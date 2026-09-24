@@ -1,0 +1,73 @@
+2026 Staffing Models		Monthly Starting SLA %		Jan-26	Jun-26	Jul-26	Aug-26	Sep-26		Starting Inventory		Jan-26	Jun-26	Jul-26	Aug-26	Sep-26		In Standard		Jan-26	Jun-26	Jul-26	Aug-26	Sep-26		Out of Standard		Jan-26	Jun-26	Jul-26	Aug-26	Sep-26
+		CB	Validation/Adjustments	89%	85%	90%	81%	74%		CB	Validation/Adjustments	 201,479 	 107,448 	 162,137 	 125,417 	 112,966 		CB	Validation/Adjustments	 179,316 	 91,331 	 145,923 	 101,588 	 83,595 		CB	Validation/Adjustments	 22,163 	 16,117 	 16,214 	 23,829 	 29,371 
+			Disputes	94%	82%	92%	91%	93%			Disputes	 12,207 	 13,452 	 12,097 	 10,531 	 9,780 			Disputes	 11,475 	 11,031 	 11,129 	 9,583 	 9,095 			Disputes	 732 	 2,421 	 968 	 948 	 685 
+			Correspondence	27%	61%	83%	87%	89%			Correspondence	 23,182 	 3,485 	 1,377 	 775 	 1,190 			Correspondence	 6,259 	 2,126 	 1,143 	 674 	 1,059 			Correspondence	 16,923 	 1,359 	 234 	 101 	 131 
+			Cash Posting	93%	97%	96%	92%	92%			Cash Posting	 36,374 	 23,882 	 19,957 	 16,305 	 13,670 			Cash Posting	 33,828 	 23,166 	 19,159 	 15,001 	 12,576 			Cash Posting	 2,546 	 716 	 798 	 1,304 	 1,094 
+		GB	Validation/Adjustments	100%	100%	99%	96%	98%		GB	Validation/Adjustments	 178,274 	 323,350 	 266,296 	 312,877 	 403,138 		GB	Validation/Adjustments	 178,124 	 322,999 	 264,576 	 300,976 	 394,083 		GB	Validation/Adjustments	 150 	 351 	 1,720 	 11,901 	 9,055 
+			Disputes	90%	84%	86%	92%	98%			Disputes	 9,708 	 12,357 	 11,499 	 9,714 	 10,063 			Disputes	 8,737 	 10,380 	 9,889 	 8,937 	 9,862 			Disputes	 971 	 1,977 	 1,610 	 777 	 201 
+			Correspondence	98%	99%	98%	99%	99%			Correspondence	 4,268 	 3,246 	 4,913 	 3,561 	 3,379 			Correspondence	 4,183 	 3,214 	 4,815 	 3,525 	 3,345 			Correspondence	 85 	 32 	 98 	 36 	 34 
+			Cash Posting	90%	83%	86%	79%	74%			Cash Posting	 21,717 	 35,379 	 36,412 	 47,432 	 48,101 			Cash Posting	 19,545 	 29,454 	 31,215 	 37,494 	 35,743 			Cash Posting	 2,172 	 5,925 	 5,197 	 9,938 	 12,358 
+		CGS	Validation/Adjustments	79%	90%	93%	77%	68%		CGS	Validation/Adjustments	 83,477 	 57,333 	 84,029 	 83,881 	 47,114 		CGS	Validation/Adjustments	 65,947 	 51,600 	 78,147 	 64,588 	 32,038 		CGS	Validation/Adjustments	 17,530 	 5,733 	 5,882 	 19,293 	 15,076 
+			Disputes	98%	76%	89%	93%	94%			Disputes	 12,284 	 22,549 	 21,756 	 21,153 	 15,448 			Disputes	 12,038 	 17,137 	 19,363 	 19,672 	 14,521 			Disputes	 246 	 5,412 	 2,393 	 1,481 	 927 
+			Correspondence	97%	98%	92%	94%	98%			Correspondence	 14,071 	 6,201 	 3,396 	 1,944 	 3,346 			Correspondence	 13,649 	 6,077 	 3,124 	 1,827 	 3,279 			Correspondence	 422 	 124 	 272 	 117 	 67 
+			Cash Posting	93%	98%	98%	91%	92%			Cash Posting	 12,296 	 13,087 	 18,885 	 22,172 	 20,944 			Cash Posting	 11,435 	 12,825 	 18,507 	 20,177 	 19,268 			Cash Posting	 861 	 262 	 378 	 1,995 	 1,676 
+			Host	40%	76%	88%	80%	82%			Host	 149,976 	 29,482 	 37,932 	 26,576 	 29,044 			Host	 59,990 	 22,406 	 33,380 	 21,261 	 23,816 			Host	 89,986 	 7,076 	 4,552 	 5,315 	 5,228 
+		Aggregated Total		80%	93%	94%	89%	89%		Aggregated Total		 759,313 	 651,251 	 680,686 	 682,338 	 718,183 		Aggregated Total		 604,527 	 603,745 	 640,371 	 605,303 	 642,281 		Aggregated Total		 154,786 	 47,506 	 40,315 	 77,035 	 75,902 
+																																
+		Monthly Receipts		Jan-26	Jun-26	Jul-26	Aug-26			Monthly Closures		Jan-26	Jun-26	Jul-26	Aug-26			Monthly Receipt/Closure Variance		Jan-26	Jun-26	Jul-26	Aug-26			Monthly Reroutes		Jan-26	Jun-26	Jul-26	Aug-26	
+		CB	Validation/Adjustments	 179,477 	 260,411 	 210,593 	 191,304 			CB	Validation/Adjustments	 318,636 	 291,572 	 230,803 	 238,005 			CB	Validation/Adjustments	 (139,159)	 (31,161)	 (20,210)	 (46,701)			CB	Validation/Adjustments	 (122,415)	 (85,850)	 16,510 	 (34,250)	
+			Disputes	 16,629 	 12,799 	 11,840 	 10,167 				Disputes	 13,183 	 14,154 	 13,406 	 10,918 				Disputes	 3,446 	 (1,355)	 (1,566)	 (751)				Disputes					
+			Correspondence	 9,230 	 4,773 	 3,349 	 2,647 				Correspondence	 13,168 	 6,881 	 3,951 	 2,232 				Correspondence	 (3,938)	 (2,108)	 (602)	 415 				Correspondence					
+			Cash Posting	 209,581 	 49,690 	 21,717 	 27,446 				Cash Posting	 41,728 	 27,648 	 28,519 	 29,879 				Cash Posting	 167,853 	 22,042 	 (6,802)	 (2,433)				Cash Posting	 172,582 	 25,967 	 (3,150)	 202 	
+		GB	Validation/Adjustments	 1,033,690 	 976,218 	 1,163,410 	 1,393,444 			GB	Validation/Adjustments	 1,062,060 	 1,041,034 	 1,109,619 	 1,304,763 			GB	Validation/Adjustments	 (28,370)	 (64,816)	 53,791 	 88,681 			GB	Validation/Adjustments	 568 	 (7,762)	 7,210 	 (1,580)	
+			Disputes	 15,591 	 14,994 	 14,440 	 13,973 				Disputes	 13,436 	 23,138 	 16,202 	 13,470 				Disputes	 2,155 	 (8,144)	 (1,762)	 503 				Disputes	 (281)	 (7,286)	 23 	 154 	
+			Correspondence	 7,292 	 6,668 	 8,103 	 7,162 				Correspondence	 7,707 	 10,148 	 9,603 	 8,480 				Correspondence	 (415)	 (3,480)	 (1,500)	 (1,318)				Correspondence	 (554)	 (5,147)	 (148)	 (1,136)	
+			Cash Posting	 440,679 	 385,504 	 395,606 	 401,422 				Cash Posting	 417,437 	 384,678 	 389,128 	 390,647 				Cash Posting	 23,242 	 826 	 6,478 	 10,775 				Cash Posting	 2,917 	 (207)	 (4,542)	 10,106 	
+		CGS	Validation/Adjustments	 191,301 	 147,578 	 183,212 	 95,401 			CGS	Validation/Adjustments	 258,471 	 225,815 	 229,386 	 216,891 			CGS	Validation/Adjustments	 (67,170)	 (78,237)	 (46,174)	 (121,490)			CGS	Validation/Adjustments	 (20,360)	 (104,933)	 (46,026)	 (84,723)	
+			Disputes	 20,263 	 28,086 	 32,928 	 27,819 				Disputes	 15,922 	 28,879 	 33,531 	 33,524 				Disputes	 4,341 	 (793)	 (603)	 (5,705)				Disputes					
+			Correspondence	 11,342 	 16,205 	 10,968 	 9,380 				Correspondence	 23,828 	 19,010 	 12,420 	 7,978 				Correspondence	 (12,486)	 (2,805)	 (1,452)	 1,402 				Correspondence					
+			Cash Posting	 63,101 	 15,807 	 16,809 	 18,467 				Cash Posting	 14,318 	 15,916 	 21,308 	 24,993 				Cash Posting	 48,783 	 (109)	 (4,499)	 (6,526)				Cash Posting	 58,001 	 (5,907)	 (7,786)	 (5,298)	
+			Host	 35,653 	 56,806 	 31,528 	 32,915 				Host	 75,902 	 48,356 	 42,884 	 30,447 				Host	 (40,249)	 8,450 	 (11,356)	 2,468 				Host					
+		Aggregated Total		 2,233,829 	 1,975,539 	 2,104,503 	 2,231,547 			 		 2,275,796 	 2,137,229 	 2,140,760 	 2,312,227 			Aggregated Total		 (41,967)	 (161,690)	 (36,257)	 (80,680)			Aggregated Total		 90,458 	 (191,125)	 (37,909)	 (116,525)	
+																																
+		Average Daily Receipts		Jan-26	Jun-26	Jul-26	Aug-26			Average Daily Production		Jan-26	Jun-26	Jul-26	Aug-26			FTE's		Jan-26	Jun-26	Jul-26	Aug-26			Hourly Goal		Jan-26	Jun-26	Jul-26	Aug-26	
+		CB	Validation/Adjustments	 8,158 	 12,401 	 9,572 	 9,110 			CB	Validation/Adjustments	 14,483 	 13,884 	 10,491 	 11,334 			CB	Validation/Adjustments	 109 	 96 	 100 	 100 			CB	Validation/Adjustments	 10.7 	 10.7 	 10.7 	 10.7 	
+			Disputes	 756 	 609 	 538 	 484 				Disputes	 599 	 674 	 609 	 520 				Disputes	 31 	 26 	 31 	 30 				Disputes	 4.0 	 4.0 	 4.0 	 4.0 	
+			Correspondence	 420 	 227 	 152 	 126 				Correspondence	 599 	 328 	 180 	 106 				Correspondence	 10 	 8 	 10 	 11 				Correspondence	 4.0 	 4.0 	 5.5 	 5.5 	
+			Cash Posting	 9,526 	 2,366 	 987 	 1,307 				Cash Posting	 1,897 	 1,317 	 1,296 	 1,423 				Cash Posting	 39 	 37 	 37 	 35 				Cash Posting	 7.0 	 7.0 	 7.0 	 7.0 	
+		GB	Validation/Adjustments	 46,986 	 46,487 	 52,882 	 66,354 			GB	Validation/Adjustments	 48,275 	 49,573 	 50,437 	 62,132 			GB	Validation/Adjustments	 59 	 46 	 45 	 48 			GB	Validation/Adjustments	 185.4 	 185.4 	 185.4 	 185.4 	
+			Disputes	 709 	 714 	 656 	 665 				Disputes	 611 	 1,102 	 736 	 641 				Disputes	 18 	 17 	 18 	 18 				Disputes	 4.00 	 4.00 	 4.00 	 4.00 	
+			Correspondence	 331 	 318 	 368 	 341 				Correspondence	 350 	 483 	 437 	 404 				Correspondence	 16 	 14 	 13 	 13 				Correspondence	 5.00 	 5.00 	 5.00 	 5.00 	
+			Cash Posting	 20,031 	 18,357 	 17,982 	 19,115 				Cash Posting	 18,974 	 18,318 	 17,688 	 18,602 				Cash Posting	 18 	 17 	 17 	 17 				Cash Posting	 204.2 	 204.2 	 204.2 	 204.2 	
+		CGS	Validation/Adjustments	 8,696 	 7,028 	 8,328 	 4,543 			CGS	Validation/Adjustments	 11,749 	 10,753 	 10,427 	 10,328 			CGS	Validation/Adjustments	 56 	 37 	 57 	 60 			CGS	Validation/Adjustments	 10.7 	 10.7 	 10.7 	 10.7 	
+			Disputes	 921 	 1,337 	 1,497 	 1,325 				Disputes	 724 	 1,375 	 1,524 	 1,596 				Disputes	 39 	 69 	 66 	 72 				Disputes	 4.0 	 4.0 	 4.0 	 4.0 	
+			Correspondence	 516 	 772 	 499 	 447 				Correspondence	 1,083 	 905 	 565 	 380 				Correspondence	 54 	 19 	 18 	 8 				Correspondence	 4.0 	 4.0 	 5.5 	 5.5 	
+			Cash Posting	 2,868 	 753 	 764 	 879 				Cash Posting	 651 	 758 	 969 	 1,190 				Cash Posting	 45 	 40 	 40 	 57 				Cash Posting	 7.0 	 7.0 	 7.0 	 7.0 	
+			Host	 1,621 	 2,705 	 1,433 	 1,567 				Host	 3,450 	 2,303 	 1,949 	 1,450 				Host	 38 	 114 	 92 	 38 				Host	 8.0 	 8.0 	 8.0 	 8.0 	
+		Aggregated Total		 101,538 	 94,073 	 95,659 	 106,264 			Aggregated Total		 103,445 	 101,773 	 97,307 	 110,106 			Aggregated Total		 532 	 540 	 544 	 507 									
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																																
+																		 														
