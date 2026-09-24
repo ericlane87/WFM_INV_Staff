@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workforce Management Intelligence Platform</title>
+  <style>
+    :root {
+      --bg: #f4f6f7;
+      --panel: #ffffff;
+      --ink: #111827;
+      --muted: #667085;
+      --line: #d7dee4;
+      --blue: #255f85;
+      --teal: #07847f;
+      --green: #327a50;
+      --amber: #b97816;
+      --red: #b63d3d;
+      --critical: #7f1d1d;
+      --shadow: 0 18px 48px rgba(17, 24, 39, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .app-shell {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 22px 8px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 780;
+      letter-spacing: 0;
+    }
+
+    .context {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .commandbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 22px 14px;
+    }
+
+    button, select, input {
+      font: inherit;
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fff;
+      color: var(--ink);
+    }
+
+    button {
+      padding: 7px 10px;
+      cursor: pointer;
+      transition: border-color 0.16s ease, background 0.16s ease, color 0.16s ease;
+    }
+
+    button:hover { border-color: var(--blue); }
+    button.active {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: #fff;
+    }
+
+    select, input { padding: 6px 9px; }
+
+    .content {
+      padding: 18px 18px 32px;
+      max-width: 1520px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .rail {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: auto;
+      padding: 16px;
+      background: #101820;
+      color: #fff;
+      border-left: 1px solid #263340;
+    }
+
+    .rail h2 {
+      margin: 0 0 12px;
+      font-size: 15px;
+      letter-spacing: 0;
+    }
+
+    .rail-card {
+      padding: 12px 0;
+      border-top: 1px solid rgba(255,255,255,0.14);
+    }
+
+    .rail-label {
+      color: #aebbc6;
+      font-size: 11px;
+      font-weight: 760;
+      text-transform: uppercase;
+    }
+
+    .rail-value {
+      margin-top: 5px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
+      gap: 14px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      padding: 14px;
+    }
+
+    .panel h2, .panel h3 {
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+
+    .panel h2 { font-size: 17px; }
+    .panel h3 { font-size: 14px; color: var(--muted); text-transform: uppercase; }
+
+    .subtle { color: var(--muted); font-size: 13px; line-height: 1.45; }
+
+    .pulse-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(118px, 1fr));
+      gap: 8px;
+    }
+
+    .pulse-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: #fbfcfd;
+      cursor: pointer;
+      min-height: 122px;
+    }
+
+    .pulse-card:hover { border-color: var(--blue); }
+    .pulse-question {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 760;
+      text-transform: uppercase;
+      line-height: 1.25;
+    }
+    .pulse-answer { margin-top: 8px; font-size: 17px; font-weight: 780; }
+
+    .heatmap {
+      display: grid;
+      grid-template-columns: 88px repeat(5, minmax(108px, 1fr));
+      gap: 7px;
+      align-items: stretch;
+    }
+
+    .heat-head, .unit-label {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 760;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+    }
+
+    .heat-cell {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      min-height: 86px;
+      background: #f8fafb;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .heat-cell::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 5px;
+      background: var(--green);
+    }
+
+    .heat-cell.critical::before { background: var(--critical); }
+    .heat-cell.at-risk::before { background: var(--red); }
+    .heat-cell.watch::before { background: var(--amber); }
+    .heat-cell.meeting-target::before { background: var(--green); }
+    .heat-cell.selected { outline: 2px solid var(--blue); }
+
+    .heat-title { font-size: 12px; font-weight: 760; }
+    .heat-metric { margin-top: 8px; font-size: 22px; font-weight: 820; }
+    .heat-note { margin-top: 3px; color: var(--muted); font-size: 12px; }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      min-height: 23px;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      background: #eef1f3;
+    }
+    .status.critical { background: #fde1e1; color: var(--critical); }
+    .status.at-risk { background: #fde7e7; color: var(--red); }
+    .status.watch { background: #fff0d5; color: #8b520b; }
+    .status.meeting-target { background: #def2e6; color: #17633a; }
+
+    .brief {
+      display: grid;
+      gap: 10px;
+    }
+
+    .brief-row {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 10px;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .bar-list { display: grid; gap: 9px; }
+    .driver-row {
+      display: grid;
+      grid-template-columns: 128px 1fr 44px;
+      align-items: center;
+      gap: 9px;
+      font-size: 13px;
+    }
+    .track { height: 11px; background: #e8edf1; border-radius: 999px; overflow: hidden; }
+    .fill { height: 100%; background: var(--blue); border-radius: 999px; }
+
+    .mover-list, .forecast-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .mover {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: #fbfcfd;
+      cursor: pointer;
+    }
+
+    .mover-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .mover strong { font-size: 14px; }
+    .mover-value { font-size: 18px; font-weight: 820; }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      align-items: stretch;
+    }
+
+    .flow-step {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      background: #fbfcfd;
+    }
+    .flow-step .number { margin-top: 8px; font-size: 22px; font-weight: 820; }
+
+    .workspace { display: none; }
+    .workspace.active { display: grid; gap: 14px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    th, td { padding: 9px 8px; border-bottom: 1px solid var(--line); text-align: right; }
+    th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
+    th { color: var(--muted); font-size: 11px; text-transform: uppercase; }
+
+    .lab-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(140px, 1fr));
+      gap: 10px;
+    }
+    .result-box {
+      margin-top: 12px;
+      background: #eef6f5;
+      border: 1px solid #cce2df;
+      border-radius: 8px;
+      padding: 12px;
+      line-height: 1.45;
+    }
+
+    .scatter {
+      position: relative;
+      height: 280px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background:
+        linear-gradient(#eef2f4 1px, transparent 1px),
+        linear-gradient(90deg, #eef2f4 1px, transparent 1px);
+      background-size: 25% 25%;
+      overflow: hidden;
+    }
+    .dot {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--blue);
+      transform: translate(-50%, -50%);
+      opacity: 0.72;
+    }
+
+    .meeting-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .meeting-card {
+      min-height: 150px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    @media (max-width: 1220px) {
+      .app-shell { grid-template-columns: 1fr; }
+      .rail { position: static; height: auto; }
+      .layout { grid-template-columns: 1fr; }
+      .pulse-grid, .flow, .meeting-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 760px) {
+      .brand-row, .commandbar { padding-left: 12px; padding-right: 12px; }
+      .content { padding: 12px; }
+      .pulse-grid, .flow, .meeting-grid, .lab-grid { grid-template-columns: 1fr; }
+      .heatmap { grid-template-columns: 82px repeat(2, minmax(120px, 1fr)); overflow-x: auto; }
+      .brief-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <div>
+      <header class="topbar">
+        <div class="brand-row">
+          <div>
+            <h1>Workforce Management Intelligence Platform</h1>
+            <div class="context" id="contextLine"></div>
+          </div>
+          <button id="resetBtn">Reset View</button>
+        </div>
+        <div class="commandbar">
+          <select id="viewSelect">
+            <option value="enterprise">Enterprise Pulse</option>
+            <option value="workforce">Workforce Pulse</option>
+            <option value="forecast">Forecasting</option>
+            <option value="lab">Planning Lab</option>
+            <option value="correlation">Correlation Explorer</option>
+            <option value="detail">Detail Data</option>
+            <option value="meeting">Meeting Mode</option>
+          </select>
+          <select id="businessSelect"></select>
+          <select id="categorySelect"></select>
+          <select id="periodSelect"></select>
+        </div>
+      </header>
+
+      <main class="content">
+        <section id="enterprise" class="workspace active">
+          <div class="panel">
+            <h2>Enterprise Pulse</h2>
+            <p class="subtle">Where should leadership look first? Each card is generated from the current period and can drill into a business unit and work category.</p>
+            <div class="pulse-grid" id="pulseGrid"></div>
+          </div>
+
+          <div class="layout">
+            <div class="panel">
+              <h2>Operational Heat Map</h2>
+              <div class="heatmap" id="heatmap"></div>
+            </div>
+            <div class="panel">
+              <h2>Intelligence Brief</h2>
+              <div class="brief" id="brief"></div>
+            </div>
+          </div>
+
+          <div class="layout">
+            <div class="panel">
+              <h2>Biggest Movers</h2>
+              <div class="mover-list" id="movers"></div>
+            </div>
+            <div class="panel">
+              <h2>Likely Drivers of Current Pressure</h2>
+              <div class="bar-list" id="driverBars"></div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h2>Inventory Flow</h2>
+            <div class="flow" id="flow"></div>
+          </div>
+        </section>
+
+        <section id="workforce" class="workspace">
+          <div class="panel">
+            <h2>Workforce Pulse</h2>
+            <div class="brief" id="workforcePulse"></div>
+          </div>
+          <div class="layout">
+            <div class="panel">
+              <h2>Receipts vs Closures</h2>
+              <div class="bar-list" id="flowBalance"></div>
+            </div>
+            <div class="panel">
+              <h2>Staffing Capacity</h2>
+              <div class="brief" id="capacityBrief"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="forecast" class="workspace">
+          <div class="panel">
+            <h2>Forecasting Workspace</h2>
+            <p class="subtle">Actuals remain separated from directional forecasts. Current history supports simple trend forecasting only.</p>
+            <div class="forecast-list" id="forecastList"></div>
+          </div>
+          <div class="panel">
+            <h2>If Nothing Changes</h2>
+            <div class="brief" id="nothingChanges"></div>
+          </div>
+        </section>
+
+        <section id="lab" class="workspace">
+          <div class="panel">
+            <h2>Workforce Planning Lab</h2>
+            <div class="lab-grid">
+              <label><span class="rail-label">Add FTE</span><input id="scenarioFte" type="number" value="0" step="1"></label>
+              <label><span class="rail-label">Productivity %</span><input id="scenarioProduction" type="number" value="0" step="1"></label>
+              <label><span class="rail-label">Receipts %</span><input id="scenarioReceipts" type="number" value="0" step="1"></label>
+              <label><span class="rail-label">Closure Override</span><input id="scenarioClosures" type="number" value="" step="100"></label>
+            </div>
+            <div class="result-box" id="scenarioResult"></div>
+          </div>
+          <div class="panel">
+            <h2>What Would It Take?</h2>
+            <div class="brief" id="takeEngine"></div>
+          </div>
+        </section>
+
+        <section id="correlation" class="workspace">
+          <div class="panel">
+            <h2>Correlation Explorer</h2>
+            <select id="correlationSelect"></select>
+            <p class="subtle" id="correlationText"></p>
+            <div class="scatter" id="scatter"></div>
+          </div>
+        </section>
+
+        <section id="detail" class="workspace">
+          <div class="panel">
+            <h2>Detail Data</h2>
+            <div style="overflow:auto">
+              <table>
+                <thead>
+                  <tr>
+                    <th>BU</th><th>Category</th><th>Status</th><th>SLA</th><th>Inventory</th><th>OOS</th><th>Receipts</th><th>Closures</th><th>Gap</th><th>FTE</th>
+                  </tr>
+                </thead>
+                <tbody id="detailRows"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section id="meeting" class="workspace">
+          <div class="panel">
+            <h2>Meeting Mode</h2>
+            <div class="meeting-grid" id="meetingGrid"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <aside class="rail">
+      <h2>Intelligence Rail</h2>
+      <div id="railContent"></div>
+    </aside>
+  </div>
+
+  <script src="data/dashboard-data.js"></script>
+  <script>
+    const data = window.DASHBOARD_DATA;
+    const state = {
+      view: 'enterprise',
+      businessUnit: 'All',
+      workCategory: 'All',
+      period: data.metadata.latestFullContextPeriod || data.metadata.latestPeriod
+    };
+    const fmt = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
+    const pct = new Intl.NumberFormat('en-US', { style: 'percent', maximumFractionDigits: 0 });
+
+    const statusClass = status => String(status || '').toLowerCase().replaceAll('_', '-');
+    const labelStatus = status => String(status || 'NO_DATA').replaceAll('_', ' ');
+    const value = x => x == null || Number.isNaN(Number(x)) ? 0 : Number(x);
+    const display = x => x == null || Number.isNaN(Number(x)) ? 'n/a' : fmt.format(Number(x));
+    const displayPct = x => x == null || Number.isNaN(Number(x)) ? 'n/a' : pct.format(Number(x));
+
+    function setup() {
+      fillSelect('businessSelect', ['All', ...data.metadata.businessUnits], 'All Business Units');
+      fillSelect('categorySelect', ['All', ...data.metadata.workCategories], 'All Work Categories');
+      fillSelect('periodSelect', data.metadata.periods, null);
+      document.getElementById('periodSelect').value = state.period;
+      document.getElementById('viewSelect').onchange = e => { state.view = e.target.value; render(); };
+      document.getElementById('businessSelect').onchange = e => { state.businessUnit = e.target.value; render(); };
+      document.getElementById('categorySelect').onchange = e => { state.workCategory = e.target.value; render(); };
+      document.getElementById('periodSelect').onchange = e => { state.period = e.target.value; render(); };
+      document.getElementById('resetBtn').onclick = () => {
+        state.view = 'enterprise';
+        state.businessUnit = 'All';
+        state.workCategory = 'All';
+        state.period = data.metadata.latestFullContextPeriod || data.metadata.latestPeriod;
+        render();
+      };
+      ['scenarioFte', 'scenarioProduction', 'scenarioReceipts', 'scenarioClosures'].forEach(id => {
+        document.getElementById(id).addEventListener('input', renderScenario);
+      });
+      const corr = document.getElementById('correlationSelect');
+      data.analytics.correlationExplorer.forEach((item, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.textContent = item.label;
+        corr.appendChild(option);
+      });
+      corr.onchange = renderCorrelation;
+      render();
+    }
+
+    function fillSelect(id, values, allLabel) {
+      const select = document.getElementById(id);
+      select.innerHTML = '';
+      values.forEach(item => {
+        const option = document.createElement('option');
+        option.value = item;
+        option.textContent = item === 'All' && allLabel ? allLabel : item;
+        select.appendChild(option);
+      });
+    }
+
+    function contextRows(period = state.period) {
+      return data.features.filter(row =>
+        row.period === period &&
+        row.businessUnit !== 'Aggregated Total' &&
+        (state.businessUnit === 'All' || row.businessUnit === state.businessUnit) &&
+        (state.workCategory === 'All' || row.workCategory === state.workCategory)
+      );
+    }
+
+    function selectedContext() {
+      const exact = data.analytics.contexts.find(item =>
+        item.period === state.period &&
+        item.businessUnit === state.businessUnit &&
+        item.workCategory === state.workCategory
+      );
+      if (exact) return exact;
+      const rows = contextRows();
+      if (!rows.length) return null;
+      const worst = rows.slice().sort((a, b) => value(b.riskScore) - value(a.riskScore))[0];
+      return data.analytics.contexts.find(item =>
+        item.period === worst.period &&
+        item.businessUnit === worst.businessUnit &&
+        item.workCategory === worst.workCategory
+      );
+    }
+
+    function aggregate(rows) {
+      const total = rows.reduce((acc, row) => {
+        ['startingInventory','inStandard','outOfStandard','monthlyReceipts','monthlyClosures','receiptClosureGap','ftes','averageDailyReceipts','averageDailyProduction'].forEach(field => {
+          acc[field] = value(acc[field]) + value(row[field]);
+        });
+        acc.riskScore = Math.max(value(acc.riskScore), value(row.riskScore));
+        return acc;
+      }, {});
+      total.sla = total.startingInventory ? total.inStandard / total.startingInventory : null;
+      return total;
+    }
+
+    function setContextLine() {
+      const path = ['Enterprise'];
+      if (state.businessUnit !== 'All') path.push(state.businessUnit);
+      if (state.workCategory !== 'All') path.push(state.workCategory);
+      document.getElementById('contextLine').textContent =
+        `${path.join(' > ')} | Period ${state.period} | SLA target ${displayPct(data.metadata.slaTarget)} | ${data.analytics.modelDiagnostics.analyticalMaturity}`;
+    }
+
+    function render() {
+      document.getElementById('viewSelect').value = state.view;
+      document.getElementById('businessSelect').value = state.businessUnit;
+      document.getElementById('categorySelect').value = state.workCategory;
+      document.getElementById('periodSelect').value = state.period;
+      document.querySelectorAll('.workspace').forEach(section => section.classList.toggle('active', section.id === state.view));
+      setContextLine();
+      renderPulse();
+      renderHeatmap();
+      renderBrief();
+      renderMovers();
+      renderDrivers();
+      renderFlow();
+      renderWorkforce();
+      renderForecast();
+      renderTakeEngine();
+      renderScenario();
+      renderCorrelation();
+      renderDetails();
+      renderMeeting();
+      renderRail();
+    }
+
+    function drill(businessUnit, workCategory, view = state.view) {
+      state.businessUnit = businessUnit;
+      state.workCategory = workCategory;
+      state.view = view;
+      render();
+    }
+
+    function renderPulse() {
+      document.getElementById('pulseGrid').innerHTML = data.analytics.enterprisePulse.filter(Boolean).map(item => `
+        <div class="pulse-card" onclick="drill('${item.answer.split(' ')[0]}', '${item.answer.replace(item.answer.split(' ')[0] + ' ', '')}', 'enterprise')">
+          <div class="pulse-question">${item.question}</div>
+          <div class="pulse-answer">${item.answer}</div>
+          <div class="subtle">${item.takeaway}</div>
+        </div>
+      `).join('');
+    }
+
+    function renderHeatmap() {
+      const units = data.metadata.businessUnits;
+      const cats = data.metadata.workCategories;
+      const byId = Object.fromEntries(data.analytics.heatmap.map(cell => [cell.id, cell]));
+      let html = '<div></div>' + cats.map(cat => `<div class="heat-head">${cat}</div>`).join('');
+      units.forEach(unit => {
+        html += `<div class="unit-label">${unit}</div>`;
+        cats.forEach(cat => {
+          const cell = byId[`${unit}::${cat}`];
+          if (!cell) {
+            html += '<div class="heat-cell" style="opacity:.25"><div class="heat-title">No data</div></div>';
+            return;
+          }
+          const selected = state.businessUnit === unit && state.workCategory === cat ? 'selected' : '';
+          html += `
+            <div class="heat-cell ${statusClass(cell.status)} ${selected}" onclick="drill('${unit}', '${cat}', 'enterprise')">
+              <div class="heat-title">${labelStatus(cell.status)}</div>
+              <div class="heat-metric">${displayPct(cell.sla)}</div>
+              <div class="heat-note">OOS ${display(cell.outOfStandard)}${cell.earlyWarning ? ' | Early warning' : ''}</div>
+            </div>
+          `;
+        });
+      });
+      document.getElementById('heatmap').innerHTML = html;
+    }
+
+    function renderBrief() {
+      const ctx = selectedContext();
+      if (!ctx) return;
+      const brief = ctx.brief;
+      document.getElementById('brief').innerHTML = [
+        ['What changed', brief.whatChanged],
+        ['Why it matters', brief.whyItMatters],
+        ['Staffing', brief.staffing],
+        ['Early warning', brief.earlyWarning],
+        ['Outlook', brief.outlook],
+        ['Evidence', brief.evidence]
+      ].map(row => `<div class="brief-row"><div class="rail-label">${row[0]}</div><div>${row[1]}</div></div>`).join('');
+    }
+
+    function renderMovers() {
+      document.getElementById('movers').innerHTML = data.analytics.biggestMovers.map(item => `
+        <div class="mover" onclick="drill('${item.businessUnit}', '${item.workCategory}', 'enterprise')">
+          <div class="mover-top"><strong>${item.title}</strong><span class="mover-value">${item.display}</span></div>
+          <div class="subtle">${item.businessUnit} ${item.workCategory} | ${item.context}</div>
+        </div>
+      `).join('');
+    }
+
+    function renderDrivers() {
+      const ctx = selectedContext();
+      const bars = ctx?.driverBars || [];
+      document.getElementById('driverBars').innerHTML = bars.map(bar => `
+        <div class="driver-row" title="${bar.note}">
+          <div>${bar.label}</div>
+          <div class="track"><div class="fill" style="width:${Math.max(5, bar.strength * 100)}%"></div></div>
+          <div>${Math.round(bar.strength * 100)}</div>
+        </div>
+      `).join('') || '<p class="subtle">No dominant driver signal for this selection.</p>';
+    }
+
+    function renderFlow() {
+      const total = aggregate(contextRows());
+      const steps = [
+        ['Starting Inventory', total.startingInventory],
+        ['Receipts In', total.monthlyReceipts],
+        ['Closures Out', -total.monthlyClosures],
+        ['Receipt / Closure Gap', total.receiptClosureGap]
+      ];
+      document.getElementById('flow').innerHTML = steps.map(step => `
+        <div class="flow-step">
+          <div class="rail-label">${step[0]}</div>
+          <div class="number">${display(step[1])}</div>
+        </div>
+      `).join('');
+    }
+
+    function renderWorkforce() {
+      const ctx = selectedContext();
+      const total = aggregate(contextRows());
+      document.getElementById('workforcePulse').innerHTML = ctx ? Object.entries(ctx.brief).map(([key, text]) =>
+        `<div class="brief-row"><div class="rail-label">${key.replace(/([A-Z])/g, ' $1')}</div><div>${text}</div></div>`
+      ).join('') : '';
+      const max = Math.max(1, total.monthlyReceipts, total.monthlyClosures);
+      document.getElementById('flowBalance').innerHTML = `
+        <div class="driver-row"><div>Receipts</div><div class="track"><div class="fill" style="width:${total.monthlyReceipts / max * 100}%"></div></div><div>${display(total.monthlyReceipts)}</div></div>
+        <div class="driver-row"><div>Closures</div><div class="track"><div class="fill" style="width:${total.monthlyClosures / max * 100}%"></div></div><div>${display(total.monthlyClosures)}</div></div>
+        <div class="driver-row"><div>Gap</div><div class="track"><div class="fill" style="width:${Math.min(100, Math.abs(total.receiptClosureGap) / max * 100)}%"></div></div><div>${display(total.receiptClosureGap)}</div></div>
+      `;
+      document.getElementById('capacityBrief').innerHTML = `
+        <div class="brief-row"><div class="rail-label">FTE</div><div>${display(total.ftes)}</div></div>
+        <div class="brief-row"><div class="rail-label">Production Ratio</div><div>${displayPct(total.averageDailyReceipts ? total.averageDailyProduction / total.averageDailyReceipts : null)}</div></div>
+        <div class="brief-row"><div class="rail-label">Context</div><div>${ctx?.brief.staffing || 'Select a work category for staffing evidence.'}</div></div>
+      `;
+    }
+
+    function renderForecast() {
+      const list = data.analytics.forecasts.filter(item =>
+        (state.businessUnit === 'All' || item.businessUnit === state.businessUnit) &&
+        (state.workCategory === 'All' || item.workCategory === state.workCategory)
+      ).slice(0, 10);
+      document.getElementById('forecastList').innerHTML = list.map(item => `
+        <div class="mover">
+          <div class="mover-top"><strong>${item.businessUnit} ${item.workCategory}</strong><span>${item.forecastPeriod}</span></div>
+          <div class="subtle">Inventory ${display(item.startingInventory)} | OOS ${display(item.outOfStandard)} | SLA ${displayPct(item.sla)} | ${item.method}</div>
+        </div>
+      `).join('');
+      const ctx = selectedContext();
+      document.getElementById('nothingChanges').innerHTML = ctx ? Object.entries(ctx.ifNothingChanges).map(([key, item]) =>
+        `<div class="brief-row"><div class="rail-label">${key}</div><div>${typeof item === 'number' ? display(item) : item}</div></div>`
+      ).join('') : '';
+    }
+
+    function renderTakeEngine() {
+      const take = selectedContext()?.whatWouldItTake;
+      document.getElementById('takeEngine').innerHTML = take ? `
+        <div class="brief-row"><div class="rail-label">Target</div><div>${take.target}</div></div>
+        <div class="brief-row"><div class="rail-label">OOS Reduction</div><div>${display(take.oosReductionNeeded)}</div></div>
+        <div class="brief-row"><div class="rail-label">FTE Equivalent</div><div>${take.estimatedFteEquivalent == null ? 'n/a' : take.estimatedFteEquivalent}</div></div>
+        <div class="brief-row"><div class="rail-label">Productivity Lift</div><div>${displayPct(take.estimatedProductivityLift)}</div></div>
+        <div class="brief-row"><div class="rail-label">Assumption</div><div>${take.assumption}</div></div>
+      ` : '';
+    }
+
+    function scenarioBase() {
+      return aggregate(contextRows().filter(row => row.monthlyClosures || row.ftes));
+    }
+
+    function renderScenario() {
+      const base = scenarioBase();
+      const addFte = Number(document.getElementById('scenarioFte').value || 0);
+      const prodChange = Number(document.getElementById('scenarioProduction').value || 0) / 100;
+      const receiptChange = Number(document.getElementById('scenarioReceipts').value || 0) / 100;
+      const closureOverride = Number(document.getElementById('scenarioClosures').value || 0);
+      const closuresPerFte = base.ftes ? base.monthlyClosures / base.ftes : 0;
+      const adjustedReceipts = Math.max(0, base.monthlyReceipts * (1 + receiptChange));
+      const adjustedClosures = closureOverride > 0 ? closureOverride : Math.max(0, base.monthlyClosures * (1 + prodChange) + addFte * closuresPerFte);
+      const adjustedGap = adjustedReceipts - adjustedClosures;
+      const outRate = base.startingInventory ? base.outOfStandard / base.startingInventory : 0;
+      const projectedOos = Math.max(0, base.outOfStandard + Math.max(0, adjustedGap) * outRate + Math.min(0, adjustedGap) * 0.25);
+      const projectedSla = base.startingInventory ? 1 - projectedOos / base.startingInventory : null;
+      document.getElementById('scenarioResult').innerHTML =
+        `<strong>Baseline vs Scenario:</strong> receipts ${display(base.monthlyReceipts)} to ${display(adjustedReceipts)}, closures ${display(base.monthlyClosures)} to ${display(adjustedClosures)}, gap ${display(adjustedGap)}. Estimated OOS ${display(projectedOos)} and SLA near ${displayPct(projectedSla)}. Directional only.`;
+    }
+
+    function renderCorrelation() {
+      const index = Number(document.getElementById('correlationSelect').value || 0);
+      const item = data.analytics.correlationExplorer[index];
+      if (!item) return;
+      document.getElementById('correlationText').textContent = item.interpretation;
+      const xs = item.points.map(p => value(p.x));
+      const ys = item.points.map(p => value(p.y));
+      const minX = Math.min(...xs), maxX = Math.max(...xs), minY = Math.min(...ys), maxY = Math.max(...ys);
+      document.getElementById('scatter').innerHTML = item.points.map(point => {
+        const x = maxX === minX ? 50 : (value(point.x) - minX) / (maxX - minX) * 92 + 4;
+        const y = maxY === minY ? 50 : 96 - ((value(point.y) - minY) / (maxY - minY) * 92 + 4);
+        return `<span class="dot" style="left:${x}%; top:${y}%" title="${point.businessUnit} ${point.workCategory} ${point.period}"></span>`;
+      }).join('');
+    }
+
+    function renderDetails() {
+      document.getElementById('detailRows').innerHTML = contextRows().map(row => `
+        <tr>
+          <td>${row.businessUnit}</td><td>${row.workCategory}</td><td><span class="status ${statusClass(row.status)}">${labelStatus(row.status)}</span></td>
+          <td>${displayPct(row.monthlyStartingSla || row.calculatedSla)}</td><td>${display(row.startingInventory)}</td><td>${display(row.outOfStandard)}</td>
+          <td>${display(row.monthlyReceipts)}</td><td>${display(row.monthlyClosures)}</td><td>${display(row.receiptClosureGap)}</td><td>${display(row.ftes)}</td>
+        </tr>
+      `).join('');
+    }
+
+    function renderMeeting() {
+      const meeting = data.analytics.meetingMode;
+      const cards = [
+        ['Current State', `SLA ${displayPct(meeting.currentState.sla)}, OOS ${display(meeting.currentState.outOfStandard)}`],
+        ['Top Change', meeting.topChange ? `${meeting.topChange.businessUnit} ${meeting.topChange.workCategory}: ${meeting.topChange.display}` : 'n/a'],
+        ['Top Improvement', meeting.topImprovement ? `${meeting.topImprovement.businessUnit} ${meeting.topImprovement.workCategory}: ${meeting.topImprovement.display}` : 'n/a'],
+        ['Top Deterioration', meeting.topDeterioration ? `${meeting.topDeterioration.businessUnit} ${meeting.topDeterioration.workCategory}: ${meeting.topDeterioration.display}` : 'n/a'],
+        ['Capacity Concern', `${meeting.topCapacityConcern.businessUnit} ${meeting.topCapacityConcern.workCategory}`],
+        ['Outlook', `${meeting.outlook.businessUnit} ${meeting.outlook.workCategory}: ${meeting.outlook.summary}`]
+      ];
+      document.getElementById('meetingGrid').innerHTML = cards.map(card => `
+        <div class="meeting-card"><div class="rail-label">${card[0]}</div><h2>${card[1]}</h2></div>
+      `).join('');
+    }
+
+    function renderRail() {
+      const ctx = selectedContext();
+      const total = aggregate(contextRows());
+      document.getElementById('railContent').innerHTML = `
+        <div class="rail-card"><div class="rail-label">Current State</div><div class="rail-value">${displayPct(total.sla)} SLA | ${display(total.outOfStandard)} OOS</div></div>
+        <div class="rail-card"><div class="rail-label">Status</div><div class="rail-value">${ctx ? labelStatus(ctx.status) : 'Enterprise'}</div></div>
+        <div class="rail-card"><div class="rail-label">Early Warning</div><div class="rail-value">${ctx?.earlyWarning?.active ? ctx.earlyWarning.evidence.join(' ') : 'No active early warning for selected context.'}</div></div>
+        <div class="rail-card"><div class="rail-label">Top Driver</div><div class="rail-value">${ctx?.driverBars?.[0]?.label || 'No dominant driver'}</div></div>
+        <div class="rail-card"><div class="rail-label">Outlook</div><div class="rail-value">${ctx?.ifNothingChanges?.summary || 'Select a context for outlook.'}</div></div>
+        <div class="rail-card"><div class="rail-label">Confidence</div><div class="rail-value">${data.analytics.modelDiagnostics.confidenceRationale}</div></div>
+      `;
+    }
+
+    setup();
+  </script>
+</body>
+</html>
