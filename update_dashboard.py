@@ -43,6 +43,7 @@ KNOWN_METRICS = {
 SUPPORTED_SOURCE_SUFFIXES = {".txt", ".csv", ".xlsx", ".xlsm"}
 DEFAULT_SOURCE_YEAR = 2026
 MONTH_RE = re.compile(r"^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)(?:-(\d{2}|\d{4}))?$")
+DAY_MONTH_RE = re.compile(r"^\d{1,2}-(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)(?:-(\d{2}|\d{4}))?$")
 MONTH_ORDER = {
     "Jan": 1,
     "Feb": 2,
@@ -85,14 +86,35 @@ def parse_number(value: str) -> float | None:
 
 
 def month_key(label: str, default_year: int = DEFAULT_SOURCE_YEAR) -> str:
-    match = MONTH_RE.match(label)
-    if not match:
-        raise ValueError(f"Unsupported month label: {label}")
-    month_name, year_text = match.groups()
+    text = clean_cell(str(label))
+    for date_format in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d", "%m/%d/%Y", "%m/%d/%y"):
+        try:
+            parsed_date = dt.datetime.strptime(text, date_format)
+            return f"{parsed_date.year}-{parsed_date.month:02d}"
+        except ValueError:
+            pass
+
+    match = MONTH_RE.match(text)
+    if match:
+        month_name, year_text = match.groups()
+    else:
+        match = DAY_MONTH_RE.match(text)
+        if not match:
+            raise ValueError(f"Unsupported month label: {label}")
+        month_name, year_text = match.groups()
+
     year = default_year if year_text is None else int(year_text)
     if year < 100:
         year += 2000
     return f"{year}-{MONTH_ORDER[month_name]:02d}"
+
+
+def is_month_label(label: str) -> bool:
+    try:
+        month_key(label)
+    except ValueError:
+        return False
+    return True
 
 
 def month_sort_key(label: str, default_year: int = DEFAULT_SOURCE_YEAR) -> tuple[int, int]:
@@ -108,7 +130,7 @@ def discover_blocks(cells: list[str], default_year: int = DEFAULT_SOURCE_YEAR) -
         month_columns = [
             {"index": idx, "label": clean_cell(cells[idx]), "period": month_key(clean_cell(cells[idx]), default_year)}
             for idx in range(start + 1, end)
-            if MONTH_RE.match(clean_cell(cells[idx]))
+            if is_month_label(clean_cell(cells[idx]))
         ]
         if month_columns:
             blocks.append({"metric": clean_cell(cells[start]), "start": start, "months": month_columns})
