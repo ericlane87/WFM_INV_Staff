@@ -2,11 +2,11 @@
 
 This project builds a local dashboard from the staffing and inventory report in `Sample Report.txt`.
 
-You can also put report files in year folders under the `input` folder beside the updater/batch file. For example, put 2026 reports in `input/2026`. The updater reads every supported file directly inside `input` and directly inside year folders such as `input/2026`, sorts the reports by their month periods, and keeps each period only once. If a later file repeats a period that was already loaded, that duplicate period is ignored.
+You can also put report files directly in the `input` folder beside the updater/batch file. The updater reads every supported file directly inside `input`, sorts the reports by their month periods, and keeps each period only once. If a later file repeats a period that was already loaded, that duplicate period is ignored.
 
 Previously loaded source rows are stored in `data/source-records.json`. New runs keep those existing dates and add only new dates from the files in `input`.
 
-Month labels without a year use the year folder they are stored in. Files in `input/2026` are treated as 2026 data.
+Excel date headers such as `26-Jan`, `Jan-26`, `Aug`, and `2026-08-26` are supported. Month labels without a year default to 2026.
 
 ## Run
 
