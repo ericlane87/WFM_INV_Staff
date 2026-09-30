@@ -1519,7 +1519,22 @@ def format_percent(value: float | None) -> str:
 
 def build_payload(source_files: list[Path], sheet_name: str | None = None) -> dict[str, Any]:
     records, source_blocks, source_stats = merge_source_files(source_files, sheet_name)
+    if not records:
+        sources = "\n".join(f"  - {path}" for path in source_files)
+        raise SystemExit(
+            "No usable dashboard records were found in the source files.\n"
+            "Check that the report has the expected Staffing and Inventory layout and includes metric headers such as "
+            "'Monthly Starting SLA %', 'Starting Inventory', 'Monthly Receipts', and 'FTE''s'.\n"
+            f"Source files checked:\n{sources}"
+        )
     feature_rows = pivot_feature_rows(records)
+    if not feature_rows:
+        sources = "\n".join(f"  - {path}" for path in source_files)
+        raise SystemExit(
+            "The source files were read, but no feature rows could be built for the dashboard.\n"
+            "Check that the report includes business units, work categories, month columns, and numeric values.\n"
+            f"Source files checked:\n{sources}"
+        )
     data_quality_warnings = validate_data(records, feature_rows)
     latest = latest_period(feature_rows)
     full_context = latest_full_context_period(feature_rows)
