@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\Users\AF32634\OneDrive - Elevance Health\Documents\AI Team\Monica\update_dashboard.py", line 1735, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "C:\Users\AF32634\OneDrive - Elevance Health\Documents\AI Team\Monica\update_dashboard.py", line 1718, in main
+    payload = build_payload(source_files, args.sheet)
+  File "C:\Users\AF32634\OneDrive - Elevance Health\Documents\AI Team\Monica\update_dashboard.py", line 1524, in build_payload
+    latest = latest_period(feature_rows)
+  File "C:\Users\AF32634\OneDrive - Elevance Health\Documents\AI Team\Monica\update_dashboard.py", line 626, in latest_period
+    return max(row["period"] for row in rows)
+ValueError: max() iterable argument is empty
+Python launcher failed. Trying python command... 
+'python' is not recognized as an internal or external command,
+operable program or batch file.
