@@ -10,6 +10,7 @@ and writes a local JavaScript data file for dashboard.html.
 from __future__ import annotations
 
 import datetime as dt
+import argparse
 import json
 import math
 import re
@@ -18,8 +19,11 @@ from pathlib import Path
 from typing import Any
 
 
-SOURCE_FILE = Path("Sample Report.txt")
-DATA_FILE = Path("data/dashboard-data.js")
+BASE_DIR = Path(__file__).resolve().parent
+DEFAULT_SOURCE_FILE = BASE_DIR / "Sample Report.txt"
+INPUT_DIR = BASE_DIR / "input"
+DATA_FILE = BASE_DIR / "data/dashboard-data.js"
+SOURCE_STORE_FILE = BASE_DIR / "data/source-records.json"
 DATA_HEADER = "// AUTO-GENERATED DASHBOARD DATA - DO NOT EDIT MANUALLY"
 SLA_TARGET = 0.90
 KNOWN_METRICS = {
@@ -36,7 +40,9 @@ KNOWN_METRICS = {
     "FTE's",
     "Hourly Goal",
 }
-MONTH_RE = re.compile(r"^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)-(\d{2})$")
+SUPPORTED_SOURCE_SUFFIXES = {".txt", ".csv", ".xlsx", ".xlsm"}
+DEFAULT_SOURCE_YEAR = 2026
+MONTH_RE = re.compile(r"^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)(?:-(\d{2}|\d{4}))?$")
 MONTH_ORDER = {
     "Jan": 1,
     "Feb": 2,
@@ -78,26 +84,29 @@ def parse_number(value: str) -> float | None:
     return parsed
 
 
-def month_key(label: str) -> str:
+def month_key(label: str, default_year: int = DEFAULT_SOURCE_YEAR) -> str:
     match = MONTH_RE.match(label)
     if not match:
         raise ValueError(f"Unsupported month label: {label}")
-    month_name, year = match.groups()
-    return f"20{year}-{MONTH_ORDER[month_name]:02d}"
+    month_name, year_text = match.groups()
+    year = default_year if year_text is None else int(year_text)
+    if year < 100:
+        year += 2000
+    return f"{year}-{MONTH_ORDER[month_name]:02d}"
 
 
-def month_sort_key(label: str) -> tuple[int, int]:
-    year, month = month_key(label).split("-")
+def month_sort_key(label: str, default_year: int = DEFAULT_SOURCE_YEAR) -> tuple[int, int]:
+    year, month = month_key(label, default_year).split("-")
     return int(year), int(month)
 
 
-def discover_blocks(cells: list[str]) -> list[dict[str, Any]]:
+def discover_blocks(cells: list[str], default_year: int = DEFAULT_SOURCE_YEAR) -> list[dict[str, Any]]:
     starts = [idx for idx, cell in enumerate(cells) if clean_cell(cell) in KNOWN_METRICS]
     blocks: list[dict[str, Any]] = []
     for pos, start in enumerate(starts):
         end = starts[pos + 1] if pos + 1 < len(starts) else len(cells)
         month_columns = [
-            {"index": idx, "label": clean_cell(cells[idx]), "period": month_key(clean_cell(cells[idx]))}
+            {"index": idx, "label": clean_cell(cells[idx]), "period": month_key(clean_cell(cells[idx]), default_year)}
             for idx in range(start + 1, end)
             if MONTH_RE.match(clean_cell(cells[idx]))
         ]
@@ -106,8 +115,50 @@ def discover_blocks(cells: list[str]) -> list[dict[str, Any]]:
     return blocks
 
 
-def parse_source(path: Path) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
-    rows = [line.split("\t") for line in path.read_text(encoding="utf-8").splitlines()]
+def load_source_rows(path: Path, sheet_name: str | None = None) -> list[list[str]]:
+    suffix = path.suffix.lower()
+    if suffix in {".xlsx", ".xlsm"}:
+        try:
+            from openpyxl import load_workbook
+        except ImportError as exc:
+            raise SystemExit("Excel input requires openpyxl. Install it with: python3 -m pip install openpyxl") from exc
+
+        workbook = load_workbook(path, data_only=True, read_only=True)
+        if sheet_name:
+            if sheet_name not in workbook.sheetnames:
+                available = ", ".join(workbook.sheetnames)
+                raise SystemExit(f"Worksheet not found: {sheet_name}. Available sheets: {available}")
+            worksheet = workbook[sheet_name]
+        else:
+            worksheet = workbook.active
+
+        rows: list[list[str]] = []
+        for row in worksheet.iter_rows(values_only=True):
+            cells = ["" if value is None else str(value) for value in row]
+            if any(clean_cell(cell) for cell in cells):
+                rows.append(cells)
+        workbook.close()
+        return rows
+
+    if suffix == ".csv":
+        import csv
+
+        with path.open(newline="", encoding="utf-8-sig") as file:
+            return [[cell for cell in row] for row in csv.reader(file)]
+
+    return [line.split("\t") for line in path.read_text(encoding="utf-8-sig").splitlines()]
+
+
+def infer_source_year(path: Path) -> int:
+    for part in reversed(path.parts):
+        if re.fullmatch(r"20\d{2}", part):
+            return int(part)
+    return DEFAULT_SOURCE_YEAR
+
+
+def parse_source(path: Path, sheet_name: str | None = None) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    source_year = infer_source_year(path)
+    rows = load_source_rows(path, sheet_name)
     normalized: list[dict[str, Any]] = []
     blocks: list[dict[str, Any]] = []
     active_blocks: list[dict[str, Any]] = []
@@ -115,7 +166,7 @@ def parse_source(path: Path) -> tuple[list[dict[str, Any]], list[dict[str, Any]]
 
     for row_number, raw_cells in enumerate(rows, start=1):
         cells = [clean_cell(cell) for cell in raw_cells]
-        discovered = discover_blocks(cells)
+        discovered = discover_blocks(cells, source_year)
         if discovered:
             active_blocks = discovered
             active_units = {}
@@ -197,6 +248,7 @@ def pivot_feature_rows(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
         row["outOfStandardRate"] = safe_divide(out_standard, starting)
         row["calculatedSla"] = safe_divide(in_standard, starting)
         row["receiptClosureGap"] = None if receipts is None or closures is None else receipts - closures
+        row["throughputBalance"] = None if receipts is None or closures is None else closures - receipts
         row["closuresPerFte"] = safe_divide(closures, ftes)
         row["receiptsPerFte"] = safe_divide(receipts, ftes)
         row["dailyProductionPerFte"] = safe_divide(production, ftes)
@@ -330,6 +382,9 @@ def add_history_features(rows: list[dict[str, Any]]) -> None:
             if row.get("receiptsPctChange") is not None and row.get("ftePctChange") is not None:
                 row["workloadGrowthVsFteGrowth"] = round(row["receiptsPctChange"] - row["ftePctChange"], 6)
             row["estimatedCapacityGap"] = estimated_capacity_gap(row)
+            row["capacityStatus"] = capacity_status(row)
+            row["capacityGapMagnitude"] = None if row.get("estimatedCapacityGap") is None else round(abs(row["estimatedCapacityGap"]), 2)
+            row["capacityGrain"] = "WORK_CATEGORY_ESTIMATE"
             row["capacityUtilizationProxy"] = capacity_utilization(row)
             row["limitedHistory"] = len(history) < 6
 
@@ -406,6 +461,17 @@ def estimated_capacity_gap(row: dict[str, Any]) -> float | None:
         return None
     required = receipts / closures_per_fte
     return round(required - ftes, 2)
+
+
+def capacity_status(row: dict[str, Any]) -> str:
+    gap = row.get("estimatedCapacityGap")
+    if gap is None:
+        return "UNKNOWN"
+    if gap > 0.25:
+        return "SHORTFALL"
+    if gap < -0.25:
+        return "SURPLUS"
+    return "SUFFICIENT"
 
 
 def capacity_utilization(row: dict[str, Any]) -> float | None:
@@ -612,8 +678,66 @@ def aggregate_for_period(rows: list[dict[str, Any]], period: str, business_unit:
     }
 
 
+def build_department_capacity(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    output = []
+    business_units = sorted({row["businessUnit"] for row in rows if row["businessUnit"] != "Aggregated Total"})
+    periods = sorted({row["period"] for row in rows})
+    for period in periods:
+        for business_unit in business_units:
+            selected = [
+                row
+                for row in rows
+                if row["period"] == period
+                and row["businessUnit"] == business_unit
+                and row["workCategory"] != "All Work Categories"
+            ]
+            if not selected:
+                continue
+            receipts = sum_optional_field(selected, "monthlyReceipts")
+            closures = sum_optional_field(selected, "monthlyClosures")
+            ftes = sum_optional_field(selected, "ftes")
+            daily_receipts = sum_optional_field(selected, "averageDailyReceipts")
+            daily_production = sum_optional_field(selected, "averageDailyProduction")
+            closures_per_fte = safe_divide(closures, ftes)
+            required_fte = safe_divide(receipts, closures_per_fte) if closures_per_fte else None
+            gap = None if required_fte is None else round(required_fte - ftes, 2)
+            ratio = safe_divide(daily_production, daily_receipts)
+            throughput = None if receipts is None or closures is None else round(closures - receipts, 2)
+            pressure_rows = sorted(selected, key=lambda row: row.get("riskScore") or 0, reverse=True)
+            output.append(
+                {
+                    "businessUnit": business_unit,
+                    "period": period,
+                    "capacityGrain": "BUSINESS_UNIT_DEPARTMENT",
+                    "fte": ftes,
+                    "receipts": receipts,
+                    "closures": closures,
+                    "dailyReceipts": daily_receipts,
+                    "dailyProduction": daily_production,
+                    "productionToReceiptsRatio": ratio,
+                    "closuresPerFte": closures_per_fte,
+                    "requiredFteToKeepPace": None if required_fte is None else round(required_fte, 2),
+                    "capacityGap": gap,
+                    "capacityGapMagnitude": None if gap is None else round(abs(gap), 2),
+                    "capacityStatus": capacity_status({"estimatedCapacityGap": gap}),
+                    "throughputBalance": throughput,
+                    "primaryWorkloadPressure": pressure_rows[0]["workCategory"] if pressure_rows else None,
+                    "primaryWorkloadPressureStatus": pressure_rows[0].get("status") if pressure_rows else None,
+                    "note": "Capacity is calculated at business-unit/department grain; work-category pressure remains operational workload context.",
+                }
+            )
+    return output
+
+
 def sum_field(rows: list[dict[str, Any]], field: str) -> float:
     return round(sum(float(row.get(field) or 0) for row in rows), 4)
+
+
+def sum_optional_field(rows: list[dict[str, Any]], field: str) -> float | None:
+    values = [float(row[field]) for row in rows if row.get(field) is not None]
+    if not values:
+        return None
+    return round(sum(values), 4)
 
 
 def generate_insights(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -661,8 +785,6 @@ def driver_list(row: dict[str, Any]) -> list[str]:
         drivers.append(f"receipts exceeded closures by {format_number(row.get('receiptClosureGap'))}")
     if (row.get("monthlyReroutes") or 0) > 0:
         drivers.append(f"reroutes added {format_number(row.get('monthlyReroutes'))} units of movement")
-    if (row.get("fteChange") or 0) < 0:
-        drivers.append(f"staffing decreased by {format_number(abs(row.get('fteChange') or 0))} FTE")
     if (row.get("productionToReceiptsRatio") or 1) < 1:
         drivers.append(f"daily production is {format_percent(row.get('productionToReceiptsRatio'))} of daily receipts")
     if not drivers:
@@ -673,7 +795,7 @@ def driver_list(row: dict[str, Any]) -> list[str]:
 def summarize_row(row: dict[str, Any], drivers: list[str]) -> str:
     return (
         f"{row['businessUnit']} {row['workCategory']} has {format_number(row.get('startingInventory'))} starting inventory, "
-        f"{format_number(row.get('outOfStandard'))} out of standard, and {format_number(row.get('ftes'))} FTE. "
+        f"and {format_number(row.get('outOfStandard'))} out of standard. "
         f"Key context: {', '.join(drivers[:3])}."
     )
 
@@ -725,6 +847,243 @@ def generate_forecasts(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return forecasts
 
 
+def generate_forecast_engine(rows: list[dict[str, Any]], horizon: int = 3) -> dict[str, Any]:
+    by_group: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
+    for row in rows:
+        if row["businessUnit"] != "Aggregated Total":
+            by_group[(row["businessUnit"], row["workCategory"])].append(row)
+
+    contexts = []
+    for (business_unit, work_category), group_rows in by_group.items():
+        group_rows.sort(key=lambda item: item["period"])
+        for index in range(len(group_rows)):
+            base_history = group_rows[: index + 1]
+            contexts.append(build_context_forecast(business_unit, work_category, base_history, horizon))
+
+    min_history = min((context["historyPeriods"] for context in contexts), default=0)
+    return {
+        "method": "adaptive_directional_operational_forecast",
+        "horizonPeriods": horizon,
+        "historyAvailable": sorted({row["period"] for row in rows}),
+        "maturity": forecast_maturity(min_history),
+        "contexts": contexts,
+        "notes": [
+            "Uses observed operational history and rolling movement when limited history is available.",
+            "Seasonality, backtesting, and statistical uncertainty become more meaningful as additional monthly periods are loaded.",
+            "Scenario adjustments are temporary and do not modify source data.",
+        ],
+    }
+
+
+def build_context_forecast(business_unit: str, work_category: str, history: list[dict[str, Any]], horizon: int) -> dict[str, Any]:
+    latest = history[-1]
+    latest_operational = latest_operational_row(history) or latest
+    history_periods = len(history)
+    drivers = forecast_drivers(history)
+    maturity = forecast_maturity(history_periods)
+    confidence = forecast_confidence(history)
+    projections = []
+    current = {
+        "period": latest["period"],
+        "operationalBasePeriod": latest_operational["period"],
+        "receipts": latest_operational.get("monthlyReceipts"),
+        "closures": latest_operational.get("monthlyClosures"),
+        "inventory": latest.get("startingInventory"),
+        "outOfStandard": latest.get("outOfStandard"),
+        "sla": latest.get("monthlyStartingSla") or latest.get("calculatedSla"),
+        "fte": latest_operational.get("ftes"),
+        "throughputBalance": latest_operational.get("throughputBalance"),
+        "capacityStatus": latest.get("capacityStatus"),
+    }
+
+    base = dict(current)
+    projections.append({"label": "Current", "horizon": 0, **base, "confidence": confidence, "drivers": drivers})
+
+    receipt_slope = adaptive_slope(history, "monthlyReceipts")
+    closure_slope = adaptive_slope(history, "monthlyClosures")
+    oos_slope = adaptive_slope(history, "outOfStandard")
+    fte_slope = adaptive_slope(history, "ftes")
+    latest_period = latest["period"]
+    prior_inventory = base.get("inventory")
+    prior_oos = base.get("outOfStandard")
+
+    for step in range(1, horizon + 1):
+        period = add_months(latest_period, step)
+        receipts = project_value(base.get("receipts"), receipt_slope, step)
+        closures = project_value(base.get("closures"), closure_slope, step)
+        throughput = None if receipts is None or closures is None else round(closures - receipts, 2)
+        inventory = None
+        if prior_inventory is not None and throughput is not None:
+            inventory = round(max(0, prior_inventory - throughput), 2)
+        out_standard = project_value(prior_oos, oos_slope, 1)
+        fte = project_value(base.get("fte"), fte_slope, step)
+        sla = None if inventory in (None, 0) or out_standard is None else round(clamp(1 - out_standard / inventory), 4)
+        expected_range = forecast_range(sla, confidence, step)
+        projections.append(
+            {
+                "label": f"Month +{step}",
+                "period": period,
+                "horizon": step,
+                "receipts": receipts,
+                "closures": closures,
+                "inventory": inventory,
+                "outOfStandard": out_standard,
+                "sla": sla,
+                "fte": fte,
+                "throughputBalance": throughput,
+                "capacityStatus": "SHORTFALL" if throughput is not None and throughput < 0 else "SUFFICIENT",
+                "confidence": confidence_by_horizon(confidence, step),
+                "expectedRange": expected_range,
+                "drivers": drivers,
+                "inventoryMethod": "Prior projected inventory + projected receipts - projected closures.",
+            }
+        )
+        prior_inventory = inventory
+        prior_oos = out_standard
+
+    crossover = next((item["period"] for item in projections[1:] if (item.get("throughputBalance") or 0) > 0), None)
+    target_inventory = operational_backlog_target(latest)
+    clearance = next((item["period"] for item in projections[1:] if item.get("inventory") is not None and item["inventory"] <= target_inventory), None)
+    return {
+        "id": context_id(business_unit, work_category),
+        "businessUnit": business_unit,
+        "workCategory": work_category,
+        "basePeriod": latest["period"],
+        "operationalBasePeriod": latest_operational["period"],
+        "historyPeriods": history_periods,
+        "maturity": maturity,
+        "confidence": confidence,
+        "primaryDrivers": drivers,
+        "operationalBacklogTarget": target_inventory,
+        "crossoverPeriod": crossover,
+        "clearancePeriod": clearance,
+        "projection": projections,
+    }
+
+
+def latest_operational_row(history: list[dict[str, Any]]) -> dict[str, Any] | None:
+    for row in reversed(history):
+        if row.get("monthlyReceipts") is not None and row.get("monthlyClosures") is not None:
+            return row
+    return None
+
+
+def adaptive_slope(history: list[dict[str, Any]], field: str) -> float:
+    values = [row.get(field) for row in history if row.get(field) is not None]
+    if len(values) < 2:
+        return 0.0
+    recent = values[-4:] if len(values) >= 4 else values
+    pairwise = [recent[index] - recent[index - 1] for index in range(1, len(recent))]
+    return round(mean(pairwise), 4) if pairwise else 0.0
+
+
+def project_value(current: float | None, slope: float, step: int) -> float | None:
+    if current is None:
+        return None
+    return round(max(0, current + slope * step), 2)
+
+
+def forecast_maturity(history_periods: int) -> str:
+    if history_periods >= 18:
+        return "ADVANCED_HISTORY_READY"
+    if history_periods >= 12:
+        return "SEASONAL_HISTORY_READY"
+    if history_periods >= 8:
+        return "TREND_HISTORY_READY"
+    return "LIMITED_HISTORY_DIRECTIONAL"
+
+
+def forecast_confidence(history: list[dict[str, Any]]) -> dict[str, Any]:
+    history_periods = len(history)
+    missing_penalty = 0
+    for field in ("monthlyReceipts", "monthlyClosures", "startingInventory", "outOfStandard", "monthlyStartingSla", "ftes"):
+        if any(row.get(field) is None for row in history[-3:]):
+            missing_penalty += 1
+    volatility = volatility_score(history, "monthlyStartingSla")
+    score = 0.35 + min(0.35, history_periods * 0.025) - missing_penalty * 0.04 - volatility * 0.25
+    score = clamp(score)
+    if score >= 0.68:
+        label = "High"
+    elif score >= 0.48:
+        label = "Medium"
+    else:
+        label = "Low"
+    return {
+        "label": label,
+        "score": round(score, 2),
+        "rationale": confidence_rationale(history_periods, missing_penalty, volatility),
+    }
+
+
+def volatility_score(history: list[dict[str, Any]], field: str) -> float:
+    values = [row.get(field) for row in history[-6:] if row.get(field) is not None]
+    if len(values) < 3:
+        return 0.25
+    return clamp(stddev(values) / max(0.01, abs(mean(values))))
+
+
+def confidence_rationale(history_periods: int, missing_penalty: int, volatility: float) -> str:
+    parts = [f"{history_periods} historical periods available"]
+    if missing_penalty:
+        parts.append("recent fields are incomplete")
+    if volatility > 0.12:
+        parts.append("recent SLA is volatile")
+    if history_periods < 8:
+        parts.append("forecast is directional until more history is loaded")
+    return "; ".join(parts) + "."
+
+
+def confidence_by_horizon(confidence: dict[str, Any], step: int) -> dict[str, Any]:
+    score = clamp((confidence.get("score") or 0) - step * 0.06)
+    label = "High" if score >= 0.68 else "Medium" if score >= 0.48 else "Low"
+    return {"label": label, "score": round(score, 2), "rationale": confidence.get("rationale")}
+
+
+def forecast_range(sla: float | None, confidence: dict[str, Any], step: int) -> dict[str, float] | None:
+    if sla is None:
+        return None
+    width = (0.025 + step * 0.015) * (1.4 - (confidence.get("score") or 0.4))
+    return {"low": round(clamp(sla - width), 4), "high": round(clamp(sla + width), 4)}
+
+
+def forecast_drivers(history: list[dict[str, Any]]) -> list[str]:
+    latest = history[-1]
+    drivers = []
+    receipts_change = latest.get("receiptsPctChange")
+    production_change = latest.get("productionPctChange")
+    if receipts_change is not None and abs(receipts_change) >= 0.05:
+        drivers.append(f"receipts trending {receipts_change:+.0%}")
+    if production_change is not None and abs(production_change) >= 0.05:
+        drivers.append(f"production trending {production_change:+.0%}")
+    if (latest.get("fteChange") or 0) != 0:
+        drivers.append(f"FTE changed by {format_number(latest.get('fteChange'))}")
+    if (latest.get("outOfStandardChange") or 0) > 0:
+        drivers.append(f"OOS inventory increased by {format_number(latest.get('outOfStandardChange'))}")
+    if latest.get("throughputBalance") is not None:
+        if latest["throughputBalance"] >= 0:
+            drivers.append("closures are exceeding receipts")
+        else:
+            drivers.append("receipts are exceeding closures")
+    if len(history) >= 12:
+        drivers.append("enough history exists to begin seasonality checks")
+    return drivers[:5] or ["limited movement detected in recent source data"]
+
+
+def operational_backlog_target(row: dict[str, Any]) -> float:
+    starting = row.get("startingInventory") or 0
+    target = starting * 0.10
+    return round(max(target, row.get("outOfStandard") or 0), 2)
+
+
+def add_months(period: str, offset: int) -> str:
+    year, month = [int(part) for part in period.split("-")]
+    month += offset
+    while month > 12:
+        year += 1
+        month -= 12
+    return f"{year}-{month:02d}"
+
+
 def build_contexts(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     contexts = [row for row in rows if row["businessUnit"] != "Aggregated Total"]
     output = []
@@ -757,6 +1116,8 @@ def context_id(business_unit: str, work_category: str) -> str:
 def compact_metrics(row: dict[str, Any]) -> dict[str, Any]:
     return {
         "sla": row.get("monthlyStartingSla") or row.get("calculatedSla"),
+        "sourceSla": row.get("monthlyStartingSla"),
+        "calculatedSla": row.get("calculatedSla"),
         "targetSla": SLA_TARGET,
         "slaChange": row.get("slaChange"),
         "startingInventory": row.get("startingInventory"),
@@ -768,10 +1129,12 @@ def compact_metrics(row: dict[str, Any]) -> dict[str, Any]:
         "closures": row.get("monthlyClosures"),
         "closuresChange": row.get("closuresPctChange"),
         "gap": row.get("receiptClosureGap"),
+        "throughputBalance": row.get("throughputBalance"),
         "fte": row.get("ftes"),
         "fteChange": row.get("fteChange"),
         "productionToReceiptsRatio": row.get("productionToReceiptsRatio"),
         "capacityGap": row.get("estimatedCapacityGap"),
+        "capacityStatus": row.get("capacityStatus"),
     }
 
 
@@ -802,11 +1165,9 @@ def summarize_change(row: dict[str, Any]) -> str:
 def staffing_sentence(row: dict[str, Any]) -> str:
     if row.get("ftes") is None:
         return "Staffing data is not available for this selected period."
-    if (row.get("estimatedCapacityGap") or 0) > 0:
-        return f"Estimated capacity gap is about {row['estimatedCapacityGap']:.1f} FTE using current closures per FTE."
     if row.get("productionToReceiptsRatio") is not None:
-        return f"Production is {format_percent(row.get('productionToReceiptsRatio'))} of receipts."
-    return f"Current staffing is {format_number(row.get('ftes'))} FTE."
+        return f"Production is {format_percent(row.get('productionToReceiptsRatio'))} of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied."
+    return "FTE is present in the source, but bucket-level staffing allocation should not be treated as precise unless the source explicitly supports it."
 
 
 def status_label(status: str | None) -> str:
@@ -823,7 +1184,7 @@ def driver_bars(row: dict[str, Any]) -> list[dict[str, Any]]:
     drivers = [
         ("Receipt Growth", abs(row.get("receiptsPctChange") or 0), "Receipt movement is historically associated with workload pressure."),
         ("Closure Decline", abs(min(0, row.get("closuresPctChange") or 0)), "Closure deterioration can widen the flow gap."),
-        ("FTE Capacity", max(0, row.get("estimatedCapacityGap") or 0) / max(1, row.get("ftes") or 1), "Current workload compared with staffing capacity."),
+        ("Workload Pressure", max(0, row.get("receiptClosureGap") or 0) / max(1, row.get("startingInventory") or 1), "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."),
         ("OOS Movement", abs(row.get("outOfStandardChange") or 0) / max(1, row.get("startingInventory") or 1), "Out-of-standard movement affects SLA risk."),
         ("Flow Gap", max(0, row.get("receiptClosureGap") or 0) / max(1, row.get("startingInventory") or 1), "Receipts above closures create inventory pressure."),
         ("Reroutes", abs(row.get("monthlyReroutes") or 0) / max(1, row.get("startingInventory") or 1), "Reroutes can affect operational flow."),
@@ -867,7 +1228,7 @@ def if_nothing_changes(row: dict[str, Any]) -> dict[str, Any]:
         "projectedInventory": round(projected_inventory, 2),
         "projectedOutOfStandard": round(projected_oos, 2),
         "projectedSla": None if projected_sla is None else round(clamp(projected_sla), 4),
-        "summary": f"If current movement continues, next-period SLA trends near {format_percent(projected_sla)} with OOS around {format_number(projected_oos)}.",
+        "summary": f"If current trends continue, next-period SLA trends near {format_percent(projected_sla)} with OOS around {format_number(projected_oos)}.",
         "method": "Directional continuation of recent inventory and OOS movement.",
     }
 
@@ -1052,6 +1413,24 @@ def build_meeting_mode(rows: list[dict[str, Any]], period: str) -> dict[str, Any
     }
 
 
+def build_period_completeness(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    required_operational = ("monthlyReceipts", "monthlyClosures", "ftes", "averageDailyReceipts", "averageDailyProduction")
+    periods = sorted({row["period"] for row in rows})
+    output = []
+    for period in periods:
+        period_rows = [row for row in rows if row["period"] == period and row["businessUnit"] != "Aggregated Total"]
+        missing_fields = sorted({field for field in required_operational for row in period_rows if row.get(field) is None})
+        output.append(
+            {
+                "period": period,
+                "isFullOperationalPeriod": not missing_fields,
+                "missingOperationalFields": missing_fields,
+                "rowCount": len(period_rows),
+            }
+        )
+    return output
+
+
 def mover_to_highlight(movers: list[dict[str, Any]], title: str) -> dict[str, Any] | None:
     return next((item for item in movers if item["title"] == title), None)
 
@@ -1087,6 +1466,15 @@ def validate_data(records: list[dict[str, Any]], rows: list[dict[str, Any]]) -> 
     for metric in KNOWN_METRICS:
         if metric not in periods_by_metric:
             warnings.append({"severity": "warning", "type": "missing_metric", "summary": f"{metric} was not found in the source report."})
+    for item in build_period_completeness(rows):
+        if not item["isFullOperationalPeriod"]:
+            warnings.append(
+                {
+                    "severity": "warning",
+                    "type": "incomplete_period",
+                    "summary": f"{item['period']} is missing operational fields: {', '.join(item['missingOperationalFields'])}.",
+                }
+            )
     return warnings[:30]
 
 
@@ -1129,8 +1517,8 @@ def format_percent(value: float | None) -> str:
     return f"{value:.0%}"
 
 
-def build_payload() -> dict[str, Any]:
-    records, source_blocks = parse_source(SOURCE_FILE)
+def build_payload(source_files: list[Path], sheet_name: str | None = None) -> dict[str, Any]:
+    records, source_blocks, source_stats = merge_source_files(source_files, sheet_name)
     feature_rows = pivot_feature_rows(records)
     data_quality_warnings = validate_data(records, feature_rows)
     latest = latest_period(feature_rows)
@@ -1138,13 +1526,18 @@ def build_payload() -> dict[str, Any]:
     return {
         "metadata": {
             "lastRefreshed": dt.datetime.now().replace(microsecond=0).isoformat(),
-            "sourceFile": str(SOURCE_FILE),
+            "sourceFile": str(source_files[0]) if len(source_files) == 1 else "multiple input files",
+            "sourceFiles": [str(path) for path in source_files],
+            "sourceStoreFile": str(SOURCE_STORE_FILE),
+            "sourceMerge": source_stats,
+            "sourceSheet": sheet_name,
             "recordCount": len(records),
             "featureRows": len(feature_rows),
             "latestPeriod": latest,
             "latestFullContextPeriod": full_context,
             "periods": sorted({row["period"] for row in feature_rows}),
             "sourceBlocks": source_blocks,
+            "periodCompleteness": build_period_completeness(feature_rows),
             "businessUnits": sorted({row["businessUnit"] for row in feature_rows if row["businessUnit"] != "Aggregated Total"}),
             "workCategories": sorted({row["workCategory"] for row in feature_rows if row["workCategory"] != "All Work Categories"}),
             "metrics": sorted(KNOWN_METRICS),
@@ -1161,6 +1554,8 @@ def build_payload() -> dict[str, Any]:
             "biggestMovers": build_biggest_movers(feature_rows, full_context),
             "insights": generate_insights(feature_rows),
             "forecasts": generate_forecasts(feature_rows),
+            "forecastEngine": generate_forecast_engine(feature_rows),
+            "departmentCapacity": build_department_capacity(feature_rows),
             "correlationExplorer": build_correlation_explorer(feature_rows),
             "meetingMode": build_meeting_mode(feature_rows, full_context),
             "dataQuality": {"warnings": data_quality_warnings},
@@ -1187,18 +1582,149 @@ def build_payload() -> dict[str, Any]:
     }
 
 
+def input_source_files() -> list[Path]:
+    if not INPUT_DIR.exists():
+        return []
+    candidates = [
+        path
+        for path in INPUT_DIR.iterdir()
+        if path.is_file() and path.suffix.lower() in SUPPORTED_SOURCE_SUFFIXES
+    ]
+    for year_dir in sorted(path for path in INPUT_DIR.iterdir() if path.is_dir() and re.fullmatch(r"20\d{2}", path.name)):
+        candidates.extend(
+            path
+            for path in year_dir.iterdir()
+            if path.is_file() and path.suffix.lower() in SUPPORTED_SOURCE_SUFFIXES
+        )
+    return sorted(candidates)
+
+
+def default_source_files() -> list[Path]:
+    input_files = input_source_files()
+    return input_files if input_files else [DEFAULT_SOURCE_FILE]
+
+
+def load_source_store() -> list[dict[str, Any]]:
+    if not SOURCE_STORE_FILE.exists():
+        return []
+    document = json.loads(SOURCE_STORE_FILE.read_text(encoding="utf-8"))
+    return document.get("records", [])
+
+
+def write_source_store(records: list[dict[str, Any]]) -> None:
+    SOURCE_STORE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    document = {
+        "updatedAt": dt.datetime.now().replace(microsecond=0).isoformat(),
+        "periods": sorted({record["period"] for record in records}),
+        "recordCount": len(records),
+        "records": records,
+    }
+    SOURCE_STORE_FILE.write_text(json.dumps(document, indent=2), encoding="utf-8")
+
+
+def merge_source_files(source_files: list[Path], sheet_name: str | None = None) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
+    stored_records = load_source_store()
+    accepted_periods = {record["period"] for record in stored_records}
+    packets = []
+    for source_file in source_files:
+        parsed_records, parsed_blocks = parse_source(source_file, sheet_name)
+        periods = sorted({record["period"] for record in parsed_records})
+        packets.append(
+            {
+                "sourceFile": source_file,
+                "sourceYear": infer_source_year(source_file),
+                "records": parsed_records,
+                "blocks": parsed_blocks,
+                "periods": periods,
+            }
+        )
+
+    packets.sort(key=lambda packet: (packet["periods"][0] if packet["periods"] else "9999-99", str(packet["sourceFile"]).lower()))
+
+    merged_records: list[dict[str, Any]] = list(stored_records)
+    merged_blocks: list[dict[str, Any]] = []
+    source_stats: list[dict[str, Any]] = [
+        {
+            "sourceFile": str(SOURCE_STORE_FILE),
+            "acceptedPeriods": sorted(accepted_periods),
+            "skippedDuplicatePeriods": [],
+            "role": "existing source data before this run",
+        }
+    ] if stored_records else []
+
+    for packet in packets:
+        source_file = packet["sourceFile"]
+        periods = packet["periods"]
+        new_periods = [period for period in periods if period not in accepted_periods]
+        skipped_periods = [period for period in periods if period in accepted_periods]
+        new_period_set = set(new_periods)
+
+        merged_records.extend(record for record in packet["records"] if record["period"] in new_period_set)
+        for block in packet["blocks"]:
+            month_labels = [label for label in block["monthLabels"] if month_key(label, packet["sourceYear"]) in new_period_set]
+            if month_labels:
+                merged_blocks.append({**block, "sourceFile": str(source_file), "monthLabels": month_labels})
+
+        accepted_periods.update(new_period_set)
+        source_stats.append(
+            {
+                "sourceFile": str(source_file),
+                "acceptedPeriods": new_periods,
+                "skippedDuplicatePeriods": skipped_periods,
+            }
+        )
+
+    merged_records.sort(
+        key=lambda record: (
+            record["period"],
+            record["businessUnit"],
+            record["workCategory"],
+            record["metric"],
+        )
+    )
+    return merged_records, merged_blocks, source_stats
+
+
 def write_dashboard_data(payload: dict[str, Any]) -> None:
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     document = f"{DATA_HEADER}\nwindow.DASHBOARD_DATA = {json.dumps(payload, indent=2)};\n"
     DATA_FILE.write_text(document, encoding="utf-8")
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Build the Staffing and Inventory dashboard data file.")
+    parser.add_argument(
+        "source_file",
+        nargs="?",
+        help=(
+            "Optional source report to read. If omitted, the updater reads all supported files directly "
+            "inside input/, or falls back to Sample Report.txt. Supports .txt, .csv, .xlsx, and .xlsm files."
+        ),
+    )
+    parser.add_argument(
+        "--sheet",
+        help="Worksheet name to read when the source file is Excel. Defaults to the active worksheet.",
+    )
+    return parser.parse_args()
+
+
 def main() -> int:
-    if not SOURCE_FILE.exists():
-        raise SystemExit(f"Source file not found: {SOURCE_FILE}")
-    payload = build_payload()
+    args = parse_args()
+    source_files = [Path(args.source_file)] if args.source_file else default_source_files()
+    source_files = [path if path.is_absolute() else BASE_DIR / path for path in source_files]
+    missing_files = [path for path in source_files if not path.exists()]
+    if missing_files:
+        raise SystemExit(f"Source file not found: {missing_files[0]}")
+    payload = build_payload(source_files, args.sheet)
+    write_source_store(payload["records"])
     write_dashboard_data(payload)
     print(f"Wrote {DATA_FILE}")
+    print(f"Updated source data: {SOURCE_STORE_FILE}")
+    print(f"Source files: {len(source_files)}")
+    for source_file in source_files:
+        print(f"  - {source_file}")
+    if args.sheet:
+        print(f"Source sheet: {args.sheet}")
     print(f"Normalized records: {payload['metadata']['recordCount']}")
     print(f"Feature rows: {payload['metadata']['featureRows']}")
     print(f"Latest period: {payload['metadata']['latestPeriod']}")

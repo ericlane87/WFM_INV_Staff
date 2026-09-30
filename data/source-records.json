@@ -1,0 +1,5613 @@
+{
+  "updatedAt": "2026-09-30T15:31:21",
+  "periods": [
+    "2026-01",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09"
+  ],
+  "recordCount": 700,
+  "records": [
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 103445.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 101538.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 532.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 604527.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -41967.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 2233829.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Reroutes",
+      "value": 90458.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.8
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 154786.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 759313.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 1897.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 9526.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 39.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 7.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 33828.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 41728.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 167853.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 209581.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Reroutes",
+      "value": 172582.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.93
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 2546.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 36374.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 599.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 420.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 10.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 6259.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 13168.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -3938.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 9230.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.27
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 16923.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 23182.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 599.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 756.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 31.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 11475.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 13183.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 3446.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 16629.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.94
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 732.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 12207.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 14483.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 8158.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 109.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 10.7
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 179316.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 318636.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -139159.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 179477.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Reroutes",
+      "value": -122415.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.89
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 22163.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 201479.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 651.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 2868.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 45.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 7.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 11435.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 14318.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 48783.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 63101.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Reroutes",
+      "value": 58001.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.93
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 861.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 12296.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 1083.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 516.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 54.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 13649.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 23828.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -12486.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 11342.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.97
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 422.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 14071.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 724.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 921.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 39.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 12038.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 15922.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 4341.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 20263.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 246.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 12284.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 3450.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 1621.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 38.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 8.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 59990.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 75902.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -40249.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 35653.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.4
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 89986.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 149976.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 11749.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 8696.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 56.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 10.7
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 65947.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 258471.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -67170.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 191301.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Reroutes",
+      "value": -20360.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.79
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 17530.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 83477.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 18974.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 20031.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 18.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 204.2
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 19545.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 417437.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 23242.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 440679.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Reroutes",
+      "value": 2917.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.9
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 2172.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 21717.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 350.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 331.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 16.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 5.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 4183.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 7707.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -415.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 7292.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Reroutes",
+      "value": -554.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 85.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 4268.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 611.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 709.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 18.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 8737.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 13436.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 2155.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 15591.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Reroutes",
+      "value": -281.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.9
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 971.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 9708.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 48275.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 46986.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 59.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 185.4
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 178124.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 1062060.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -28370.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 1033690.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Reroutes",
+      "value": 568.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 1.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 150.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 178274.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 101773.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 94073.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 540.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 603745.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -161690.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 1975539.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": -191125.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.93
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 47506.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 651251.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 1317.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 2366.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 37.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 7.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 23166.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 27648.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 22042.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 49690.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": 25967.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.97
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 716.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 23882.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 328.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 227.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 8.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 2126.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 6881.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -2108.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 4773.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.61
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 1359.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 3485.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 674.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 609.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 26.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 11031.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 14154.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -1355.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 12799.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.82
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 2421.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 13452.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 13884.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 12401.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 96.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 10.7
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 91331.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 291572.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -31161.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 260411.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": -85850.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.85
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 16117.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 107448.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 758.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 753.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 40.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 7.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 12825.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 15916.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -109.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 15807.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": -5907.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 262.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 13087.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 905.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 772.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 19.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 6077.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 19010.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -2805.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 16205.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 124.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 6201.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 1375.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 1337.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 69.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 17137.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 28879.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -793.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 28086.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.76
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 5412.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 22549.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 2303.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 2705.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 114.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 8.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 22406.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 48356.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 8450.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 56806.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.76
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 7076.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 29482.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 10753.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 7028.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 37.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 10.7
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 51600.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 225815.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -78237.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 147578.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": -104933.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.9
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 5733.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 57333.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 18318.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 18357.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 17.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 204.2
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 29454.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 384678.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 826.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 385504.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": -207.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.83
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 5925.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 35379.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 483.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 318.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 14.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 5.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 3214.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 10148.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -3480.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 6668.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": -5147.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.99
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 32.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 3246.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 1102.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 714.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 17.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 10380.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 23138.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -8144.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 14994.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": -7286.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.84
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 1977.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 12357.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 49573.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 46487.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 46.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 185.4
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 322999.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 1041034.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -64816.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 976218.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": -7762.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 1.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 351.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 323350.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 97307.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 95659.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 544.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 640371.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -36257.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 2104503.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Reroutes",
+      "value": -37909.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.94
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 40315.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 680686.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 1296.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 987.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 37.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 7.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 19159.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 28519.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -6802.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 21717.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Reroutes",
+      "value": -3150.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.96
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 798.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 19957.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 180.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 152.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 10.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 5.5
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 1143.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 3951.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -602.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 3349.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.83
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 234.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 1377.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 609.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 538.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 31.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 11129.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 13406.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -1566.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 11840.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.92
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 968.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 12097.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 10491.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 9572.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 100.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 10.7
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 145923.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 230803.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -20210.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 210593.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Reroutes",
+      "value": 16510.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.9
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 16214.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 162137.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 969.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 764.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 40.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 7.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 18507.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 21308.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -4499.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 16809.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Reroutes",
+      "value": -7786.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 378.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 18885.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 565.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 499.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 18.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 5.5
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 3124.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 12420.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -1452.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 10968.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.92
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 272.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 3396.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 1524.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 1497.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 66.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 19363.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 33531.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -603.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 32928.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.89
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 2393.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 21756.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 1949.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 1433.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 92.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 8.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 33380.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 42884.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -11356.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 31528.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.88
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 4552.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 37932.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 10427.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 8328.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 57.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 10.7
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 78147.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 229386.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -46174.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 183212.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Reroutes",
+      "value": -46026.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.93
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 5882.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 84029.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 17688.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 17982.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 17.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 204.2
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 31215.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 389128.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 6478.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 395606.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Reroutes",
+      "value": -4542.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.86
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 5197.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 36412.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 437.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 368.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 13.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 5.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 4815.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 9603.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -1500.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 8103.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Reroutes",
+      "value": -148.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 98.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 4913.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 736.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 656.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 18.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 9889.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 16202.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -1762.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 14440.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Reroutes",
+      "value": 23.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.86
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 1610.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 11499.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 50437.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 52882.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 45.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 185.4
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 264576.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 1109619.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 53791.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 1163410.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Reroutes",
+      "value": 7210.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.99
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 1720.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 266296.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 110106.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 106264.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 507.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 605303.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -80680.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 2231547.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": -116525.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.89
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 77035.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 682338.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 1423.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 1307.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 35.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 7.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 15001.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 29879.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -2433.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 27446.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": 202.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.92
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 1304.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 16305.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 106.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 126.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 11.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 5.5
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 674.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 2232.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 415.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 2647.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.87
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 101.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 775.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 520.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 484.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 30.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 9583.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 10918.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -751.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 10167.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.91
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 948.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 10531.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 11334.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 9110.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 100.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 10.7
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 101588.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 238005.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -46701.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 191304.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": -34250.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.81
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 23829.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 125417.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 1190.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 879.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 57.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 7.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 20177.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 24993.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -6526.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 18467.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": -5298.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.91
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 1995.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 22172.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 380.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 447.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 8.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 5.5
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 1827.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 7978.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 1402.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 9380.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.94
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 117.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 1944.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 1596.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 1325.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 72.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 19672.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 33524.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -5705.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 27819.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.93
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 1481.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 21153.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 1450.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 1567.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 38.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 8.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 21261.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 30447.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 2468.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 32915.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.8
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 5315.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 26576.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 10328.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 4543.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 60.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 10.7
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 64588.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 216891.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -121490.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 95401.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": -84723.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.77
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 19293.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 83881.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 18602.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 19115.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 17.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 204.2
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 37494.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 390647.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 10775.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 401422.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": 10106.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.79
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 9938.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 47432.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 404.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 341.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 13.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 5.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 3525.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 8480.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -1318.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 7162.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": -1136.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.99
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 36.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 3561.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 641.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 665.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 18.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 8937.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 13470.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 503.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 13973.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": 154.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.92
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 777.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 9714.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 62132.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 66354.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 48.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 185.4
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 300976.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 1304763.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 88681.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 1393444.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": -1580.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.96
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 11901.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 312877.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 642281.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.89
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 75902.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 718183.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 12576.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.92
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 1094.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 13670.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 1059.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.89
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 131.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 1190.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 9095.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.93
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 685.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 9780.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 83595.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.74
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 29371.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 112966.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 19268.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.92
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 1676.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 20944.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 3279.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 67.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 3346.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 14521.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.94
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 927.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 15448.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 23816.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.82
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 5228.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 29044.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 32038.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.68
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 15076.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 47114.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 35743.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.74
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 12358.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 48101.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 3345.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.99
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 34.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 3379.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 9862.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 201.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 10063.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 394083.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 9055.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 403138.0
+    }
+  ]
+}

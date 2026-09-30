@@ -3,628 +3,740 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Workforce Management Intelligence Platform</title>
+  <title>WorkforceIQ Dashboard</title>
   <style>
     :root {
-      --bg: #f4f6f7;
+      --navy: #12284c;
+      --blue: #2563a9;
+      --teal: #0d7f86;
+      --green: #177245;
+      --yellow: #b77916;
+      --red: #bc3434;
+      --ink: #172033;
+      --muted: #66758b;
+      --line: #d8e0ea;
       --panel: #ffffff;
-      --ink: #111827;
-      --muted: #667085;
-      --line: #d7dee4;
-      --blue: #255f85;
-      --teal: #07847f;
-      --green: #327a50;
-      --amber: #b97816;
-      --red: #b63d3d;
-      --critical: #7f1d1d;
-      --shadow: 0 18px 48px rgba(17, 24, 39, 0.08);
+      --bg: #f3f5f8;
+      --soft: #f8fafc;
+      --shadow: 0 10px 28px rgba(18, 40, 76, .08);
     }
-
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      background: var(--bg);
+      background: linear-gradient(180deg, #eef2f7 0, var(--bg) 280px);
       color: var(--ink);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font: 14px/1.45 Inter, Arial, Helvetica, sans-serif;
     }
-
-    .app-shell {
-      display: grid;
-      grid-template-columns: 1fr 320px;
-      min-height: 100vh;
+    header, footer {
+      background: #102642;
+      color: #fff;
     }
-
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 3;
-      background: rgba(255, 255, 255, 0.96);
-      border-bottom: 1px solid var(--line);
-      backdrop-filter: blur(12px);
-    }
-
-    .brand-row {
+    header {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 16px;
-      padding: 14px 22px 8px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 20px;
-      font-weight: 780;
-      letter-spacing: 0;
-    }
-
-    .context {
-      color: var(--muted);
-      font-size: 13px;
-      margin-top: 4px;
-    }
-
-    .commandbar {
-      display: flex;
-      flex-wrap: wrap;
       align-items: center;
-      gap: 8px;
-      padding: 8px 22px 14px;
-    }
-
-    button, select, input {
-      font: inherit;
-      min-height: 34px;
-      border: 1px solid var(--line);
-      border-radius: 7px;
-      background: #fff;
-      color: var(--ink);
-    }
-
-    button {
-      padding: 7px 10px;
-      cursor: pointer;
-      transition: border-color 0.16s ease, background 0.16s ease, color 0.16s ease;
-    }
-
-    button:hover { border-color: var(--blue); }
-    button.active {
-      background: var(--blue);
-      border-color: var(--blue);
-      color: #fff;
-    }
-
-    select, input { padding: 6px 9px; }
-
-    .content {
-      padding: 18px 18px 32px;
-      max-width: 1520px;
-      width: 100%;
-      margin: 0 auto;
-    }
-
-    .rail {
+      gap: 18px;
+      padding: 16px 28px;
       position: sticky;
       top: 0;
-      height: 100vh;
-      overflow: auto;
-      padding: 16px;
-      background: #101820;
+      z-index: 9;
+      box-shadow: 0 8px 24px rgba(7, 18, 39, .18);
+    }
+    .brand { display: flex; gap: 22px; align-items: center; }
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: .85;
+      padding-right: 22px;
+      border-right: 1px solid rgba(255,255,255,.45);
+    }
+    .logo span { display: block; font-size: 15px; }
+    h1 { margin: 0; font-size: 22px; letter-spacing: .01em; }
+    .subtitle { font-weight: 700; margin-top: 3px; color: #c7d6e7; }
+    .header-meta { display: flex; gap: 16px; align-items: center; }
+    .freshness { display: grid; gap: 2px; text-align: right; font-size: 13px; }
+    .freshness strong { font-size: 14px; }
+    .freshness span { color: #c7d6e7; }
+    .ghost-btn, .export-btn, .secondary-btn, .guide-btn, .reset-btn, .scenario-btn, .tab-btn, .icon-btn {
+      border: 0;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .ghost-btn, .export-btn {
+      background: rgba(255,255,255,.13);
       color: #fff;
-      border-left: 1px solid #263340;
+      padding: 9px 12px;
     }
-
-    .rail h2 {
-      margin: 0 0 12px;
-      font-size: 15px;
-      letter-spacing: 0;
-    }
-
-    .rail-card {
-      padding: 12px 0;
-      border-top: 1px solid rgba(255,255,255,0.14);
-    }
-
-    .rail-label {
-      color: #aebbc6;
-      font-size: 11px;
-      font-weight: 760;
-      text-transform: uppercase;
-    }
-
-    .rail-value {
-      margin-top: 5px;
-      font-size: 14px;
-      line-height: 1.4;
-    }
-
-    .layout {
+    .ghost-btn.active { background: #fff; color: var(--navy); }
+    main { padding: 18px 18px 24px; max-width: 1720px; margin: 0 auto; }
+    .kpis {
       display: grid;
-      grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
-      gap: 14px;
+      grid-template-columns: repeat(5, minmax(160px, 1fr));
+      gap: 12px;
+      margin-bottom: 16px;
     }
-
-    .panel {
+    .card, .panel {
       background: var(--panel);
       border: 1px solid var(--line);
       border-radius: 8px;
       box-shadow: var(--shadow);
-      padding: 14px;
     }
-
-    .panel h2, .panel h3 {
-      margin: 0 0 10px;
-      letter-spacing: 0;
-    }
-
-    .panel h2 { font-size: 17px; }
-    .panel h3 { font-size: 14px; color: var(--muted); text-transform: uppercase; }
-
-    .subtle { color: var(--muted); font-size: 13px; line-height: 1.45; }
-
-    .pulse-grid {
+    .kpi {
+      min-height: 118px;
+      padding: 15px;
       display: grid;
-      grid-template-columns: repeat(5, minmax(118px, 1fr));
-      gap: 8px;
-    }
-
-    .pulse-card {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 10px;
-      background: #fbfcfd;
-      cursor: pointer;
-      min-height: 122px;
-    }
-
-    .pulse-card:hover { border-color: var(--blue); }
-    .pulse-question {
-      color: var(--muted);
-      font-size: 11px;
-      font-weight: 760;
-      text-transform: uppercase;
-      line-height: 1.25;
-    }
-    .pulse-answer { margin-top: 8px; font-size: 17px; font-weight: 780; }
-
-    .heatmap {
-      display: grid;
-      grid-template-columns: 88px repeat(5, minmax(108px, 1fr));
-      gap: 7px;
-      align-items: stretch;
-    }
-
-    .heat-head, .unit-label {
-      color: var(--muted);
-      font-size: 11px;
-      font-weight: 760;
-      text-transform: uppercase;
-      display: flex;
+      grid-template-columns: 1fr auto;
+      gap: 14px;
       align-items: center;
-    }
-
-    .heat-cell {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 10px;
-      min-height: 86px;
-      background: #f8fafb;
       cursor: pointer;
+      transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
       position: relative;
       overflow: hidden;
     }
-
-    .heat-cell::before {
+    .kpi::before {
       content: "";
       position: absolute;
-      inset: 0 auto 0 0;
-      width: 5px;
-      background: var(--green);
-    }
-
-    .heat-cell.critical::before { background: var(--critical); }
-    .heat-cell.at-risk::before { background: var(--red); }
-    .heat-cell.watch::before { background: var(--amber); }
-    .heat-cell.meeting-target::before { background: var(--green); }
-    .heat-cell.selected { outline: 2px solid var(--blue); }
-
-    .heat-title { font-size: 12px; font-weight: 760; }
-    .heat-metric { margin-top: 8px; font-size: 22px; font-weight: 820; }
-    .heat-note { margin-top: 3px; color: var(--muted); font-size: 12px; }
-
-    .status {
-      display: inline-flex;
-      align-items: center;
-      min-height: 23px;
-      border-radius: 999px;
-      padding: 2px 8px;
-      font-size: 11px;
-      font-weight: 800;
-      text-transform: uppercase;
-      background: #eef1f3;
-    }
-    .status.critical { background: #fde1e1; color: var(--critical); }
-    .status.at-risk { background: #fde7e7; color: var(--red); }
-    .status.watch { background: #fff0d5; color: #8b520b; }
-    .status.meeting-target { background: #def2e6; color: #17633a; }
-
-    .brief {
-      display: grid;
-      gap: 10px;
-    }
-
-    .brief-row {
-      display: grid;
-      grid-template-columns: 130px 1fr;
-      gap: 10px;
-      padding: 9px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .bar-list { display: grid; gap: 9px; }
-    .driver-row {
-      display: grid;
-      grid-template-columns: 128px 1fr 44px;
-      align-items: center;
-      gap: 9px;
-      font-size: 13px;
-    }
-    .track { height: 11px; background: #e8edf1; border-radius: 999px; overflow: hidden; }
-    .fill { height: 100%; background: var(--blue); border-radius: 999px; }
-
-    .mover-list, .forecast-list {
-      display: grid;
-      gap: 8px;
-    }
-
-    .mover {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 10px;
-      background: #fbfcfd;
-      cursor: pointer;
-    }
-
-    .mover-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-    }
-
-    .mover strong { font-size: 14px; }
-    .mover-value { font-size: 18px; font-weight: 820; }
-
-    .flow {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 8px;
-      align-items: stretch;
-    }
-
-    .flow-step {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 12px;
-      background: #fbfcfd;
-    }
-    .flow-step .number { margin-top: 8px; font-size: 22px; font-weight: 820; }
-
-    .workspace { display: none; }
-    .workspace.active { display: grid; gap: 14px; }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 13px;
-    }
-    th, td { padding: 9px 8px; border-bottom: 1px solid var(--line); text-align: right; }
-    th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
-    th { color: var(--muted); font-size: 11px; text-transform: uppercase; }
-
-    .lab-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(140px, 1fr));
-      gap: 10px;
-    }
-    .result-box {
-      margin-top: 12px;
-      background: #eef6f5;
-      border: 1px solid #cce2df;
-      border-radius: 8px;
-      padding: 12px;
-      line-height: 1.45;
-    }
-
-    .scatter {
-      position: relative;
-      height: 280px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background:
-        linear-gradient(#eef2f4 1px, transparent 1px),
-        linear-gradient(90deg, #eef2f4 1px, transparent 1px);
-      background-size: 25% 25%;
-      overflow: hidden;
-    }
-    .dot {
-      position: absolute;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
+      inset: 0 0 auto;
+      height: 4px;
       background: var(--blue);
-      transform: translate(-50%, -50%);
-      opacity: 0.72;
     }
-
-    .meeting-grid {
+    .kpi.good::before { background: var(--green); }
+    .kpi.warn::before { background: var(--yellow); }
+    .kpi.bad::before { background: var(--red); }
+    .kpi:hover { transform: translateY(-2px); border-color: #b8c7d8; box-shadow: 0 14px 30px rgba(8, 41, 93, .14); }
+    .kpi.primary { border-color: var(--blue); }
+    .icon {
+      width: 42px;
+      height: 42px;
+      border: 1px solid currentColor;
+      border-radius: 50%;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      place-items: center;
+      font-size: 20px;
+      color: var(--blue);
+      background: #f4f8fc;
+    }
+    .kpi.green .icon, .kpi.green .value { color: var(--green); }
+    .kpi.red .icon, .kpi.red .value { color: var(--red); }
+    .label {
+      text-transform: uppercase;
+      font-weight: 800;
+      color: #375272;
+      font-size: 11px;
+      letter-spacing: .03em;
+    }
+    .label-line { display: flex; align-items: center; gap: 6px; }
+    .value {
+      font-size: 27px;
+      font-weight: 800;
+      margin-top: 4px;
+      color: #143a67;
+    }
+    .value.text { font-size: 18px; line-height: 1.15; }
+    .subvalue { margin-top: 3px; color: #263851; font-size: 13px; }
+    .trend { font-weight: 800; }
+    .trend.good { color: var(--green); }
+    .trend.bad { color: var(--red); }
+    .info {
+      display: inline-grid;
+      place-items: center;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 1px solid #8ba2bd;
+      color: #35506d;
+      font-size: 11px;
+      line-height: 1;
+      cursor: help;
+      position: relative;
+      text-transform: none;
+    }
+    .info:hover::after {
+      content: attr(data-tip);
+      position: absolute;
+      left: 50%;
+      top: 22px;
+      transform: translateX(-50%);
+      width: min(280px, 80vw);
+      z-index: 30;
+      background: #10253f;
+      color: #fff;
+      border-radius: 6px;
+      padding: 9px 10px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.35;
+      text-transform: none;
+      box-shadow: 0 14px 32px rgba(0,0,0,.2);
+    }
+    .delta.up { color: var(--green); font-weight: 800; }
+    .delta.down { color: var(--red); font-weight: 800; }
+    .layout {
+      display: grid;
+      grid-template-columns: 260px minmax(660px, 1fr) 300px;
+      gap: 16px;
+    }
+    .left, .right { display: grid; gap: 14px; align-content: start; }
+    .panel { padding: 16px; }
+    .panel h2 {
+      margin: 0 0 12px;
+      font-size: 14px;
+      color: #18395e;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    .hint { color: var(--muted); margin: -5px 0 14px; }
+    .filter-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 13px; }
+    .guide-btn { background: var(--blue); color: white; padding: 10px; }
+    .reset-btn { background: #e8eef5; color: #17365d; padding: 10px; }
+    .filter-row {
+      display: grid;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    label { font-weight: 800; font-size: 12px; color: #21395d; text-transform: uppercase; }
+    select, input {
+      width: 100%;
+      border: 1px solid #cdd6e2;
+      border-radius: 6px;
+      padding: 9px;
+      font: inherit;
+      background: #fff;
+    }
+    .current-view-badge {
+      background: #f5f8fc;
+      border-left: 3px solid var(--blue);
+      border-radius: 6px;
+      padding: 10px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .answer-box {
+      margin: 0 0 14px;
+      border: 1px solid #c9d5e4;
+      border-left: 4px solid var(--blue);
+      border-radius: 6px;
+      background: #fbfcfe;
+      padding: 12px 14px;
+    }
+    .answer-box strong { color: #1a3150; }
+    .decision-bar { margin-bottom: 14px; }
+    .scenario-btn { background: var(--navy); color: white; padding: 0 14px; min-height: 42px; }
+    .secondary-btn { background: #edf2f7; color: #14345a; padding: 9px 11px; margin: 0 0 8px; }
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 10px;
+    }
+    .tab-btn { background: transparent; color: #496179; padding: 9px 10px; border-radius: 0; border-bottom: 3px solid transparent; }
+    .tab-btn.active { background: transparent; color: var(--blue); border-bottom-color: var(--blue); }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+    .chart-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(260px, 1fr));
       gap: 12px;
     }
-    .meeting-card {
-      min-height: 150px;
-      padding: 16px;
+    .chart-panel { padding: 15px; min-height: 270px; position: relative; box-shadow: none; }
+    .chart-title { font-weight: 800; color: #18395e; margin-bottom: 10px; }
+    .signal-callout {
+      border: 1px solid #d6e3f2;
+      border-left: 4px solid var(--blue);
+      background: #f7fbff;
+      padding: 12px 14px;
+      border-radius: 7px;
+      margin-bottom: 12px;
+    }
+    .signal-callout.good { border-left-color: var(--green); background: #f6fbf8; }
+    .signal-callout.warn { border-left-color: var(--yellow); background: #fffaf0; }
+    .signal-callout.bad { border-left-color: var(--red); background: #fff7f7; }
+    .forecast-controls {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(120px, 1fr));
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .forecast-stage {
+      display: grid;
+      grid-template-columns: minmax(360px, 1.25fr) minmax(300px, .75fr);
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .forecast-visual {
+      min-height: 310px;
+      padding: 15px;
+    }
+    .forecast-svg {
+      width: 100%;
+      height: 220px;
+      display: block;
+      border: 1px solid #e0e7ef;
+      background: linear-gradient(180deg, #fbfdff, #f7f9fc);
+      border-radius: 8px;
+    }
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .legend span::before {
+      content: "";
+      display: inline-block;
+      width: 18px;
+      height: 3px;
+      margin-right: 6px;
+      vertical-align: middle;
+      border-radius: 99px;
+      background: var(--blue);
+    }
+    .legend .closures::before { background: var(--green); }
+    .legend .inventory::before { background: var(--red); }
+    .metric-stack {
+      display: grid;
+      gap: 10px;
+    }
+    .metric-tile {
+      border: 1px solid #dbe4ee;
+      background: var(--soft);
+      border-radius: 8px;
+      padding: 12px;
+    }
+    .metric-tile strong {
+      display: block;
+      font-size: clamp(17px, 1.6vw, 22px);
+      color: #18395e;
+      margin-top: 3px;
+      overflow-wrap: anywhere;
+    }
+    .control-card {
+      border: 1px solid #dbe4ee;
+      border-radius: 8px;
+      background: #fbfcfe;
+      padding: 10px;
+      min-width: 0;
+    }
+    .stepper {
+      display: grid;
+      grid-template-columns: 34px 1fr 34px;
+      gap: 6px;
+      align-items: center;
+      margin-top: 6px;
+    }
+    .stepper button, .choice-row button {
+      border: 1px solid #cdd8e5;
+      background: #fff;
+      border-radius: 6px;
+      padding: 8px;
+      cursor: pointer;
+      font-weight: 800;
+      color: #18395e;
+    }
+    .choice-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-top: 6px;
+    }
+    .choice-row button.active {
+      background: var(--blue);
+      color: #fff;
+      border-color: var(--blue);
+    }
+    .forecast-row {
+      display: grid;
+      grid-template-columns: minmax(92px, 1.1fr) repeat(6, minmax(70px, 1fr));
+      gap: 8px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
+      align-items: center;
+      font-size: 13px;
+    }
+    .forecast-row:hover:not(.header) { background: #f8fbff; }
+    .forecast-row.header { color: #07317a; font-weight: 800; text-transform: uppercase; font-size: 11px; }
+    .bar-row {
+      display: grid;
+      grid-template-columns: 120px 1fr 78px;
+      gap: 9px;
+      align-items: center;
+      margin: 8px 0;
+      font-size: 13px;
+    }
+    .bar-row.clickable:hover { background: #f8fbff; }
+    .track { height: 14px; background: #e8edf3; border-radius: 999px; overflow: hidden; }
+    .fill { height: 100%; background: var(--blue); border-radius: 999px; }
+    .fill.green { background: var(--green); }
+    .fill.yellow { background: var(--yellow); }
+    .fill.red { background: var(--red); }
+    .insight {
+      border-top: 1px solid var(--line);
+      padding: 11px 0;
+    }
+    .insight:first-child { border-top: 0; padding-top: 0; }
+    .insight-type {
+      display: inline-block;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: #07317a;
+      background: #e8eef7;
+      border-radius: 999px;
+      padding: 3px 8px;
+      margin-bottom: 6px;
+    }
+    .status-dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--green);
+      margin-right: 6px;
+    }
+    .status-dot.watch { background: var(--yellow); }
+    .status-dot.at-risk, .status-dot.critical { background: var(--red); }
+    .table-wrap { overflow: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 9px 8px; text-align: right; }
+    th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
+    th { color: #07317a; text-transform: uppercase; font-size: 11px; background: #f8fafd; }
+    tr.clickable { cursor: pointer; }
+    tr.clickable:hover { background: #f5f9ff; }
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(160px, 1fr));
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .note-strip {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    footer {
+      margin-top: 20px;
+      padding: 16px 24px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 18px;
+      align-items: center;
+    }
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 16, 32, .5);
+      display: none;
+      place-items: center;
+      z-index: 20;
+      padding: 24px;
+    }
+    .modal-backdrop.open { display: grid; }
+    .modal {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 30px 80px rgba(0,0,0,.25);
+      width: min(760px, 95vw);
+      max-height: 90vh;
+      overflow: auto;
+    }
+    .modal.wide { width: min(1100px, 96vw); }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--line);
+    }
+    .modal-header h3 { margin: 0; font-size: 20px; color: #07317a; }
+    .modal-close { background: #edf2f7; color: #17365d; padding: 8px 11px; border: 0; border-radius: 6px; cursor: pointer; font-weight: 800; }
+    .modal-body { padding: 18px 20px 22px; }
+    .loading-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      display: none;
+      place-items: center;
+      background: rgba(243, 245, 248, .94);
+      backdrop-filter: blur(6px);
+      padding: 24px;
+    }
+    body.loading .loading-screen { display: grid; }
+    .loading-card {
+      width: min(520px, 92vw);
+      border: 1px solid #d5dfeb;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 24px 60px rgba(18, 40, 76, .18);
+      padding: 22px;
+    }
+    .loading-brand {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+    .loading-title { font-size: 20px; font-weight: 800; color: #18395e; }
+    .loading-subtitle { color: var(--muted); margin-top: 4px; }
+    .loading-spinner {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      border: 5px solid #e3ebf4;
+      border-top-color: var(--blue);
+      margin: 18px 0 12px;
+      animation: loadingSpin .9s linear infinite;
+    }
+    .loading-error .loading-spinner { border-top-color: var(--red); animation: none; }
+    .loading-note { color: #44576f; font-size: 13px; }
+    @keyframes loadingSpin { to { transform: rotate(360deg); } }
+    .guide-options {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .guide-option {
+      text-align: left;
       border: 1px solid var(--line);
       border-radius: 8px;
       background: #fff;
+      padding: 14px;
+      cursor: pointer;
     }
-
-    @media (max-width: 1220px) {
-      .app-shell { grid-template-columns: 1fr; }
-      .rail { position: static; height: auto; }
+    .guide-option strong { display: block; color: #07317a; margin-bottom: 6px; }
+    .guide-option span { color: var(--muted); }
+    body.presentation-mode .left,
+    body.presentation-mode .right,
+    body.presentation-mode footer,
+    body.presentation-mode .kpis article:nth-child(n+4) { display: none; }
+    body.presentation-mode main { max-width: 1500px; margin: 0 auto; }
+    body.presentation-mode .layout { grid-template-columns: 1fr; }
+    body.presentation-mode .panel { box-shadow: none; }
+    @media (max-width: 1120px) {
       .layout { grid-template-columns: 1fr; }
-      .pulse-grid, .flow, .meeting-grid { grid-template-columns: repeat(2, 1fr); }
+      .left, .right { grid-template-columns: repeat(2, minmax(240px, 1fr)); }
+      .kpis { grid-template-columns: repeat(2, minmax(160px, 1fr)); }
+      .forecast-stage { grid-template-columns: 1fr; }
     }
-
     @media (max-width: 760px) {
-      .brand-row, .commandbar { padding-left: 12px; padding-right: 12px; }
-      .content { padding: 12px; }
-      .pulse-grid, .flow, .meeting-grid, .lab-grid { grid-template-columns: 1fr; }
-      .heatmap { grid-template-columns: 82px repeat(2, minmax(120px, 1fr)); overflow-x: auto; }
-      .brief-row { grid-template-columns: 1fr; }
+      header, .brand, .header-meta { display: grid; text-align: left; }
+      .kpis, .chart-grid, .guide-options, footer, .left, .right { grid-template-columns: 1fr; }
+      .decision-bar { grid-template-columns: 1fr; }
+      .bar-row { grid-template-columns: 92px 1fr 64px; }
     }
   </style>
 </head>
 <body>
-  <div class="app-shell">
-    <div>
-      <header class="topbar">
-        <div class="brand-row">
-          <div>
-            <h1>Workforce Management Intelligence Platform</h1>
-            <div class="context" id="contextLine"></div>
-          </div>
-          <button id="resetBtn">Reset View</button>
-        </div>
-        <div class="commandbar">
-          <select id="viewSelect">
-            <option value="enterprise">Enterprise Pulse</option>
-            <option value="workforce">Workforce Pulse</option>
-            <option value="forecast">Forecasting</option>
-            <option value="lab">Planning Lab</option>
-            <option value="correlation">Correlation Explorer</option>
-            <option value="detail">Detail Data</option>
-            <option value="meeting">Meeting Mode</option>
-          </select>
-          <select id="businessSelect"></select>
-          <select id="categorySelect"></select>
-          <select id="periodSelect"></select>
-        </div>
-      </header>
-
-      <main class="content">
-        <section id="enterprise" class="workspace active">
-          <div class="panel">
-            <h2>Enterprise Pulse</h2>
-            <p class="subtle">Where should leadership look first? Each card is generated from the current period and can drill into a business unit and work category.</p>
-            <div class="pulse-grid" id="pulseGrid"></div>
-          </div>
-
-          <div class="layout">
-            <div class="panel">
-              <h2>Operational Heat Map</h2>
-              <div class="heatmap" id="heatmap"></div>
-            </div>
-            <div class="panel">
-              <h2>Intelligence Brief</h2>
-              <div class="brief" id="brief"></div>
-            </div>
-          </div>
-
-          <div class="layout">
-            <div class="panel">
-              <h2>Biggest Movers</h2>
-              <div class="mover-list" id="movers"></div>
-            </div>
-            <div class="panel">
-              <h2>Likely Drivers of Current Pressure</h2>
-              <div class="bar-list" id="driverBars"></div>
-            </div>
-          </div>
-
-          <div class="panel">
-            <h2>Inventory Flow</h2>
-            <div class="flow" id="flow"></div>
-          </div>
-        </section>
-
-        <section id="workforce" class="workspace">
-          <div class="panel">
-            <h2>Workforce Pulse</h2>
-            <div class="brief" id="workforcePulse"></div>
-          </div>
-          <div class="layout">
-            <div class="panel">
-              <h2>Receipts vs Closures</h2>
-              <div class="bar-list" id="flowBalance"></div>
-            </div>
-            <div class="panel">
-              <h2>Staffing Capacity</h2>
-              <div class="brief" id="capacityBrief"></div>
-            </div>
-          </div>
-        </section>
-
-        <section id="forecast" class="workspace">
-          <div class="panel">
-            <h2>Forecasting Workspace</h2>
-            <p class="subtle">Actuals remain separated from directional forecasts. Current history supports simple trend forecasting only.</p>
-            <div class="forecast-list" id="forecastList"></div>
-          </div>
-          <div class="panel">
-            <h2>If Nothing Changes</h2>
-            <div class="brief" id="nothingChanges"></div>
-          </div>
-        </section>
-
-        <section id="lab" class="workspace">
-          <div class="panel">
-            <h2>Workforce Planning Lab</h2>
-            <div class="lab-grid">
-              <label><span class="rail-label">Add FTE</span><input id="scenarioFte" type="number" value="0" step="1"></label>
-              <label><span class="rail-label">Productivity %</span><input id="scenarioProduction" type="number" value="0" step="1"></label>
-              <label><span class="rail-label">Receipts %</span><input id="scenarioReceipts" type="number" value="0" step="1"></label>
-              <label><span class="rail-label">Closure Override</span><input id="scenarioClosures" type="number" value="" step="100"></label>
-            </div>
-            <div class="result-box" id="scenarioResult"></div>
-          </div>
-          <div class="panel">
-            <h2>What Would It Take?</h2>
-            <div class="brief" id="takeEngine"></div>
-          </div>
-        </section>
-
-        <section id="correlation" class="workspace">
-          <div class="panel">
-            <h2>Correlation Explorer</h2>
-            <select id="correlationSelect"></select>
-            <p class="subtle" id="correlationText"></p>
-            <div class="scatter" id="scatter"></div>
-          </div>
-        </section>
-
-        <section id="detail" class="workspace">
-          <div class="panel">
-            <h2>Detail Data</h2>
-            <div style="overflow:auto">
-              <table>
-                <thead>
-                  <tr>
-                    <th>BU</th><th>Category</th><th>Status</th><th>SLA</th><th>Inventory</th><th>OOS</th><th>Receipts</th><th>Closures</th><th>Gap</th><th>FTE</th>
-                  </tr>
-                </thead>
-                <tbody id="detailRows"></tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-
-        <section id="meeting" class="workspace">
-          <div class="panel">
-            <h2>Meeting Mode</h2>
-            <div class="meeting-grid" id="meetingGrid"></div>
-          </div>
-        </section>
-      </main>
+  <header>
+    <div class="brand">
+      <div class="logo">WFM<span>IQ</span></div>
+      <div>
+        <h1>WorkforceIQ Dashboard</h1>
+        <div class="subtitle">Staffing, Inventory & SLA Intelligence</div>
+      </div>
     </div>
+    <div class="header-meta">
+      <div class="freshness" id="dataAsOf"></div>
+      <button class="ghost-btn" id="presentationBtn" type="button">Presentation Mode</button>
+      <button class="ghost-btn" id="refreshBtn" type="button">↻ Refresh</button>
+    </div>
+  </header>
 
-    <aside class="rail">
-      <h2>Intelligence Rail</h2>
-      <div id="railContent"></div>
-    </aside>
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-card">
+      <div class="loading-brand">
+        <div>
+          <div class="loading-title">Opening WorkforceIQ</div>
+          <div class="loading-subtitle">Loading local dashboard data from the shared folder.</div>
+        </div>
+        <div class="logo">WFM<span>IQ</span></div>
+      </div>
+      <div class="loading-spinner" aria-hidden="true"></div>
+      <div class="loading-note">Keep `dashboard.html` and the `data` folder together when sharing this dashboard.</div>
+    </div>
+  </div>
+
+  <main>
+    <section class="kpis">
+      <article class="card kpi" data-nav="staffing"><div><div class="label-line"><div class="label">Capacity</div><span class="info" data-tip="Compares incoming receipts to observed closure productivity. Shortfall means more equivalent productive capacity is needed; surplus means current output can exceed intake.">i</span></div><div class="value text" id="kpiCapacity">n/a</div><div class="subvalue" id="kpiCapacitySub">Observed productivity</div></div><div class="icon">↗</div></article>
+      <article class="card kpi" data-nav="detail"><div><div class="label-line"><div class="label">SLA Health</div><span class="info" data-tip="Uses source SLA when available; calculated SLA is In Standard divided by Starting Inventory. Target is 90%.">i</span></div><div class="value" id="kpiSla">n/a</div><div class="subvalue" id="kpiSlaSub">Target 90%</div></div><div class="icon">✓</div></article>
+      <article class="card kpi" data-nav="flow"><div><div class="label-line"><div class="label">Backlog</div><span class="info" data-tip="Uses Throughput Balance: closures minus receipts. Positive means backlog can burn down; negative means intake exceeded closures.">i</span></div><div class="value text" id="kpiBacklog">n/a</div><div class="subvalue" id="kpiBacklogSub">Throughput balance</div></div><div class="icon">↔</div></article>
+      <article class="card kpi" data-nav="pulse"><div><div class="label-line"><div class="label">Operational Health</div><span class="info" data-tip="Counts areas that are Critical, At Risk, or Watch in the selected context. If none exist, no arbitrary top focus is shown.">i</span></div><div class="value text" id="kpiHealth">n/a</div><div class="subvalue" id="kpiHealthSub">Selected context</div></div><div class="icon">!</div></article>
+      <article class="card kpi" data-nav="forecast"><div><div class="label-line"><div class="label">Outlook</div><span class="info" data-tip="Directional operational forecast. Confidence considers history length, missing data, volatility, and forecast horizon.">i</span></div><div class="value text" id="kpiOutlook">n/a</div><div class="subvalue" id="kpiOutlookSub">Forecast confidence</div></div><div class="icon">◷</div></article>
+    </section>
+
+    <section class="layout">
+      <aside class="left">
+        <div class="panel">
+          <h2>Command Center</h2>
+          <p class="hint">Start with a question, then narrow by business unit and work category.</p>
+          <div class="filter-actions">
+            <button class="guide-btn" id="guideMeBtn" type="button">Guide Me</button>
+            <button class="reset-btn" id="resetViewBtn" type="button">Reset View</button>
+          </div>
+          <div class="filter-row"><label for="viewModeFilter">Dashboard View</label><select id="viewModeFilter"></select></div>
+          <div class="current-view-badge" id="currentViewBadge">Current View: Pulse</div>
+          <div class="filter-row"><label for="businessFilter">Business Unit</label><select id="businessFilter"></select></div>
+          <div class="filter-row"><label for="categoryFilter">Work Category</label><select id="categoryFilter"></select></div>
+          <div class="filter-row"><label for="periodFilter">Period</label><select id="periodFilter"></select></div>
+        </div>
+      </aside>
+
+      <section>
+        <div class="panel">
+          <h2 id="workspaceTitle">Workforce Pulse</h2>
+          <p class="hint" id="workspaceHint"></p>
+          <div class="decision-bar">
+            <div class="answer-box" id="answerSentence"><div class="label">Executive Summary</div><strong>Loading workforce intelligence...</strong></div>
+          </div>
+          <div class="tabs" id="tabs"></div>
+          <div id="tabPulse" class="tab-panel active"></div>
+          <div id="tabFlow" class="tab-panel"></div>
+          <div id="tabStaffing" class="tab-panel"></div>
+          <div id="tabForecast" class="tab-panel"></div>
+          <div id="tabIntelligence" class="tab-panel"></div>
+          <div id="tabDetail" class="tab-panel"></div>
+        </div>
+      </section>
+
+      <aside class="right">
+        <div class="panel">
+          <h2>Intelligence Rail</h2>
+          <div id="rail"></div>
+        </div>
+        <div class="panel">
+          <h2>Source Notes</h2>
+          <div id="dataQuality"></div>
+        </div>
+        <div class="panel">
+          <h2>Model Status</h2>
+          <div id="modelStatus"></div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">WFM<span>IQ</span></div>
+    <div>WorkforceIQ converts staffing and inventory reports into local leadership intelligence, forecasts, and scenario support.</div>
+    <div><button class="export-btn" id="openHtmlBtn" type="button">Local HTML</button></div>
+  </footer>
+
+  <div class="modal-backdrop" id="guideModal">
+    <div class="modal">
+      <div class="modal-header">
+        <div><h3>What Do You Want To See?</h3><div class="hint">Guide Me changes the dashboard view and highlights the right evidence.</div></div>
+        <button class="modal-close" data-close="guideModal">Close</button>
+      </div>
+      <div class="modal-body">
+        <div class="guide-options" id="guideOptions"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="detailModal">
+    <div class="modal wide">
+      <div class="modal-header">
+        <div><h3 id="detailTitle">Work Category Detail</h3><div class="hint" id="detailHint"></div></div>
+        <button class="modal-close" data-close="detailModal">Close</button>
+      </div>
+      <div class="modal-body" id="detailBody"></div>
+    </div>
   </div>
 
   <script src="data/dashboard-data.js"></script>
   <script>
     const data = window.DASHBOARD_DATA;
+    const loadingPreview = new URLSearchParams(window.location.search).has('loading-preview');
+    const normalLoadingMs = 3000;
+    const navigationType = performance.getEntriesByType('navigation')?.[0]?.type || 'navigate';
+    if (!data) {
+      document.body.classList.add('loading-error');
+      const loading = document.getElementById('loadingScreen');
+      if (loading) {
+        loading.innerHTML = `<div class="loading-card"><div class="loading-brand"><div><div class="loading-title">Dashboard Data Not Found</div><div class="loading-subtitle">WorkforceIQ opened, but it could not load <strong>data/dashboard-data.js</strong>.</div></div><div class="logo">WFM<span>IQ</span></div></div><div class="loading-spinner" aria-hidden="true"></div><div class="loading-note">On the shared drive, keep <strong>dashboard.html</strong> in the same folder as the <strong>data</strong> folder. If the report was refreshed, run <strong>python3 update_dashboard.py</strong> before sharing.</div></div>`;
+      }
+      throw new Error('WorkforceIQ data file missing: data/dashboard-data.js');
+    }
     const state = {
-      view: 'enterprise',
+      view: 'pulse',
+      tab: 'pulse',
       businessUnit: 'All',
       workCategory: 'All',
       period: data.metadata.latestFullContextPeriod || data.metadata.latestPeriod
     };
     const fmt = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
     const pct = new Intl.NumberFormat('en-US', { style: 'percent', maximumFractionDigits: 0 });
-
-    const statusClass = status => String(status || '').toLowerCase().replaceAll('_', '-');
-    const labelStatus = status => String(status || 'NO_DATA').replaceAll('_', ' ');
     const value = x => x == null || Number.isNaN(Number(x)) ? 0 : Number(x);
     const display = x => x == null || Number.isNaN(Number(x)) ? 'n/a' : fmt.format(Number(x));
     const displayPct = x => x == null || Number.isNaN(Number(x)) ? 'n/a' : pct.format(Number(x));
+    const cls = x => String(x || '').toLowerCase().replaceAll('_','-');
+    const label = x => String(x || 'NO_DATA').replaceAll('_',' ');
+
+    const viewModes = {
+      pulse: { label: 'Pulse', hint: 'Where should leadership look first?' },
+      flow: { label: 'Flow', hint: 'Receipts, closures, reroutes, and inventory pressure.' },
+      staffing: { label: 'Staffing', hint: 'Capacity, FTE, productivity, and workload per FTE.' },
+      forecast: { label: 'Forecast', hint: 'Operational outlook, backlog trajectory, and temporary scenario planning.' },
+      intelligence: { label: 'Intelligence', hint: 'Early warnings, drivers, anomalies, and model context.' },
+      detail: { label: 'Detail', hint: 'Supporting table and drill-down evidence.' }
+    };
 
     function setup() {
-      fillSelect('businessSelect', ['All', ...data.metadata.businessUnits], 'All Business Units');
-      fillSelect('categorySelect', ['All', ...data.metadata.workCategories], 'All Work Categories');
-      fillSelect('periodSelect', data.metadata.periods, null);
-      document.getElementById('periodSelect').value = state.period;
-      document.getElementById('viewSelect').onchange = e => { state.view = e.target.value; render(); };
-      document.getElementById('businessSelect').onchange = e => { state.businessUnit = e.target.value; render(); };
-      document.getElementById('categorySelect').onchange = e => { state.workCategory = e.target.value; render(); };
-      document.getElementById('periodSelect').onchange = e => { state.period = e.target.value; render(); };
-      document.getElementById('resetBtn').onclick = () => {
-        state.view = 'enterprise';
-        state.businessUnit = 'All';
-        state.workCategory = 'All';
-        state.period = data.metadata.latestFullContextPeriod || data.metadata.latestPeriod;
-        render();
-      };
-      ['scenarioFte', 'scenarioProduction', 'scenarioReceipts', 'scenarioClosures'].forEach(id => {
-        document.getElementById(id).addEventListener('input', renderScenario);
-      });
-      const corr = document.getElementById('correlationSelect');
-      data.analytics.correlationExplorer.forEach((item, index) => {
-        const option = document.createElement('option');
-        option.value = index;
-        option.textContent = item.label;
-        corr.appendChild(option);
-      });
-      corr.onchange = renderCorrelation;
+      fillSelect('viewModeFilter', Object.keys(viewModes).map(key => [key, viewModes[key].label]));
+      fillSelect('businessFilter', [['All','All Business Units'], ...data.metadata.businessUnits.map(x => [x,x])]);
+      fillSelect('categoryFilter', [['All','All Work Categories'], ...data.metadata.workCategories.map(x => [x,x])]);
+      fillSelect('periodFilter', data.metadata.periods.map(x => [x,x]));
+      document.getElementById('viewModeFilter').onchange = e => { state.view = e.target.value; state.tab = e.target.value === 'pulse' ? 'pulse' : e.target.value; render(); };
+      document.getElementById('businessFilter').onchange = e => { state.businessUnit = e.target.value; render(); };
+      document.getElementById('categoryFilter').onchange = e => { state.workCategory = e.target.value; render(); };
+      document.getElementById('periodFilter').onchange = e => { state.period = e.target.value; render(); };
+      document.getElementById('resetViewBtn').onclick = resetView;
+      document.getElementById('refreshBtn').onclick = render;
+      document.getElementById('guideMeBtn').onclick = () => openModal('guideModal');
+      document.getElementById('presentationBtn').onclick = togglePresentation;
+      document.querySelectorAll('.kpi[data-nav]').forEach(card => card.onclick = () => navigateTo(card.dataset.nav));
+      document.querySelectorAll('[data-close]').forEach(btn => btn.onclick = () => closeModal(btn.dataset.close));
+      renderGuideOptions();
       render();
     }
 
-    function fillSelect(id, values, allLabel) {
-      const select = document.getElementById(id);
-      select.innerHTML = '';
-      values.forEach(item => {
-        const option = document.createElement('option');
-        option.value = item;
-        option.textContent = item === 'All' && allLabel ? allLabel : item;
-        select.appendChild(option);
-      });
+    function fillSelect(id, pairs) {
+      document.getElementById(id).innerHTML = pairs.map(([value, text]) => `<option value="${value}">${text}</option>`).join('');
     }
 
-    function contextRows(period = state.period) {
-      return data.features.filter(row =>
-        row.period === period &&
-        row.businessUnit !== 'Aggregated Total' &&
-        (state.businessUnit === 'All' || row.businessUnit === state.businessUnit) &&
-        (state.workCategory === 'All' || row.workCategory === state.workCategory)
-      );
+    function resetView() {
+      state.view = 'pulse';
+      state.tab = 'pulse';
+      state.businessUnit = 'All';
+      state.workCategory = 'All';
+      state.period = data.metadata.latestFullContextPeriod || data.metadata.latestPeriod;
+      render();
     }
 
-    function selectedContext() {
-      const exact = data.analytics.contexts.find(item =>
-        item.period === state.period &&
-        item.businessUnit === state.businessUnit &&
-        item.workCategory === state.workCategory
-      );
-      if (exact) return exact;
-      const rows = contextRows();
-      if (!rows.length) return null;
-      const worst = rows.slice().sort((a, b) => value(b.riskScore) - value(a.riskScore))[0];
-      return data.analytics.contexts.find(item =>
-        item.period === worst.period &&
-        item.businessUnit === worst.businessUnit &&
-        item.workCategory === worst.workCategory
-      );
+    function navigateTo(view) {
+      state.view = view;
+      state.tab = view;
+      render();
     }
 
-    function aggregate(rows) {
-      const total = rows.reduce((acc, row) => {
-        ['startingInventory','inStandard','outOfStandard','monthlyReceipts','monthlyClosures','receiptClosureGap','ftes','averageDailyReceipts','averageDailyProduction'].forEach(field => {
-          acc[field] = value(acc[field]) + value(row[field]);
-        });
+    function rows(period = state.period) {
+      return data.features.filter(row => row.period === period && row.businessUnit !== 'Aggregated Total'
+        && (state.businessUnit === 'All' || row.businessUnit === state.businessUnit)
+        && (state.workCategory === 'All' || row.workCategory === state.workCategory));
+    }
+
+    function aggregate(list) {
+      const total = list.reduce((acc, row) => {
+        ['startingInventory','inStandard','outOfStandard','monthlyReceipts','monthlyClosures','receiptClosureGap','ftes','averageDailyReceipts','averageDailyProduction'].forEach(field => acc[field] = value(acc[field]) + value(row[field]));
         acc.riskScore = Math.max(value(acc.riskScore), value(row.riskScore));
         return acc;
       }, {});
@@ -632,253 +744,662 @@
       return total;
     }
 
-    function setContextLine() {
-      const path = ['Enterprise'];
-      if (state.businessUnit !== 'All') path.push(state.businessUnit);
-      if (state.workCategory !== 'All') path.push(state.workCategory);
-      document.getElementById('contextLine').textContent =
-        `${path.join(' > ')} | Period ${state.period} | SLA target ${displayPct(data.metadata.slaTarget)} | ${data.analytics.modelDiagnostics.analyticalMaturity}`;
+    function selectedRow() {
+      const exact = data.features.find(row => row.period === state.period && row.businessUnit === state.businessUnit && row.workCategory === state.workCategory);
+      if (exact) return exact;
+      return rows().slice().sort((a,b) => value(b.riskScore)-value(a.riskScore))[0] || data.features.find(row => row.period === state.period && row.businessUnit !== 'Aggregated Total');
+    }
+
+    function selectedContext() {
+      const row = selectedRow();
+      return data.analytics.contexts.find(item => item.period === row.period && item.businessUnit === row.businessUnit && item.workCategory === row.workCategory);
+    }
+
+    function selectedForecastContext() {
+      const row = selectedRow();
+      const forecasts = data.analytics.forecastEngine?.contexts || [];
+      return forecasts.find(item => item.businessUnit === row.businessUnit && item.workCategory === row.workCategory && item.basePeriod === state.period)
+        || forecasts.find(item => item.businessUnit === row.businessUnit && item.workCategory === row.workCategory && item.operationalBasePeriod === state.period)
+        || forecasts.filter(item => item.businessUnit === row.businessUnit && item.workCategory === row.workCategory).slice().sort((a,b) => String(b.basePeriod).localeCompare(String(a.basePeriod)))[0]
+        || forecasts.find(item => state.businessUnit === 'All' || item.businessUnit === state.businessUnit)
+        || forecasts[0];
+    }
+
+    function departmentCapacityRows(period = state.period) {
+      const rows = data.analytics.departmentCapacity || [];
+      return rows.filter(item => item.period === period && (state.businessUnit === 'All' || item.businessUnit === state.businessUnit));
+    }
+
+    function selectedDepartmentCapacity() {
+      const selected = selectedRow();
+      const rows = data.analytics.departmentCapacity || [];
+      return rows.find(item => item.period === state.period && item.businessUnit === selected.businessUnit)
+        || rows.find(item => item.period === data.metadata.latestFullContextPeriod && item.businessUnit === selected.businessUnit)
+        || rows.find(item => item.businessUnit === selected.businessUnit);
+    }
+
+    function capacitySummary(list = departmentCapacityRows()) {
+      const withCapacity = list.filter(row => row.capacityGap != null);
+      const shortfalls = withCapacity.filter(row => row.capacityGap > 0.25).sort((a,b) => value(b.capacityGap)-value(a.capacityGap));
+      const surplus = withCapacity.filter(row => row.capacityGap < -0.25).sort((a,b) => Math.abs(value(b.capacityGap))-Math.abs(value(a.capacityGap)));
+      const maxShortfall = shortfalls[0];
+      const totalShortfall = shortfalls.reduce((sum,row) => sum + value(row.capacityGap), 0);
+      const totalSurplus = surplus.reduce((sum,row) => sum + Math.abs(value(row.capacityGap)), 0);
+      return { withCapacity, shortfalls, surplus, maxShortfall, totalShortfall, totalSurplus };
+    }
+
+    function throughputLabel(amount) {
+      if (amount == null) return ['n/a', 'No flow data'];
+      return amount >= 0
+        ? [`↓ ${display(amount)}`, 'Burning Down']
+        : [`↑ ${display(Math.abs(amount))}`, 'Growing'];
+    }
+
+    function productionMeaning(ratio) {
+      if (ratio == null) return 'No production/receipt comparison available.';
+      const pctDiff = Math.abs(ratio - 1);
+      return ratio >= 1
+        ? `Capacity Ahead: production is approximately ${displayPct(pctDiff)} above incoming volume.`
+        : `Capacity Behind: production is approximately ${displayPct(pctDiff)} below incoming volume.`;
+    }
+
+    function currentPath() {
+      const parts = ['Enterprise'];
+      if (state.businessUnit !== 'All') parts.push(state.businessUnit);
+      if (state.workCategory !== 'All') parts.push(state.workCategory);
+      return parts.join(' > ');
     }
 
     function render() {
-      document.getElementById('viewSelect').value = state.view;
-      document.getElementById('businessSelect').value = state.businessUnit;
-      document.getElementById('categorySelect').value = state.workCategory;
-      document.getElementById('periodSelect').value = state.period;
-      document.querySelectorAll('.workspace').forEach(section => section.classList.toggle('active', section.id === state.view));
-      setContextLine();
-      renderPulse();
-      renderHeatmap();
-      renderBrief();
-      renderMovers();
-      renderDrivers();
-      renderFlow();
-      renderWorkforce();
-      renderForecast();
-      renderTakeEngine();
-      renderScenario();
-      renderCorrelation();
-      renderDetails();
-      renderMeeting();
+      document.getElementById('viewModeFilter').value = state.view;
+      document.getElementById('businessFilter').value = state.businessUnit;
+      document.getElementById('categoryFilter').value = state.workCategory;
+      document.getElementById('periodFilter').value = state.period;
+      document.getElementById('currentViewBadge').textContent = `Current View: ${viewModes[state.view].label} | ${currentPath()}`;
+      document.getElementById('workspaceTitle').textContent = `${viewModes[state.view].label} View`;
+      document.getElementById('workspaceHint').textContent = viewModes[state.view].hint;
+      document.getElementById('dataAsOf').innerHTML = `<strong>${periodLabel(state.period)} Operational View</strong><span>Latest source: ${periodLabel(data.metadata.latestPeriod)} • Full ops: ${periodLabel(data.metadata.latestFullContextPeriod)}</span>`;
+      renderTabs();
+      renderKpis();
+      renderSummary();
+      renderActiveTab();
       renderRail();
+      renderNotes();
     }
 
-    function drill(businessUnit, workCategory, view = state.view) {
-      state.businessUnit = businessUnit;
-      state.workCategory = workCategory;
-      state.view = view;
-      render();
+    function setCardState(id, stateName) {
+      const card = document.getElementById(id)?.closest('.kpi');
+      if (!card) return;
+      card.classList.remove('good','warn','bad');
+      if (stateName) card.classList.add(stateName);
+    }
+
+    function renderTabs() {
+      const tabs = [
+        ['pulse','Pulse'], ['flow','Flow'], ['staffing','Staffing'], ['forecast','Forecast'], ['intelligence','Intelligence'], ['detail','Detail']
+      ];
+      document.getElementById('tabs').innerHTML = tabs.map(([key,text]) => `<button class="tab-btn ${state.tab === key ? 'active' : ''}" data-tab="${key}">${text}</button>`).join('');
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.onclick = () => { state.tab = btn.dataset.tab; state.view = btn.dataset.tab; render(); });
+      document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+      document.getElementById(`tab${state.tab[0].toUpperCase()}${state.tab.slice(1)}`).classList.add('active');
+    }
+
+    function renderKpis() {
+      const total = aggregate(rows());
+      const current = rows();
+      const capacity = capacitySummary(current);
+      const unhealthy = current.filter(row => ['CRITICAL','AT_RISK','WATCH'].includes(row.status));
+      const critical = unhealthy.filter(row => row.status === 'CRITICAL').length;
+      const atRisk = unhealthy.filter(row => row.status === 'AT_RISK').length;
+      const watch = unhealthy.filter(row => row.status === 'WATCH').length;
+      const throughput = -value(total.receiptClosureGap);
+      const [backlogValue, backlogText] = throughputLabel(throughput);
+      const forecast = selectedForecastContext();
+      const next = forecast?.projection?.[1];
+      const currentForecast = forecast?.projection?.[0];
+      const outlookDelta = next?.sla != null && currentForecast?.sla != null ? next.sla - currentForecast.sla : null;
+      const outlook = outlookDelta == null ? 'Directional' : outlookDelta > 0.005 ? 'Improving' : outlookDelta < -0.005 ? 'Deteriorating' : 'Stable';
+
+      if (capacity.shortfalls.length) {
+        document.getElementById('kpiCapacity').textContent = `${capacity.totalShortfall.toFixed(1)} FTE Shortfall`;
+        document.getElementById('kpiCapacitySub').textContent = `${capacity.shortfalls.length} area${capacity.shortfalls.length === 1 ? '' : 's'} need capacity`;
+        setCardState('kpiCapacity', 'bad');
+      } else if (capacity.surplus.length) {
+        document.getElementById('kpiCapacity').textContent = 'Sufficient';
+        document.getElementById('kpiCapacitySub').textContent = `${capacity.totalSurplus.toFixed(1)} FTE equivalent surplus`;
+        setCardState('kpiCapacity', 'good');
+      } else {
+        document.getElementById('kpiCapacity').textContent = 'Sufficient';
+        document.getElementById('kpiCapacitySub').textContent = 'No current shortfalls';
+        setCardState('kpiCapacity', 'good');
+      }
+
+      document.getElementById('kpiSla').textContent = displayPct(total.sla);
+      const slaTrend = current.map(row => row.slaChange).filter(x => x != null);
+      const avgTrend = slaTrend.length ? slaTrend.reduce((a,b)=>a+b,0) / slaTrend.length : null;
+      document.getElementById('kpiSlaSub').innerHTML = total.sla == null ? 'No SLA data' : `${total.sla >= data.metadata.slaTarget ? 'Meeting Target' : 'Below Target'} ${avgTrend == null ? '' : `<span class="trend ${avgTrend >= 0 ? 'good' : 'bad'}">${avgTrend >= 0 ? '↑' : '↓'} ${Math.abs(avgTrend*100).toFixed(1)} pts</span>`}`;
+      setCardState('kpiSla', total.sla == null ? 'warn' : total.sla >= data.metadata.slaTarget ? 'good' : 'bad');
+      document.getElementById('kpiBacklog').textContent = backlogValue;
+      document.getElementById('kpiBacklogSub').textContent = backlogText;
+      setCardState('kpiBacklog', throughput >= 0 ? 'good' : 'bad');
+      if (unhealthy.length) {
+        document.getElementById('kpiHealth').textContent = `${unhealthy.length} Areas Need Attention`;
+        document.getElementById('kpiHealthSub').textContent = `${critical} Critical • ${atRisk} At Risk • ${watch} Watch`;
+        setCardState('kpiHealth', critical || atRisk ? 'bad' : 'warn');
+      } else {
+        document.getElementById('kpiHealth').textContent = 'All Areas Healthy';
+        document.getElementById('kpiHealthSub').textContent = 'No current risk flags';
+        setCardState('kpiHealth', 'good');
+      }
+      document.getElementById('kpiOutlook').textContent = outlook;
+      document.getElementById('kpiOutlookSub').textContent = `${next?.confidence?.label || forecast?.confidence?.label || 'Low'} confidence`;
+      setCardState('kpiOutlook', outlook === 'Improving' || outlook === 'Stable' ? 'good' : outlook === 'Deteriorating' ? 'bad' : 'warn');
+    }
+
+    function renderSummary() {
+      const total = aggregate(rows());
+      const current = rows();
+      const attention = current.filter(row => ['CRITICAL','AT_RISK','WATCH'].includes(row.status)).sort((a,b) => value(b.riskScore)-value(a.riskScore));
+      const focus = attention[0];
+      const throughput = -value(total.receiptClosureGap);
+      const text = focus
+        ? `${currentPath()} is at ${displayPct(total.sla)} SLA. ${focus.businessUnit} ${focus.workCategory} needs attention because ${focus.statusReasons?.[0] || 'operational pressure is elevated'}. Throughput balance is ${display(throughput)}.`
+        : current.length
+          ? `${currentPath()} is at ${displayPct(total.sla)} SLA with no current critical, at-risk, or watch areas in the selected context. Throughput balance is ${display(throughput)}.`
+        : 'No records are available for this filter selection.';
+      document.getElementById('answerSentence').innerHTML = `<div class="label">Executive Summary</div><strong>${text}</strong>`;
+    }
+
+    function renderActiveTab() {
+      renderPulse();
+      renderFlow();
+      renderStaffing();
+      renderForecast();
+      renderIntelligence();
+      renderDetail();
     }
 
     function renderPulse() {
-      document.getElementById('pulseGrid').innerHTML = data.analytics.enterprisePulse.filter(Boolean).map(item => `
-        <div class="pulse-card" onclick="drill('${item.answer.split(' ')[0]}', '${item.answer.replace(item.answer.split(' ')[0] + ' ', '')}', 'enterprise')">
-          <div class="pulse-question">${item.question}</div>
-          <div class="pulse-answer">${item.answer}</div>
-          <div class="subtle">${item.takeaway}</div>
+      const current = rows();
+      const flagged = current.filter(row => ['CRITICAL','AT_RISK','WATCH'].includes(row.status));
+      const attention = (flagged.length ? flagged : current).slice().sort((a,b) => value(b.riskScore)-value(a.riskScore)).slice(0,8);
+      const maxRisk = Math.max(1, ...attention.map(row => value(row.riskScore)));
+      document.getElementById('tabPulse').innerHTML = `
+        <div class="summary-grid">
+          <div class="metric-tile"><div class="label">SLA</div><strong>${displayPct(aggregate(current).sla)}</strong><div class="subvalue">Selected context</div></div>
+          <div class="metric-tile"><div class="label">Inventory</div><strong>${display(aggregate(current).startingInventory)}</strong><div class="subvalue">Starting position</div></div>
+          <div class="metric-tile"><div class="label">Attention</div><strong>${flagged.length || 'None'}</strong><div class="subvalue">${flagged.length ? 'Areas flagged' : 'No active flags'}</div></div>
         </div>
-      `).join('');
+        <div class="chart-grid">
+          <div class="chart-panel card">
+            <div class="chart-title">${flagged.length ? 'Attention Required' : 'All Areas Healthy'}</div>
+            ${attention.map(row => barRow(`${row.businessUnit} ${row.workCategory}`, value(row.riskScore), maxRisk, `${displayPct(row.monthlyStartingSla || row.calculatedSla)} SLA`, cls(row.status), `openDetail('${row.businessUnit}','${row.workCategory}')`)).join('') || '<div class="hint">No records available for this selection.</div>'}
+          </div>
+          <div class="chart-panel card">
+            <div class="chart-title">Enterprise Health</div>
+            ${data.metadata.businessUnits.map(bu => {
+              const buRows = current.filter(row => row.businessUnit === bu);
+              const total = aggregate(buRows);
+              const worst = buRows.slice().sort((a,b) => value(b.riskScore)-value(a.riskScore))[0];
+              return barRow(`${bu}`, value(total.sla || 0), 1, `${displayPct(total.sla)} | ${worst ? label(worst.status) : 'n/a'}`, worst ? cls(worst.status) : '', `filterBusiness('${bu}')`);
+            }).join('')}
+          </div>
+        </div>`;
     }
 
-    function renderHeatmap() {
-      const units = data.metadata.businessUnits;
-      const cats = data.metadata.workCategories;
-      const byId = Object.fromEntries(data.analytics.heatmap.map(cell => [cell.id, cell]));
-      let html = '<div></div>' + cats.map(cat => `<div class="heat-head">${cat}</div>`).join('');
-      units.forEach(unit => {
-        html += `<div class="unit-label">${unit}</div>`;
-        cats.forEach(cat => {
-          const cell = byId[`${unit}::${cat}`];
-          if (!cell) {
-            html += '<div class="heat-cell" style="opacity:.25"><div class="heat-title">No data</div></div>';
-            return;
-          }
-          const selected = state.businessUnit === unit && state.workCategory === cat ? 'selected' : '';
-          html += `
-            <div class="heat-cell ${statusClass(cell.status)} ${selected}" onclick="drill('${unit}', '${cat}', 'enterprise')">
-              <div class="heat-title">${labelStatus(cell.status)}</div>
-              <div class="heat-metric">${displayPct(cell.sla)}</div>
-              <div class="heat-note">OOS ${display(cell.outOfStandard)}${cell.earlyWarning ? ' | Early warning' : ''}</div>
-            </div>
-          `;
-        });
-      });
-      document.getElementById('heatmap').innerHTML = html;
-    }
-
-    function renderBrief() {
-      const ctx = selectedContext();
-      if (!ctx) return;
-      const brief = ctx.brief;
-      document.getElementById('brief').innerHTML = [
-        ['What changed', brief.whatChanged],
-        ['Why it matters', brief.whyItMatters],
-        ['Staffing', brief.staffing],
-        ['Early warning', brief.earlyWarning],
-        ['Outlook', brief.outlook],
-        ['Evidence', brief.evidence]
-      ].map(row => `<div class="brief-row"><div class="rail-label">${row[0]}</div><div>${row[1]}</div></div>`).join('');
-    }
-
-    function renderMovers() {
-      document.getElementById('movers').innerHTML = data.analytics.biggestMovers.map(item => `
-        <div class="mover" onclick="drill('${item.businessUnit}', '${item.workCategory}', 'enterprise')">
-          <div class="mover-top"><strong>${item.title}</strong><span class="mover-value">${item.display}</span></div>
-          <div class="subtle">${item.businessUnit} ${item.workCategory} | ${item.context}</div>
-        </div>
-      `).join('');
-    }
-
-    function renderDrivers() {
-      const ctx = selectedContext();
-      const bars = ctx?.driverBars || [];
-      document.getElementById('driverBars').innerHTML = bars.map(bar => `
-        <div class="driver-row" title="${bar.note}">
-          <div>${bar.label}</div>
-          <div class="track"><div class="fill" style="width:${Math.max(5, bar.strength * 100)}%"></div></div>
-          <div>${Math.round(bar.strength * 100)}</div>
-        </div>
-      `).join('') || '<p class="subtle">No dominant driver signal for this selection.</p>';
+    function barRow(name, amount, max, text, status, click) {
+      const width = Math.max(3, Math.min(100, value(amount) / Math.max(1, value(max)) * 100));
+      const color = status.includes('critical') || status.includes('at-risk') ? 'red' : status.includes('watch') ? 'yellow' : 'green';
+      return `<div class="bar-row clickable" onclick="${click || ''}"><span><span class="status-dot ${status}"></span>${name}</span><div class="track"><div class="fill ${color}" style="width:${width}%"></div></div><strong>${text}</strong></div>`;
     }
 
     function renderFlow() {
-      const total = aggregate(contextRows());
-      const steps = [
-        ['Starting Inventory', total.startingInventory],
-        ['Receipts In', total.monthlyReceipts],
-        ['Closures Out', -total.monthlyClosures],
-        ['Receipt / Closure Gap', total.receiptClosureGap]
-      ];
-      document.getElementById('flow').innerHTML = steps.map(step => `
-        <div class="flow-step">
-          <div class="rail-label">${step[0]}</div>
-          <div class="number">${display(step[1])}</div>
+      const total = aggregate(rows());
+      const throughput = -value(total.receiptClosureGap);
+      const max = Math.max(1, total.monthlyReceipts, total.monthlyClosures, Math.abs(throughput));
+      const runway = burnDownRunway(total, throughput);
+      const balanceText = throughput >= 0
+        ? `Closures exceeded incoming receipts by ${display(throughput)}. At this run rate, existing inventory can burn down.`
+        : `Closures were below incoming receipts by ${display(Math.abs(throughput))}. Inventory pressure is increasing.`;
+      document.getElementById('tabFlow').innerHTML = `
+        <div class="signal-callout ${throughput >= 0 ? 'good' : 'bad'}"><div class="label-line"><div class="label">Throughput Balance</div><span class="info" data-tip="Displayed as closures minus receipts. Positive is favorable because closures exceeded incoming work; negative means incoming work exceeded closures.">i</span></div><strong>${display(throughput)}</strong><div>${balanceText}</div></div>
+        <div class="forecast-stage">
+          <div class="chart-panel card forecast-visual"><div class="chart-title">Inventory Burn-Down Runway</div>
+            ${burnDownVisual(runway.points)}
+            <div class="legend"><span class="inventory">Inventory</span><span class="closures">Run-rate burn-down</span></div>
+          </div>
+          <div class="metric-stack">
+            <div class="metric-tile"><div class="label">Run-Rate Direction</div><strong>${throughput >= 0 ? 'Burning Down' : 'Growing'}</strong><div class="subvalue">${runway.direction}</div></div>
+            <div class="metric-tile"><div class="label">10% Inventory Reduction</div><strong>${runway.tenPctLabel}</strong><div class="subvalue">${runway.tenPctNote}</div></div>
+            <div class="metric-tile"><div class="label">25% Inventory Reduction</div><strong>${runway.quarterLabel}</strong><div class="subvalue">${runway.quarterNote}</div></div>
+          </div>
         </div>
-      `).join('');
+        <div class="chart-grid">
+          <div class="chart-panel card"><div class="chart-title">Receipts vs Closures</div>
+            ${barRow('Receipts In', total.monthlyReceipts, max, display(total.monthlyReceipts), '', '')}
+            ${barRow('Closures Out', total.monthlyClosures, max, display(total.monthlyClosures), 'meeting-target', '')}
+            ${barRow('Throughput Balance', Math.abs(throughput), max, display(throughput), throughput < 0 ? 'at-risk' : 'meeting-target', '')}
+          </div>
+          <div class="chart-panel card"><div class="chart-title">Inventory Position</div>
+            ${barRow('Starting Inventory', total.startingInventory, Math.max(1,total.startingInventory), display(total.startingInventory), '', '')}
+            ${barRow('In Standard', total.inStandard, Math.max(1,total.startingInventory), display(total.inStandard), 'meeting-target', '')}
+            ${barRow('Out of Standard', total.outOfStandard, Math.max(1,total.startingInventory), display(total.outOfStandard), 'at-risk', '')}
+          </div>
+        </div>`;
     }
 
-    function renderWorkforce() {
-      const ctx = selectedContext();
-      const total = aggregate(contextRows());
-      document.getElementById('workforcePulse').innerHTML = ctx ? Object.entries(ctx.brief).map(([key, text]) =>
-        `<div class="brief-row"><div class="rail-label">${key.replace(/([A-Z])/g, ' $1')}</div><div>${text}</div></div>`
-      ).join('') : '';
-      const max = Math.max(1, total.monthlyReceipts, total.monthlyClosures);
-      document.getElementById('flowBalance').innerHTML = `
-        <div class="driver-row"><div>Receipts</div><div class="track"><div class="fill" style="width:${total.monthlyReceipts / max * 100}%"></div></div><div>${display(total.monthlyReceipts)}</div></div>
-        <div class="driver-row"><div>Closures</div><div class="track"><div class="fill" style="width:${total.monthlyClosures / max * 100}%"></div></div><div>${display(total.monthlyClosures)}</div></div>
-        <div class="driver-row"><div>Gap</div><div class="track"><div class="fill" style="width:${Math.min(100, Math.abs(total.receiptClosureGap) / max * 100)}%"></div></div><div>${display(total.receiptClosureGap)}</div></div>
-      `;
-      document.getElementById('capacityBrief').innerHTML = `
-        <div class="brief-row"><div class="rail-label">FTE</div><div>${display(total.ftes)}</div></div>
-        <div class="brief-row"><div class="rail-label">Production Ratio</div><div>${displayPct(total.averageDailyReceipts ? total.averageDailyProduction / total.averageDailyReceipts : null)}</div></div>
-        <div class="brief-row"><div class="rail-label">Context</div><div>${ctx?.brief.staffing || 'Select a work category for staffing evidence.'}</div></div>
-      `;
+    function burnDownRunway(total, throughput) {
+      const inventory = value(total.startingInventory);
+      const points = Array.from({length: 7}, (_, index) => ({
+        period: index === 0 ? state.period : addMonths(state.period, index),
+        inventory: Math.max(0, inventory - throughput * index)
+      }));
+      const monthsTo = target => throughput > 0 ? Math.ceil(Math.max(0, inventory - target) / throughput) : null;
+      const tenTarget = inventory * 0.9;
+      const quarterTarget = inventory * 0.75;
+      const tenMonths = monthsTo(tenTarget);
+      const quarterMonths = monthsTo(quarterTarget);
+      return {
+        points,
+        direction: throughput >= 0
+          ? `Closures are ahead of receipts by ${display(throughput)} this period. This is a run-rate estimate, not a guarantee.`
+          : `Receipts are ahead of closures by ${display(Math.abs(throughput))}; inventory grows unless throughput improves.`,
+        tenPctLabel: tenMonths == null ? 'Not Possible At Current Rate' : tenMonths === 0 ? 'Already Reached' : `${tenMonths} mo`,
+        tenPctNote: tenMonths == null ? 'Closures must exceed receipts before inventory can burn down.' : `Estimated around ${periodLabel(addMonths(state.period, tenMonths))} if this throughput continues.`,
+        quarterLabel: quarterMonths == null ? 'Not Possible At Current Rate' : quarterMonths === 0 ? 'Already Reached' : `${quarterMonths} mo`,
+        quarterNote: quarterMonths == null ? 'Current flow adds pressure rather than reducing inventory.' : `Estimated around ${periodLabel(addMonths(state.period, quarterMonths))} if this throughput continues.`
+      };
+    }
+
+    function addMonths(period, offset) {
+      if (!period || !String(period).includes('-')) return period;
+      let [year, month] = String(period).split('-').map(Number);
+      month += offset;
+      while (month > 12) {
+        year += 1;
+        month -= 12;
+      }
+      return `${year}-${String(month).padStart(2, '0')}`;
+    }
+
+    function burnDownVisual(points) {
+      const w = 640, h = 220, pad = 28;
+      const maxValue = Math.max(1, ...points.map(item => value(item.inventory)));
+      const x = index => pad + (index / Math.max(1, points.length - 1)) * (w - pad * 2);
+      const y = amount => h - pad - (value(amount) / maxValue) * (h - pad * 2);
+      const line = points.map((item, index) => `${x(index)},${y(item.inventory)}`).join(' ');
+      const area = `${pad},${h-pad} ${line} ${w-pad},${h-pad}`;
+      const labels = points.map((item, index) => index % 2 === 0 ? `<text x="${x(index)}" y="${h - 8}" text-anchor="middle" font-size="11" fill="#66758b">${periodLabel(item.period)}</text>` : '').join('');
+      const dots = points.map((item, index) => `<circle cx="${x(index)}" cy="${y(item.inventory)}" r="4" fill="#bc3434"><title>${periodLabel(item.period)} inventory: ${display(item.inventory)}</title></circle>`).join('');
+      return `<svg class="forecast-svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="Inventory burn-down runway">
+        <polygon points="${area}" fill="rgba(188,52,52,.10)" />
+        <polyline points="${line}" fill="none" stroke="#bc3434" stroke-width="3" />
+        ${dots}
+        ${labels}
+      </svg>`;
+    }
+
+    function renderStaffing() {
+      const departments = departmentCapacityRows();
+      const selectedDept = selectedDepartmentCapacity();
+      const cap = capacitySummary(departments);
+      const topShortfall = cap.maxShortfall;
+      const activeDept = state.businessUnit === 'All' ? topShortfall || selectedDept || departments[0] : selectedDept;
+      const ratio = activeDept?.productionToReceiptsRatio;
+      const callout = activeDept?.capacityGap == null
+        ? `<div class="signal-callout warn"><div class="label">Department Capacity</div><strong>Capacity cannot be calculated for this period.</strong><div>Receipts, closures, and FTE are required. Choose the latest full operational period if this is a partial period.</div></div>`
+        : activeDept.capacityGap > 0.25
+          ? `<div class="signal-callout bad"><div class="label">Capacity Action</div><strong>Approximately +${activeDept.capacityGap.toFixed(1)} FTE-equivalent productive capacity would be required for ${activeDept.businessUnit} to keep pace with current incoming workload.</strong><div>This answers keeping pace with incoming work. It does not estimate staffing required to eliminate existing backlog.</div></div>`
+          : activeDept.capacityGap < -0.25
+            ? `<div class="signal-callout good"><div class="label">Capacity Surplus</div><strong>${Math.abs(activeDept.capacityGap).toFixed(1)} FTE-equivalent productive capacity surplus.</strong><div>${activeDept.businessUnit} appears sufficient to keep pace with incoming workload at observed productivity.</div></div>`
+            : `<div class="signal-callout good"><div class="label">No Current Capacity Shortfall</div><strong>${activeDept.businessUnit} is sufficient to meet incoming workload.</strong><div>Observed departmental productivity is keeping pace with receipts.</div></div>`;
+      const pressureRows = rows().slice().sort((a,b) => value(b.riskScore)-value(a.riskScore)).slice(0,6);
+      document.getElementById('tabStaffing').innerHTML = `
+        ${callout}
+        <div class="chart-grid">
+          <div class="chart-panel card"><div class="chart-title">Department Capacity Signal</div>
+            ${barRow('Department FTE', activeDept?.fte, Math.max(1,value(activeDept?.fte)), display(activeDept?.fte), '', '')}
+            ${barRow('Daily Receipts', activeDept?.dailyReceipts, Math.max(1,value(activeDept?.dailyReceipts),value(activeDept?.dailyProduction)), display(activeDept?.dailyReceipts), '', '')}
+            ${barRow('Daily Production', activeDept?.dailyProduction, Math.max(1,value(activeDept?.dailyReceipts),value(activeDept?.dailyProduction)), display(activeDept?.dailyProduction), ratio >= 1 ? 'meeting-target' : 'at-risk', '')}
+            ${barRow('Production / Receipts', value(ratio), 1, displayPct(ratio), ratio >= 1 ? 'meeting-target' : 'watch', '')}
+            <p class="hint">${productionMeaning(ratio)}</p>
+          </div>
+          <div class="chart-panel card"><div class="chart-title">Workload Pressure Areas</div>
+            ${pressureRows.length ? pressureRows.map(row => barRow(`${row.businessUnit} ${row.workCategory}`, value(row.riskScore), Math.max(1,...pressureRows.map(item => value(item.riskScore))), `${label(row.status)}`, cls(row.status), `openDetail('${row.businessUnit}','${row.workCategory}')`)).join('') : '<div class="hint">No significant workload pressure detected.</div>'}
+            <p class="hint">Work-category operational pressure is valid; FTE shortfall is shown only at department grain.</p>
+          </div>
+        </div>`;
     }
 
     function renderForecast() {
-      const list = data.analytics.forecasts.filter(item =>
-        (state.businessUnit === 'All' || item.businessUnit === state.businessUnit) &&
-        (state.workCategory === 'All' || item.workCategory === state.workCategory)
-      ).slice(0, 10);
-      document.getElementById('forecastList').innerHTML = list.map(item => `
-        <div class="mover">
-          <div class="mover-top"><strong>${item.businessUnit} ${item.workCategory}</strong><span>${item.forecastPeriod}</span></div>
-          <div class="subtle">Inventory ${display(item.startingInventory)} | OOS ${display(item.outOfStandard)} | SLA ${displayPct(item.sla)} | ${item.method}</div>
+      const forecast = selectedForecastContext();
+      if (!forecast) {
+        document.getElementById('tabForecast').innerHTML = '<div class="hint">No forecast context is available for this selection.</div>';
+        return;
+      }
+      const department = selectedDepartmentCapacity();
+      const currentFte = value(department?.fte);
+      const fteValue = Number(document.getElementById('forecastFte')?.value || currentFte || 0);
+      const receiptValue = Number(document.getElementById('forecastReceipts')?.value || 0);
+      const prodValue = Number(document.getElementById('forecastProd')?.value || 0);
+      const rawTarget = document.getElementById('forecastTarget')?.value ?? '';
+      const target = rawTarget === '' ? null : Number(rawTarget);
+      const adjusted = scenarioProjection(forecast);
+      const latest = adjusted[0] || {};
+      const last = adjusted[adjusted.length - 1] || {};
+      const outlook = last.sla != null && latest.sla != null ? last.sla - latest.sla : null;
+      const outlookLabel = outlook == null ? 'Directional' : outlook > 0.005 ? 'Improving' : outlook < -0.005 ? 'Deteriorating' : 'Stable';
+      const crossover = adjusted.slice(1).find(item => (item.throughputBalance || 0) > 0)?.period;
+      const clearance = target == null ? null : adjusted.slice(1).find(item => item.inventory != null && item.inventory <= target)?.period;
+      const finalPeriod = adjusted[adjusted.length - 1]?.period;
+      const narrative = forecastNarrative(adjusted, crossover, target, clearance);
+      document.getElementById('tabForecast').innerHTML = `
+        <div class="signal-callout"><div class="label-line"><div class="label">Forecast</div><span class="info" data-tip="This is an adaptive directional forecast. With limited history it uses recent movement; with more history the backend is structured to support seasonality, backtesting, and stronger uncertainty estimates.">i</span></div><strong>${outlookLabel}</strong><div>${forecast.confidence?.label || 'Low'} confidence: ${forecast.confidence?.rationale || 'Limited source history.'}</div></div>
+        <div class="forecast-controls">
+          <div class="control-card"><div class="label-line"><label>Staffing</label><span class="info" data-tip="Department-level what-if. Additional FTE uses observed department closures per FTE. It is not assigned to a specific work bucket.">i</span></div><div class="subvalue">Current departmental FTE: ${display(currentFte)}</div><div class="stepper"><button type="button" data-step-fte="-1">-</button><input id="forecastFte" type="number" value="${fteValue}" step="1"><button type="button" data-step-fte="1">+</button></div></div>
+          <div class="control-card"><div class="label-line"><label>Expected Workload</label><span class="info" data-tip="Changes projected incoming receipts for the selected forecast context.">i</span></div><input id="forecastReceipts" type="hidden" value="${receiptValue}"><div class="choice-row">${scenarioChoice('forecastReceipts', -0.10, '-10%', receiptValue)}${scenarioChoice('forecastReceipts', 0, 'Current', receiptValue)}${scenarioChoice('forecastReceipts', 0.10, '+10%', receiptValue)}</div></div>
+          <div class="control-card"><div class="label-line"><label>Productivity</label><span class="info" data-tip="Changes projected closures by applying a productivity lift or drag to observed output.">i</span></div><input id="forecastProd" type="hidden" value="${prodValue}"><div class="choice-row">${scenarioChoice('forecastProd', -0.05, '-5%', prodValue)}${scenarioChoice('forecastProd', 0, 'Current', prodValue)}${scenarioChoice('forecastProd', 0.05, '+5%', prodValue)}</div></div>
+          <div class="control-card"><div class="label-line"><label>Backlog Goal</label><span class="info" data-tip="Optional target inventory threshold. If left blank, no backlog-goal result is calculated.">i</span></div><input id="forecastTarget" type="number" value="${rawTarget}" placeholder="Target inventory" step="100"></div>
         </div>
-      `).join('');
+        <button class="secondary-btn" id="forecastResetBtn" type="button">Reset To Baseline Forecast</button>
+        <div class="forecast-stage">
+          <div class="chart-panel card forecast-visual"><div class="chart-title">Interactive Backlog / Burn-Down Forecast</div>
+            ${forecastVisual(adjusted, target)}
+            <div class="legend"><span>Receipts</span><span class="closures">Closures</span><span class="inventory">Inventory</span></div>
+          </div>
+          <div class="metric-stack">
+            <div class="metric-tile"><div class="label">Crossover</div><strong>${crossover ? periodLabel(crossover) : 'No Crossover Expected'}</strong><div class="subvalue">${crossover ? `Projected closures begin exceeding incoming workload in ${periodLabel(crossover)}.` : 'Projected closures remain below incoming workload throughout the forecast horizon.'}</div></div>
+            <div class="metric-tile"><div class="label">Backlog Goal</div><strong>${target == null ? 'Define Target' : clearance ? `Projected ${periodLabel(clearance)}` : 'Not Reached Within Forecast Horizon'}</strong><div class="subvalue">${target == null ? 'Enter a target inventory to calculate goal timing.' : clearance ? `Projected inventory reaches the configured target of ${display(target)}.` : `Projected backlog remains above the configured target of ${display(target)} through ${periodLabel(finalPeriod)}.`}</div></div>
+            <div class="metric-tile"><div class="label">Expected SLA</div><strong>${displayPct(last.sla)}</strong><div class="subvalue">${last.confidence?.label || forecast.confidence?.label || 'Low'} confidence at horizon.</div></div>
+          </div>
+        </div>
+        <div class="chart-grid">
+          <div class="chart-panel card"><div class="chart-title">If Current Trends Continue</div>
+            ${forecastTable(adjusted)}
+            <div class="note-strip"><span>Crossover: ${crossover ? periodLabel(crossover) : 'No crossover expected'}</span><span>Backlog goal: ${target == null ? 'No target set' : clearance ? periodLabel(clearance) : 'Not reached in horizon'}</span></div>
+          </div>
+          <div class="chart-panel card"><div class="chart-title">Backlog / Burn-Down Outlook</div>
+            ${adjusted.map(item => barRow(periodLabel(item.period), Math.max(0,value(item.inventory)), Math.max(1,...adjusted.map(x => value(x.inventory))), `${display(item.inventory)} inv`, (item.throughputBalance || 0) >= 0 ? 'meeting-target' : 'at-risk', '')).join('')}
+            <p class="hint">${narrative}</p>
+            <div class="insight"><div class="insight-type">Burn-Down Math</div>${burnDownMath(adjusted)}</div>
+            <div class="insight"><div class="insight-type">Primary Drivers</div>${(forecast.primaryDrivers || []).join('; ')}</div>
+          </div>
+        </div>`;
+      document.getElementById('forecastFte').addEventListener('input', renderForecast);
+      document.getElementById('forecastTarget').addEventListener('input', renderForecast);
+      document.querySelectorAll('[data-step-fte]').forEach(btn => btn.onclick = () => {
+        const input = document.getElementById('forecastFte');
+        input.value = Number(input.value || currentFte || 0) + Number(btn.dataset.stepFte);
+        renderForecast();
+      });
+      document.querySelectorAll('[data-scenario-target]').forEach(btn => btn.onclick = () => {
+        document.getElementById(btn.dataset.scenarioTarget).value = btn.dataset.scenarioValue;
+        renderForecast();
+      });
+      document.getElementById('forecastResetBtn').onclick = () => {
+        document.getElementById('forecastFte').value = currentFte || 0;
+        document.getElementById('forecastProd').value = 0;
+        document.getElementById('forecastReceipts').value = 0;
+        document.getElementById('forecastTarget').value = '';
+        renderForecast();
+      };
+    }
+
+    function scenarioChoice(target, value, text, current) {
+      return `<button type="button" class="${Number(current) === value ? 'active' : ''}" data-scenario-target="${target}" data-scenario-value="${value}">${text}</button>`;
+    }
+
+    function periodLabel(period) {
+      if (!period || !String(period).includes('-')) return period || 'n/a';
+      const [year, month] = String(period).split('-').map(Number);
+      return new Date(year, month - 1, 1).toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+    }
+
+    function forecastNarrative(projection, crossover, target, clearance) {
+      const first = projection[0] || {};
+      const last = projection[projection.length - 1] || {};
+      const inventoryDelta = value(last.inventory) - value(first.inventory);
+      const flow = value(last.throughputBalance);
+      const inventoryText = inventoryDelta > 0 ? 'Projected backlog is growing.' : inventoryDelta < 0 ? 'Projected backlog is reducing.' : 'Projected backlog is stable.';
+      const flowText = flow >= 0 ? 'Projected closures exceed incoming workload by the end of the horizon.' : 'Projected incoming workload remains above closures by the end of the horizon.';
+      const crossoverText = crossover ? ` Crossover occurs in ${periodLabel(crossover)}.` : ' No crossover is expected within the forecast horizon.';
+      const targetText = target == null ? ' No backlog goal is configured.' : clearance ? ` Backlog goal is projected in ${periodLabel(clearance)}.` : ' Backlog goal is not reached within the forecast horizon.';
+      return `${inventoryText} ${flowText}${crossoverText}${targetText}`;
+    }
+
+    function burnDownMath(projection) {
+      const current = projection[0] || {};
+      const future = projection.slice(1);
+      if (!future.length || current.inventory == null) return 'Insufficient forecast detail to reconcile inventory movement.';
+      const netThroughput = future.reduce((sum, item) => sum + value(item.throughputBalance), 0);
+      const ending = future[future.length - 1];
+      const direction = netThroughput >= 0 ? 'reducing' : 'increasing';
+      return `Projected closures ${netThroughput >= 0 ? 'exceed' : 'trail'} receipts by ${display(Math.abs(netThroughput))} over the horizon, ${direction} inventory from ${display(current.inventory)} to approximately ${display(ending.inventory)}. Inventory is rolled forward as prior inventory + receipts - closures.`;
+    }
+
+    function forecastVisual(projection, target) {
+      const w = 640, h = 220, pad = 28;
+      const points = projection.map((item, index) => ({...item, index}));
+      const maxValue = Math.max(1, ...points.flatMap(item => [value(item.receipts), value(item.closures), value(item.inventory), value(target)]));
+      const x = index => pad + (index / Math.max(1, points.length - 1)) * (w - pad * 2);
+      const y = amount => h - pad - (value(amount) / maxValue) * (h - pad * 2);
+      const line = field => points.map(item => `${x(item.index)},${y(item[field])}`).join(' ');
+      const labels = points.map(item => `<text x="${x(item.index)}" y="${h - 8}" text-anchor="middle" font-size="11" fill="#66758b">${periodLabel(item.period)}</text>`).join('');
+      const targetY = target == null ? null : y(target);
+      const dots = (field, color) => points.map(item => `<circle cx="${x(item.index)}" cy="${y(item[field])}" r="4" fill="${color}"><title>${field}: ${display(item[field])}</title></circle>`).join('');
+      return `<svg class="forecast-svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="Forecast lines for receipts closures and inventory">
+        ${targetY == null ? '' : `<line x1="${pad}" y1="${targetY}" x2="${w-pad}" y2="${targetY}" stroke="#b77916" stroke-dasharray="5 5" /><text x="${w-pad}" y="${Math.max(14,targetY-6)}" text-anchor="end" font-size="11" fill="#8a5b12">target</text>`}
+        <polyline points="${line('receipts')}" fill="none" stroke="#2563a9" stroke-width="3" />
+        <polyline points="${line('closures')}" fill="none" stroke="#177245" stroke-width="3" />
+        <polyline points="${line('inventory')}" fill="none" stroke="#bc3434" stroke-width="3" />
+        ${dots('receipts', '#2563a9')}
+        ${dots('closures', '#177245')}
+        ${dots('inventory', '#bc3434')}
+        ${labels}
+      </svg>`;
+    }
+
+    function renderNothingChanges() {
       const ctx = selectedContext();
-      document.getElementById('nothingChanges').innerHTML = ctx ? Object.entries(ctx.ifNothingChanges).map(([key, item]) =>
-        `<div class="brief-row"><div class="rail-label">${key}</div><div>${typeof item === 'number' ? display(item) : item}</div></div>`
-      ).join('') : '';
+      if (!ctx) return '<div class="hint">Select a work category to view outlook.</div>';
+      const n = ctx.ifNothingChanges;
+      return `
+        ${barRow('Projected Inventory', n.projectedInventory, Math.max(1,n.projectedInventory), display(n.projectedInventory), '', '')}
+        ${barRow('Projected OOS', n.projectedOutOfStandard, Math.max(1,n.projectedInventory), display(n.projectedOutOfStandard), 'at-risk', '')}
+        ${barRow('Projected SLA', n.projectedSla || 0, 1, displayPct(n.projectedSla), n.projectedSla < data.metadata.slaTarget ? 'at-risk' : 'meeting-target', '')}
+        <p class="hint">${n.summary}</p>`;
     }
 
-    function renderTakeEngine() {
-      const take = selectedContext()?.whatWouldItTake;
-      document.getElementById('takeEngine').innerHTML = take ? `
-        <div class="brief-row"><div class="rail-label">Target</div><div>${take.target}</div></div>
-        <div class="brief-row"><div class="rail-label">OOS Reduction</div><div>${display(take.oosReductionNeeded)}</div></div>
-        <div class="brief-row"><div class="rail-label">FTE Equivalent</div><div>${take.estimatedFteEquivalent == null ? 'n/a' : take.estimatedFteEquivalent}</div></div>
-        <div class="brief-row"><div class="rail-label">Productivity Lift</div><div>${displayPct(take.estimatedProductivityLift)}</div></div>
-        <div class="brief-row"><div class="rail-label">Assumption</div><div>${take.assumption}</div></div>
-      ` : '';
+    function forecastTable(projection) {
+      return `<div class="forecast-row header"><span>Period</span><span>Receipts</span><span>Closures</span><span>Balance</span><span>Inventory</span><span>OOS</span><span>SLA</span></div>
+        ${projection.map(item => `<div class="forecast-row"><strong>${periodLabel(item.period)}</strong><span>${forecastCell(item.receipts, 'Receipts require an operational base period with source receipt data.')}</span><span>${forecastCell(item.closures, 'Closures require an operational base period with source closure data.')}</span><span class="${(item.throughputBalance || 0) >= 0 ? 'trend good' : 'trend bad'}">${forecastCell(item.throughputBalance, 'Throughput balance requires projected receipts and closures.')}</span><span>${forecastCell(item.inventory, 'Inventory requires source inventory and projected flow.')}</span><span>${forecastCell(item.outOfStandard, 'OOS requires source out-of-standard inventory.')}</span><span>${displayPct(item.sla)}<br><small>${item.confidence?.label || ''}</small></span></div>`).join('')}`;
     }
 
-    function scenarioBase() {
-      return aggregate(contextRows().filter(row => row.monthlyClosures || row.ftes));
+    function forecastCell(value, reason) {
+      return value == null || Number.isNaN(Number(value)) ? `<span title="${reason}">Unavailable</span>` : display(value);
     }
 
-    function renderScenario() {
-      const base = scenarioBase();
-      const addFte = Number(document.getElementById('scenarioFte').value || 0);
-      const prodChange = Number(document.getElementById('scenarioProduction').value || 0) / 100;
-      const receiptChange = Number(document.getElementById('scenarioReceipts').value || 0) / 100;
-      const closureOverride = Number(document.getElementById('scenarioClosures').value || 0);
-      const closuresPerFte = base.ftes ? base.monthlyClosures / base.ftes : 0;
-      const adjustedReceipts = Math.max(0, base.monthlyReceipts * (1 + receiptChange));
-      const adjustedClosures = closureOverride > 0 ? closureOverride : Math.max(0, base.monthlyClosures * (1 + prodChange) + addFte * closuresPerFte);
-      const adjustedGap = adjustedReceipts - adjustedClosures;
-      const outRate = base.startingInventory ? base.outOfStandard / base.startingInventory : 0;
-      const projectedOos = Math.max(0, base.outOfStandard + Math.max(0, adjustedGap) * outRate + Math.min(0, adjustedGap) * 0.25);
-      const projectedSla = base.startingInventory ? 1 - projectedOos / base.startingInventory : null;
-      document.getElementById('scenarioResult').innerHTML =
-        `<strong>Baseline vs Scenario:</strong> receipts ${display(base.monthlyReceipts)} to ${display(adjustedReceipts)}, closures ${display(base.monthlyClosures)} to ${display(adjustedClosures)}, gap ${display(adjustedGap)}. Estimated OOS ${display(projectedOos)} and SLA near ${displayPct(projectedSla)}. Directional only.`;
+    function scenarioProjection(forecast) {
+      const projection = (forecast.projection || []).map(item => ({...item}));
+      const department = selectedDepartmentCapacity();
+      const targetFte = Number(document.getElementById('forecastFte')?.value || department?.fte || 0);
+      const fteChange = targetFte - value(department?.fte);
+      const prodChange = Number(document.getElementById('forecastProd')?.value || 0);
+      const receiptChange = Number(document.getElementById('forecastReceipts')?.value || 0);
+      const current = projection[0] || {};
+      const closuresPerFte = department?.closuresPerFte || (current.fte ? value(current.closures) / value(current.fte) : 0);
+      const adjusted = [];
+      projection.forEach((item, index) => {
+        if (index === 0) {
+          adjusted.push(item);
+          return;
+        }
+        const receipts = item.receipts == null ? null : item.receipts * (1 + receiptChange);
+        const closures = item.closures == null ? null : item.closures * (1 + prodChange) + fteChange * closuresPerFte;
+        const throughputBalance = receipts == null || closures == null ? null : closures - receipts;
+        const prior = adjusted[index - 1];
+        const inventory = item.inventory == null || throughputBalance == null ? null : Math.max(0, value(prior.inventory) + value(receipts) - value(closures));
+        const outRate = current.inventory ? value(current.outOfStandard) / value(current.inventory) : 0;
+        const outOfStandard = inventory == null ? null : Math.max(0, value(item.outOfStandard) + Math.max(0, -value(throughputBalance)) * outRate - Math.max(0, value(throughputBalance)) * 0.15);
+        const sla = inventory ? 1 - outOfStandard / inventory : null;
+        adjusted.push({...item, receipts, closures, throughputBalance, inventory, outOfStandard, sla});
+      });
+      return adjusted;
     }
 
-    function renderCorrelation() {
-      const index = Number(document.getElementById('correlationSelect').value || 0);
-      const item = data.analytics.correlationExplorer[index];
-      if (!item) return;
-      document.getElementById('correlationText').textContent = item.interpretation;
-      const xs = item.points.map(p => value(p.x));
-      const ys = item.points.map(p => value(p.y));
-      const minX = Math.min(...xs), maxX = Math.max(...xs), minY = Math.min(...ys), maxY = Math.max(...ys);
-      document.getElementById('scatter').innerHTML = item.points.map(point => {
-        const x = maxX === minX ? 50 : (value(point.x) - minX) / (maxX - minX) * 92 + 4;
-        const y = maxY === minY ? 50 : 96 - ((value(point.y) - minY) / (maxY - minY) * 92 + 4);
-        return `<span class="dot" style="left:${x}%; top:${y}%" title="${point.businessUnit} ${point.workCategory} ${point.period}"></span>`;
-      }).join('');
+    function renderIntelligence() {
+      const current = rows().slice().sort((a,b) => value(b.riskScore)-value(a.riskScore));
+      document.getElementById('tabIntelligence').innerHTML = `
+        <div class="chart-grid">
+          <div class="chart-panel card"><div class="chart-title">Early Warnings</div>
+            ${current.filter(row => row.earlyWarning?.active).slice(0,8).map(row => `<div class="insight clickable" onclick="openDetail('${row.businessUnit}','${row.workCategory}')"><div class="insight-type">Early Warning</div><strong>${row.businessUnit} ${row.workCategory}</strong><div>${row.earlyWarning.evidence.join(' ')}</div></div>`).join('') || '<div class="hint">No active early warnings for this context.</div>'}
+          </div>
+          <div class="chart-panel card"><div class="chart-title">Likely Drivers</div>
+            ${(selectedContext()?.driverBars || []).map(item => barRow(item.label, item.strength, 1, Math.round(item.strength*100), '', '')).join('') || '<div class="hint">Select a work category for driver bars.</div>'}
+          </div>
+        </div>`;
     }
 
-    function renderDetails() {
-      document.getElementById('detailRows').innerHTML = contextRows().map(row => `
-        <tr>
-          <td>${row.businessUnit}</td><td>${row.workCategory}</td><td><span class="status ${statusClass(row.status)}">${labelStatus(row.status)}</span></td>
-          <td>${displayPct(row.monthlyStartingSla || row.calculatedSla)}</td><td>${display(row.startingInventory)}</td><td>${display(row.outOfStandard)}</td>
-          <td>${display(row.monthlyReceipts)}</td><td>${display(row.monthlyClosures)}</td><td>${display(row.receiptClosureGap)}</td><td>${display(row.ftes)}</td>
-        </tr>
-      `).join('');
-    }
-
-    function renderMeeting() {
-      const meeting = data.analytics.meetingMode;
-      const cards = [
-        ['Current State', `SLA ${displayPct(meeting.currentState.sla)}, OOS ${display(meeting.currentState.outOfStandard)}`],
-        ['Top Change', meeting.topChange ? `${meeting.topChange.businessUnit} ${meeting.topChange.workCategory}: ${meeting.topChange.display}` : 'n/a'],
-        ['Top Improvement', meeting.topImprovement ? `${meeting.topImprovement.businessUnit} ${meeting.topImprovement.workCategory}: ${meeting.topImprovement.display}` : 'n/a'],
-        ['Top Deterioration', meeting.topDeterioration ? `${meeting.topDeterioration.businessUnit} ${meeting.topDeterioration.workCategory}: ${meeting.topDeterioration.display}` : 'n/a'],
-        ['Capacity Concern', `${meeting.topCapacityConcern.businessUnit} ${meeting.topCapacityConcern.workCategory}`],
-        ['Outlook', `${meeting.outlook.businessUnit} ${meeting.outlook.workCategory}: ${meeting.outlook.summary}`]
-      ];
-      document.getElementById('meetingGrid').innerHTML = cards.map(card => `
-        <div class="meeting-card"><div class="rail-label">${card[0]}</div><h2>${card[1]}</h2></div>
-      `).join('');
+    function renderDetail() {
+      document.getElementById('tabDetail').innerHTML = `<div class="table-wrap"><table><thead><tr><th>BU</th><th>Category</th><th>Status</th><th>Source SLA</th><th>Calc SLA</th><th>Inventory</th><th>OOS</th><th>Receipts</th><th>Closures</th><th>Balance</th><th>FTE</th></tr></thead><tbody>${rows().map(row => `<tr class="clickable" onclick="openDetail('${row.businessUnit}','${row.workCategory}')"><td>${row.businessUnit}</td><td>${row.workCategory}</td><td>${label(row.status)}</td><td>${displayPct(row.monthlyStartingSla)}</td><td>${displayPct(row.calculatedSla)}</td><td>${display(row.startingInventory)}</td><td>${display(row.outOfStandard)}</td><td>${display(row.monthlyReceipts)}</td><td>${display(row.monthlyClosures)}</td><td>${display(row.throughputBalance)}</td><td>${display(row.ftes)}</td></tr>`).join('')}</tbody></table></div>`;
     }
 
     function renderRail() {
       const ctx = selectedContext();
-      const total = aggregate(contextRows());
-      document.getElementById('railContent').innerHTML = `
-        <div class="rail-card"><div class="rail-label">Current State</div><div class="rail-value">${displayPct(total.sla)} SLA | ${display(total.outOfStandard)} OOS</div></div>
-        <div class="rail-card"><div class="rail-label">Status</div><div class="rail-value">${ctx ? labelStatus(ctx.status) : 'Enterprise'}</div></div>
-        <div class="rail-card"><div class="rail-label">Early Warning</div><div class="rail-value">${ctx?.earlyWarning?.active ? ctx.earlyWarning.evidence.join(' ') : 'No active early warning for selected context.'}</div></div>
-        <div class="rail-card"><div class="rail-label">Top Driver</div><div class="rail-value">${ctx?.driverBars?.[0]?.label || 'No dominant driver'}</div></div>
-        <div class="rail-card"><div class="rail-label">Outlook</div><div class="rail-value">${ctx?.ifNothingChanges?.summary || 'Select a context for outlook.'}</div></div>
-        <div class="rail-card"><div class="rail-label">Confidence</div><div class="rail-value">${data.analytics.modelDiagnostics.confidenceRationale}</div></div>
-      `;
+      const forecast = selectedForecastContext();
+      const dept = selectedDepartmentCapacity();
+      const lever = dept?.capacityStatus === 'SHORTFALL'
+        ? `${dept.businessUnit} has an estimated ${Math.abs(dept.capacityGap).toFixed(1)} FTE-equivalent departmental capacity shortfall. ${ctx?.workCategory || 'The selected work category'} is workload context, not a staffing allocation claim.`
+        : ctx?.metrics?.throughputBalance < 0
+          ? 'Improve closures or reduce receipts enough to turn throughput balance positive.'
+          : dept?.capacityStatus === 'SURPLUS'
+            ? `${dept.businessUnit} has departmental capacity surplus at observed productivity; surplus throughput may support backlog reduction.`
+            : 'Capacity is currently sufficient based on available department-level staffing data.';
+      document.getElementById('rail').innerHTML = ctx ? `
+        <div class="insight"><div class="insight-type">Current State</div><div>${ctx.brief.whyItMatters}</div></div>
+        <div class="insight"><div class="insight-type">Why It Matters</div><div>${ctx.brief.evidence || 'No dominant evidence item.'}</div></div>
+        <div class="insight"><div class="insight-type">Primary Driver</div><div>${primaryDriverText(selectedRow())}</div></div>
+        <div class="insight"><div class="insight-type">Early Warning</div><div>${ctx.earlyWarning?.active ? ctx.earlyWarning.evidence.join(' ') : 'No active early-warning signal for selected context.'}</div></div>
+        <div class="insight"><div class="insight-type">Outlook</div><div>${forecast?.projection?.[1]?.sla == null ? ctx.ifNothingChanges?.summary : `Next projected SLA is ${displayPct(forecast.projection[1].sla)} with ${forecast.projection[1].confidence?.label || forecast.confidence?.label} confidence.`}</div></div>
+        <div class="insight"><div class="insight-type">Recommended Lever</div><div>${lever}</div></div>
+      ` : '<div class="hint">Select a work category for intelligence.</div>';
     }
 
-    setup();
+    function primaryDriverText(row) {
+      if (!row) return 'No clear driver identified.';
+      if (row.throughputBalance != null && row.throughputBalance < 0) return `Incoming work exceeded closures by ${display(Math.abs(row.throughputBalance))}.`;
+      if ((row.outOfStandardChange || 0) > 0) return `Out-of-standard inventory increased by ${display(row.outOfStandardChange)}.`;
+      if (row.productionToReceiptsRatio != null && row.productionToReceiptsRatio < 1) return `Production is ${displayPct(row.productionToReceiptsRatio)} of incoming volume.`;
+      if ((row.monthlyStartingSla || row.calculatedSla || 1) < data.metadata.slaTarget) return `SLA is below the ${displayPct(data.metadata.slaTarget)} target.`;
+      return 'Current indicators are stable; no clear driver identified.';
+    }
+
+    function renderNotes() {
+      document.getElementById('dataQuality').innerHTML = (data.analytics.dataQuality.warnings || []).map(w => `<div class="insight"><div class="insight-type">${w.severity}</div>${w.summary}</div>`).join('') || '<p>No data quality warnings detected.</p>';
+      const d = data.analytics.modelDiagnostics;
+      const completeness = (data.metadata.periodCompleteness || []).map(item => `${item.period}: ${item.isFullOperationalPeriod ? 'full' : 'partial'}`).join('<br>');
+      document.getElementById('modelStatus').innerHTML = `<p><strong>${d.analyticalMaturity}</strong></p><p>${d.confidenceRationale}</p><p class="hint">Latest available: ${data.metadata.latestPeriod}<br>Latest full operational: ${data.metadata.latestFullContextPeriod}</p><p class="hint">${completeness}</p><p class="hint">Enabled: ${d.enabledMethods.join(', ')}</p>`;
+    }
+
+    function renderGuideOptions() {
+      const options = [
+        ['Are we healthy?', 'pulse', 'Shows executive health, ranked attention items, and enterprise context.'],
+        ['Is backlog growing?', 'flow', 'Shows positive-is-good throughput balance and inventory pressure.'],
+        ['Do we have capacity?', 'staffing', 'Translates staffing shortfall, sufficient capacity, or surplus into plain language.'],
+        ['What happens next?', 'forecast', 'Opens the interactive burn-down forecast and scenario controls.'],
+        ['Why is it happening?', 'intelligence', 'Shows early warnings, supported drivers, and model context.'],
+        ['Prepare for a meeting', 'pulse:presentation', 'Switches to presentation mode with the pulse view.']
+      ];
+      document.getElementById('guideOptions').innerHTML = options.map(([title, view, text]) => `<button class="guide-option" data-guide="${view}"><strong>${title}</strong><span>${text}</span></button>`).join('');
+      document.querySelectorAll('.guide-option').forEach(btn => btn.onclick = () => {
+        const [view, mode] = btn.dataset.guide.split(':');
+        state.view = view;
+        state.tab = view;
+        closeModal('guideModal');
+        if (mode === 'presentation' && !document.body.classList.contains('presentation-mode')) togglePresentation();
+        render();
+      });
+    }
+
+    function filterBusiness(bu) {
+      state.businessUnit = bu;
+      state.workCategory = 'All';
+      render();
+    }
+
+    function openDetail(bu, cat) {
+      state.businessUnit = bu;
+      state.workCategory = cat;
+      render();
+      const row = selectedRow();
+      const ctx = selectedContext();
+      document.getElementById('detailTitle').textContent = `${bu} ${cat}`;
+      document.getElementById('detailHint').textContent = `${displayPct(row.monthlyStartingSla || row.calculatedSla)} SLA | ${label(row.status)} | ${row.period}`;
+      document.getElementById('detailBody').innerHTML = `
+        <div class="chart-grid">
+          <div class="chart-panel card"><div class="chart-title">Operational Snapshot</div>
+            ${barRow('Source SLA', row.monthlyStartingSla, 1, displayPct(row.monthlyStartingSla), cls(row.status), '')}
+            ${barRow('Calculated SLA', row.calculatedSla, 1, displayPct(row.calculatedSla), cls(row.status), '')}
+            ${barRow('Inventory', row.startingInventory, Math.max(1,row.startingInventory), display(row.startingInventory), '', '')}
+            ${barRow('Out of Standard', row.outOfStandard, Math.max(1,row.startingInventory), display(row.outOfStandard), 'at-risk', '')}
+            ${barRow('Throughput Balance', Math.abs(row.throughputBalance), Math.max(1,Math.abs(row.throughputBalance),row.monthlyReceipts,row.monthlyClosures), display(row.throughputBalance), row.throughputBalance < 0 ? 'at-risk' : 'meeting-target', '')}
+          </div>
+          <div class="chart-panel card"><div class="chart-title">Intelligence Brief</div>
+            ${Object.entries(ctx.brief).map(([key,text]) => `<div class="insight"><div class="insight-type">${key}</div>${text}</div>`).join('')}
+          </div>
+        </div>`;
+      openModal('detailModal');
+    }
+
+    function openModal(id) { document.getElementById(id).classList.add('open'); }
+    function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+    function togglePresentation() {
+      document.body.classList.toggle('presentation-mode');
+      document.getElementById('presentationBtn').classList.toggle('active', document.body.classList.contains('presentation-mode'));
+      document.getElementById('presentationBtn').textContent = document.body.classList.contains('presentation-mode') ? 'Exit Presentation' : 'Presentation Mode';
+    }
+
+    function finishLoading() {
+      document.body.classList.remove('loading');
+      document.getElementById('loadingScreen')?.remove();
+    }
+
+    function showLoadingThen(callback, duration = normalLoadingMs) {
+      let loading = document.getElementById('loadingScreen');
+      if (!loading) {
+        loading = document.createElement('div');
+        loading.id = 'loadingScreen';
+        loading.className = 'loading-screen';
+        loading.innerHTML = `<div class="loading-card"><div class="loading-brand"><div><div class="loading-title">Refreshing WorkforceIQ</div><div class="loading-subtitle">Updating the local dashboard view.</div></div><div class="logo">WFM<span>IQ</span></div></div><div class="loading-spinner" aria-hidden="true"></div><div class="loading-note">Using the latest generated dashboard data available in this folder.</div></div>`;
+        document.body.appendChild(loading);
+      }
+      document.body.classList.add('loading');
+      setTimeout(() => {
+        callback();
+        finishLoading();
+      }, duration);
+    }
+
+    function boot() {
+      if (loadingPreview) {
+        document.body.classList.add('loading');
+        setTimeout(() => {
+          setup();
+          finishLoading();
+        }, 4500);
+      } else if (navigationType === 'reload') {
+        setup();
+        finishLoading();
+      } else {
+        document.body.classList.add('loading');
+        setTimeout(() => {
+          setup();
+          finishLoading();
+        }, normalLoadingMs);
+      }
+    }
+
+    boot();
   </script>
 </body>
 </html>

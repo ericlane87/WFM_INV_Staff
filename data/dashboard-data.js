@@ -1,8 +1,38 @@
 // AUTO-GENERATED DASHBOARD DATA - DO NOT EDIT MANUALLY
 window.DASHBOARD_DATA = {
   "metadata": {
-    "lastRefreshed": "2026-09-24T15:01:01",
-    "sourceFile": "Sample Report.txt",
+    "lastRefreshed": "2026-09-30T15:31:21",
+    "sourceFile": "/Users/ericlane/Desktop/Work Projects/Monica/Saffing and Inventoryy /Sample Report.txt",
+    "sourceFiles": [
+      "/Users/ericlane/Desktop/Work Projects/Monica/Saffing and Inventoryy /Sample Report.txt"
+    ],
+    "sourceStoreFile": "/Users/ericlane/Desktop/Work Projects/Monica/Saffing and Inventoryy /data/source-records.json",
+    "sourceMerge": [
+      {
+        "sourceFile": "/Users/ericlane/Desktop/Work Projects/Monica/Saffing and Inventoryy /data/source-records.json",
+        "acceptedPeriods": [
+          "2026-01",
+          "2026-06",
+          "2026-07",
+          "2026-08",
+          "2026-09"
+        ],
+        "skippedDuplicatePeriods": [],
+        "role": "existing source data before this run"
+      },
+      {
+        "sourceFile": "/Users/ericlane/Desktop/Work Projects/Monica/Saffing and Inventoryy /Sample Report.txt",
+        "acceptedPeriods": [],
+        "skippedDuplicatePeriods": [
+          "2026-01",
+          "2026-06",
+          "2026-07",
+          "2026-08",
+          "2026-09"
+        ]
+      }
+    ],
+    "sourceSheet": null,
     "recordCount": 700,
     "featureRows": 70,
     "latestPeriod": "2026-09",
@@ -14,130 +44,43 @@ window.DASHBOARD_DATA = {
       "2026-08",
       "2026-09"
     ],
-    "sourceBlocks": [
+    "sourceBlocks": [],
+    "periodCompleteness": [
       {
-        "row": 1,
-        "metric": "Monthly Starting SLA %",
-        "monthLabels": [
-          "Jan-26",
-          "Jun-26",
-          "Jul-26",
-          "Aug-26",
-          "Sep-26"
-        ]
+        "period": "2026-01",
+        "isFullOperationalPeriod": true,
+        "missingOperationalFields": [],
+        "rowCount": 13
       },
       {
-        "row": 1,
-        "metric": "Starting Inventory",
-        "monthLabels": [
-          "Jan-26",
-          "Jun-26",
-          "Jul-26",
-          "Aug-26",
-          "Sep-26"
-        ]
+        "period": "2026-06",
+        "isFullOperationalPeriod": true,
+        "missingOperationalFields": [],
+        "rowCount": 13
       },
       {
-        "row": 1,
-        "metric": "In Standard",
-        "monthLabels": [
-          "Jan-26",
-          "Jun-26",
-          "Jul-26",
-          "Aug-26",
-          "Sep-26"
-        ]
+        "period": "2026-07",
+        "isFullOperationalPeriod": true,
+        "missingOperationalFields": [],
+        "rowCount": 13
       },
       {
-        "row": 1,
-        "metric": "Out of Standard",
-        "monthLabels": [
-          "Jan-26",
-          "Jun-26",
-          "Jul-26",
-          "Aug-26",
-          "Sep-26"
-        ]
+        "period": "2026-08",
+        "isFullOperationalPeriod": true,
+        "missingOperationalFields": [],
+        "rowCount": 13
       },
       {
-        "row": 17,
-        "metric": "Monthly Receipts",
-        "monthLabels": [
-          "Jan-26",
-          "Jun-26",
-          "Jul-26",
-          "Aug-26"
-        ]
-      },
-      {
-        "row": 17,
-        "metric": "Monthly Closures",
-        "monthLabels": [
-          "Jan-26",
-          "Jun-26",
-          "Jul-26",
-          "Aug-26"
-        ]
-      },
-      {
-        "row": 17,
-        "metric": "Monthly Receipt/Closure Variance",
-        "monthLabels": [
-          "Jan-26",
-          "Jun-26",
-          "Jul-26",
-          "Aug-26"
-        ]
-      },
-      {
-        "row": 17,
-        "metric": "Monthly Reroutes",
-        "monthLabels": [
-          "Jan-26",
-          "Jun-26",
-          "Jul-26",
-          "Aug-26"
-        ]
-      },
-      {
-        "row": 33,
-        "metric": "Average Daily Receipts",
-        "monthLabels": [
-          "Jan-26",
-          "Jun-26",
-          "Jul-26",
-          "Aug-26"
-        ]
-      },
-      {
-        "row": 33,
-        "metric": "Average Daily Production",
-        "monthLabels": [
-          "Jan-26",
-          "Jun-26",
-          "Jul-26",
-          "Aug-26"
-        ]
-      },
-      {
-        "row": 33,
-        "metric": "FTE's",
-        "monthLabels": [
-          "Jan-26",
-          "Jun-26",
-          "Jul-26",
-          "Aug-26"
-        ]
-      },
-      {
-        "row": 33,
-        "metric": "Hourly Goal",
-        "monthLabels": [
-          "Jan-26",
-          "Jun-26",
-          "Jul-26",
-          "Aug-26"
-        ]
+        "period": "2026-09",
+        "isFullOperationalPeriod": false,
+        "missingOperationalFields": [
+          "averageDailyProduction",
+          "averageDailyReceipts",
+          "ftes",
+          "monthlyClosures",
+          "monthlyReceipts"
+        ],
+        "rowCount": 13
       }
     ],
     "businessUnits": [
@@ -170,2164 +113,28 @@ window.DASHBOARD_DATA = {
   },
   "records": [
     {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.89
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.85
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.9
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.81
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.74
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Starting Inventory",
-      "value": 201479.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Starting Inventory",
-      "value": 107448.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Starting Inventory",
-      "value": 162137.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Starting Inventory",
-      "value": 125417.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Starting Inventory",
-      "value": 112966.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "In Standard",
-      "value": 179316.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "In Standard",
-      "value": 91331.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "In Standard",
-      "value": 145923.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "In Standard",
-      "value": 101588.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "In Standard",
-      "value": 83595.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Out of Standard",
-      "value": 22163.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Out of Standard",
-      "value": 16117.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Out of Standard",
-      "value": 16214.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Out of Standard",
-      "value": 23829.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Out of Standard",
-      "value": 29371.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.94
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.82
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.92
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.91
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.93
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Starting Inventory",
-      "value": 12207.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Starting Inventory",
-      "value": 13452.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Starting Inventory",
-      "value": 12097.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Starting Inventory",
-      "value": 10531.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Starting Inventory",
-      "value": 9780.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "In Standard",
-      "value": 11475.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "In Standard",
-      "value": 11031.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "In Standard",
-      "value": 11129.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "In Standard",
-      "value": 9583.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "In Standard",
-      "value": 9095.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Out of Standard",
-      "value": 732.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Out of Standard",
-      "value": 2421.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Out of Standard",
-      "value": 968.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Out of Standard",
-      "value": 948.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Out of Standard",
-      "value": 685.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.27
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.61
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.83
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.87
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.89
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Starting Inventory",
-      "value": 23182.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Starting Inventory",
-      "value": 3485.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Starting Inventory",
-      "value": 1377.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Starting Inventory",
-      "value": 775.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Starting Inventory",
-      "value": 1190.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "In Standard",
-      "value": 6259.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "In Standard",
-      "value": 2126.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "In Standard",
-      "value": 1143.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "In Standard",
-      "value": 674.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "In Standard",
-      "value": 1059.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Out of Standard",
-      "value": 16923.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Out of Standard",
-      "value": 1359.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Out of Standard",
-      "value": 234.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Out of Standard",
-      "value": 101.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Out of Standard",
-      "value": 131.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.93
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.97
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.96
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.92
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.92
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Starting Inventory",
-      "value": 36374.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Starting Inventory",
-      "value": 23882.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Starting Inventory",
-      "value": 19957.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Starting Inventory",
-      "value": 16305.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Starting Inventory",
-      "value": 13670.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "In Standard",
-      "value": 33828.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "In Standard",
-      "value": 23166.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "In Standard",
-      "value": 19159.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "In Standard",
-      "value": 15001.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "In Standard",
-      "value": 12576.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Out of Standard",
-      "value": 2546.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Out of Standard",
-      "value": 716.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Out of Standard",
-      "value": 798.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Out of Standard",
-      "value": 1304.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Out of Standard",
-      "value": 1094.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 1.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 1.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.99
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.96
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.98
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Starting Inventory",
-      "value": 178274.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Starting Inventory",
-      "value": 323350.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Starting Inventory",
-      "value": 266296.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Starting Inventory",
-      "value": 312877.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Starting Inventory",
-      "value": 403138.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "In Standard",
-      "value": 178124.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "In Standard",
-      "value": 322999.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "In Standard",
-      "value": 264576.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "In Standard",
-      "value": 300976.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "In Standard",
-      "value": 394083.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Out of Standard",
-      "value": 150.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Out of Standard",
-      "value": 351.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Out of Standard",
-      "value": 1720.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Out of Standard",
-      "value": 11901.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Out of Standard",
-      "value": 9055.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.9
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.84
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.86
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.92
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.98
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Starting Inventory",
-      "value": 9708.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Starting Inventory",
-      "value": 12357.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Starting Inventory",
-      "value": 11499.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Starting Inventory",
-      "value": 9714.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Starting Inventory",
-      "value": 10063.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "In Standard",
-      "value": 8737.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "In Standard",
-      "value": 10380.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "In Standard",
-      "value": 9889.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "In Standard",
-      "value": 8937.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "In Standard",
-      "value": 9862.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Out of Standard",
-      "value": 971.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Out of Standard",
-      "value": 1977.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Out of Standard",
-      "value": 1610.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Out of Standard",
-      "value": 777.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Out of Standard",
-      "value": 201.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.98
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.99
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.98
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.99
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.99
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Starting Inventory",
-      "value": 4268.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Starting Inventory",
-      "value": 3246.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Starting Inventory",
-      "value": 4913.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Starting Inventory",
-      "value": 3561.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Starting Inventory",
-      "value": 3379.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "In Standard",
-      "value": 4183.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "In Standard",
-      "value": 3214.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "In Standard",
-      "value": 4815.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "In Standard",
-      "value": 3525.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "In Standard",
-      "value": 3345.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Out of Standard",
-      "value": 85.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Out of Standard",
-      "value": 32.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Out of Standard",
-      "value": 98.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Out of Standard",
-      "value": 36.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Out of Standard",
-      "value": 34.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.9
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.83
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.86
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.79
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.74
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Starting Inventory",
-      "value": 21717.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Starting Inventory",
-      "value": 35379.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Starting Inventory",
-      "value": 36412.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Starting Inventory",
-      "value": 47432.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Starting Inventory",
-      "value": 48101.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "In Standard",
-      "value": 19545.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "In Standard",
-      "value": 29454.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "In Standard",
-      "value": 31215.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "In Standard",
-      "value": 37494.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "In Standard",
-      "value": 35743.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Out of Standard",
-      "value": 2172.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Out of Standard",
-      "value": 5925.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Out of Standard",
-      "value": 5197.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Out of Standard",
-      "value": 9938.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Out of Standard",
-      "value": 12358.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.79
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.9
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.93
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.77
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.68
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Starting Inventory",
-      "value": 83477.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Starting Inventory",
-      "value": 57333.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Starting Inventory",
-      "value": 84029.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Starting Inventory",
-      "value": 83881.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Starting Inventory",
-      "value": 47114.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "In Standard",
-      "value": 65947.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "In Standard",
-      "value": 51600.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "In Standard",
-      "value": 78147.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "In Standard",
-      "value": 64588.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "In Standard",
-      "value": 32038.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Out of Standard",
-      "value": 17530.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Out of Standard",
-      "value": 5733.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Out of Standard",
-      "value": 5882.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Out of Standard",
-      "value": 19293.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Out of Standard",
-      "value": 15076.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.98
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.76
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.89
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.93
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.94
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Starting Inventory",
-      "value": 12284.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Starting Inventory",
-      "value": 22549.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Starting Inventory",
-      "value": 21756.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Starting Inventory",
-      "value": 21153.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Starting Inventory",
-      "value": 15448.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "In Standard",
-      "value": 12038.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "In Standard",
-      "value": 17137.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "In Standard",
-      "value": 19363.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "In Standard",
-      "value": 19672.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "In Standard",
-      "value": 14521.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Out of Standard",
-      "value": 246.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Out of Standard",
-      "value": 5412.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Out of Standard",
-      "value": 2393.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Out of Standard",
-      "value": 1481.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Out of Standard",
-      "value": 927.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.97
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.98
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.92
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.94
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.98
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Starting Inventory",
-      "value": 14071.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Starting Inventory",
-      "value": 6201.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Starting Inventory",
-      "value": 3396.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Starting Inventory",
-      "value": 1944.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Starting Inventory",
-      "value": 3346.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "In Standard",
-      "value": 13649.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "In Standard",
-      "value": 6077.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "In Standard",
-      "value": 3124.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "In Standard",
-      "value": 1827.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "In Standard",
-      "value": 3279.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Out of Standard",
-      "value": 422.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Out of Standard",
-      "value": 124.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Out of Standard",
-      "value": 272.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Out of Standard",
-      "value": 117.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Out of Standard",
-      "value": 67.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.93
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.98
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.98
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.91
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.92
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Starting Inventory",
-      "value": 12296.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Starting Inventory",
-      "value": 13087.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Starting Inventory",
-      "value": 18885.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Starting Inventory",
-      "value": 22172.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Starting Inventory",
-      "value": 20944.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "In Standard",
-      "value": 11435.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "In Standard",
-      "value": 12825.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "In Standard",
-      "value": 18507.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "In Standard",
-      "value": 20177.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "In Standard",
-      "value": 19268.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Out of Standard",
-      "value": 861.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Out of Standard",
-      "value": 262.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Out of Standard",
-      "value": 378.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Out of Standard",
-      "value": 1995.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Out of Standard",
-      "value": 1676.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.4
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.76
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.88
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.8
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.82
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Starting Inventory",
-      "value": 149976.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Starting Inventory",
-      "value": 29482.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Starting Inventory",
-      "value": 37932.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Starting Inventory",
-      "value": 26576.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Starting Inventory",
-      "value": 29044.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "In Standard",
-      "value": 59990.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "In Standard",
-      "value": 22406.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "In Standard",
-      "value": 33380.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "In Standard",
-      "value": 21261.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "In Standard",
-      "value": 23816.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Out of Standard",
-      "value": 89986.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Out of Standard",
-      "value": 7076.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Out of Standard",
-      "value": 4552.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Out of Standard",
-      "value": 5315.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Out of Standard",
-      "value": 5228.0
+      "metric": "Average Daily Production",
+      "value": 103445.0
     },
     {
       "businessUnit": "Aggregated Total",
       "workCategory": "All Work Categories",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.8
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.93
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.94
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.89
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Monthly Starting SLA %",
-      "value": 0.89
+      "metric": "Average Daily Receipts",
+      "value": 101538.0
     },
     {
       "businessUnit": "Aggregated Total",
       "workCategory": "All Work Categories",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "metric": "Starting Inventory",
-      "value": 759313.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Starting Inventory",
-      "value": 651251.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Starting Inventory",
-      "value": 680686.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Starting Inventory",
-      "value": 682338.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Starting Inventory",
-      "value": 718183.0
+      "metric": "FTE's",
+      "value": 532.0
     },
     {
       "businessUnit": "Aggregated Total",
@@ -2340,1578 +147,10 @@ window.DASHBOARD_DATA = {
     {
       "businessUnit": "Aggregated Total",
       "workCategory": "All Work Categories",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "In Standard",
-      "value": 603745.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "In Standard",
-      "value": 640371.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "In Standard",
-      "value": 605303.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "In Standard",
-      "value": 642281.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Out of Standard",
-      "value": 154786.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Out of Standard",
-      "value": 47506.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Out of Standard",
-      "value": 40315.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Out of Standard",
-      "value": 77035.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-09",
-      "monthLabel": "Sep-26",
-      "metric": "Out of Standard",
-      "value": 75902.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipts",
-      "value": 179477.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipts",
-      "value": 260411.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipts",
-      "value": 210593.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipts",
-      "value": 191304.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Closures",
-      "value": 318636.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Closures",
-      "value": 291572.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Closures",
-      "value": 230803.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Closures",
-      "value": 238005.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
       "period": "2026-01",
       "monthLabel": "Jan-26",
       "metric": "Monthly Receipt/Closure Variance",
-      "value": -139159.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -31161.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -20210.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -46701.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Reroutes",
-      "value": -122415.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Reroutes",
-      "value": -85850.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Reroutes",
-      "value": 16510.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Reroutes",
-      "value": -34250.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipts",
-      "value": 16629.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipts",
-      "value": 12799.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipts",
-      "value": 11840.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipts",
-      "value": 10167.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Closures",
-      "value": 13183.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Closures",
-      "value": 14154.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Closures",
-      "value": 13406.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Closures",
-      "value": 10918.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": 3446.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -1355.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -1566.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -751.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipts",
-      "value": 9230.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipts",
-      "value": 4773.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipts",
-      "value": 3349.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipts",
-      "value": 2647.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Closures",
-      "value": 13168.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Closures",
-      "value": 6881.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Closures",
-      "value": 3951.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Closures",
-      "value": 2232.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -3938.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -2108.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -602.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": 415.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipts",
-      "value": 209581.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipts",
-      "value": 49690.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipts",
-      "value": 21717.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipts",
-      "value": 27446.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Closures",
-      "value": 41728.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Closures",
-      "value": 27648.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Closures",
-      "value": 28519.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Closures",
-      "value": 29879.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": 167853.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": 22042.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -6802.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -2433.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Reroutes",
-      "value": 172582.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Reroutes",
-      "value": 25967.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Reroutes",
-      "value": -3150.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Reroutes",
-      "value": 202.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipts",
-      "value": 1033690.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipts",
-      "value": 976218.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipts",
-      "value": 1163410.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipts",
-      "value": 1393444.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Closures",
-      "value": 1062060.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Closures",
-      "value": 1041034.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Closures",
-      "value": 1109619.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Closures",
-      "value": 1304763.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -28370.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -64816.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": 53791.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": 88681.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Reroutes",
-      "value": 568.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Reroutes",
-      "value": -7762.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Reroutes",
-      "value": 7210.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Reroutes",
-      "value": -1580.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipts",
-      "value": 15591.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipts",
-      "value": 14994.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipts",
-      "value": 14440.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipts",
-      "value": 13973.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Closures",
-      "value": 13436.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Closures",
-      "value": 23138.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Closures",
-      "value": 16202.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Closures",
-      "value": 13470.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": 2155.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -8144.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -1762.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": 503.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Reroutes",
-      "value": -281.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Reroutes",
-      "value": -7286.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Reroutes",
-      "value": 23.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Reroutes",
-      "value": 154.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipts",
-      "value": 7292.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipts",
-      "value": 6668.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipts",
-      "value": 8103.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipts",
-      "value": 7162.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Closures",
-      "value": 7707.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Closures",
-      "value": 10148.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Closures",
-      "value": 9603.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Closures",
-      "value": 8480.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -415.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -3480.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -1500.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -1318.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Reroutes",
-      "value": -554.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Reroutes",
-      "value": -5147.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Reroutes",
-      "value": -148.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Reroutes",
-      "value": -1136.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipts",
-      "value": 440679.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipts",
-      "value": 385504.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipts",
-      "value": 395606.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipts",
-      "value": 401422.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Closures",
-      "value": 417437.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Closures",
-      "value": 384678.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Closures",
-      "value": 389128.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Closures",
-      "value": 390647.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": 23242.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": 826.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": 6478.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": 10775.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Reroutes",
-      "value": 2917.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Reroutes",
-      "value": -207.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Reroutes",
-      "value": -4542.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Reroutes",
-      "value": 10106.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipts",
-      "value": 191301.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipts",
-      "value": 147578.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipts",
-      "value": 183212.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipts",
-      "value": 95401.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Closures",
-      "value": 258471.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Closures",
-      "value": 225815.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Closures",
-      "value": 229386.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Closures",
-      "value": 216891.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -67170.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -78237.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -46174.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -121490.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Reroutes",
-      "value": -20360.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Reroutes",
-      "value": -104933.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Reroutes",
-      "value": -46026.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Reroutes",
-      "value": -84723.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipts",
-      "value": 20263.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipts",
-      "value": 28086.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipts",
-      "value": 32928.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipts",
-      "value": 27819.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Closures",
-      "value": 15922.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Closures",
-      "value": 28879.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Closures",
-      "value": 33531.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Closures",
-      "value": 33524.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": 4341.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -793.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -603.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -5705.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipts",
-      "value": 11342.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipts",
-      "value": 16205.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipts",
-      "value": 10968.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipts",
-      "value": 9380.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Closures",
-      "value": 23828.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Closures",
-      "value": 19010.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Closures",
-      "value": 12420.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Closures",
-      "value": 7978.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -12486.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -2805.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -1452.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": 1402.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipts",
-      "value": 63101.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipts",
-      "value": 15807.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipts",
-      "value": 16809.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipts",
-      "value": 18467.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Closures",
-      "value": 14318.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Closures",
-      "value": 15916.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Closures",
-      "value": 21308.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Closures",
-      "value": 24993.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": 48783.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -109.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -4499.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -6526.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Reroutes",
-      "value": 58001.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Reroutes",
-      "value": -5907.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Reroutes",
-      "value": -7786.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Reroutes",
-      "value": -5298.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipts",
-      "value": 35653.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipts",
-      "value": 56806.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipts",
-      "value": 31528.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipts",
-      "value": 32915.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Closures",
-      "value": 75902.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Closures",
-      "value": 48356.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Closures",
-      "value": 42884.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Closures",
-      "value": 30447.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -40249.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": 8450.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -11356.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": 2468.0
+      "value": -41967.0
     },
     {
       "businessUnit": "Aggregated Total",
@@ -3924,62 +163,6 @@ window.DASHBOARD_DATA = {
     {
       "businessUnit": "Aggregated Total",
       "workCategory": "All Work Categories",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipts",
-      "value": 1975539.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipts",
-      "value": 2104503.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipts",
-      "value": 2231547.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -41967.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -161690.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -36257.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Monthly Receipt/Closure Variance",
-      "value": -80680.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
       "period": "2026-01",
       "monthLabel": "Jan-26",
       "metric": "Monthly Reroutes",
@@ -3988,154 +171,218 @@ window.DASHBOARD_DATA = {
     {
       "businessUnit": "Aggregated Total",
       "workCategory": "All Work Categories",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Monthly Reroutes",
-      "value": -191125.0
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.8
     },
     {
       "businessUnit": "Aggregated Total",
       "workCategory": "All Work Categories",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Monthly Reroutes",
-      "value": -37909.0
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 154786.0
     },
     {
       "businessUnit": "Aggregated Total",
       "workCategory": "All Work Categories",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 759313.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 1897.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 9526.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 39.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 7.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 33828.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 41728.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 167853.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 209581.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
       "metric": "Monthly Reroutes",
-      "value": -116525.0
+      "value": 172582.0
     },
     {
       "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
+      "workCategory": "Cash Posting",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "metric": "Average Daily Receipts",
-      "value": 8158.0
+      "metric": "Monthly Starting SLA %",
+      "value": 0.93
     },
     {
       "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Receipts",
-      "value": 12401.0
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 2546.0
     },
     {
       "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Average Daily Receipts",
-      "value": 9572.0
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 36374.0
     },
     {
       "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Receipts",
-      "value": 9110.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
+      "workCategory": "Correspondence",
       "period": "2026-01",
       "monthLabel": "Jan-26",
       "metric": "Average Daily Production",
-      "value": 14483.0
+      "value": 599.0
     },
     {
       "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Production",
-      "value": 13884.0
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 420.0
     },
     {
       "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Average Daily Production",
-      "value": 10491.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Production",
-      "value": 11334.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
+      "workCategory": "Correspondence",
       "period": "2026-01",
       "monthLabel": "Jan-26",
       "metric": "FTE's",
-      "value": 109.0
+      "value": 10.0
     },
     {
       "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "FTE's",
-      "value": 96.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "FTE's",
-      "value": 100.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "FTE's",
-      "value": 100.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
+      "workCategory": "Correspondence",
       "period": "2026-01",
       "monthLabel": "Jan-26",
       "metric": "Hourly Goal",
-      "value": 10.7
+      "value": 4.0
     },
     {
       "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Hourly Goal",
-      "value": 10.7
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 6259.0
     },
     {
       "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Hourly Goal",
-      "value": 10.7
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 13168.0
     },
     {
       "businessUnit": "CB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Hourly Goal",
-      "value": 10.7
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -3938.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 9230.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.27
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 16923.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 23182.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 599.0
     },
     {
       "businessUnit": "CB",
@@ -4148,9 +395,2569 @@ window.DASHBOARD_DATA = {
     {
       "businessUnit": "CB",
       "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 31.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 11475.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 13183.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 3446.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 16629.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.94
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 732.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 12207.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 14483.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 8158.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 109.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 10.7
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 179316.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 318636.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -139159.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 179477.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Reroutes",
+      "value": -122415.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.89
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 22163.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 201479.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 651.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 2868.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 45.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 7.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 11435.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 14318.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 48783.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 63101.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Reroutes",
+      "value": 58001.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.93
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 861.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 12296.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 1083.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 516.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 54.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 13649.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 23828.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -12486.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 11342.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.97
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 422.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 14071.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 724.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 921.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 39.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 12038.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 15922.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 4341.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 20263.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 246.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 12284.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 3450.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 1621.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 38.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 8.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 59990.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 75902.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -40249.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 35653.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.4
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 89986.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 149976.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 11749.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 8696.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 56.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 10.7
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 65947.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 258471.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -67170.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 191301.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Reroutes",
+      "value": -20360.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.79
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 17530.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 83477.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 18974.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 20031.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 18.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 204.2
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 19545.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 417437.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 23242.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 440679.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Reroutes",
+      "value": 2917.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.9
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 2172.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 21717.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 350.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 331.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 16.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 5.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 4183.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 7707.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -415.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 7292.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Reroutes",
+      "value": -554.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 85.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 4268.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 611.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 709.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 18.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 8737.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 13436.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 2155.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 15591.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Reroutes",
+      "value": -281.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.9
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 971.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 9708.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Production",
+      "value": 48275.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Average Daily Receipts",
+      "value": 46986.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "FTE's",
+      "value": 59.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Hourly Goal",
+      "value": 185.4
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "In Standard",
+      "value": 178124.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Closures",
+      "value": 1062060.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -28370.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Receipts",
+      "value": 1033690.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Reroutes",
+      "value": 568.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 1.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Out of Standard",
+      "value": 150.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-01",
+      "monthLabel": "Jan-26",
+      "metric": "Starting Inventory",
+      "value": 178274.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 101773.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
       "period": "2026-06",
       "monthLabel": "Jun-26",
       "metric": "Average Daily Receipts",
+      "value": 94073.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 540.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 603745.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -161690.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 1975539.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": -191125.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.93
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 47506.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 651251.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 1317.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 2366.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 37.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 7.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 23166.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 27648.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 22042.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 49690.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": 25967.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.97
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 716.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 23882.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 328.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 227.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 8.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 2126.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 6881.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -2108.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 4773.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.61
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 1359.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 3485.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 674.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 609.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 26.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 11031.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 14154.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -1355.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 12799.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.82
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 2421.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 13452.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 13884.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 12401.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 96.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 10.7
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 91331.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 291572.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -31161.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 260411.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": -85850.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.85
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 16117.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 107448.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 758.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 753.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 40.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 7.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 12825.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 15916.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -109.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 15807.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": -5907.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 262.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 13087.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 905.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 772.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 19.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 6077.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 19010.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -2805.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 16205.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 124.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 6201.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 1375.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 1337.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 69.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 17137.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 28879.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -793.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 28086.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.76
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 5412.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 22549.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 2303.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 2705.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 114.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 8.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 22406.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 48356.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 8450.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 56806.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.76
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 7076.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 29482.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 10753.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 7028.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 37.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 10.7
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 51600.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 225815.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -78237.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 147578.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": -104933.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.9
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 5733.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 57333.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 18318.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 18357.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 17.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 204.2
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 29454.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 384678.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 826.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 385504.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": -207.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.83
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 5925.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 35379.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 483.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 318.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 14.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 5.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 3214.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 10148.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -3480.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 6668.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": -5147.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.99
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 32.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 3246.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 1102.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 714.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 17.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 10380.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 23138.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -8144.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 14994.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": -7286.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.84
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 1977.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 12357.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Production",
+      "value": 49573.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Average Daily Receipts",
+      "value": 46487.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "FTE's",
+      "value": 46.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Hourly Goal",
+      "value": 185.4
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "In Standard",
+      "value": 322999.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Closures",
+      "value": 1041034.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -64816.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Receipts",
+      "value": 976218.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Reroutes",
+      "value": -7762.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 1.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Out of Standard",
+      "value": 351.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-06",
+      "monthLabel": "Jun-26",
+      "metric": "Starting Inventory",
+      "value": 323350.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 97307.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 95659.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 544.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 640371.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -36257.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 2104503.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Reroutes",
+      "value": -37909.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.94
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 40315.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 680686.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 1296.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 987.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 37.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 7.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 19159.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 28519.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -6802.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 21717.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Reroutes",
+      "value": -3150.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.96
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 798.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 19957.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 180.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 152.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 10.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 5.5
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 1143.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 3951.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -602.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 3349.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.83
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 234.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 1377.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
       "value": 609.0
     },
     {
@@ -4164,62 +2971,6 @@ window.DASHBOARD_DATA = {
     {
       "businessUnit": "CB",
       "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Receipts",
-      "value": 484.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Production",
-      "value": 599.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Production",
-      "value": 674.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Average Daily Production",
-      "value": 609.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Production",
-      "value": 520.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "FTE's",
-      "value": 31.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "FTE's",
-      "value": 26.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
       "period": "2026-07",
       "monthLabel": "Jul-26",
       "metric": "FTE's",
@@ -4228,30 +2979,6 @@ window.DASHBOARD_DATA = {
     {
       "businessUnit": "CB",
       "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "FTE's",
-      "value": 30.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Hourly Goal",
-      "value": 4.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Hourly Goal",
-      "value": 4.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Disputes",
       "period": "2026-07",
       "monthLabel": "Jul-26",
       "metric": "Hourly Goal",
@@ -4260,893 +2987,85 @@ window.DASHBOARD_DATA = {
     {
       "businessUnit": "CB",
       "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Hourly Goal",
-      "value": 4.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Receipts",
-      "value": 420.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Receipts",
-      "value": 227.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "metric": "Average Daily Receipts",
-      "value": 152.0
+      "metric": "In Standard",
+      "value": 11129.0
     },
     {
       "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Receipts",
-      "value": 126.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Production",
-      "value": 599.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Production",
-      "value": 328.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Average Daily Production",
-      "value": 180.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Production",
-      "value": 106.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "FTE's",
-      "value": 10.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "FTE's",
-      "value": 8.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "FTE's",
-      "value": 10.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "FTE's",
-      "value": 11.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Hourly Goal",
-      "value": 4.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Hourly Goal",
-      "value": 4.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Hourly Goal",
-      "value": 5.5
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Hourly Goal",
-      "value": 5.5
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Receipts",
-      "value": 9526.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Receipts",
-      "value": 2366.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Average Daily Receipts",
-      "value": 987.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Receipts",
-      "value": 1307.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Production",
-      "value": 1897.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Production",
-      "value": 1317.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Average Daily Production",
-      "value": 1296.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Production",
-      "value": 1423.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "FTE's",
-      "value": 39.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "FTE's",
-      "value": 37.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "FTE's",
-      "value": 37.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "FTE's",
-      "value": 35.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Hourly Goal",
-      "value": 7.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Hourly Goal",
-      "value": 7.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Hourly Goal",
-      "value": 7.0
-    },
-    {
-      "businessUnit": "CB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Hourly Goal",
-      "value": 7.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Receipts",
-      "value": 46986.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Receipts",
-      "value": 46487.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Average Daily Receipts",
-      "value": 52882.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Receipts",
-      "value": 66354.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Production",
-      "value": 48275.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Production",
-      "value": 49573.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Average Daily Production",
-      "value": 50437.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Production",
-      "value": 62132.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "FTE's",
-      "value": 59.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "FTE's",
-      "value": 46.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "FTE's",
-      "value": 45.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "FTE's",
-      "value": 48.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Hourly Goal",
-      "value": 185.4
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Hourly Goal",
-      "value": 185.4
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Hourly Goal",
-      "value": 185.4
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Hourly Goal",
-      "value": 185.4
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Receipts",
-      "value": 709.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Receipts",
-      "value": 714.0
-    },
-    {
-      "businessUnit": "GB",
       "workCategory": "Disputes",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "metric": "Average Daily Receipts",
-      "value": 656.0
+      "metric": "Monthly Closures",
+      "value": 13406.0
     },
     {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Receipts",
-      "value": 665.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Production",
-      "value": 611.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Production",
-      "value": 1102.0
-    },
-    {
-      "businessUnit": "GB",
+      "businessUnit": "CB",
       "workCategory": "Disputes",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "metric": "Average Daily Production",
-      "value": 736.0
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -1566.0
     },
     {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Production",
-      "value": 641.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "FTE's",
-      "value": 18.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "FTE's",
-      "value": 17.0
-    },
-    {
-      "businessUnit": "GB",
+      "businessUnit": "CB",
       "workCategory": "Disputes",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "metric": "FTE's",
-      "value": 18.0
+      "metric": "Monthly Receipts",
+      "value": 11840.0
     },
     {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "FTE's",
-      "value": 18.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Hourly Goal",
-      "value": 4.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Hourly Goal",
-      "value": 4.0
-    },
-    {
-      "businessUnit": "GB",
+      "businessUnit": "CB",
       "workCategory": "Disputes",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "metric": "Hourly Goal",
-      "value": 4.0
+      "metric": "Monthly Starting SLA %",
+      "value": 0.92
     },
     {
-      "businessUnit": "GB",
+      "businessUnit": "CB",
       "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Hourly Goal",
-      "value": 4.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Receipts",
-      "value": 331.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Receipts",
-      "value": 318.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "metric": "Average Daily Receipts",
-      "value": 368.0
+      "metric": "Out of Standard",
+      "value": 968.0
     },
     {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Receipts",
-      "value": 341.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Production",
-      "value": 350.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Production",
-      "value": 483.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "metric": "Average Daily Production",
-      "value": 437.0
+      "metric": "Starting Inventory",
+      "value": 12097.0
     },
     {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Production",
-      "value": 404.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "FTE's",
-      "value": 16.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "FTE's",
-      "value": 14.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "FTE's",
-      "value": 13.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "FTE's",
-      "value": 13.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Hourly Goal",
-      "value": 5.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Hourly Goal",
-      "value": 5.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Hourly Goal",
-      "value": 5.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Hourly Goal",
-      "value": 5.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Receipts",
-      "value": 20031.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Receipts",
-      "value": 18357.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Average Daily Receipts",
-      "value": 17982.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Receipts",
-      "value": 19115.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Production",
-      "value": 18974.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Production",
-      "value": 18318.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Average Daily Production",
-      "value": 17688.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Production",
-      "value": 18602.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "FTE's",
-      "value": 18.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "FTE's",
-      "value": 17.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "FTE's",
-      "value": 17.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "FTE's",
-      "value": 17.0
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Hourly Goal",
-      "value": 204.2
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Hourly Goal",
-      "value": 204.2
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Hourly Goal",
-      "value": 204.2
-    },
-    {
-      "businessUnit": "GB",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Hourly Goal",
-      "value": 204.2
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Receipts",
-      "value": 8696.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Receipts",
-      "value": 7028.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Average Daily Receipts",
-      "value": 8328.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Receipts",
-      "value": 4543.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Production",
-      "value": 11749.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Production",
-      "value": 10753.0
-    },
-    {
-      "businessUnit": "CGS",
+      "businessUnit": "CB",
       "workCategory": "Validation/Adjustments",
       "period": "2026-07",
       "monthLabel": "Jul-26",
       "metric": "Average Daily Production",
-      "value": 10427.0
+      "value": 10491.0
     },
     {
-      "businessUnit": "CGS",
+      "businessUnit": "CB",
       "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Production",
-      "value": 10328.0
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 9572.0
     },
     {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "FTE's",
-      "value": 56.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "FTE's",
-      "value": 37.0
-    },
-    {
-      "businessUnit": "CGS",
+      "businessUnit": "CB",
       "workCategory": "Validation/Adjustments",
       "period": "2026-07",
       "monthLabel": "Jul-26",
       "metric": "FTE's",
-      "value": 57.0
+      "value": 100.0
     },
     {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "FTE's",
-      "value": 60.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Hourly Goal",
-      "value": 10.7
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Validation/Adjustments",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Hourly Goal",
-      "value": 10.7
-    },
-    {
-      "businessUnit": "CGS",
+      "businessUnit": "CB",
       "workCategory": "Validation/Adjustments",
       "period": "2026-07",
       "monthLabel": "Jul-26",
@@ -5154,316 +3073,68 @@ window.DASHBOARD_DATA = {
       "value": 10.7
     },
     {
-      "businessUnit": "CGS",
+      "businessUnit": "CB",
       "workCategory": "Validation/Adjustments",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Hourly Goal",
-      "value": 10.7
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Receipts",
-      "value": 921.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Receipts",
-      "value": 1337.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "metric": "Average Daily Receipts",
-      "value": 1497.0
+      "metric": "In Standard",
+      "value": 145923.0
     },
     {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Receipts",
-      "value": 1325.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Production",
-      "value": 724.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Production",
-      "value": 1375.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "metric": "Average Daily Production",
-      "value": 1524.0
+      "metric": "Monthly Closures",
+      "value": 230803.0
     },
     {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Production",
-      "value": 1596.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "FTE's",
-      "value": 39.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "FTE's",
-      "value": 69.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "metric": "FTE's",
-      "value": 66.0
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -20210.0
     },
     {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "FTE's",
-      "value": 72.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Hourly Goal",
-      "value": 4.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Hourly Goal",
-      "value": 4.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "metric": "Hourly Goal",
-      "value": 4.0
+      "metric": "Monthly Receipts",
+      "value": 210593.0
     },
     {
-      "businessUnit": "CGS",
-      "workCategory": "Disputes",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Hourly Goal",
-      "value": 4.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Receipts",
-      "value": 516.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Receipts",
-      "value": 772.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "metric": "Average Daily Receipts",
-      "value": 499.0
+      "metric": "Monthly Reroutes",
+      "value": 16510.0
     },
     {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Receipts",
-      "value": 447.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Production",
-      "value": 1083.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Production",
-      "value": 905.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "metric": "Average Daily Production",
-      "value": 565.0
+      "metric": "Monthly Starting SLA %",
+      "value": 0.9
     },
     {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Production",
-      "value": 380.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "FTE's",
-      "value": 54.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "FTE's",
-      "value": 19.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "metric": "FTE's",
-      "value": 18.0
+      "metric": "Out of Standard",
+      "value": 16214.0
     },
     {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "FTE's",
-      "value": 8.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Hourly Goal",
-      "value": 4.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Hourly Goal",
-      "value": 4.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "metric": "Hourly Goal",
-      "value": 5.5
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Correspondence",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Hourly Goal",
-      "value": 5.5
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Receipts",
-      "value": 2868.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Receipts",
-      "value": 753.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "Average Daily Receipts",
-      "value": 764.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Receipts",
-      "value": 879.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Production",
-      "value": 651.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Production",
-      "value": 758.0
+      "metric": "Starting Inventory",
+      "value": 162137.0
     },
     {
       "businessUnit": "CGS",
@@ -5476,26 +3147,10 @@ window.DASHBOARD_DATA = {
     {
       "businessUnit": "CGS",
       "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Production",
-      "value": 1190.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "FTE's",
-      "value": 45.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "FTE's",
-      "value": 40.0
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 764.0
     },
     {
       "businessUnit": "CGS",
@@ -5508,90 +3163,250 @@ window.DASHBOARD_DATA = {
     {
       "businessUnit": "CGS",
       "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 7.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 18507.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 21308.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -4499.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 16809.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Reroutes",
+      "value": -7786.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 378.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 18885.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 565.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 499.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
       "metric": "FTE's",
-      "value": 57.0
+      "value": 18.0
     },
     {
       "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Hourly Goal",
-      "value": 7.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Hourly Goal",
-      "value": 7.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
+      "workCategory": "Correspondence",
       "period": "2026-07",
       "monthLabel": "Jul-26",
       "metric": "Hourly Goal",
-      "value": 7.0
+      "value": 5.5
     },
     {
       "businessUnit": "CGS",
-      "workCategory": "Cash Posting",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Hourly Goal",
-      "value": 7.0
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 3124.0
     },
     {
       "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Receipts",
-      "value": 1621.0
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 12420.0
     },
     {
       "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Receipts",
-      "value": 2705.0
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -1452.0
     },
     {
       "businessUnit": "CGS",
-      "workCategory": "Host",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 10968.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.92
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 272.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 3396.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 1524.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
       "period": "2026-07",
       "monthLabel": "Jul-26",
       "metric": "Average Daily Receipts",
-      "value": 1433.0
+      "value": 1497.0
     },
     {
       "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Receipts",
-      "value": 1567.0
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 66.0
     },
     {
       "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Production",
-      "value": 3450.0
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
     },
     {
       "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Production",
-      "value": 2303.0
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 19363.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 33531.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -603.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 32928.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.89
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 2393.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 21756.0
     },
     {
       "businessUnit": "CGS",
@@ -5604,26 +3419,10 @@ window.DASHBOARD_DATA = {
     {
       "businessUnit": "CGS",
       "workCategory": "Host",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Production",
-      "value": 1450.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "FTE's",
-      "value": 38.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "FTE's",
-      "value": 114.0
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 1433.0
     },
     {
       "businessUnit": "CGS",
@@ -5636,98 +3435,546 @@ window.DASHBOARD_DATA = {
     {
       "businessUnit": "CGS",
       "workCategory": "Host",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 8.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 33380.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 42884.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -11356.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 31528.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.88
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 4552.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 37932.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 10427.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 8328.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
       "metric": "FTE's",
-      "value": 38.0
+      "value": 57.0
     },
     {
       "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Hourly Goal",
-      "value": 8.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Hourly Goal",
-      "value": 8.0
-    },
-    {
-      "businessUnit": "CGS",
-      "workCategory": "Host",
+      "workCategory": "Validation/Adjustments",
       "period": "2026-07",
       "monthLabel": "Jul-26",
       "metric": "Hourly Goal",
-      "value": 8.0
+      "value": 10.7
     },
     {
       "businessUnit": "CGS",
-      "workCategory": "Host",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 78147.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 229386.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -46174.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 183212.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Reroutes",
+      "value": -46026.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.93
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 5882.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 84029.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 17688.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 17982.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 17.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
       "metric": "Hourly Goal",
-      "value": 8.0
+      "value": 204.2
     },
     {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Receipts",
-      "value": 101538.0
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 31215.0
     },
     {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Receipts",
-      "value": 94073.0
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 389128.0
     },
     {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 6478.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 395606.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Reroutes",
+      "value": -4542.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.86
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 5197.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 36412.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 437.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
       "period": "2026-07",
       "monthLabel": "Jul-26",
       "metric": "Average Daily Receipts",
-      "value": 95659.0
+      "value": 368.0
     },
     {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-08",
-      "monthLabel": "Aug-26",
-      "metric": "Average Daily Receipts",
-      "value": 106264.0
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 13.0
     },
     {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "Average Daily Production",
-      "value": 103445.0
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 5.0
     },
     {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "Average Daily Production",
-      "value": 101773.0
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 4815.0
     },
     {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 9603.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -1500.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 8103.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Reroutes",
+      "value": -148.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 98.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 4913.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
       "period": "2026-07",
       "monthLabel": "Jul-26",
       "metric": "Average Daily Production",
-      "value": 97307.0
+      "value": 736.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 656.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 18.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 9889.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 16202.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -1762.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 14440.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Reroutes",
+      "value": 23.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.86
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 1610.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 11499.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Production",
+      "value": 50437.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Average Daily Receipts",
+      "value": 52882.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "FTE's",
+      "value": 45.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Hourly Goal",
+      "value": 185.4
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "In Standard",
+      "value": 264576.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Closures",
+      "value": 1109619.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 53791.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Receipts",
+      "value": 1163410.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Reroutes",
+      "value": 7210.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.99
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Out of Standard",
+      "value": 1720.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-07",
+      "monthLabel": "Jul-26",
+      "metric": "Starting Inventory",
+      "value": 266296.0
     },
     {
       "businessUnit": "Aggregated Total",
@@ -5740,26 +3987,10 @@ window.DASHBOARD_DATA = {
     {
       "businessUnit": "Aggregated Total",
       "workCategory": "All Work Categories",
-      "period": "2026-01",
-      "monthLabel": "Jan-26",
-      "metric": "FTE's",
-      "value": 532.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-06",
-      "monthLabel": "Jun-26",
-      "metric": "FTE's",
-      "value": 540.0
-    },
-    {
-      "businessUnit": "Aggregated Total",
-      "workCategory": "All Work Categories",
-      "period": "2026-07",
-      "monthLabel": "Jul-26",
-      "metric": "FTE's",
-      "value": 544.0
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 106264.0
     },
     {
       "businessUnit": "Aggregated Total",
@@ -5768,6 +3999,1718 @@ window.DASHBOARD_DATA = {
       "monthLabel": "Aug-26",
       "metric": "FTE's",
       "value": 507.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 605303.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -80680.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 2231547.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": -116525.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.89
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 77035.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 682338.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 1423.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 1307.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 35.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 7.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 15001.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 29879.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -2433.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 27446.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": 202.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.92
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 1304.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 16305.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 106.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 126.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 11.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 5.5
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 674.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 2232.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 415.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 2647.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.87
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 101.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 775.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 520.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 484.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 30.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 9583.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 10918.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -751.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 10167.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.91
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 948.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 10531.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 11334.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 9110.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 100.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 10.7
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 101588.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 238005.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -46701.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 191304.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": -34250.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.81
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 23829.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 125417.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 1190.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 879.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 57.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 7.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 20177.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 24993.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -6526.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 18467.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": -5298.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.91
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 1995.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 22172.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 380.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 447.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 8.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 5.5
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 1827.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 7978.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 1402.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 9380.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.94
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 117.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 1944.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 1596.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 1325.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 72.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 19672.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 33524.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -5705.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 27819.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.93
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 1481.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 21153.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 1450.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 1567.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 38.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 8.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 21261.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 30447.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 2468.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 32915.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.8
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 5315.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 26576.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 10328.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 4543.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 60.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 10.7
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 64588.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 216891.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -121490.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 95401.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": -84723.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.77
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 19293.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 83881.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 18602.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 19115.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 17.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 204.2
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 37494.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 390647.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 10775.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 401422.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": 10106.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.79
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 9938.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 47432.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 404.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 341.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 13.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 5.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 3525.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 8480.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": -1318.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 7162.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": -1136.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.99
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 36.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 3561.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 641.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 665.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 18.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 4.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 8937.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 13470.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 503.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 13973.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": 154.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.92
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 777.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 9714.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Production",
+      "value": 62132.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Average Daily Receipts",
+      "value": 66354.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "FTE's",
+      "value": 48.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Hourly Goal",
+      "value": 185.4
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "In Standard",
+      "value": 300976.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Closures",
+      "value": 1304763.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipt/Closure Variance",
+      "value": 88681.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Receipts",
+      "value": 1393444.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Reroutes",
+      "value": -1580.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.96
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Out of Standard",
+      "value": 11901.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-08",
+      "monthLabel": "Aug-26",
+      "metric": "Starting Inventory",
+      "value": 312877.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 642281.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.89
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 75902.0
+    },
+    {
+      "businessUnit": "Aggregated Total",
+      "workCategory": "All Work Categories",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 718183.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 12576.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.92
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 1094.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 13670.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 1059.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.89
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 131.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 1190.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 9095.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.93
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 685.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 9780.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 83595.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.74
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 29371.0
+    },
+    {
+      "businessUnit": "CB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 112966.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 19268.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.92
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 1676.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 20944.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 3279.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 67.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 3346.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 14521.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.94
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 927.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 15448.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 23816.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.82
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 5228.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Host",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 29044.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 32038.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.68
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 15076.0
+    },
+    {
+      "businessUnit": "CGS",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 47114.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 35743.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.74
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 12358.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Cash Posting",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 48101.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 3345.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.99
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 34.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Correspondence",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 3379.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 9862.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 201.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Disputes",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 10063.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "In Standard",
+      "value": 394083.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Monthly Starting SLA %",
+      "value": 0.98
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Out of Standard",
+      "value": 9055.0
+    },
+    {
+      "businessUnit": "GB",
+      "workCategory": "Validation/Adjustments",
+      "period": "2026-09",
+      "monthLabel": "Sep-26",
+      "metric": "Starting Inventory",
+      "value": 403138.0
     }
   ],
   "features": [
@@ -5776,19 +5719,20 @@ window.DASHBOARD_DATA = {
       "workCategory": "All Work Categories",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "monthlyStartingSla": 0.8,
-      "startingInventory": 759313.0,
-      "inStandard": 604527.0,
-      "outOfStandard": 154786.0,
-      "monthlyReceipts": 2233829.0,
-      "receiptClosureVariance": -41967.0,
-      "monthlyReroutes": 90458.0,
-      "averageDailyReceipts": 101538.0,
       "averageDailyProduction": 103445.0,
+      "averageDailyReceipts": 101538.0,
       "ftes": 532.0,
+      "inStandard": 604527.0,
+      "receiptClosureVariance": -41967.0,
+      "monthlyReceipts": 2233829.0,
+      "monthlyReroutes": 90458.0,
+      "monthlyStartingSla": 0.8,
+      "outOfStandard": 154786.0,
+      "startingInventory": 759313.0,
       "outOfStandardRate": 0.20385,
       "calculatedSla": 0.79615,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": 4198.926692,
       "dailyProductionPerFte": 194.445489,
@@ -5877,6 +5821,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -5905,19 +5852,20 @@ window.DASHBOARD_DATA = {
       "workCategory": "All Work Categories",
       "period": "2026-06",
       "monthLabel": "Jun-26",
-      "monthlyStartingSla": 0.93,
-      "startingInventory": 651251.0,
-      "inStandard": 603745.0,
-      "outOfStandard": 47506.0,
-      "monthlyReceipts": 1975539.0,
-      "receiptClosureVariance": -161690.0,
-      "monthlyReroutes": -191125.0,
-      "averageDailyReceipts": 94073.0,
       "averageDailyProduction": 101773.0,
+      "averageDailyReceipts": 94073.0,
       "ftes": 540.0,
+      "inStandard": 603745.0,
+      "receiptClosureVariance": -161690.0,
+      "monthlyReceipts": 1975539.0,
+      "monthlyReroutes": -191125.0,
+      "monthlyStartingSla": 0.93,
+      "outOfStandard": 47506.0,
+      "startingInventory": 651251.0,
       "outOfStandardRate": 0.072946,
       "calculatedSla": 0.927054,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": 3658.405556,
       "dailyProductionPerFte": 188.468519,
@@ -6006,6 +5954,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.130665,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -6031,19 +5982,20 @@ window.DASHBOARD_DATA = {
       "workCategory": "All Work Categories",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "monthlyStartingSla": 0.94,
-      "startingInventory": 680686.0,
-      "inStandard": 640371.0,
-      "outOfStandard": 40315.0,
-      "monthlyReceipts": 2104503.0,
-      "receiptClosureVariance": -36257.0,
-      "monthlyReroutes": -37909.0,
-      "averageDailyReceipts": 95659.0,
       "averageDailyProduction": 97307.0,
+      "averageDailyReceipts": 95659.0,
       "ftes": 544.0,
+      "inStandard": 640371.0,
+      "receiptClosureVariance": -36257.0,
+      "monthlyReceipts": 2104503.0,
+      "monthlyReroutes": -37909.0,
+      "monthlyStartingSla": 0.94,
+      "outOfStandard": 40315.0,
+      "startingInventory": 680686.0,
       "outOfStandardRate": 0.059227,
       "calculatedSla": 0.940773,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": 3868.571691,
       "dailyProductionPerFte": 178.873162,
@@ -6132,6 +6084,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": 0.057873,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -6157,19 +6112,20 @@ window.DASHBOARD_DATA = {
       "workCategory": "All Work Categories",
       "period": "2026-08",
       "monthLabel": "Aug-26",
-      "monthlyStartingSla": 0.89,
-      "startingInventory": 682338.0,
-      "inStandard": 605303.0,
-      "outOfStandard": 77035.0,
-      "monthlyReceipts": 2231547.0,
-      "receiptClosureVariance": -80680.0,
-      "monthlyReroutes": -116525.0,
-      "averageDailyReceipts": 106264.0,
       "averageDailyProduction": 110106.0,
+      "averageDailyReceipts": 106264.0,
       "ftes": 507.0,
+      "inStandard": 605303.0,
+      "receiptClosureVariance": -80680.0,
+      "monthlyReceipts": 2231547.0,
+      "monthlyReroutes": -116525.0,
+      "monthlyStartingSla": 0.89,
+      "outOfStandard": 77035.0,
+      "startingInventory": 682338.0,
       "outOfStandardRate": 0.112899,
       "calculatedSla": 0.887101,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": 4401.473373,
       "dailyProductionPerFte": 217.171598,
@@ -6258,6 +6214,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": 0.128383,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -6296,13 +6255,14 @@ window.DASHBOARD_DATA = {
       "workCategory": "All Work Categories",
       "period": "2026-09",
       "monthLabel": "Sep-26",
-      "monthlyStartingSla": 0.89,
-      "startingInventory": 718183.0,
       "inStandard": 642281.0,
+      "monthlyStartingSla": 0.89,
       "outOfStandard": 75902.0,
+      "startingInventory": 718183.0,
       "outOfStandardRate": 0.105686,
       "calculatedSla": 0.894314,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": null,
       "dailyProductionPerFte": null,
@@ -6391,6 +6351,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -6416,21 +6379,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Cash Posting",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "monthlyStartingSla": 0.93,
-      "startingInventory": 36374.0,
-      "inStandard": 33828.0,
-      "outOfStandard": 2546.0,
-      "monthlyReceipts": 209581.0,
-      "monthlyClosures": 41728.0,
-      "receiptClosureVariance": 167853.0,
-      "monthlyReroutes": 172582.0,
-      "averageDailyReceipts": 9526.0,
       "averageDailyProduction": 1897.0,
+      "averageDailyReceipts": 9526.0,
       "ftes": 39.0,
       "hourlyGoal": 7.0,
+      "inStandard": 33828.0,
+      "monthlyClosures": 41728.0,
+      "receiptClosureVariance": 167853.0,
+      "monthlyReceipts": 209581.0,
+      "monthlyReroutes": 172582.0,
+      "monthlyStartingSla": 0.93,
+      "outOfStandard": 2546.0,
+      "startingInventory": 36374.0,
       "outOfStandardRate": 0.069995,
       "calculatedSla": 0.930005,
       "receiptClosureGap": 167853.0,
+      "throughputBalance": -167853.0,
       "closuresPerFte": 1069.948718,
       "receiptsPerFte": 5373.871795,
       "dailyProductionPerFte": 48.641026,
@@ -6519,6 +6483,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 1,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": 156.88,
+      "capacityStatus": "SHORTFALL",
+      "capacityGapMagnitude": 156.88,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 5.022551,
       "limitedHistory": true,
       "earlyWarning": {
@@ -6549,21 +6516,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Cash Posting",
       "period": "2026-06",
       "monthLabel": "Jun-26",
-      "monthlyStartingSla": 0.97,
-      "startingInventory": 23882.0,
-      "inStandard": 23166.0,
-      "outOfStandard": 716.0,
-      "monthlyReceipts": 49690.0,
-      "monthlyClosures": 27648.0,
-      "receiptClosureVariance": 22042.0,
-      "monthlyReroutes": 25967.0,
-      "averageDailyReceipts": 2366.0,
       "averageDailyProduction": 1317.0,
+      "averageDailyReceipts": 2366.0,
       "ftes": 37.0,
       "hourlyGoal": 7.0,
+      "inStandard": 23166.0,
+      "monthlyClosures": 27648.0,
+      "receiptClosureVariance": 22042.0,
+      "monthlyReceipts": 49690.0,
+      "monthlyReroutes": 25967.0,
+      "monthlyStartingSla": 0.97,
+      "outOfStandard": 716.0,
+      "startingInventory": 23882.0,
       "outOfStandardRate": 0.029981,
       "calculatedSla": 0.970019,
       "receiptClosureGap": 22042.0,
+      "throughputBalance": -22042.0,
       "closuresPerFte": 747.243243,
       "receiptsPerFte": 1342.972973,
       "dailyProductionPerFte": 35.594595,
@@ -6652,6 +6620,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 2,
       "workloadGrowthVsFteGrowth": -0.711626,
       "estimatedCapacityGap": 29.5,
+      "capacityStatus": "SHORTFALL",
+      "capacityGapMagnitude": 29.5,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 1.797237,
       "limitedHistory": true,
       "earlyWarning": {
@@ -6684,21 +6655,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Cash Posting",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "monthlyStartingSla": 0.96,
-      "startingInventory": 19957.0,
-      "inStandard": 19159.0,
-      "outOfStandard": 798.0,
-      "monthlyReceipts": 21717.0,
-      "monthlyClosures": 28519.0,
-      "receiptClosureVariance": -6802.0,
-      "monthlyReroutes": -3150.0,
-      "averageDailyReceipts": 987.0,
       "averageDailyProduction": 1296.0,
+      "averageDailyReceipts": 987.0,
       "ftes": 37.0,
       "hourlyGoal": 7.0,
+      "inStandard": 19159.0,
+      "monthlyClosures": 28519.0,
+      "receiptClosureVariance": -6802.0,
+      "monthlyReceipts": 21717.0,
+      "monthlyReroutes": -3150.0,
+      "monthlyStartingSla": 0.96,
+      "outOfStandard": 798.0,
+      "startingInventory": 19957.0,
       "outOfStandardRate": 0.039986,
       "calculatedSla": 0.960014,
       "receiptClosureGap": -6802.0,
+      "throughputBalance": 6802.0,
       "closuresPerFte": 770.783784,
       "receiptsPerFte": 586.945946,
       "dailyProductionPerFte": 35.027027,
@@ -6787,6 +6759,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.56295,
       "estimatedCapacityGap": -8.82,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 8.82,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.761492,
       "limitedHistory": true,
       "earlyWarning": {
@@ -6815,21 +6790,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Cash Posting",
       "period": "2026-08",
       "monthLabel": "Aug-26",
-      "monthlyStartingSla": 0.92,
-      "startingInventory": 16305.0,
-      "inStandard": 15001.0,
-      "outOfStandard": 1304.0,
-      "monthlyReceipts": 27446.0,
-      "monthlyClosures": 29879.0,
-      "receiptClosureVariance": -2433.0,
-      "monthlyReroutes": 202.0,
-      "averageDailyReceipts": 1307.0,
       "averageDailyProduction": 1423.0,
+      "averageDailyReceipts": 1307.0,
       "ftes": 35.0,
       "hourlyGoal": 7.0,
+      "inStandard": 15001.0,
+      "monthlyClosures": 29879.0,
+      "receiptClosureVariance": -2433.0,
+      "monthlyReceipts": 27446.0,
+      "monthlyReroutes": 202.0,
+      "monthlyStartingSla": 0.92,
+      "outOfStandard": 1304.0,
+      "startingInventory": 16305.0,
       "outOfStandardRate": 0.079975,
       "calculatedSla": 0.920025,
       "receiptClosureGap": -2433.0,
+      "throughputBalance": 2433.0,
       "closuresPerFte": 853.685714,
       "receiptsPerFte": 784.171429,
       "dailyProductionPerFte": 40.657143,
@@ -6918,6 +6894,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": 0.317857,
       "estimatedCapacityGap": -2.85,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 2.85,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.918572,
       "limitedHistory": true,
       "earlyWarning": {
@@ -6959,13 +6938,14 @@ window.DASHBOARD_DATA = {
       "workCategory": "Cash Posting",
       "period": "2026-09",
       "monthLabel": "Sep-26",
-      "monthlyStartingSla": 0.92,
-      "startingInventory": 13670.0,
       "inStandard": 12576.0,
+      "monthlyStartingSla": 0.92,
       "outOfStandard": 1094.0,
+      "startingInventory": 13670.0,
       "outOfStandardRate": 0.080029,
       "calculatedSla": 0.919971,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": null,
       "dailyProductionPerFte": null,
@@ -7054,6 +7034,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -7077,20 +7060,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Correspondence",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "monthlyStartingSla": 0.27,
-      "startingInventory": 23182.0,
-      "inStandard": 6259.0,
-      "outOfStandard": 16923.0,
-      "monthlyReceipts": 9230.0,
-      "monthlyClosures": 13168.0,
-      "receiptClosureVariance": -3938.0,
-      "averageDailyReceipts": 420.0,
       "averageDailyProduction": 599.0,
+      "averageDailyReceipts": 420.0,
       "ftes": 10.0,
       "hourlyGoal": 4.0,
+      "inStandard": 6259.0,
+      "monthlyClosures": 13168.0,
+      "receiptClosureVariance": -3938.0,
+      "monthlyReceipts": 9230.0,
+      "monthlyStartingSla": 0.27,
+      "outOfStandard": 16923.0,
+      "startingInventory": 23182.0,
       "outOfStandardRate": 0.730006,
       "calculatedSla": 0.269994,
       "receiptClosureGap": -3938.0,
+      "throughputBalance": 3938.0,
       "closuresPerFte": 1316.8,
       "receiptsPerFte": 923.0,
       "dailyProductionPerFte": 59.9,
@@ -7179,6 +7163,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": -2.99,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 2.99,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.700942,
       "limitedHistory": true,
       "earlyWarning": {
@@ -7205,20 +7192,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Correspondence",
       "period": "2026-06",
       "monthLabel": "Jun-26",
-      "monthlyStartingSla": 0.61,
-      "startingInventory": 3485.0,
-      "inStandard": 2126.0,
-      "outOfStandard": 1359.0,
-      "monthlyReceipts": 4773.0,
-      "monthlyClosures": 6881.0,
-      "receiptClosureVariance": -2108.0,
-      "averageDailyReceipts": 227.0,
       "averageDailyProduction": 328.0,
+      "averageDailyReceipts": 227.0,
       "ftes": 8.0,
       "hourlyGoal": 4.0,
+      "inStandard": 2126.0,
+      "monthlyClosures": 6881.0,
+      "receiptClosureVariance": -2108.0,
+      "monthlyReceipts": 4773.0,
+      "monthlyStartingSla": 0.61,
+      "outOfStandard": 1359.0,
+      "startingInventory": 3485.0,
       "outOfStandardRate": 0.389957,
       "calculatedSla": 0.610043,
       "receiptClosureGap": -2108.0,
+      "throughputBalance": 2108.0,
       "closuresPerFte": 860.125,
       "receiptsPerFte": 596.625,
       "dailyProductionPerFte": 41.0,
@@ -7307,6 +7295,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.282882,
       "estimatedCapacityGap": -2.45,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 2.45,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.693649,
       "limitedHistory": true,
       "earlyWarning": {
@@ -7335,20 +7326,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Correspondence",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "monthlyStartingSla": 0.83,
-      "startingInventory": 1377.0,
-      "inStandard": 1143.0,
-      "outOfStandard": 234.0,
-      "monthlyReceipts": 3349.0,
-      "monthlyClosures": 3951.0,
-      "receiptClosureVariance": -602.0,
-      "averageDailyReceipts": 152.0,
       "averageDailyProduction": 180.0,
+      "averageDailyReceipts": 152.0,
       "ftes": 10.0,
       "hourlyGoal": 5.5,
+      "inStandard": 1143.0,
+      "monthlyClosures": 3951.0,
+      "receiptClosureVariance": -602.0,
+      "monthlyReceipts": 3349.0,
+      "monthlyStartingSla": 0.83,
+      "outOfStandard": 234.0,
+      "startingInventory": 1377.0,
       "outOfStandardRate": 0.169935,
       "calculatedSla": 0.830065,
       "receiptClosureGap": -602.0,
+      "throughputBalance": 602.0,
       "closuresPerFte": 395.1,
       "receiptsPerFte": 334.9,
       "dailyProductionPerFte": 18.0,
@@ -7437,6 +7429,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.548345,
       "estimatedCapacityGap": -1.52,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 1.52,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.847634,
       "limitedHistory": true,
       "earlyWarning": {
@@ -7465,20 +7460,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Correspondence",
       "period": "2026-08",
       "monthLabel": "Aug-26",
-      "monthlyStartingSla": 0.87,
-      "startingInventory": 775.0,
-      "inStandard": 674.0,
-      "outOfStandard": 101.0,
-      "monthlyReceipts": 2647.0,
-      "monthlyClosures": 2232.0,
-      "receiptClosureVariance": 415.0,
-      "averageDailyReceipts": 126.0,
       "averageDailyProduction": 106.0,
+      "averageDailyReceipts": 126.0,
       "ftes": 11.0,
       "hourlyGoal": 5.5,
+      "inStandard": 674.0,
+      "monthlyClosures": 2232.0,
+      "receiptClosureVariance": 415.0,
+      "monthlyReceipts": 2647.0,
+      "monthlyStartingSla": 0.87,
+      "outOfStandard": 101.0,
+      "startingInventory": 775.0,
       "outOfStandardRate": 0.130323,
       "calculatedSla": 0.869677,
       "receiptClosureGap": 415.0,
+      "throughputBalance": -415.0,
       "closuresPerFte": 202.909091,
       "receiptsPerFte": 240.636364,
       "dailyProductionPerFte": 9.636364,
@@ -7567,6 +7563,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 1,
       "workloadGrowthVsFteGrowth": -0.309615,
       "estimatedCapacityGap": 2.05,
+      "capacityStatus": "SHORTFALL",
+      "capacityGapMagnitude": 2.05,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 1.185932,
       "limitedHistory": true,
       "earlyWarning": {
@@ -7596,13 +7595,14 @@ window.DASHBOARD_DATA = {
       "workCategory": "Correspondence",
       "period": "2026-09",
       "monthLabel": "Sep-26",
-      "monthlyStartingSla": 0.89,
-      "startingInventory": 1190.0,
       "inStandard": 1059.0,
+      "monthlyStartingSla": 0.89,
       "outOfStandard": 131.0,
+      "startingInventory": 1190.0,
       "outOfStandardRate": 0.110084,
       "calculatedSla": 0.889916,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": null,
       "dailyProductionPerFte": null,
@@ -7691,6 +7691,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -7718,20 +7721,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Disputes",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "monthlyStartingSla": 0.94,
-      "startingInventory": 12207.0,
-      "inStandard": 11475.0,
-      "outOfStandard": 732.0,
-      "monthlyReceipts": 16629.0,
-      "monthlyClosures": 13183.0,
-      "receiptClosureVariance": 3446.0,
-      "averageDailyReceipts": 756.0,
       "averageDailyProduction": 599.0,
+      "averageDailyReceipts": 756.0,
       "ftes": 31.0,
       "hourlyGoal": 4.0,
+      "inStandard": 11475.0,
+      "monthlyClosures": 13183.0,
+      "receiptClosureVariance": 3446.0,
+      "monthlyReceipts": 16629.0,
+      "monthlyStartingSla": 0.94,
+      "outOfStandard": 732.0,
+      "startingInventory": 12207.0,
       "outOfStandardRate": 0.059966,
       "calculatedSla": 0.940034,
       "receiptClosureGap": 3446.0,
+      "throughputBalance": -3446.0,
       "closuresPerFte": 425.258065,
       "receiptsPerFte": 536.419355,
       "dailyProductionPerFte": 19.322581,
@@ -7820,6 +7824,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 1,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": 8.1,
+      "capacityStatus": "SHORTFALL",
+      "capacityGapMagnitude": 8.1,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 1.261397,
       "limitedHistory": true,
       "earlyWarning": {
@@ -7848,20 +7855,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Disputes",
       "period": "2026-06",
       "monthLabel": "Jun-26",
-      "monthlyStartingSla": 0.82,
-      "startingInventory": 13452.0,
-      "inStandard": 11031.0,
-      "outOfStandard": 2421.0,
-      "monthlyReceipts": 12799.0,
-      "monthlyClosures": 14154.0,
-      "receiptClosureVariance": -1355.0,
-      "averageDailyReceipts": 609.0,
       "averageDailyProduction": 674.0,
+      "averageDailyReceipts": 609.0,
       "ftes": 26.0,
       "hourlyGoal": 4.0,
+      "inStandard": 11031.0,
+      "monthlyClosures": 14154.0,
+      "receiptClosureVariance": -1355.0,
+      "monthlyReceipts": 12799.0,
+      "monthlyStartingSla": 0.82,
+      "outOfStandard": 2421.0,
+      "startingInventory": 13452.0,
       "outOfStandardRate": 0.179973,
       "calculatedSla": 0.820027,
       "receiptClosureGap": -1355.0,
+      "throughputBalance": 1355.0,
       "closuresPerFte": 544.384615,
       "receiptsPerFte": 492.269231,
       "dailyProductionPerFte": 25.923077,
@@ -7950,6 +7958,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.069031,
       "estimatedCapacityGap": -2.49,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 2.49,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.904267,
       "limitedHistory": true,
       "earlyWarning": {
@@ -7977,20 +7988,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Disputes",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "monthlyStartingSla": 0.92,
-      "startingInventory": 12097.0,
-      "inStandard": 11129.0,
-      "outOfStandard": 968.0,
-      "monthlyReceipts": 11840.0,
-      "monthlyClosures": 13406.0,
-      "receiptClosureVariance": -1566.0,
-      "averageDailyReceipts": 538.0,
       "averageDailyProduction": 609.0,
+      "averageDailyReceipts": 538.0,
       "ftes": 31.0,
       "hourlyGoal": 4.0,
+      "inStandard": 11129.0,
+      "monthlyClosures": 13406.0,
+      "receiptClosureVariance": -1566.0,
+      "monthlyReceipts": 11840.0,
+      "monthlyStartingSla": 0.92,
+      "outOfStandard": 968.0,
+      "startingInventory": 12097.0,
       "outOfStandardRate": 0.08002,
       "calculatedSla": 0.91998,
       "receiptClosureGap": -1566.0,
+      "throughputBalance": 1566.0,
       "closuresPerFte": 432.451613,
       "receiptsPerFte": 381.935484,
       "dailyProductionPerFte": 19.645161,
@@ -8079,6 +8091,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.267236,
       "estimatedCapacityGap": -3.62,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 3.62,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.883187,
       "limitedHistory": true,
       "earlyWarning": {
@@ -8104,20 +8119,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Disputes",
       "period": "2026-08",
       "monthLabel": "Aug-26",
-      "monthlyStartingSla": 0.91,
-      "startingInventory": 10531.0,
-      "inStandard": 9583.0,
-      "outOfStandard": 948.0,
-      "monthlyReceipts": 10167.0,
-      "monthlyClosures": 10918.0,
-      "receiptClosureVariance": -751.0,
-      "averageDailyReceipts": 484.0,
       "averageDailyProduction": 520.0,
+      "averageDailyReceipts": 484.0,
       "ftes": 30.0,
       "hourlyGoal": 4.0,
+      "inStandard": 9583.0,
+      "monthlyClosures": 10918.0,
+      "receiptClosureVariance": -751.0,
+      "monthlyReceipts": 10167.0,
+      "monthlyStartingSla": 0.91,
+      "outOfStandard": 948.0,
+      "startingInventory": 10531.0,
       "outOfStandardRate": 0.09002,
       "calculatedSla": 0.90998,
       "receiptClosureGap": -751.0,
+      "throughputBalance": 751.0,
       "closuresPerFte": 363.933333,
       "receiptsPerFte": 338.9,
       "dailyProductionPerFte": 17.333333,
@@ -8206,6 +8222,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.109043,
       "estimatedCapacityGap": -2.06,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 2.06,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.931215,
       "limitedHistory": true,
       "earlyWarning": {
@@ -8241,13 +8260,14 @@ window.DASHBOARD_DATA = {
       "workCategory": "Disputes",
       "period": "2026-09",
       "monthLabel": "Sep-26",
-      "monthlyStartingSla": 0.93,
-      "startingInventory": 9780.0,
       "inStandard": 9095.0,
+      "monthlyStartingSla": 0.93,
       "outOfStandard": 685.0,
+      "startingInventory": 9780.0,
       "outOfStandardRate": 0.070041,
       "calculatedSla": 0.929959,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": null,
       "dailyProductionPerFte": null,
@@ -8336,6 +8356,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -8359,21 +8382,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Validation/Adjustments",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "monthlyStartingSla": 0.89,
-      "startingInventory": 201479.0,
-      "inStandard": 179316.0,
-      "outOfStandard": 22163.0,
-      "monthlyReceipts": 179477.0,
-      "monthlyClosures": 318636.0,
-      "receiptClosureVariance": -139159.0,
-      "monthlyReroutes": -122415.0,
-      "averageDailyReceipts": 8158.0,
       "averageDailyProduction": 14483.0,
+      "averageDailyReceipts": 8158.0,
       "ftes": 109.0,
       "hourlyGoal": 10.7,
+      "inStandard": 179316.0,
+      "monthlyClosures": 318636.0,
+      "receiptClosureVariance": -139159.0,
+      "monthlyReceipts": 179477.0,
+      "monthlyReroutes": -122415.0,
+      "monthlyStartingSla": 0.89,
+      "outOfStandard": 22163.0,
+      "startingInventory": 201479.0,
       "outOfStandardRate": 0.110002,
       "calculatedSla": 0.889998,
       "receiptClosureGap": -139159.0,
+      "throughputBalance": 139159.0,
       "closuresPerFte": 2923.266055,
       "receiptsPerFte": 1646.577982,
       "dailyProductionPerFte": 132.87156,
@@ -8462,6 +8486,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": -47.6,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 47.6,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.563267,
       "limitedHistory": true,
       "earlyWarning": {
@@ -8488,21 +8515,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Validation/Adjustments",
       "period": "2026-06",
       "monthLabel": "Jun-26",
-      "monthlyStartingSla": 0.85,
-      "startingInventory": 107448.0,
-      "inStandard": 91331.0,
-      "outOfStandard": 16117.0,
-      "monthlyReceipts": 260411.0,
-      "monthlyClosures": 291572.0,
-      "receiptClosureVariance": -31161.0,
-      "monthlyReroutes": -85850.0,
-      "averageDailyReceipts": 12401.0,
       "averageDailyProduction": 13884.0,
+      "averageDailyReceipts": 12401.0,
       "ftes": 96.0,
       "hourlyGoal": 10.7,
+      "inStandard": 91331.0,
+      "monthlyClosures": 291572.0,
+      "receiptClosureVariance": -31161.0,
+      "monthlyReceipts": 260411.0,
+      "monthlyReroutes": -85850.0,
+      "monthlyStartingSla": 0.85,
+      "outOfStandard": 16117.0,
+      "startingInventory": 107448.0,
       "outOfStandardRate": 0.149998,
       "calculatedSla": 0.850002,
       "receiptClosureGap": -31161.0,
+      "throughputBalance": 31161.0,
       "closuresPerFte": 3037.208333,
       "receiptsPerFte": 2712.614583,
       "dailyProductionPerFte": 144.625,
@@ -8591,6 +8619,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": 0.57021,
       "estimatedCapacityGap": -10.26,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 10.26,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.893128,
       "limitedHistory": true,
       "earlyWarning": {
@@ -8620,21 +8651,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Validation/Adjustments",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "monthlyStartingSla": 0.9,
-      "startingInventory": 162137.0,
-      "inStandard": 145923.0,
-      "outOfStandard": 16214.0,
-      "monthlyReceipts": 210593.0,
-      "monthlyClosures": 230803.0,
-      "receiptClosureVariance": -20210.0,
-      "monthlyReroutes": 16510.0,
-      "averageDailyReceipts": 9572.0,
       "averageDailyProduction": 10491.0,
+      "averageDailyReceipts": 9572.0,
       "ftes": 100.0,
       "hourlyGoal": 10.7,
+      "inStandard": 145923.0,
+      "monthlyClosures": 230803.0,
+      "receiptClosureVariance": -20210.0,
+      "monthlyReceipts": 210593.0,
+      "monthlyReroutes": 16510.0,
+      "monthlyStartingSla": 0.9,
+      "outOfStandard": 16214.0,
+      "startingInventory": 162137.0,
       "outOfStandardRate": 0.100002,
       "calculatedSla": 0.899998,
       "receiptClosureGap": -20210.0,
+      "throughputBalance": 20210.0,
       "closuresPerFte": 2308.03,
       "receiptsPerFte": 2105.93,
       "dailyProductionPerFte": 104.91,
@@ -8723,6 +8755,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.232972,
       "estimatedCapacityGap": -8.76,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 8.76,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.912436,
       "limitedHistory": true,
       "earlyWarning": {
@@ -8762,21 +8797,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Validation/Adjustments",
       "period": "2026-08",
       "monthLabel": "Aug-26",
-      "monthlyStartingSla": 0.81,
-      "startingInventory": 125417.0,
-      "inStandard": 101588.0,
-      "outOfStandard": 23829.0,
-      "monthlyReceipts": 191304.0,
-      "monthlyClosures": 238005.0,
-      "receiptClosureVariance": -46701.0,
-      "monthlyReroutes": -34250.0,
-      "averageDailyReceipts": 9110.0,
       "averageDailyProduction": 11334.0,
+      "averageDailyReceipts": 9110.0,
       "ftes": 100.0,
       "hourlyGoal": 10.7,
+      "inStandard": 101588.0,
+      "monthlyClosures": 238005.0,
+      "receiptClosureVariance": -46701.0,
+      "monthlyReceipts": 191304.0,
+      "monthlyReroutes": -34250.0,
+      "monthlyStartingSla": 0.81,
+      "outOfStandard": 23829.0,
+      "startingInventory": 125417.0,
       "outOfStandardRate": 0.189998,
       "calculatedSla": 0.810002,
       "receiptClosureGap": -46701.0,
+      "throughputBalance": 46701.0,
       "closuresPerFte": 2380.05,
       "receiptsPerFte": 1913.04,
       "dailyProductionPerFte": 113.34,
@@ -8865,6 +8901,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.091594,
       "estimatedCapacityGap": -19.62,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 19.62,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.803781,
       "limitedHistory": true,
       "earlyWarning": {
@@ -8902,13 +8941,14 @@ window.DASHBOARD_DATA = {
       "workCategory": "Validation/Adjustments",
       "period": "2026-09",
       "monthLabel": "Sep-26",
-      "monthlyStartingSla": 0.74,
-      "startingInventory": 112966.0,
       "inStandard": 83595.0,
+      "monthlyStartingSla": 0.74,
       "outOfStandard": 29371.0,
+      "startingInventory": 112966.0,
       "outOfStandardRate": 0.259999,
       "calculatedSla": 0.740001,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": null,
       "dailyProductionPerFte": null,
@@ -8997,6 +9037,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -9040,21 +9083,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Cash Posting",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "monthlyStartingSla": 0.93,
-      "startingInventory": 12296.0,
-      "inStandard": 11435.0,
-      "outOfStandard": 861.0,
-      "monthlyReceipts": 63101.0,
-      "monthlyClosures": 14318.0,
-      "receiptClosureVariance": 48783.0,
-      "monthlyReroutes": 58001.0,
-      "averageDailyReceipts": 2868.0,
       "averageDailyProduction": 651.0,
+      "averageDailyReceipts": 2868.0,
       "ftes": 45.0,
       "hourlyGoal": 7.0,
+      "inStandard": 11435.0,
+      "monthlyClosures": 14318.0,
+      "receiptClosureVariance": 48783.0,
+      "monthlyReceipts": 63101.0,
+      "monthlyReroutes": 58001.0,
+      "monthlyStartingSla": 0.93,
+      "outOfStandard": 861.0,
+      "startingInventory": 12296.0,
       "outOfStandardRate": 0.070023,
       "calculatedSla": 0.929977,
       "receiptClosureGap": 48783.0,
+      "throughputBalance": -48783.0,
       "closuresPerFte": 318.177778,
       "receiptsPerFte": 1402.244444,
       "dailyProductionPerFte": 14.466667,
@@ -9143,6 +9187,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 1,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": 153.32,
+      "capacityStatus": "SHORTFALL",
+      "capacityGapMagnitude": 153.32,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 4.40711,
       "limitedHistory": true,
       "earlyWarning": {
@@ -9173,21 +9220,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Cash Posting",
       "period": "2026-06",
       "monthLabel": "Jun-26",
-      "monthlyStartingSla": 0.98,
-      "startingInventory": 13087.0,
-      "inStandard": 12825.0,
-      "outOfStandard": 262.0,
-      "monthlyReceipts": 15807.0,
-      "monthlyClosures": 15916.0,
-      "receiptClosureVariance": -109.0,
-      "monthlyReroutes": -5907.0,
-      "averageDailyReceipts": 753.0,
       "averageDailyProduction": 758.0,
+      "averageDailyReceipts": 753.0,
       "ftes": 40.0,
       "hourlyGoal": 7.0,
+      "inStandard": 12825.0,
+      "monthlyClosures": 15916.0,
+      "receiptClosureVariance": -109.0,
+      "monthlyReceipts": 15807.0,
+      "monthlyReroutes": -5907.0,
+      "monthlyStartingSla": 0.98,
+      "outOfStandard": 262.0,
+      "startingInventory": 13087.0,
       "outOfStandardRate": 0.02002,
       "calculatedSla": 0.97998,
       "receiptClosureGap": -109.0,
+      "throughputBalance": 109.0,
       "closuresPerFte": 397.9,
       "receiptsPerFte": 395.175,
       "dailyProductionPerFte": 18.95,
@@ -9276,6 +9324,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.638386,
       "estimatedCapacityGap": -0.27,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 0.27,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.993152,
       "limitedHistory": true,
       "earlyWarning": {
@@ -9301,21 +9352,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Cash Posting",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "monthlyStartingSla": 0.98,
-      "startingInventory": 18885.0,
-      "inStandard": 18507.0,
-      "outOfStandard": 378.0,
-      "monthlyReceipts": 16809.0,
-      "monthlyClosures": 21308.0,
-      "receiptClosureVariance": -4499.0,
-      "monthlyReroutes": -7786.0,
-      "averageDailyReceipts": 764.0,
       "averageDailyProduction": 969.0,
+      "averageDailyReceipts": 764.0,
       "ftes": 40.0,
       "hourlyGoal": 7.0,
+      "inStandard": 18507.0,
+      "monthlyClosures": 21308.0,
+      "receiptClosureVariance": -4499.0,
+      "monthlyReceipts": 16809.0,
+      "monthlyReroutes": -7786.0,
+      "monthlyStartingSla": 0.98,
+      "outOfStandard": 378.0,
+      "startingInventory": 18885.0,
       "outOfStandardRate": 0.020016,
       "calculatedSla": 0.979984,
       "receiptClosureGap": -4499.0,
+      "throughputBalance": 4499.0,
       "closuresPerFte": 532.7,
       "receiptsPerFte": 420.225,
       "dailyProductionPerFte": 24.225,
@@ -9404,6 +9456,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": 0.06339,
       "estimatedCapacityGap": -8.45,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 8.45,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.788859,
       "limitedHistory": true,
       "earlyWarning": {
@@ -9440,21 +9495,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Cash Posting",
       "period": "2026-08",
       "monthLabel": "Aug-26",
-      "monthlyStartingSla": 0.91,
-      "startingInventory": 22172.0,
-      "inStandard": 20177.0,
-      "outOfStandard": 1995.0,
-      "monthlyReceipts": 18467.0,
-      "monthlyClosures": 24993.0,
-      "receiptClosureVariance": -6526.0,
-      "monthlyReroutes": -5298.0,
-      "averageDailyReceipts": 879.0,
       "averageDailyProduction": 1190.0,
+      "averageDailyReceipts": 879.0,
       "ftes": 57.0,
       "hourlyGoal": 7.0,
+      "inStandard": 20177.0,
+      "monthlyClosures": 24993.0,
+      "receiptClosureVariance": -6526.0,
+      "monthlyReceipts": 18467.0,
+      "monthlyReroutes": -5298.0,
+      "monthlyStartingSla": 0.91,
+      "outOfStandard": 1995.0,
+      "startingInventory": 22172.0,
       "outOfStandardRate": 0.089978,
       "calculatedSla": 0.910022,
       "receiptClosureGap": -6526.0,
+      "throughputBalance": 6526.0,
       "closuresPerFte": 438.473684,
       "receiptsPerFte": 323.982456,
       "dailyProductionPerFte": 20.877193,
@@ -9543,6 +9599,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.326362,
       "estimatedCapacityGap": -14.88,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 14.88,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.738887,
       "limitedHistory": true,
       "earlyWarning": {
@@ -9596,13 +9655,14 @@ window.DASHBOARD_DATA = {
       "workCategory": "Cash Posting",
       "period": "2026-09",
       "monthLabel": "Sep-26",
-      "monthlyStartingSla": 0.92,
-      "startingInventory": 20944.0,
       "inStandard": 19268.0,
+      "monthlyStartingSla": 0.92,
       "outOfStandard": 1676.0,
+      "startingInventory": 20944.0,
       "outOfStandardRate": 0.080023,
       "calculatedSla": 0.919977,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": null,
       "dailyProductionPerFte": null,
@@ -9691,6 +9751,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -9714,20 +9777,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Correspondence",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "monthlyStartingSla": 0.97,
-      "startingInventory": 14071.0,
-      "inStandard": 13649.0,
-      "outOfStandard": 422.0,
-      "monthlyReceipts": 11342.0,
-      "monthlyClosures": 23828.0,
-      "receiptClosureVariance": -12486.0,
-      "averageDailyReceipts": 516.0,
       "averageDailyProduction": 1083.0,
+      "averageDailyReceipts": 516.0,
       "ftes": 54.0,
       "hourlyGoal": 4.0,
+      "inStandard": 13649.0,
+      "monthlyClosures": 23828.0,
+      "receiptClosureVariance": -12486.0,
+      "monthlyReceipts": 11342.0,
+      "monthlyStartingSla": 0.97,
+      "outOfStandard": 422.0,
+      "startingInventory": 14071.0,
       "outOfStandardRate": 0.029991,
       "calculatedSla": 0.970009,
       "receiptClosureGap": -12486.0,
+      "throughputBalance": 12486.0,
       "closuresPerFte": 441.259259,
       "receiptsPerFte": 210.037037,
       "dailyProductionPerFte": 20.055556,
@@ -9816,6 +9880,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": -28.3,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 28.3,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.475995,
       "limitedHistory": true,
       "earlyWarning": {
@@ -9839,20 +9906,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Correspondence",
       "period": "2026-06",
       "monthLabel": "Jun-26",
-      "monthlyStartingSla": 0.98,
-      "startingInventory": 6201.0,
-      "inStandard": 6077.0,
-      "outOfStandard": 124.0,
-      "monthlyReceipts": 16205.0,
-      "monthlyClosures": 19010.0,
-      "receiptClosureVariance": -2805.0,
-      "averageDailyReceipts": 772.0,
       "averageDailyProduction": 905.0,
+      "averageDailyReceipts": 772.0,
       "ftes": 19.0,
       "hourlyGoal": 4.0,
+      "inStandard": 6077.0,
+      "monthlyClosures": 19010.0,
+      "receiptClosureVariance": -2805.0,
+      "monthlyReceipts": 16205.0,
+      "monthlyStartingSla": 0.98,
+      "outOfStandard": 124.0,
+      "startingInventory": 6201.0,
       "outOfStandardRate": 0.019997,
       "calculatedSla": 0.980003,
       "receiptClosureGap": -2805.0,
+      "throughputBalance": 2805.0,
       "closuresPerFte": 1000.526316,
       "receiptsPerFte": 852.894737,
       "dailyProductionPerFte": 47.631579,
@@ -9941,6 +10009,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": 1.076908,
       "estimatedCapacityGap": -2.8,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 2.8,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.852446,
       "limitedHistory": true,
       "earlyWarning": {
@@ -9971,20 +10042,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Correspondence",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "monthlyStartingSla": 0.92,
-      "startingInventory": 3396.0,
-      "inStandard": 3124.0,
-      "outOfStandard": 272.0,
-      "monthlyReceipts": 10968.0,
-      "monthlyClosures": 12420.0,
-      "receiptClosureVariance": -1452.0,
-      "averageDailyReceipts": 499.0,
       "averageDailyProduction": 565.0,
+      "averageDailyReceipts": 499.0,
       "ftes": 18.0,
       "hourlyGoal": 5.5,
+      "inStandard": 3124.0,
+      "monthlyClosures": 12420.0,
+      "receiptClosureVariance": -1452.0,
+      "monthlyReceipts": 10968.0,
+      "monthlyStartingSla": 0.92,
+      "outOfStandard": 272.0,
+      "startingInventory": 3396.0,
       "outOfStandardRate": 0.080094,
       "calculatedSla": 0.919906,
       "receiptClosureGap": -1452.0,
+      "throughputBalance": 1452.0,
       "closuresPerFte": 690.0,
       "receiptsPerFte": 609.333333,
       "dailyProductionPerFte": 31.388889,
@@ -10073,6 +10145,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.27054,
       "estimatedCapacityGap": -2.1,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 2.1,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.883092,
       "limitedHistory": true,
       "earlyWarning": {
@@ -10117,20 +10192,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Correspondence",
       "period": "2026-08",
       "monthLabel": "Aug-26",
-      "monthlyStartingSla": 0.94,
-      "startingInventory": 1944.0,
-      "inStandard": 1827.0,
-      "outOfStandard": 117.0,
-      "monthlyReceipts": 9380.0,
-      "monthlyClosures": 7978.0,
-      "receiptClosureVariance": 1402.0,
-      "averageDailyReceipts": 447.0,
       "averageDailyProduction": 380.0,
+      "averageDailyReceipts": 447.0,
       "ftes": 8.0,
       "hourlyGoal": 5.5,
+      "inStandard": 1827.0,
+      "monthlyClosures": 7978.0,
+      "receiptClosureVariance": 1402.0,
+      "monthlyReceipts": 9380.0,
+      "monthlyStartingSla": 0.94,
+      "outOfStandard": 117.0,
+      "startingInventory": 1944.0,
       "outOfStandardRate": 0.060185,
       "calculatedSla": 0.939815,
       "receiptClosureGap": 1402.0,
+      "throughputBalance": -1402.0,
       "closuresPerFte": 997.25,
       "receiptsPerFte": 1172.5,
       "dailyProductionPerFte": 47.5,
@@ -10219,6 +10295,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 1,
       "workloadGrowthVsFteGrowth": 0.410771,
       "estimatedCapacityGap": 1.41,
+      "capacityStatus": "SHORTFALL",
+      "capacityGapMagnitude": 1.41,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 1.175733,
       "limitedHistory": true,
       "earlyWarning": {
@@ -10251,13 +10330,14 @@ window.DASHBOARD_DATA = {
       "workCategory": "Correspondence",
       "period": "2026-09",
       "monthLabel": "Sep-26",
-      "monthlyStartingSla": 0.98,
-      "startingInventory": 3346.0,
       "inStandard": 3279.0,
+      "monthlyStartingSla": 0.98,
       "outOfStandard": 67.0,
+      "startingInventory": 3346.0,
       "outOfStandardRate": 0.020024,
       "calculatedSla": 0.979976,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": null,
       "dailyProductionPerFte": null,
@@ -10346,6 +10426,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -10369,20 +10452,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Disputes",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "monthlyStartingSla": 0.98,
-      "startingInventory": 12284.0,
-      "inStandard": 12038.0,
-      "outOfStandard": 246.0,
-      "monthlyReceipts": 20263.0,
-      "monthlyClosures": 15922.0,
-      "receiptClosureVariance": 4341.0,
-      "averageDailyReceipts": 921.0,
       "averageDailyProduction": 724.0,
+      "averageDailyReceipts": 921.0,
       "ftes": 39.0,
       "hourlyGoal": 4.0,
+      "inStandard": 12038.0,
+      "monthlyClosures": 15922.0,
+      "receiptClosureVariance": 4341.0,
+      "monthlyReceipts": 20263.0,
+      "monthlyStartingSla": 0.98,
+      "outOfStandard": 246.0,
+      "startingInventory": 12284.0,
       "outOfStandardRate": 0.020026,
       "calculatedSla": 0.979974,
       "receiptClosureGap": 4341.0,
+      "throughputBalance": -4341.0,
       "closuresPerFte": 408.25641,
       "receiptsPerFte": 519.564103,
       "dailyProductionPerFte": 18.564103,
@@ -10471,6 +10555,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 1,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": 10.63,
+      "capacityStatus": "SHORTFALL",
+      "capacityGapMagnitude": 10.63,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 1.272642,
       "limitedHistory": true,
       "earlyWarning": {
@@ -10499,20 +10586,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Disputes",
       "period": "2026-06",
       "monthLabel": "Jun-26",
-      "monthlyStartingSla": 0.76,
-      "startingInventory": 22549.0,
-      "inStandard": 17137.0,
-      "outOfStandard": 5412.0,
-      "monthlyReceipts": 28086.0,
-      "monthlyClosures": 28879.0,
-      "receiptClosureVariance": -793.0,
-      "averageDailyReceipts": 1337.0,
       "averageDailyProduction": 1375.0,
+      "averageDailyReceipts": 1337.0,
       "ftes": 69.0,
       "hourlyGoal": 4.0,
+      "inStandard": 17137.0,
+      "monthlyClosures": 28879.0,
+      "receiptClosureVariance": -793.0,
+      "monthlyReceipts": 28086.0,
+      "monthlyStartingSla": 0.76,
+      "outOfStandard": 5412.0,
+      "startingInventory": 22549.0,
       "outOfStandardRate": 0.240011,
       "calculatedSla": 0.759989,
       "receiptClosureGap": -793.0,
+      "throughputBalance": 793.0,
       "closuresPerFte": 418.536232,
       "receiptsPerFte": 407.043478,
       "dailyProductionPerFte": 19.927536,
@@ -10601,6 +10689,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.383158,
       "estimatedCapacityGap": -1.89,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 1.89,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.972541,
       "limitedHistory": true,
       "earlyWarning": {
@@ -10630,20 +10721,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Disputes",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "monthlyStartingSla": 0.89,
-      "startingInventory": 21756.0,
-      "inStandard": 19363.0,
-      "outOfStandard": 2393.0,
-      "monthlyReceipts": 32928.0,
-      "monthlyClosures": 33531.0,
-      "receiptClosureVariance": -603.0,
-      "averageDailyReceipts": 1497.0,
       "averageDailyProduction": 1524.0,
+      "averageDailyReceipts": 1497.0,
       "ftes": 66.0,
       "hourlyGoal": 4.0,
+      "inStandard": 19363.0,
+      "monthlyClosures": 33531.0,
+      "receiptClosureVariance": -603.0,
+      "monthlyReceipts": 32928.0,
+      "monthlyStartingSla": 0.89,
+      "outOfStandard": 2393.0,
+      "startingInventory": 21756.0,
       "outOfStandardRate": 0.109993,
       "calculatedSla": 0.890007,
       "receiptClosureGap": -603.0,
+      "throughputBalance": 603.0,
       "closuresPerFte": 508.045455,
       "receiptsPerFte": 498.909091,
       "dailyProductionPerFte": 23.090909,
@@ -10732,6 +10824,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": 0.215877,
       "estimatedCapacityGap": -1.19,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 1.19,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.982017,
       "limitedHistory": true,
       "earlyWarning": {
@@ -10760,20 +10855,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Disputes",
       "period": "2026-08",
       "monthLabel": "Aug-26",
-      "monthlyStartingSla": 0.93,
-      "startingInventory": 21153.0,
-      "inStandard": 19672.0,
-      "outOfStandard": 1481.0,
-      "monthlyReceipts": 27819.0,
-      "monthlyClosures": 33524.0,
-      "receiptClosureVariance": -5705.0,
-      "averageDailyReceipts": 1325.0,
       "averageDailyProduction": 1596.0,
+      "averageDailyReceipts": 1325.0,
       "ftes": 72.0,
       "hourlyGoal": 4.0,
+      "inStandard": 19672.0,
+      "monthlyClosures": 33524.0,
+      "receiptClosureVariance": -5705.0,
+      "monthlyReceipts": 27819.0,
+      "monthlyStartingSla": 0.93,
+      "outOfStandard": 1481.0,
+      "startingInventory": 21153.0,
       "outOfStandardRate": 0.070014,
       "calculatedSla": 0.929986,
       "receiptClosureGap": -5705.0,
+      "throughputBalance": 5705.0,
       "closuresPerFte": 465.611111,
       "receiptsPerFte": 386.375,
       "dailyProductionPerFte": 22.166667,
@@ -10862,6 +10958,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.246066,
       "estimatedCapacityGap": -12.25,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 12.25,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.829823,
       "limitedHistory": true,
       "earlyWarning": {
@@ -10885,13 +10984,14 @@ window.DASHBOARD_DATA = {
       "workCategory": "Disputes",
       "period": "2026-09",
       "monthLabel": "Sep-26",
-      "monthlyStartingSla": 0.94,
-      "startingInventory": 15448.0,
       "inStandard": 14521.0,
+      "monthlyStartingSla": 0.94,
       "outOfStandard": 927.0,
+      "startingInventory": 15448.0,
       "outOfStandardRate": 0.060008,
       "calculatedSla": 0.939992,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": null,
       "dailyProductionPerFte": null,
@@ -10980,6 +11080,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -11003,20 +11106,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Host",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "monthlyStartingSla": 0.4,
-      "startingInventory": 149976.0,
-      "inStandard": 59990.0,
-      "outOfStandard": 89986.0,
-      "monthlyReceipts": 35653.0,
-      "monthlyClosures": 75902.0,
-      "receiptClosureVariance": -40249.0,
-      "averageDailyReceipts": 1621.0,
       "averageDailyProduction": 3450.0,
+      "averageDailyReceipts": 1621.0,
       "ftes": 38.0,
       "hourlyGoal": 8.0,
+      "inStandard": 59990.0,
+      "monthlyClosures": 75902.0,
+      "receiptClosureVariance": -40249.0,
+      "monthlyReceipts": 35653.0,
+      "monthlyStartingSla": 0.4,
+      "outOfStandard": 89986.0,
+      "startingInventory": 149976.0,
       "outOfStandardRate": 0.600003,
       "calculatedSla": 0.399997,
       "receiptClosureGap": -40249.0,
+      "throughputBalance": 40249.0,
       "closuresPerFte": 1997.421053,
       "receiptsPerFte": 938.236842,
       "dailyProductionPerFte": 90.789474,
@@ -11105,6 +11209,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": -20.15,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 20.15,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.469724,
       "limitedHistory": true,
       "earlyWarning": {
@@ -11131,20 +11238,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Host",
       "period": "2026-06",
       "monthLabel": "Jun-26",
-      "monthlyStartingSla": 0.76,
-      "startingInventory": 29482.0,
-      "inStandard": 22406.0,
-      "outOfStandard": 7076.0,
-      "monthlyReceipts": 56806.0,
-      "monthlyClosures": 48356.0,
-      "receiptClosureVariance": 8450.0,
-      "averageDailyReceipts": 2705.0,
       "averageDailyProduction": 2303.0,
+      "averageDailyReceipts": 2705.0,
       "ftes": 114.0,
       "hourlyGoal": 8.0,
+      "inStandard": 22406.0,
+      "monthlyClosures": 48356.0,
+      "receiptClosureVariance": 8450.0,
+      "monthlyReceipts": 56806.0,
+      "monthlyStartingSla": 0.76,
+      "outOfStandard": 7076.0,
+      "startingInventory": 29482.0,
       "outOfStandardRate": 0.240011,
       "calculatedSla": 0.759989,
       "receiptClosureGap": 8450.0,
+      "throughputBalance": -8450.0,
       "closuresPerFte": 424.175439,
       "receiptsPerFte": 498.298246,
       "dailyProductionPerFte": 20.201754,
@@ -11233,6 +11341,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 1,
       "workloadGrowthVsFteGrowth": -1.406698,
       "estimatedCapacityGap": 19.92,
+      "capacityStatus": "SHORTFALL",
+      "capacityGapMagnitude": 19.92,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 1.174746,
       "limitedHistory": true,
       "earlyWarning": {
@@ -11262,20 +11373,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Host",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "monthlyStartingSla": 0.88,
-      "startingInventory": 37932.0,
-      "inStandard": 33380.0,
-      "outOfStandard": 4552.0,
-      "monthlyReceipts": 31528.0,
-      "monthlyClosures": 42884.0,
-      "receiptClosureVariance": -11356.0,
-      "averageDailyReceipts": 1433.0,
       "averageDailyProduction": 1949.0,
+      "averageDailyReceipts": 1433.0,
       "ftes": 92.0,
       "hourlyGoal": 8.0,
+      "inStandard": 33380.0,
+      "monthlyClosures": 42884.0,
+      "receiptClosureVariance": -11356.0,
+      "monthlyReceipts": 31528.0,
+      "monthlyStartingSla": 0.88,
+      "outOfStandard": 4552.0,
+      "startingInventory": 37932.0,
       "outOfStandardRate": 0.120004,
       "calculatedSla": 0.879996,
       "receiptClosureGap": -11356.0,
+      "throughputBalance": 11356.0,
       "closuresPerFte": 466.130435,
       "receiptsPerFte": 342.695652,
       "dailyProductionPerFte": 21.184783,
@@ -11364,6 +11476,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.252006,
       "estimatedCapacityGap": -24.36,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 24.36,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.735193,
       "limitedHistory": true,
       "earlyWarning": {
@@ -11390,20 +11505,21 @@ window.DASHBOARD_DATA = {
       "workCategory": "Host",
       "period": "2026-08",
       "monthLabel": "Aug-26",
-      "monthlyStartingSla": 0.8,
-      "startingInventory": 26576.0,
-      "inStandard": 21261.0,
-      "outOfStandard": 5315.0,
-      "monthlyReceipts": 32915.0,
-      "monthlyClosures": 30447.0,
-      "receiptClosureVariance": 2468.0,
-      "averageDailyReceipts": 1567.0,
       "averageDailyProduction": 1450.0,
+      "averageDailyReceipts": 1567.0,
       "ftes": 38.0,
       "hourlyGoal": 8.0,
+      "inStandard": 21261.0,
+      "monthlyClosures": 30447.0,
+      "receiptClosureVariance": 2468.0,
+      "monthlyReceipts": 32915.0,
+      "monthlyStartingSla": 0.8,
+      "outOfStandard": 5315.0,
+      "startingInventory": 26576.0,
       "outOfStandardRate": 0.199992,
       "calculatedSla": 0.800008,
       "receiptClosureGap": 2468.0,
+      "throughputBalance": -2468.0,
       "closuresPerFte": 801.236842,
       "receiptsPerFte": 866.184211,
       "dailyProductionPerFte": 38.157895,
@@ -11492,6 +11608,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 1,
       "workloadGrowthVsFteGrowth": 0.63095,
       "estimatedCapacityGap": 3.08,
+      "capacityStatus": "SHORTFALL",
+      "capacityGapMagnitude": 3.08,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 1.081059,
       "limitedHistory": true,
       "earlyWarning": {
@@ -11522,13 +11641,14 @@ window.DASHBOARD_DATA = {
       "workCategory": "Host",
       "period": "2026-09",
       "monthLabel": "Sep-26",
-      "monthlyStartingSla": 0.82,
-      "startingInventory": 29044.0,
       "inStandard": 23816.0,
+      "monthlyStartingSla": 0.82,
       "outOfStandard": 5228.0,
+      "startingInventory": 29044.0,
       "outOfStandardRate": 0.180003,
       "calculatedSla": 0.819997,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": null,
       "dailyProductionPerFte": null,
@@ -11617,6 +11737,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -11643,21 +11766,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Validation/Adjustments",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "monthlyStartingSla": 0.79,
-      "startingInventory": 83477.0,
-      "inStandard": 65947.0,
-      "outOfStandard": 17530.0,
-      "monthlyReceipts": 191301.0,
-      "monthlyClosures": 258471.0,
-      "receiptClosureVariance": -67170.0,
-      "monthlyReroutes": -20360.0,
-      "averageDailyReceipts": 8696.0,
       "averageDailyProduction": 11749.0,
+      "averageDailyReceipts": 8696.0,
       "ftes": 56.0,
       "hourlyGoal": 10.7,
+      "inStandard": 65947.0,
+      "monthlyClosures": 258471.0,
+      "receiptClosureVariance": -67170.0,
+      "monthlyReceipts": 191301.0,
+      "monthlyReroutes": -20360.0,
+      "monthlyStartingSla": 0.79,
+      "outOfStandard": 17530.0,
+      "startingInventory": 83477.0,
       "outOfStandardRate": 0.209998,
       "calculatedSla": 0.790002,
       "receiptClosureGap": -67170.0,
+      "throughputBalance": 67170.0,
       "closuresPerFte": 4615.553571,
       "receiptsPerFte": 3416.089286,
       "dailyProductionPerFte": 209.803571,
@@ -11746,6 +11870,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": -14.55,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 14.55,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.740126,
       "limitedHistory": true,
       "earlyWarning": {
@@ -11774,21 +11901,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Validation/Adjustments",
       "period": "2026-06",
       "monthLabel": "Jun-26",
-      "monthlyStartingSla": 0.9,
-      "startingInventory": 57333.0,
-      "inStandard": 51600.0,
-      "outOfStandard": 5733.0,
-      "monthlyReceipts": 147578.0,
-      "monthlyClosures": 225815.0,
-      "receiptClosureVariance": -78237.0,
-      "monthlyReroutes": -104933.0,
-      "averageDailyReceipts": 7028.0,
       "averageDailyProduction": 10753.0,
+      "averageDailyReceipts": 7028.0,
       "ftes": 37.0,
       "hourlyGoal": 10.7,
+      "inStandard": 51600.0,
+      "monthlyClosures": 225815.0,
+      "receiptClosureVariance": -78237.0,
+      "monthlyReceipts": 147578.0,
+      "monthlyReroutes": -104933.0,
+      "monthlyStartingSla": 0.9,
+      "outOfStandard": 5733.0,
+      "startingInventory": 57333.0,
       "outOfStandardRate": 0.099995,
       "calculatedSla": 0.900005,
       "receiptClosureGap": -78237.0,
+      "throughputBalance": 78237.0,
       "closuresPerFte": 6103.108108,
       "receiptsPerFte": 3988.594595,
       "dailyProductionPerFte": 290.621622,
@@ -11877,6 +12005,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": 0.11073,
       "estimatedCapacityGap": -12.82,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 12.82,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.653535,
       "limitedHistory": true,
       "earlyWarning": {
@@ -11907,21 +12038,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Validation/Adjustments",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "monthlyStartingSla": 0.93,
-      "startingInventory": 84029.0,
-      "inStandard": 78147.0,
-      "outOfStandard": 5882.0,
-      "monthlyReceipts": 183212.0,
-      "monthlyClosures": 229386.0,
-      "receiptClosureVariance": -46174.0,
-      "monthlyReroutes": -46026.0,
-      "averageDailyReceipts": 8328.0,
       "averageDailyProduction": 10427.0,
+      "averageDailyReceipts": 8328.0,
       "ftes": 57.0,
       "hourlyGoal": 10.7,
+      "inStandard": 78147.0,
+      "monthlyClosures": 229386.0,
+      "receiptClosureVariance": -46174.0,
+      "monthlyReceipts": 183212.0,
+      "monthlyReroutes": -46026.0,
+      "monthlyStartingSla": 0.93,
+      "outOfStandard": 5882.0,
+      "startingInventory": 84029.0,
       "outOfStandardRate": 0.07,
       "calculatedSla": 0.93,
       "receiptClosureGap": -46174.0,
+      "throughputBalance": 46174.0,
       "closuresPerFte": 4024.315789,
       "receiptsPerFte": 3214.245614,
       "dailyProductionPerFte": 182.929825,
@@ -12010,6 +12142,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.299082,
       "estimatedCapacityGap": -11.47,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 11.47,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.798706,
       "limitedHistory": true,
       "earlyWarning": {
@@ -12040,21 +12175,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Validation/Adjustments",
       "period": "2026-08",
       "monthLabel": "Aug-26",
-      "monthlyStartingSla": 0.77,
-      "startingInventory": 83881.0,
-      "inStandard": 64588.0,
-      "outOfStandard": 19293.0,
-      "monthlyReceipts": 95401.0,
-      "monthlyClosures": 216891.0,
-      "receiptClosureVariance": -121490.0,
-      "monthlyReroutes": -84723.0,
-      "averageDailyReceipts": 4543.0,
       "averageDailyProduction": 10328.0,
+      "averageDailyReceipts": 4543.0,
       "ftes": 60.0,
       "hourlyGoal": 10.7,
+      "inStandard": 64588.0,
+      "monthlyClosures": 216891.0,
+      "receiptClosureVariance": -121490.0,
+      "monthlyReceipts": 95401.0,
+      "monthlyReroutes": -84723.0,
+      "monthlyStartingSla": 0.77,
+      "outOfStandard": 19293.0,
+      "startingInventory": 83881.0,
       "outOfStandardRate": 0.230004,
       "calculatedSla": 0.769996,
       "receiptClosureGap": -121490.0,
+      "throughputBalance": 121490.0,
       "closuresPerFte": 3614.85,
       "receiptsPerFte": 1590.016667,
       "dailyProductionPerFte": 172.133333,
@@ -12143,6 +12279,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.531918,
       "estimatedCapacityGap": -33.61,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 33.61,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.439857,
       "limitedHistory": true,
       "earlyWarning": {
@@ -12180,13 +12319,14 @@ window.DASHBOARD_DATA = {
       "workCategory": "Validation/Adjustments",
       "period": "2026-09",
       "monthLabel": "Sep-26",
-      "monthlyStartingSla": 0.68,
-      "startingInventory": 47114.0,
       "inStandard": 32038.0,
+      "monthlyStartingSla": 0.68,
       "outOfStandard": 15076.0,
+      "startingInventory": 47114.0,
       "outOfStandardRate": 0.31999,
       "calculatedSla": 0.68001,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": null,
       "dailyProductionPerFte": null,
@@ -12275,6 +12415,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -12310,21 +12453,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Cash Posting",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "monthlyStartingSla": 0.9,
-      "startingInventory": 21717.0,
-      "inStandard": 19545.0,
-      "outOfStandard": 2172.0,
-      "monthlyReceipts": 440679.0,
-      "monthlyClosures": 417437.0,
-      "receiptClosureVariance": 23242.0,
-      "monthlyReroutes": 2917.0,
-      "averageDailyReceipts": 20031.0,
       "averageDailyProduction": 18974.0,
+      "averageDailyReceipts": 20031.0,
       "ftes": 18.0,
       "hourlyGoal": 204.2,
+      "inStandard": 19545.0,
+      "monthlyClosures": 417437.0,
+      "receiptClosureVariance": 23242.0,
+      "monthlyReceipts": 440679.0,
+      "monthlyReroutes": 2917.0,
+      "monthlyStartingSla": 0.9,
+      "outOfStandard": 2172.0,
+      "startingInventory": 21717.0,
       "outOfStandardRate": 0.100014,
       "calculatedSla": 0.899986,
       "receiptClosureGap": 23242.0,
+      "throughputBalance": -23242.0,
       "closuresPerFte": 23190.944444,
       "receiptsPerFte": 24482.166667,
       "dailyProductionPerFte": 1054.111111,
@@ -12413,6 +12557,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 1,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": 1.0,
+      "capacityStatus": "SHORTFALL",
+      "capacityGapMagnitude": 1.0,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 1.055678,
       "limitedHistory": true,
       "earlyWarning": {
@@ -12441,21 +12588,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Cash Posting",
       "period": "2026-06",
       "monthLabel": "Jun-26",
-      "monthlyStartingSla": 0.83,
-      "startingInventory": 35379.0,
-      "inStandard": 29454.0,
-      "outOfStandard": 5925.0,
-      "monthlyReceipts": 385504.0,
-      "monthlyClosures": 384678.0,
-      "receiptClosureVariance": 826.0,
-      "monthlyReroutes": -207.0,
-      "averageDailyReceipts": 18357.0,
       "averageDailyProduction": 18318.0,
+      "averageDailyReceipts": 18357.0,
       "ftes": 17.0,
       "hourlyGoal": 204.2,
+      "inStandard": 29454.0,
+      "monthlyClosures": 384678.0,
+      "receiptClosureVariance": 826.0,
+      "monthlyReceipts": 385504.0,
+      "monthlyReroutes": -207.0,
+      "monthlyStartingSla": 0.83,
+      "outOfStandard": 5925.0,
+      "startingInventory": 35379.0,
       "outOfStandardRate": 0.167472,
       "calculatedSla": 0.832528,
       "receiptClosureGap": 826.0,
+      "throughputBalance": -826.0,
       "closuresPerFte": 22628.117647,
       "receiptsPerFte": 22676.705882,
       "dailyProductionPerFte": 1077.529412,
@@ -12544,6 +12692,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 2,
       "workloadGrowthVsFteGrowth": -0.069649,
       "estimatedCapacityGap": 0.04,
+      "capacityStatus": "SUFFICIENT",
+      "capacityGapMagnitude": 0.04,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 1.002147,
       "limitedHistory": true,
       "earlyWarning": {
@@ -12575,21 +12726,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Cash Posting",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "monthlyStartingSla": 0.86,
-      "startingInventory": 36412.0,
-      "inStandard": 31215.0,
-      "outOfStandard": 5197.0,
-      "monthlyReceipts": 395606.0,
-      "monthlyClosures": 389128.0,
-      "receiptClosureVariance": 6478.0,
-      "monthlyReroutes": -4542.0,
-      "averageDailyReceipts": 17982.0,
       "averageDailyProduction": 17688.0,
+      "averageDailyReceipts": 17982.0,
       "ftes": 17.0,
       "hourlyGoal": 204.2,
+      "inStandard": 31215.0,
+      "monthlyClosures": 389128.0,
+      "receiptClosureVariance": 6478.0,
+      "monthlyReceipts": 395606.0,
+      "monthlyReroutes": -4542.0,
+      "monthlyStartingSla": 0.86,
+      "outOfStandard": 5197.0,
+      "startingInventory": 36412.0,
       "outOfStandardRate": 0.142728,
       "calculatedSla": 0.857272,
       "receiptClosureGap": 6478.0,
+      "throughputBalance": -6478.0,
       "closuresPerFte": 22889.882353,
       "receiptsPerFte": 23270.941176,
       "dailyProductionPerFte": 1040.470588,
@@ -12678,6 +12830,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 3,
       "workloadGrowthVsFteGrowth": 0.026205,
       "estimatedCapacityGap": 0.28,
+      "capacityStatus": "SHORTFALL",
+      "capacityGapMagnitude": 0.28,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 1.016647,
       "limitedHistory": true,
       "earlyWarning": {
@@ -12707,21 +12862,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Cash Posting",
       "period": "2026-08",
       "monthLabel": "Aug-26",
-      "monthlyStartingSla": 0.79,
-      "startingInventory": 47432.0,
-      "inStandard": 37494.0,
-      "outOfStandard": 9938.0,
-      "monthlyReceipts": 401422.0,
-      "monthlyClosures": 390647.0,
-      "receiptClosureVariance": 10775.0,
-      "monthlyReroutes": 10106.0,
-      "averageDailyReceipts": 19115.0,
       "averageDailyProduction": 18602.0,
+      "averageDailyReceipts": 19115.0,
       "ftes": 17.0,
       "hourlyGoal": 204.2,
+      "inStandard": 37494.0,
+      "monthlyClosures": 390647.0,
+      "receiptClosureVariance": 10775.0,
+      "monthlyReceipts": 401422.0,
+      "monthlyReroutes": 10106.0,
+      "monthlyStartingSla": 0.79,
+      "outOfStandard": 9938.0,
+      "startingInventory": 47432.0,
       "outOfStandardRate": 0.209521,
       "calculatedSla": 0.790479,
       "receiptClosureGap": 10775.0,
+      "throughputBalance": -10775.0,
       "closuresPerFte": 22979.235294,
       "receiptsPerFte": 23613.058824,
       "dailyProductionPerFte": 1094.235294,
@@ -12810,6 +12966,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 4,
       "workloadGrowthVsFteGrowth": 0.014701,
       "estimatedCapacityGap": 0.47,
+      "capacityStatus": "SHORTFALL",
+      "capacityGapMagnitude": 0.47,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 1.027582,
       "limitedHistory": true,
       "earlyWarning": {
@@ -12856,13 +13015,14 @@ window.DASHBOARD_DATA = {
       "workCategory": "Cash Posting",
       "period": "2026-09",
       "monthLabel": "Sep-26",
-      "monthlyStartingSla": 0.74,
-      "startingInventory": 48101.0,
       "inStandard": 35743.0,
+      "monthlyStartingSla": 0.74,
       "outOfStandard": 12358.0,
+      "startingInventory": 48101.0,
       "outOfStandardRate": 0.256918,
       "calculatedSla": 0.743082,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": null,
       "dailyProductionPerFte": null,
@@ -12951,6 +13111,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -12994,21 +13157,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Correspondence",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "monthlyStartingSla": 0.98,
-      "startingInventory": 4268.0,
-      "inStandard": 4183.0,
-      "outOfStandard": 85.0,
-      "monthlyReceipts": 7292.0,
-      "monthlyClosures": 7707.0,
-      "receiptClosureVariance": -415.0,
-      "monthlyReroutes": -554.0,
-      "averageDailyReceipts": 331.0,
       "averageDailyProduction": 350.0,
+      "averageDailyReceipts": 331.0,
       "ftes": 16.0,
       "hourlyGoal": 5.0,
+      "inStandard": 4183.0,
+      "monthlyClosures": 7707.0,
+      "receiptClosureVariance": -415.0,
+      "monthlyReceipts": 7292.0,
+      "monthlyReroutes": -554.0,
+      "monthlyStartingSla": 0.98,
+      "outOfStandard": 85.0,
+      "startingInventory": 4268.0,
       "outOfStandardRate": 0.019916,
       "calculatedSla": 0.980084,
       "receiptClosureGap": -415.0,
+      "throughputBalance": 415.0,
       "closuresPerFte": 481.6875,
       "receiptsPerFte": 455.75,
       "dailyProductionPerFte": 21.875,
@@ -13097,6 +13261,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": -0.86,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 0.86,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.946153,
       "limitedHistory": true,
       "earlyWarning": {
@@ -13122,21 +13289,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Correspondence",
       "period": "2026-06",
       "monthLabel": "Jun-26",
-      "monthlyStartingSla": 0.99,
-      "startingInventory": 3246.0,
-      "inStandard": 3214.0,
-      "outOfStandard": 32.0,
-      "monthlyReceipts": 6668.0,
-      "monthlyClosures": 10148.0,
-      "receiptClosureVariance": -3480.0,
-      "monthlyReroutes": -5147.0,
-      "averageDailyReceipts": 318.0,
       "averageDailyProduction": 483.0,
+      "averageDailyReceipts": 318.0,
       "ftes": 14.0,
       "hourlyGoal": 5.0,
+      "inStandard": 3214.0,
+      "monthlyClosures": 10148.0,
+      "receiptClosureVariance": -3480.0,
+      "monthlyReceipts": 6668.0,
+      "monthlyReroutes": -5147.0,
+      "monthlyStartingSla": 0.99,
+      "outOfStandard": 32.0,
+      "startingInventory": 3246.0,
       "outOfStandardRate": 0.009858,
       "calculatedSla": 0.990142,
       "receiptClosureGap": -3480.0,
+      "throughputBalance": 3480.0,
       "closuresPerFte": 724.857143,
       "receiptsPerFte": 476.285714,
       "dailyProductionPerFte": 34.5,
@@ -13225,6 +13393,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": 0.039427,
       "estimatedCapacityGap": -4.8,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 4.8,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.657075,
       "limitedHistory": true,
       "earlyWarning": {
@@ -13250,21 +13421,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Correspondence",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "monthlyStartingSla": 0.98,
-      "startingInventory": 4913.0,
-      "inStandard": 4815.0,
-      "outOfStandard": 98.0,
-      "monthlyReceipts": 8103.0,
-      "monthlyClosures": 9603.0,
-      "receiptClosureVariance": -1500.0,
-      "monthlyReroutes": -148.0,
-      "averageDailyReceipts": 368.0,
       "averageDailyProduction": 437.0,
+      "averageDailyReceipts": 368.0,
       "ftes": 13.0,
       "hourlyGoal": 5.0,
+      "inStandard": 4815.0,
+      "monthlyClosures": 9603.0,
+      "receiptClosureVariance": -1500.0,
+      "monthlyReceipts": 8103.0,
+      "monthlyReroutes": -148.0,
+      "monthlyStartingSla": 0.98,
+      "outOfStandard": 98.0,
+      "startingInventory": 4913.0,
       "outOfStandardRate": 0.019947,
       "calculatedSla": 0.980053,
       "receiptClosureGap": -1500.0,
+      "throughputBalance": 1500.0,
       "closuresPerFte": 738.692308,
       "receiptsPerFte": 623.307692,
       "dailyProductionPerFte": 33.615385,
@@ -13353,6 +13525,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": 0.286636,
       "estimatedCapacityGap": -2.03,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 2.03,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.843799,
       "limitedHistory": true,
       "earlyWarning": {
@@ -13393,21 +13568,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Correspondence",
       "period": "2026-08",
       "monthLabel": "Aug-26",
-      "monthlyStartingSla": 0.99,
-      "startingInventory": 3561.0,
-      "inStandard": 3525.0,
-      "outOfStandard": 36.0,
-      "monthlyReceipts": 7162.0,
-      "monthlyClosures": 8480.0,
-      "receiptClosureVariance": -1318.0,
-      "monthlyReroutes": -1136.0,
-      "averageDailyReceipts": 341.0,
       "averageDailyProduction": 404.0,
+      "averageDailyReceipts": 341.0,
       "ftes": 13.0,
       "hourlyGoal": 5.0,
+      "inStandard": 3525.0,
+      "monthlyClosures": 8480.0,
+      "receiptClosureVariance": -1318.0,
+      "monthlyReceipts": 7162.0,
+      "monthlyReroutes": -1136.0,
+      "monthlyStartingSla": 0.99,
+      "outOfStandard": 36.0,
+      "startingInventory": 3561.0,
       "outOfStandardRate": 0.01011,
       "calculatedSla": 0.98989,
       "receiptClosureGap": -1318.0,
+      "throughputBalance": 1318.0,
       "closuresPerFte": 652.307692,
       "receiptsPerFte": 550.923077,
       "dailyProductionPerFte": 31.076923,
@@ -13496,6 +13672,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.11613,
       "estimatedCapacityGap": -2.02,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 2.02,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.844575,
       "limitedHistory": true,
       "earlyWarning": {
@@ -13523,13 +13702,14 @@ window.DASHBOARD_DATA = {
       "workCategory": "Correspondence",
       "period": "2026-09",
       "monthLabel": "Sep-26",
-      "monthlyStartingSla": 0.99,
-      "startingInventory": 3379.0,
       "inStandard": 3345.0,
+      "monthlyStartingSla": 0.99,
       "outOfStandard": 34.0,
+      "startingInventory": 3379.0,
       "outOfStandardRate": 0.010062,
       "calculatedSla": 0.989938,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": null,
       "dailyProductionPerFte": null,
@@ -13618,6 +13798,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -13641,21 +13824,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Disputes",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "monthlyStartingSla": 0.9,
-      "startingInventory": 9708.0,
-      "inStandard": 8737.0,
-      "outOfStandard": 971.0,
-      "monthlyReceipts": 15591.0,
-      "monthlyClosures": 13436.0,
-      "receiptClosureVariance": 2155.0,
-      "monthlyReroutes": -281.0,
-      "averageDailyReceipts": 709.0,
       "averageDailyProduction": 611.0,
+      "averageDailyReceipts": 709.0,
       "ftes": 18.0,
       "hourlyGoal": 4.0,
+      "inStandard": 8737.0,
+      "monthlyClosures": 13436.0,
+      "receiptClosureVariance": 2155.0,
+      "monthlyReceipts": 15591.0,
+      "monthlyReroutes": -281.0,
+      "monthlyStartingSla": 0.9,
+      "outOfStandard": 971.0,
+      "startingInventory": 9708.0,
       "outOfStandardRate": 0.100021,
       "calculatedSla": 0.899979,
       "receiptClosureGap": 2155.0,
+      "throughputBalance": -2155.0,
       "closuresPerFte": 746.444444,
       "receiptsPerFte": 866.166667,
       "dailyProductionPerFte": 33.944444,
@@ -13744,6 +13928,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 1,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": 2.89,
+      "capacityStatus": "SHORTFALL",
+      "capacityGapMagnitude": 2.89,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 1.16039,
       "limitedHistory": true,
       "earlyWarning": {
@@ -13772,21 +13959,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Disputes",
       "period": "2026-06",
       "monthLabel": "Jun-26",
-      "monthlyStartingSla": 0.84,
-      "startingInventory": 12357.0,
-      "inStandard": 10380.0,
-      "outOfStandard": 1977.0,
-      "monthlyReceipts": 14994.0,
-      "monthlyClosures": 23138.0,
-      "receiptClosureVariance": -8144.0,
-      "monthlyReroutes": -7286.0,
-      "averageDailyReceipts": 714.0,
       "averageDailyProduction": 1102.0,
+      "averageDailyReceipts": 714.0,
       "ftes": 17.0,
       "hourlyGoal": 4.0,
+      "inStandard": 10380.0,
+      "monthlyClosures": 23138.0,
+      "receiptClosureVariance": -8144.0,
+      "monthlyReceipts": 14994.0,
+      "monthlyReroutes": -7286.0,
+      "monthlyStartingSla": 0.84,
+      "outOfStandard": 1977.0,
+      "startingInventory": 12357.0,
       "outOfStandardRate": 0.15999,
       "calculatedSla": 0.84001,
       "receiptClosureGap": -8144.0,
+      "throughputBalance": 8144.0,
       "closuresPerFte": 1361.058824,
       "receiptsPerFte": 882.0,
       "dailyProductionPerFte": 64.823529,
@@ -13875,6 +14063,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": 0.017265,
       "estimatedCapacityGap": -5.98,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 5.98,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.648025,
       "limitedHistory": true,
       "earlyWarning": {
@@ -13904,21 +14095,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Disputes",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "monthlyStartingSla": 0.86,
-      "startingInventory": 11499.0,
-      "inStandard": 9889.0,
-      "outOfStandard": 1610.0,
-      "monthlyReceipts": 14440.0,
-      "monthlyClosures": 16202.0,
-      "receiptClosureVariance": -1762.0,
-      "monthlyReroutes": 23.0,
-      "averageDailyReceipts": 656.0,
       "averageDailyProduction": 736.0,
+      "averageDailyReceipts": 656.0,
       "ftes": 18.0,
       "hourlyGoal": 4.0,
+      "inStandard": 9889.0,
+      "monthlyClosures": 16202.0,
+      "receiptClosureVariance": -1762.0,
+      "monthlyReceipts": 14440.0,
+      "monthlyReroutes": 23.0,
+      "monthlyStartingSla": 0.86,
+      "outOfStandard": 1610.0,
+      "startingInventory": 11499.0,
       "outOfStandardRate": 0.140012,
       "calculatedSla": 0.859988,
       "receiptClosureGap": -1762.0,
+      "throughputBalance": 1762.0,
       "closuresPerFte": 900.111111,
       "receiptsPerFte": 802.222222,
       "dailyProductionPerFte": 40.888889,
@@ -14007,6 +14199,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": -0.095772,
       "estimatedCapacityGap": -1.96,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 1.96,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.891248,
       "limitedHistory": true,
       "earlyWarning": {
@@ -14041,21 +14236,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Disputes",
       "period": "2026-08",
       "monthLabel": "Aug-26",
-      "monthlyStartingSla": 0.92,
-      "startingInventory": 9714.0,
-      "inStandard": 8937.0,
-      "outOfStandard": 777.0,
-      "monthlyReceipts": 13973.0,
-      "monthlyClosures": 13470.0,
-      "receiptClosureVariance": 503.0,
-      "monthlyReroutes": 154.0,
-      "averageDailyReceipts": 665.0,
       "averageDailyProduction": 641.0,
+      "averageDailyReceipts": 665.0,
       "ftes": 18.0,
       "hourlyGoal": 4.0,
+      "inStandard": 8937.0,
+      "monthlyClosures": 13470.0,
+      "receiptClosureVariance": 503.0,
+      "monthlyReceipts": 13973.0,
+      "monthlyReroutes": 154.0,
+      "monthlyStartingSla": 0.92,
+      "outOfStandard": 777.0,
+      "startingInventory": 9714.0,
       "outOfStandardRate": 0.079988,
       "calculatedSla": 0.920012,
       "receiptClosureGap": 503.0,
+      "throughputBalance": -503.0,
       "closuresPerFte": 748.333333,
       "receiptsPerFte": 776.277778,
       "dailyProductionPerFte": 35.611111,
@@ -14144,6 +14340,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 1,
       "workloadGrowthVsFteGrowth": -0.032341,
       "estimatedCapacityGap": 0.67,
+      "capacityStatus": "SHORTFALL",
+      "capacityGapMagnitude": 0.67,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 1.037342,
       "limitedHistory": true,
       "earlyWarning": {
@@ -14176,13 +14375,14 @@ window.DASHBOARD_DATA = {
       "workCategory": "Disputes",
       "period": "2026-09",
       "monthLabel": "Sep-26",
-      "monthlyStartingSla": 0.98,
-      "startingInventory": 10063.0,
       "inStandard": 9862.0,
+      "monthlyStartingSla": 0.98,
       "outOfStandard": 201.0,
+      "startingInventory": 10063.0,
       "outOfStandardRate": 0.019974,
       "calculatedSla": 0.980026,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": null,
       "dailyProductionPerFte": null,
@@ -14271,6 +14471,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -14309,21 +14512,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Validation/Adjustments",
       "period": "2026-01",
       "monthLabel": "Jan-26",
-      "monthlyStartingSla": 1.0,
-      "startingInventory": 178274.0,
-      "inStandard": 178124.0,
-      "outOfStandard": 150.0,
-      "monthlyReceipts": 1033690.0,
-      "monthlyClosures": 1062060.0,
-      "receiptClosureVariance": -28370.0,
-      "monthlyReroutes": 568.0,
-      "averageDailyReceipts": 46986.0,
       "averageDailyProduction": 48275.0,
+      "averageDailyReceipts": 46986.0,
       "ftes": 59.0,
       "hourlyGoal": 185.4,
+      "inStandard": 178124.0,
+      "monthlyClosures": 1062060.0,
+      "receiptClosureVariance": -28370.0,
+      "monthlyReceipts": 1033690.0,
+      "monthlyReroutes": 568.0,
+      "monthlyStartingSla": 1.0,
+      "outOfStandard": 150.0,
+      "startingInventory": 178274.0,
       "outOfStandardRate": 0.000841,
       "calculatedSla": 0.999159,
       "receiptClosureGap": -28370.0,
+      "throughputBalance": 28370.0,
       "closuresPerFte": 18001.016949,
       "receiptsPerFte": 17520.169492,
       "dailyProductionPerFte": 818.220339,
@@ -14412,6 +14616,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": -1.58,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 1.58,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.973288,
       "limitedHistory": true,
       "earlyWarning": {
@@ -14435,21 +14642,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Validation/Adjustments",
       "period": "2026-06",
       "monthLabel": "Jun-26",
-      "monthlyStartingSla": 1.0,
-      "startingInventory": 323350.0,
-      "inStandard": 322999.0,
-      "outOfStandard": 351.0,
-      "monthlyReceipts": 976218.0,
-      "monthlyClosures": 1041034.0,
-      "receiptClosureVariance": -64816.0,
-      "monthlyReroutes": -7762.0,
-      "averageDailyReceipts": 46487.0,
       "averageDailyProduction": 49573.0,
+      "averageDailyReceipts": 46487.0,
       "ftes": 46.0,
       "hourlyGoal": 185.4,
+      "inStandard": 322999.0,
+      "monthlyClosures": 1041034.0,
+      "receiptClosureVariance": -64816.0,
+      "monthlyReceipts": 976218.0,
+      "monthlyReroutes": -7762.0,
+      "monthlyStartingSla": 1.0,
+      "outOfStandard": 351.0,
+      "startingInventory": 323350.0,
       "outOfStandardRate": 0.001086,
       "calculatedSla": 0.998914,
       "receiptClosureGap": -64816.0,
+      "throughputBalance": 64816.0,
       "closuresPerFte": 22631.173913,
       "receiptsPerFte": 21222.130435,
       "dailyProductionPerFte": 1077.673913,
@@ -14538,6 +14746,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": 0.16474,
       "estimatedCapacityGap": -2.86,
+      "capacityStatus": "SURPLUS",
+      "capacityGapMagnitude": 2.86,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 0.937739,
       "limitedHistory": true,
       "earlyWarning": {
@@ -14567,21 +14778,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Validation/Adjustments",
       "period": "2026-07",
       "monthLabel": "Jul-26",
-      "monthlyStartingSla": 0.99,
-      "startingInventory": 266296.0,
-      "inStandard": 264576.0,
-      "outOfStandard": 1720.0,
-      "monthlyReceipts": 1163410.0,
-      "monthlyClosures": 1109619.0,
-      "receiptClosureVariance": 53791.0,
-      "monthlyReroutes": 7210.0,
-      "averageDailyReceipts": 52882.0,
       "averageDailyProduction": 50437.0,
+      "averageDailyReceipts": 52882.0,
       "ftes": 45.0,
       "hourlyGoal": 185.4,
+      "inStandard": 264576.0,
+      "monthlyClosures": 1109619.0,
+      "receiptClosureVariance": 53791.0,
+      "monthlyReceipts": 1163410.0,
+      "monthlyReroutes": 7210.0,
+      "monthlyStartingSla": 0.99,
+      "outOfStandard": 1720.0,
+      "startingInventory": 266296.0,
       "outOfStandardRate": 0.006459,
       "calculatedSla": 0.993541,
       "receiptClosureGap": 53791.0,
+      "throughputBalance": -53791.0,
       "closuresPerFte": 24658.2,
       "receiptsPerFte": 25853.555556,
       "dailyProductionPerFte": 1120.822222,
@@ -14670,6 +14882,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 1,
       "workloadGrowthVsFteGrowth": 0.213491,
       "estimatedCapacityGap": 2.18,
+      "capacityStatus": "SHORTFALL",
+      "capacityGapMagnitude": 2.18,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 1.048477,
       "limitedHistory": true,
       "earlyWarning": {
@@ -14725,21 +14940,22 @@ window.DASHBOARD_DATA = {
       "workCategory": "Validation/Adjustments",
       "period": "2026-08",
       "monthLabel": "Aug-26",
-      "monthlyStartingSla": 0.96,
-      "startingInventory": 312877.0,
-      "inStandard": 300976.0,
-      "outOfStandard": 11901.0,
-      "monthlyReceipts": 1393444.0,
-      "monthlyClosures": 1304763.0,
-      "receiptClosureVariance": 88681.0,
-      "monthlyReroutes": -1580.0,
-      "averageDailyReceipts": 66354.0,
       "averageDailyProduction": 62132.0,
+      "averageDailyReceipts": 66354.0,
       "ftes": 48.0,
       "hourlyGoal": 185.4,
+      "inStandard": 300976.0,
+      "monthlyClosures": 1304763.0,
+      "receiptClosureVariance": 88681.0,
+      "monthlyReceipts": 1393444.0,
+      "monthlyReroutes": -1580.0,
+      "monthlyStartingSla": 0.96,
+      "outOfStandard": 11901.0,
+      "startingInventory": 312877.0,
       "outOfStandardRate": 0.038037,
       "calculatedSla": 0.961963,
       "receiptClosureGap": 88681.0,
+      "throughputBalance": -88681.0,
       "closuresPerFte": 27182.5625,
       "receiptsPerFte": 29030.083333,
       "dailyProductionPerFte": 1294.416667,
@@ -14828,6 +15044,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 2,
       "workloadGrowthVsFteGrowth": 0.131057,
       "estimatedCapacityGap": 3.26,
+      "capacityStatus": "SHORTFALL",
+      "capacityGapMagnitude": 3.26,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": 1.067967,
       "limitedHistory": true,
       "earlyWarning": {
@@ -14894,13 +15113,14 @@ window.DASHBOARD_DATA = {
       "workCategory": "Validation/Adjustments",
       "period": "2026-09",
       "monthLabel": "Sep-26",
-      "monthlyStartingSla": 0.98,
-      "startingInventory": 403138.0,
       "inStandard": 394083.0,
+      "monthlyStartingSla": 0.98,
       "outOfStandard": 9055.0,
+      "startingInventory": 403138.0,
       "outOfStandardRate": 0.022461,
       "calculatedSla": 0.977539,
       "receiptClosureGap": null,
+      "throughputBalance": null,
       "closuresPerFte": null,
       "receiptsPerFte": null,
       "dailyProductionPerFte": null,
@@ -14989,6 +15209,9 @@ window.DASHBOARD_DATA = {
       "consecutiveProductionBelowReceiptsPeriods": 0,
       "workloadGrowthVsFteGrowth": null,
       "estimatedCapacityGap": null,
+      "capacityStatus": "UNKNOWN",
+      "capacityGapMagnitude": null,
+      "capacityGrain": "WORK_CATEGORY_ESTIMATE",
       "capacityUtilizationProxy": null,
       "limitedHistory": true,
       "earlyWarning": {
@@ -15063,9 +15286,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "gap is 167,853.",
           "whyItMatters": "CB Cash Posting is on watch with SLA at 93%.",
-          "staffing": "Estimated capacity gap is about 156.9 FTE using current closures per FTE.",
+          "staffing": "Production is 20% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 93% with OOS around 2,546.",
+          "outlook": "If current trends continue, next-period SLA trends near 93% with OOS around 2,546.",
           "evidence": "receipts exceeded closures by 167,853; reroutes added 172,582 units of movement; daily production is 20% of daily receipts"
         },
         "driverBars": [
@@ -15076,20 +15299,22 @@ window.DASHBOARD_DATA = {
             "note": "Reroutes can affect operational flow."
           },
           {
+            "label": "Workload Pressure",
+            "strength": 0.9726,
+            "rawValue": 4.614642,
+            "note": "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."
+          },
+          {
             "label": "Flow Gap",
             "strength": 0.9726,
             "rawValue": 4.614642,
             "note": "Receipts above closures create inventory pressure."
-          },
-          {
-            "label": "FTE Capacity",
-            "strength": 0.8478,
-            "rawValue": 4.022564,
-            "note": "Current workload compared with staffing capacity."
           }
         ],
         "metrics": {
           "sla": 0.93,
+          "sourceSla": 0.93,
+          "calculatedSla": 0.930005,
           "targetSla": 0.9,
           "slaChange": null,
           "startingInventory": 36374.0,
@@ -15101,10 +15326,12 @@ window.DASHBOARD_DATA = {
           "closures": 41728.0,
           "closuresChange": null,
           "gap": 167853.0,
+          "throughputBalance": -167853.0,
           "fte": 39.0,
           "fteChange": null,
           "productionToReceiptsRatio": 0.199139,
-          "capacityGap": 156.88
+          "capacityGap": 156.88,
+          "capacityStatus": "SHORTFALL"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -15118,7 +15345,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 36374.0,
           "projectedOutOfStandard": 2546.0,
           "projectedSla": 0.93,
-          "summary": "If current movement continues, next-period SLA trends near 93% with OOS around 2,546.",
+          "summary": "If current trends continue, next-period SLA trends near 93% with OOS around 2,546.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -15150,10 +15377,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +4 pts, OOS moved -1,830, gap is 22,042.",
           "whyItMatters": "CB Cash Posting is on watch with SLA at 97%.",
-          "staffing": "Estimated capacity gap is about 29.5 FTE using current closures per FTE.",
+          "staffing": "Production is 56% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "Receipt/closure gap was positive for 2 periods.; Production is 56% of receipts.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
-          "evidence": "receipts exceeded closures by 22,042; reroutes added 25,967 units of movement; staffing decreased by 2 FTE; daily production is 56% of daily receipts"
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
+          "evidence": "receipts exceeded closures by 22,042; reroutes added 25,967 units of movement; daily production is 56% of daily receipts"
         },
         "driverBars": [
           {
@@ -15163,16 +15390,16 @@ window.DASHBOARD_DATA = {
             "note": "Reroutes can affect operational flow."
           },
           {
+            "label": "Workload Pressure",
+            "strength": 0.8488,
+            "rawValue": 0.922955,
+            "note": "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."
+          },
+          {
             "label": "Flow Gap",
             "strength": 0.8488,
             "rawValue": 0.922955,
             "note": "Receipts above closures create inventory pressure."
-          },
-          {
-            "label": "FTE Capacity",
-            "strength": 0.7333,
-            "rawValue": 0.797297,
-            "note": "Current workload compared with staffing capacity."
           },
           {
             "label": "Receipt Growth",
@@ -15189,6 +15416,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.97,
+          "sourceSla": 0.97,
+          "calculatedSla": 0.970019,
           "targetSla": 0.9,
           "slaChange": 0.04,
           "startingInventory": 23882.0,
@@ -15200,10 +15429,12 @@ window.DASHBOARD_DATA = {
           "closures": 27648.0,
           "closuresChange": -0.337423,
           "gap": 22042.0,
+          "throughputBalance": -22042.0,
           "fte": 37.0,
           "fteChange": -2.0,
           "productionToReceiptsRatio": 0.556636,
-          "capacityGap": 29.5
+          "capacityGap": 29.5,
+          "capacityStatus": "SHORTFALL"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -15217,7 +15448,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 15680.16,
           "projectedOutOfStandard": 0,
           "projectedSla": 1.0,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -15245,9 +15476,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved -1 pts, OOS moved 82, gap is -6,802.",
           "whyItMatters": "CB Cash Posting is meeting target with SLA at 96%.",
-          "staffing": "Production is 131% of receipts.",
+          "staffing": "Production is 131% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 95% with OOS around 880.",
+          "outlook": "If current trends continue, next-period SLA trends near 95% with OOS around 880.",
           "evidence": "out-of-standard inventory increased by 82"
         },
         "driverBars": [
@@ -15272,6 +15503,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.96,
+          "sourceSla": 0.96,
+          "calculatedSla": 0.960014,
           "targetSla": 0.9,
           "slaChange": -0.01,
           "startingInventory": 19957.0,
@@ -15283,10 +15516,12 @@ window.DASHBOARD_DATA = {
           "closures": 28519.0,
           "closuresChange": 0.031503,
           "gap": -6802.0,
+          "throughputBalance": 6802.0,
           "fte": 37.0,
           "fteChange": 0.0,
           "productionToReceiptsRatio": 1.31307,
-          "capacityGap": -8.82
+          "capacityGap": -8.82,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -15300,7 +15535,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 16677.07,
           "projectedOutOfStandard": 880.0,
           "projectedSla": 0.9472,
-          "summary": "If current movement continues, next-period SLA trends near 95% with OOS around 880.",
+          "summary": "If current trends continue, next-period SLA trends near 95% with OOS around 880.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -15332,10 +15567,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved -4 pts, OOS moved 506, gap is -2,433.",
           "whyItMatters": "CB Cash Posting is on watch with SLA at 92%.",
-          "staffing": "Production is 109% of receipts.",
+          "staffing": "Production is 109% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "OOS inventory increased by 506.; Workload is growing faster than FTE.",
-          "outlook": "If current movement continues, next-period SLA trends near 86% with OOS around 1,810.",
-          "evidence": "out-of-standard inventory increased by 506; reroutes added 202 units of movement; staffing decreased by 2 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 86% with OOS around 1,810.",
+          "evidence": "out-of-standard inventory increased by 506; reroutes added 202 units of movement"
         },
         "driverBars": [
           {
@@ -15359,6 +15594,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.92,
+          "sourceSla": 0.92,
+          "calculatedSla": 0.920025,
           "targetSla": 0.9,
           "slaChange": -0.04,
           "startingInventory": 16305.0,
@@ -15370,10 +15607,12 @@ window.DASHBOARD_DATA = {
           "closures": 29879.0,
           "closuresChange": 0.047688,
           "gap": -2433.0,
+          "throughputBalance": 2433.0,
           "fte": 35.0,
           "fteChange": -2.0,
           "productionToReceiptsRatio": 1.088753,
-          "capacityGap": -2.85
+          "capacityGap": -2.85,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -15387,7 +15626,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 13321.3,
           "projectedOutOfStandard": 1810.0,
           "projectedSla": 0.8641,
-          "summary": "If current movement continues, next-period SLA trends near 86% with OOS around 1,810.",
+          "summary": "If current trends continue, next-period SLA trends near 86% with OOS around 1,810.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -15412,7 +15651,7 @@ window.DASHBOARD_DATA = {
           "whyItMatters": "CB Cash Posting is meeting target with SLA at 92%.",
           "staffing": "Staffing data is not available for this selected period.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 92% with OOS around 884.",
+          "outlook": "If current trends continue, next-period SLA trends near 92% with OOS around 884.",
           "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [
@@ -15425,6 +15664,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.92,
+          "sourceSla": 0.92,
+          "calculatedSla": 0.919971,
           "targetSla": 0.9,
           "slaChange": 0.0,
           "startingInventory": 13670.0,
@@ -15436,10 +15677,12 @@ window.DASHBOARD_DATA = {
           "closures": null,
           "closuresChange": null,
           "gap": null,
+          "throughputBalance": null,
           "fte": null,
           "fteChange": null,
           "productionToReceiptsRatio": null,
-          "capacityGap": null
+          "capacityGap": null,
+          "capacityStatus": "UNKNOWN"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -15453,7 +15696,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 11460.83,
           "projectedOutOfStandard": 884.0,
           "projectedSla": 0.9229,
-          "summary": "If current movement continues, next-period SLA trends near 92% with OOS around 884.",
+          "summary": "If current trends continue, next-period SLA trends near 92% with OOS around 884.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -15479,14 +15722,16 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "gap is -3,938.",
           "whyItMatters": "CB Correspondence is critical with SLA at 27%.",
-          "staffing": "Production is 143% of receipts.",
+          "staffing": "Production is 143% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 27% with OOS around 16,923.",
+          "outlook": "If current trends continue, next-period SLA trends near 27% with OOS around 16,923.",
           "evidence": "SLA is 27%"
         },
         "driverBars": [],
         "metrics": {
           "sla": 0.27,
+          "sourceSla": 0.27,
+          "calculatedSla": 0.269994,
           "targetSla": 0.9,
           "slaChange": null,
           "startingInventory": 23182.0,
@@ -15498,10 +15743,12 @@ window.DASHBOARD_DATA = {
           "closures": 13168.0,
           "closuresChange": null,
           "gap": -3938.0,
+          "throughputBalance": 3938.0,
           "fte": 10.0,
           "fteChange": null,
           "productionToReceiptsRatio": 1.42619,
-          "capacityGap": -2.99
+          "capacityGap": -2.99,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -15515,7 +15762,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 23182.0,
           "projectedOutOfStandard": 16923.0,
           "projectedSla": 0.27,
-          "summary": "If current movement continues, next-period SLA trends near 27% with OOS around 16,923.",
+          "summary": "If current trends continue, next-period SLA trends near 27% with OOS around 16,923.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -15543,10 +15790,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +34 pts, OOS moved -15,564, gap is -2,108.",
           "whyItMatters": "CB Correspondence is critical with SLA at 61%.",
-          "staffing": "Production is 144% of receipts.",
+          "staffing": "Production is 144% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
-          "evidence": "SLA is 61%; staffing decreased by 2 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
+          "evidence": "SLA is 61%"
         },
         "driverBars": [
           {
@@ -15570,6 +15817,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.61,
+          "sourceSla": 0.61,
+          "calculatedSla": 0.610043,
           "targetSla": 0.9,
           "slaChange": 0.34,
           "startingInventory": 3485.0,
@@ -15581,10 +15830,12 @@ window.DASHBOARD_DATA = {
           "closures": 6881.0,
           "closuresChange": -0.477445,
           "gap": -2108.0,
+          "throughputBalance": 2108.0,
           "fte": 8.0,
           "fteChange": -2.0,
           "productionToReceiptsRatio": 1.444934,
-          "capacityGap": -2.45
+          "capacityGap": -2.45,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -15598,7 +15849,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 523.91,
           "projectedOutOfStandard": 0,
           "projectedSla": 1.0,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -15626,9 +15877,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +22 pts, OOS moved -1,125, gap is -602.",
           "whyItMatters": "CB Correspondence is at risk with SLA at 83%.",
-          "staffing": "Production is 118% of receipts.",
+          "staffing": "Production is 118% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "evidence": "SLA is 83%"
         },
         "driverBars": [
@@ -15653,6 +15904,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.83,
+          "sourceSla": 0.83,
+          "calculatedSla": 0.830065,
           "targetSla": 0.9,
           "slaChange": 0.22,
           "startingInventory": 1377.0,
@@ -15664,10 +15917,12 @@ window.DASHBOARD_DATA = {
           "closures": 3951.0,
           "closuresChange": -0.42581,
           "gap": -602.0,
+          "throughputBalance": 602.0,
           "fte": 10.0,
           "fteChange": 2.0,
           "productionToReceiptsRatio": 1.184211,
-          "capacityGap": -1.52
+          "capacityGap": -1.52,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -15681,7 +15936,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 544.08,
           "projectedOutOfStandard": 0,
           "projectedSla": 1.0,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -15710,12 +15965,18 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +4 pts, OOS moved -133, gap is 415.",
           "whyItMatters": "CB Correspondence is at risk with SLA at 87%.",
-          "staffing": "Estimated capacity gap is about 2.0 FTE using current closures per FTE.",
+          "staffing": "Production is 84% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "evidence": "SLA is 87%; receipts exceeded closures by 415; daily production is 84% of daily receipts"
         },
         "driverBars": [
+          {
+            "label": "Workload Pressure",
+            "strength": 1.0,
+            "rawValue": 0.535484,
+            "note": "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."
+          },
           {
             "label": "Flow Gap",
             "strength": 1.0,
@@ -15735,12 +15996,6 @@ window.DASHBOARD_DATA = {
             "note": "Receipt movement is historically associated with workload pressure."
           },
           {
-            "label": "FTE Capacity",
-            "strength": 0.348,
-            "rawValue": 0.186364,
-            "note": "Current workload compared with staffing capacity."
-          },
-          {
             "label": "OOS Movement",
             "strength": 0.3205,
             "rawValue": 0.171613,
@@ -15749,6 +16004,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.87,
+          "sourceSla": 0.87,
+          "calculatedSla": 0.869677,
           "targetSla": 0.9,
           "slaChange": 0.04,
           "startingInventory": 775.0,
@@ -15760,10 +16017,12 @@ window.DASHBOARD_DATA = {
           "closures": 2232.0,
           "closuresChange": -0.43508,
           "gap": 415.0,
+          "throughputBalance": -415.0,
           "fte": 11.0,
           "fteChange": 1.0,
           "productionToReceiptsRatio": 0.84127,
-          "capacityGap": 2.05
+          "capacityGap": 2.05,
+          "capacityStatus": "SHORTFALL"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -15777,7 +16036,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 436.18,
           "projectedOutOfStandard": 0,
           "projectedSla": 1.0,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -15805,7 +16064,7 @@ window.DASHBOARD_DATA = {
           "whyItMatters": "CB Correspondence is at risk with SLA at 89%.",
           "staffing": "Staffing data is not available for this selected period.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 91% with OOS around 161.",
+          "outlook": "If current trends continue, next-period SLA trends near 91% with OOS around 161.",
           "evidence": "SLA is 89%; out-of-standard inventory increased by 30"
         },
         "driverBars": [
@@ -15818,6 +16077,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.89,
+          "sourceSla": 0.89,
+          "calculatedSla": 0.889916,
           "targetSla": 0.9,
           "slaChange": 0.02,
           "startingInventory": 1190.0,
@@ -15829,10 +16090,12 @@ window.DASHBOARD_DATA = {
           "closures": null,
           "closuresChange": null,
           "gap": null,
+          "throughputBalance": null,
           "fte": null,
           "fteChange": null,
           "productionToReceiptsRatio": null,
-          "capacityGap": null
+          "capacityGap": null,
+          "capacityStatus": "UNKNOWN"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -15846,7 +16109,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 1827.23,
           "projectedOutOfStandard": 161.0,
           "projectedSla": 0.9119,
-          "summary": "If current movement continues, next-period SLA trends near 91% with OOS around 161.",
+          "summary": "If current trends continue, next-period SLA trends near 91% with OOS around 161.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -15874,27 +16137,29 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "gap is 3,446.",
           "whyItMatters": "CB Disputes is meeting target with SLA at 94%.",
-          "staffing": "Estimated capacity gap is about 8.1 FTE using current closures per FTE.",
+          "staffing": "Production is 79% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 94% with OOS around 732.",
+          "outlook": "If current trends continue, next-period SLA trends near 94% with OOS around 732.",
           "evidence": "receipts exceeded closures by 3,446; daily production is 79% of daily receipts"
         },
         "driverBars": [
+          {
+            "label": "Workload Pressure",
+            "strength": 1.0,
+            "rawValue": 0.282297,
+            "note": "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."
+          },
           {
             "label": "Flow Gap",
             "strength": 1.0,
             "rawValue": 0.282297,
             "note": "Receipts above closures create inventory pressure."
-          },
-          {
-            "label": "FTE Capacity",
-            "strength": 0.9256,
-            "rawValue": 0.26129,
-            "note": "Current workload compared with staffing capacity."
           }
         ],
         "metrics": {
           "sla": 0.94,
+          "sourceSla": 0.94,
+          "calculatedSla": 0.940034,
           "targetSla": 0.9,
           "slaChange": null,
           "startingInventory": 12207.0,
@@ -15906,10 +16171,12 @@ window.DASHBOARD_DATA = {
           "closures": 13183.0,
           "closuresChange": null,
           "gap": 3446.0,
+          "throughputBalance": -3446.0,
           "fte": 31.0,
           "fteChange": null,
           "productionToReceiptsRatio": 0.792328,
-          "capacityGap": 8.1
+          "capacityGap": 8.1,
+          "capacityStatus": "SHORTFALL"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -15923,7 +16190,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 12207.0,
           "projectedOutOfStandard": 732.0,
           "projectedSla": 0.94,
-          "summary": "If current movement continues, next-period SLA trends near 94% with OOS around 732.",
+          "summary": "If current trends continue, next-period SLA trends near 94% with OOS around 732.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -15949,10 +16216,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved -12 pts, OOS moved 1,689, gap is -1,355.",
           "whyItMatters": "CB Disputes is at risk with SLA at 82%.",
-          "staffing": "Production is 111% of receipts.",
+          "staffing": "Production is 111% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 72% with OOS around 4,110.",
-          "evidence": "SLA is 82%; out-of-standard inventory increased by 1,689; staffing decreased by 5 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 72% with OOS around 4,110.",
+          "evidence": "SLA is 82%; out-of-standard inventory increased by 1,689"
         },
         "driverBars": [
           {
@@ -15970,6 +16237,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.82,
+          "sourceSla": 0.82,
+          "calculatedSla": 0.820027,
           "targetSla": 0.9,
           "slaChange": -0.12,
           "startingInventory": 13452.0,
@@ -15981,10 +16250,12 @@ window.DASHBOARD_DATA = {
           "closures": 14154.0,
           "closuresChange": 0.073655,
           "gap": -1355.0,
+          "throughputBalance": 1355.0,
           "fte": 26.0,
           "fteChange": -5.0,
           "productionToReceiptsRatio": 1.106732,
-          "capacityGap": -2.49
+          "capacityGap": -2.49,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -15998,7 +16269,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 14823.98,
           "projectedOutOfStandard": 4110.0,
           "projectedSla": 0.7227,
-          "summary": "If current movement continues, next-period SLA trends near 72% with OOS around 4,110.",
+          "summary": "If current trends continue, next-period SLA trends near 72% with OOS around 4,110.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -16023,9 +16294,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +10 pts, OOS moved -1,453, gap is -1,566.",
           "whyItMatters": "CB Disputes is meeting target with SLA at 92%.",
-          "staffing": "Production is 113% of receipts.",
+          "staffing": "Production is 113% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [
@@ -16050,6 +16321,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.92,
+          "sourceSla": 0.92,
+          "calculatedSla": 0.91998,
           "targetSla": 0.9,
           "slaChange": 0.1,
           "startingInventory": 12097.0,
@@ -16061,10 +16334,12 @@ window.DASHBOARD_DATA = {
           "closures": 13406.0,
           "closuresChange": -0.052847,
           "gap": -1566.0,
+          "throughputBalance": 1566.0,
           "fte": 31.0,
           "fteChange": 5.0,
           "productionToReceiptsRatio": 1.13197,
-          "capacityGap": -3.62
+          "capacityGap": -3.62,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -16078,7 +16353,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 10878.48,
           "projectedOutOfStandard": 0,
           "projectedSla": 1.0,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -16105,10 +16380,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved -1 pts, OOS moved -20, gap is -751.",
           "whyItMatters": "CB Disputes is meeting target with SLA at 91%.",
-          "staffing": "Production is 107% of receipts.",
+          "staffing": "Production is 107% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 90% with OOS around 928.",
-          "evidence": "staffing decreased by 1 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 90% with OOS around 928.",
+          "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [
           {
@@ -16132,6 +16407,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.91,
+          "sourceSla": 0.91,
+          "calculatedSla": 0.90998,
           "targetSla": 0.9,
           "slaChange": -0.01,
           "startingInventory": 10531.0,
@@ -16143,10 +16420,12 @@ window.DASHBOARD_DATA = {
           "closures": 10918.0,
           "closuresChange": -0.185589,
           "gap": -751.0,
+          "throughputBalance": 751.0,
           "fte": 30.0,
           "fteChange": -1.0,
           "productionToReceiptsRatio": 1.07438,
-          "capacityGap": -2.06
+          "capacityGap": -2.06,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -16160,7 +16439,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 9167.72,
           "projectedOutOfStandard": 928.0,
           "projectedSla": 0.8988,
-          "summary": "If current movement continues, next-period SLA trends near 90% with OOS around 928.",
+          "summary": "If current trends continue, next-period SLA trends near 90% with OOS around 928.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -16185,7 +16464,7 @@ window.DASHBOARD_DATA = {
           "whyItMatters": "CB Disputes is meeting target with SLA at 93%.",
           "staffing": "Staffing data is not available for this selected period.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 95% with OOS around 422.",
+          "outlook": "If current trends continue, next-period SLA trends near 95% with OOS around 422.",
           "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [
@@ -16198,6 +16477,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.93,
+          "sourceSla": 0.93,
+          "calculatedSla": 0.929959,
           "targetSla": 0.9,
           "slaChange": 0.02,
           "startingInventory": 9780.0,
@@ -16209,10 +16490,12 @@ window.DASHBOARD_DATA = {
           "closures": null,
           "closuresChange": null,
           "gap": null,
+          "throughputBalance": null,
           "fte": null,
           "fteChange": null,
           "productionToReceiptsRatio": null,
-          "capacityGap": null
+          "capacityGap": null,
+          "capacityStatus": "UNKNOWN"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -16226,7 +16509,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 9082.56,
           "projectedOutOfStandard": 422.0,
           "projectedSla": 0.9535,
-          "summary": "If current movement continues, next-period SLA trends near 95% with OOS around 422.",
+          "summary": "If current trends continue, next-period SLA trends near 95% with OOS around 422.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -16252,9 +16535,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "gap is -139,159.",
           "whyItMatters": "CB Validation/Adjustments is at risk with SLA at 89%.",
-          "staffing": "Production is 178% of receipts.",
+          "staffing": "Production is 178% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 89% with OOS around 22,163.",
+          "outlook": "If current trends continue, next-period SLA trends near 89% with OOS around 22,163.",
           "evidence": "SLA is 89%"
         },
         "driverBars": [
@@ -16267,6 +16550,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.89,
+          "sourceSla": 0.89,
+          "calculatedSla": 0.889998,
           "targetSla": 0.9,
           "slaChange": null,
           "startingInventory": 201479.0,
@@ -16278,10 +16563,12 @@ window.DASHBOARD_DATA = {
           "closures": 318636.0,
           "closuresChange": null,
           "gap": -139159.0,
+          "throughputBalance": 139159.0,
           "fte": 109.0,
           "fteChange": null,
           "productionToReceiptsRatio": 1.775313,
-          "capacityGap": -47.6
+          "capacityGap": -47.6,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -16295,7 +16582,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 201479.0,
           "projectedOutOfStandard": 22163.0,
           "projectedSla": 0.89,
-          "summary": "If current movement continues, next-period SLA trends near 89% with OOS around 22,163.",
+          "summary": "If current trends continue, next-period SLA trends near 89% with OOS around 22,163.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -16324,10 +16611,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved -4 pts, OOS moved -6,046, gap is -31,161.",
           "whyItMatters": "CB Validation/Adjustments is at risk with SLA at 85%.",
-          "staffing": "Production is 112% of receipts.",
+          "staffing": "Production is 112% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 82% with OOS around 10,071.",
-          "evidence": "SLA is 85%; staffing decreased by 13 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 82% with OOS around 10,071.",
+          "evidence": "SLA is 85%"
         },
         "driverBars": [
           {
@@ -16357,6 +16644,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.85,
+          "sourceSla": 0.85,
+          "calculatedSla": 0.850002,
           "targetSla": 0.9,
           "slaChange": -0.04,
           "startingInventory": 107448.0,
@@ -16368,10 +16657,12 @@ window.DASHBOARD_DATA = {
           "closures": 291572.0,
           "closuresChange": -0.084937,
           "gap": -31161.0,
+          "throughputBalance": 31161.0,
           "fte": 96.0,
           "fteChange": -13.0,
           "productionToReceiptsRatio": 1.119587,
-          "capacityGap": -10.26
+          "capacityGap": -10.26,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -16385,7 +16676,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 57301.59,
           "projectedOutOfStandard": 10071.0,
           "projectedSla": 0.8242,
-          "summary": "If current movement continues, next-period SLA trends near 82% with OOS around 10,071.",
+          "summary": "If current trends continue, next-period SLA trends near 82% with OOS around 10,071.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -16416,9 +16707,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +5 pts, OOS moved 97, gap is -20,210.",
           "whyItMatters": "CB Validation/Adjustments is on watch with SLA at 90%.",
-          "staffing": "Production is 110% of receipts.",
+          "staffing": "Production is 110% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "Closures declined for 2 consecutive periods.; OOS inventory increased by 97.",
-          "outlook": "If current movement continues, next-period SLA trends near 93% with OOS around 16,311.",
+          "outlook": "If current trends continue, next-period SLA trends near 93% with OOS around 16,311.",
           "evidence": "out-of-standard inventory increased by 97; reroutes added 16,510 units of movement"
         },
         "driverBars": [
@@ -16449,6 +16740,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.9,
+          "sourceSla": 0.9,
+          "calculatedSla": 0.899998,
           "targetSla": 0.9,
           "slaChange": 0.05,
           "startingInventory": 162137.0,
@@ -16460,10 +16753,12 @@ window.DASHBOARD_DATA = {
           "closures": 230803.0,
           "closuresChange": -0.208419,
           "gap": -20210.0,
+          "throughputBalance": 20210.0,
           "fte": 100.0,
           "fteChange": 4.0,
           "productionToReceiptsRatio": 1.096009,
-          "capacityGap": -8.76
+          "capacityGap": -8.76,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -16477,7 +16772,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 244661.65,
           "projectedOutOfStandard": 16311.0,
           "projectedSla": 0.9333,
-          "summary": "If current movement continues, next-period SLA trends near 93% with OOS around 16,311.",
+          "summary": "If current trends continue, next-period SLA trends near 93% with OOS around 16,311.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -16505,9 +16800,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved -9 pts, OOS moved 7,615, gap is -46,701.",
           "whyItMatters": "CB Validation/Adjustments is at risk with SLA at 81%.",
-          "staffing": "Production is 124% of receipts.",
+          "staffing": "Production is 124% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 68% with OOS around 31,444.",
+          "outlook": "If current trends continue, next-period SLA trends near 68% with OOS around 31,444.",
           "evidence": "SLA is 81%; out-of-standard inventory increased by 7,615"
         },
         "driverBars": [
@@ -16532,6 +16827,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.81,
+          "sourceSla": 0.81,
+          "calculatedSla": 0.810002,
           "targetSla": 0.9,
           "slaChange": -0.09,
           "startingInventory": 125417.0,
@@ -16543,10 +16840,12 @@ window.DASHBOARD_DATA = {
           "closures": 238005.0,
           "closuresChange": 0.031204,
           "gap": -46701.0,
+          "throughputBalance": 46701.0,
           "fte": 100.0,
           "fteChange": 0.0,
           "productionToReceiptsRatio": 1.244127,
-          "capacityGap": -19.62
+          "capacityGap": -19.62,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -16560,7 +16859,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 97013.18,
           "projectedOutOfStandard": 31444.0,
           "projectedSla": 0.6759,
-          "summary": "If current movement continues, next-period SLA trends near 68% with OOS around 31,444.",
+          "summary": "If current trends continue, next-period SLA trends near 68% with OOS around 31,444.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -16588,7 +16887,7 @@ window.DASHBOARD_DATA = {
           "whyItMatters": "CB Validation/Adjustments is critical with SLA at 74%.",
           "staffing": "Staffing data is not available for this selected period.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 66% with OOS around 34,913.",
+          "outlook": "If current trends continue, next-period SLA trends near 66% with OOS around 34,913.",
           "evidence": "SLA is 74%; out-of-standard inventory increased by 5,542"
         },
         "driverBars": [
@@ -16601,6 +16900,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.74,
+          "sourceSla": 0.74,
+          "calculatedSla": 0.740001,
           "targetSla": 0.9,
           "slaChange": -0.07,
           "startingInventory": 112966.0,
@@ -16612,10 +16913,12 @@ window.DASHBOARD_DATA = {
           "closures": null,
           "closuresChange": null,
           "gap": null,
+          "throughputBalance": null,
           "fte": null,
           "fteChange": null,
           "productionToReceiptsRatio": null,
-          "capacityGap": null
+          "capacityGap": null,
+          "capacityStatus": "UNKNOWN"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -16629,7 +16932,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 101751.07,
           "projectedOutOfStandard": 34913.0,
           "projectedSla": 0.6569,
-          "summary": "If current movement continues, next-period SLA trends near 66% with OOS around 34,913.",
+          "summary": "If current trends continue, next-period SLA trends near 66% with OOS around 34,913.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -16659,9 +16962,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "gap is 48,783.",
           "whyItMatters": "CGS Cash Posting is on watch with SLA at 93%.",
-          "staffing": "Estimated capacity gap is about 153.3 FTE using current closures per FTE.",
+          "staffing": "Production is 23% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 93% with OOS around 861.",
+          "outlook": "If current trends continue, next-period SLA trends near 93% with OOS around 861.",
           "evidence": "receipts exceeded closures by 48,783; reroutes added 58,001 units of movement; daily production is 23% of daily receipts"
         },
         "driverBars": [
@@ -16672,20 +16975,22 @@ window.DASHBOARD_DATA = {
             "note": "Reroutes can affect operational flow."
           },
           {
+            "label": "Workload Pressure",
+            "strength": 0.8411,
+            "rawValue": 3.967388,
+            "note": "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."
+          },
+          {
             "label": "Flow Gap",
             "strength": 0.8411,
             "rawValue": 3.967388,
             "note": "Receipts above closures create inventory pressure."
-          },
-          {
-            "label": "FTE Capacity",
-            "strength": 0.7223,
-            "rawValue": 3.407111,
-            "note": "Current workload compared with staffing capacity."
           }
         ],
         "metrics": {
           "sla": 0.93,
+          "sourceSla": 0.93,
+          "calculatedSla": 0.929977,
           "targetSla": 0.9,
           "slaChange": null,
           "startingInventory": 12296.0,
@@ -16697,10 +17002,12 @@ window.DASHBOARD_DATA = {
           "closures": 14318.0,
           "closuresChange": null,
           "gap": 48783.0,
+          "throughputBalance": -48783.0,
           "fte": 45.0,
           "fteChange": null,
           "productionToReceiptsRatio": 0.226987,
-          "capacityGap": 153.32
+          "capacityGap": 153.32,
+          "capacityStatus": "SHORTFALL"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -16714,7 +17021,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 12296.0,
           "projectedOutOfStandard": 861.0,
           "projectedSla": 0.93,
-          "summary": "If current movement continues, next-period SLA trends near 93% with OOS around 861.",
+          "summary": "If current trends continue, next-period SLA trends near 93% with OOS around 861.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -16739,10 +17046,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +5 pts, OOS moved -599, gap is -109.",
           "whyItMatters": "CGS Cash Posting is meeting target with SLA at 98%.",
-          "staffing": "Production is 101% of receipts.",
+          "staffing": "Production is 101% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
-          "evidence": "staffing decreased by 5 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
+          "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [
           {
@@ -16766,6 +17073,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.98,
+          "sourceSla": 0.98,
+          "calculatedSla": 0.97998,
           "targetSla": 0.9,
           "slaChange": 0.05,
           "startingInventory": 13087.0,
@@ -16777,10 +17086,12 @@ window.DASHBOARD_DATA = {
           "closures": 15916.0,
           "closuresChange": 0.111608,
           "gap": -109.0,
+          "throughputBalance": 109.0,
           "fte": 40.0,
           "fteChange": -5.0,
           "productionToReceiptsRatio": 1.00664,
-          "capacityGap": -0.27
+          "capacityGap": -0.27,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -16794,7 +17105,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 13928.89,
           "projectedOutOfStandard": 0,
           "projectedSla": 1.0,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -16822,9 +17133,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +0 pts, OOS moved 116, gap is -4,499.",
           "whyItMatters": "CGS Cash Posting is meeting target with SLA at 98%.",
-          "staffing": "Production is 127% of receipts.",
+          "staffing": "Production is 127% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 98% with OOS around 494.",
+          "outlook": "If current trends continue, next-period SLA trends near 98% with OOS around 494.",
           "evidence": "out-of-standard inventory increased by 116"
         },
         "driverBars": [
@@ -16849,6 +17160,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.98,
+          "sourceSla": 0.98,
+          "calculatedSla": 0.979984,
           "targetSla": 0.9,
           "slaChange": 0.0,
           "startingInventory": 18885.0,
@@ -16860,10 +17173,12 @@ window.DASHBOARD_DATA = {
           "closures": 21308.0,
           "closuresChange": 0.338779,
           "gap": -4499.0,
+          "throughputBalance": 4499.0,
           "fte": 40.0,
           "fteChange": 0.0,
           "productionToReceiptsRatio": 1.268325,
-          "capacityGap": -8.45
+          "capacityGap": -8.45,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -16877,7 +17192,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 27251.72,
           "projectedOutOfStandard": 494.0,
           "projectedSla": 0.9819,
-          "summary": "If current movement continues, next-period SLA trends near 98% with OOS around 494.",
+          "summary": "If current trends continue, next-period SLA trends near 98% with OOS around 494.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -16908,9 +17223,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved -7 pts, OOS moved 1,617, gap is -6,526.",
           "whyItMatters": "CGS Cash Posting is on watch with SLA at 91%.",
-          "staffing": "Production is 135% of receipts.",
+          "staffing": "Production is 135% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "Receipts increased for 2 consecutive periods.; OOS inventory increased by 1,617.",
-          "outlook": "If current movement continues, next-period SLA trends near 86% with OOS around 3,612.",
+          "outlook": "If current trends continue, next-period SLA trends near 86% with OOS around 3,612.",
           "evidence": "out-of-standard inventory increased by 1,617"
         },
         "driverBars": [
@@ -16935,6 +17250,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.91,
+          "sourceSla": 0.91,
+          "calculatedSla": 0.910022,
           "targetSla": 0.9,
           "slaChange": -0.07,
           "startingInventory": 22172.0,
@@ -16946,10 +17263,12 @@ window.DASHBOARD_DATA = {
           "closures": 24993.0,
           "closuresChange": 0.17294,
           "gap": -6526.0,
+          "throughputBalance": 6526.0,
           "fte": 57.0,
           "fteChange": 17.0,
           "productionToReceiptsRatio": 1.353811,
-          "capacityGap": -14.88
+          "capacityGap": -14.88,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -16963,7 +17282,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 26031.1,
           "projectedOutOfStandard": 3612.0,
           "projectedSla": 0.8612,
-          "summary": "If current movement continues, next-period SLA trends near 86% with OOS around 3,612.",
+          "summary": "If current trends continue, next-period SLA trends near 86% with OOS around 3,612.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -16988,7 +17307,7 @@ window.DASHBOARD_DATA = {
           "whyItMatters": "CGS Cash Posting is meeting target with SLA at 92%.",
           "staffing": "Staffing data is not available for this selected period.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 93% with OOS around 1,357.",
+          "outlook": "If current trends continue, next-period SLA trends near 93% with OOS around 1,357.",
           "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [
@@ -17001,6 +17320,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.92,
+          "sourceSla": 0.92,
+          "calculatedSla": 0.919977,
           "targetSla": 0.9,
           "slaChange": 0.01,
           "startingInventory": 20944.0,
@@ -17012,10 +17333,12 @@ window.DASHBOARD_DATA = {
           "closures": null,
           "closuresChange": null,
           "gap": null,
+          "throughputBalance": null,
           "fte": null,
           "fteChange": null,
           "productionToReceiptsRatio": null,
-          "capacityGap": null
+          "capacityGap": null,
+          "capacityStatus": "UNKNOWN"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -17029,7 +17352,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 19784.02,
           "projectedOutOfStandard": 1357.0,
           "projectedSla": 0.9314,
-          "summary": "If current movement continues, next-period SLA trends near 93% with OOS around 1,357.",
+          "summary": "If current trends continue, next-period SLA trends near 93% with OOS around 1,357.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -17052,14 +17375,16 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "gap is -12,486.",
           "whyItMatters": "CGS Correspondence is meeting target with SLA at 97%.",
-          "staffing": "Production is 210% of receipts.",
+          "staffing": "Production is 210% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 97% with OOS around 422.",
+          "outlook": "If current trends continue, next-period SLA trends near 97% with OOS around 422.",
           "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [],
         "metrics": {
           "sla": 0.97,
+          "sourceSla": 0.97,
+          "calculatedSla": 0.970009,
           "targetSla": 0.9,
           "slaChange": null,
           "startingInventory": 14071.0,
@@ -17071,10 +17396,12 @@ window.DASHBOARD_DATA = {
           "closures": 23828.0,
           "closuresChange": null,
           "gap": -12486.0,
+          "throughputBalance": 12486.0,
           "fte": 54.0,
           "fteChange": null,
           "productionToReceiptsRatio": 2.098837,
-          "capacityGap": -28.3
+          "capacityGap": -28.3,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -17088,7 +17415,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 14071.0,
           "projectedOutOfStandard": 422.0,
           "projectedSla": 0.97,
-          "summary": "If current movement continues, next-period SLA trends near 97% with OOS around 422.",
+          "summary": "If current trends continue, next-period SLA trends near 97% with OOS around 422.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -17118,10 +17445,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +1 pts, OOS moved -298, gap is -2,805.",
           "whyItMatters": "CGS Correspondence is meeting target with SLA at 98%.",
-          "staffing": "Production is 117% of receipts.",
+          "staffing": "Production is 117% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
-          "evidence": "staffing decreased by 35 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
+          "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [
           {
@@ -17145,6 +17472,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.98,
+          "sourceSla": 0.98,
+          "calculatedSla": 0.980003,
           "targetSla": 0.9,
           "slaChange": 0.01,
           "startingInventory": 6201.0,
@@ -17156,10 +17485,12 @@ window.DASHBOARD_DATA = {
           "closures": 19010.0,
           "closuresChange": -0.202199,
           "gap": -2805.0,
+          "throughputBalance": 2805.0,
           "fte": 19.0,
           "fteChange": -35.0,
           "productionToReceiptsRatio": 1.17228,
-          "capacityGap": -2.8
+          "capacityGap": -2.8,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -17173,7 +17504,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 2732.74,
           "projectedOutOfStandard": 0,
           "projectedSla": 1.0,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -17202,10 +17533,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved -6 pts, OOS moved 148, gap is -1,452.",
           "whyItMatters": "CGS Correspondence is on watch with SLA at 92%.",
-          "staffing": "Production is 113% of receipts.",
+          "staffing": "Production is 113% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "Closures declined for 2 consecutive periods.; OOS inventory increased by 148.",
-          "outlook": "If current movement continues, next-period SLA trends near 77% with OOS around 420.",
-          "evidence": "out-of-standard inventory increased by 148; staffing decreased by 1 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 77% with OOS around 420.",
+          "evidence": "out-of-standard inventory increased by 148"
         },
         "driverBars": [
           {
@@ -17229,6 +17560,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.92,
+          "sourceSla": 0.92,
+          "calculatedSla": 0.919906,
           "targetSla": 0.9,
           "slaChange": -0.06,
           "startingInventory": 3396.0,
@@ -17240,10 +17573,12 @@ window.DASHBOARD_DATA = {
           "closures": 12420.0,
           "closuresChange": -0.34666,
           "gap": -1452.0,
+          "throughputBalance": 1452.0,
           "fte": 18.0,
           "fteChange": -1.0,
           "productionToReceiptsRatio": 1.132265,
-          "capacityGap": -2.1
+          "capacityGap": -2.1,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -17257,7 +17592,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 1859.83,
           "projectedOutOfStandard": 420.0,
           "projectedSla": 0.7742,
-          "summary": "If current movement continues, next-period SLA trends near 77% with OOS around 420.",
+          "summary": "If current trends continue, next-period SLA trends near 77% with OOS around 420.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -17289,12 +17624,18 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +2 pts, OOS moved -155, gap is 1,402.",
           "whyItMatters": "CGS Correspondence is on watch with SLA at 94%.",
-          "staffing": "Estimated capacity gap is about 1.4 FTE using current closures per FTE.",
+          "staffing": "Production is 85% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "Closures declined for 3 consecutive periods.; Production is 85% of receipts.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
-          "evidence": "receipts exceeded closures by 1,402; staffing decreased by 10 FTE; daily production is 85% of daily receipts"
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
+          "evidence": "receipts exceeded closures by 1,402; daily production is 85% of daily receipts"
         },
         "driverBars": [
+          {
+            "label": "Workload Pressure",
+            "strength": 1.0,
+            "rawValue": 0.721193,
+            "note": "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."
+          },
           {
             "label": "Flow Gap",
             "strength": 1.0,
@@ -17306,12 +17647,6 @@ window.DASHBOARD_DATA = {
             "strength": 0.4959,
             "rawValue": 0.357649,
             "note": "Closure deterioration can widen the flow gap."
-          },
-          {
-            "label": "FTE Capacity",
-            "strength": 0.2444,
-            "rawValue": 0.17625,
-            "note": "Current workload compared with staffing capacity."
           },
           {
             "label": "Receipt Growth",
@@ -17328,6 +17663,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.94,
+          "sourceSla": 0.94,
+          "calculatedSla": 0.939815,
           "targetSla": 0.9,
           "slaChange": 0.02,
           "startingInventory": 1944.0,
@@ -17339,10 +17676,12 @@ window.DASHBOARD_DATA = {
           "closures": 7978.0,
           "closuresChange": -0.357649,
           "gap": 1402.0,
+          "throughputBalance": -1402.0,
           "fte": 8.0,
           "fteChange": -10.0,
           "productionToReceiptsRatio": 0.850112,
-          "capacityGap": 1.41
+          "capacityGap": 1.41,
+          "capacityStatus": "SHORTFALL"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -17356,7 +17695,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 1112.82,
           "projectedOutOfStandard": 0,
           "projectedSla": 1.0,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -17381,7 +17720,7 @@ window.DASHBOARD_DATA = {
           "whyItMatters": "CGS Correspondence is meeting target with SLA at 98%.",
           "staffing": "Staffing data is not available for this selected period.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 17.",
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 17.",
           "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [
@@ -17394,6 +17733,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.98,
+          "sourceSla": 0.98,
+          "calculatedSla": 0.979976,
           "targetSla": 0.9,
           "slaChange": 0.04,
           "startingInventory": 3346.0,
@@ -17405,10 +17746,12 @@ window.DASHBOARD_DATA = {
           "closures": null,
           "closuresChange": null,
           "gap": null,
+          "throughputBalance": null,
           "fte": null,
           "fteChange": null,
           "productionToReceiptsRatio": null,
-          "capacityGap": null
+          "capacityGap": null,
+          "capacityStatus": "UNKNOWN"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -17422,7 +17765,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 5759.11,
           "projectedOutOfStandard": 17.0,
           "projectedSla": 0.997,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 17.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 17.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -17450,27 +17793,29 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "gap is 4,341.",
           "whyItMatters": "CGS Disputes is meeting target with SLA at 98%.",
-          "staffing": "Estimated capacity gap is about 10.6 FTE using current closures per FTE.",
+          "staffing": "Production is 79% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 98% with OOS around 246.",
+          "outlook": "If current trends continue, next-period SLA trends near 98% with OOS around 246.",
           "evidence": "receipts exceeded closures by 4,341; daily production is 79% of daily receipts"
         },
         "driverBars": [
+          {
+            "label": "Workload Pressure",
+            "strength": 1.0,
+            "rawValue": 0.353387,
+            "note": "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."
+          },
           {
             "label": "Flow Gap",
             "strength": 1.0,
             "rawValue": 0.353387,
             "note": "Receipts above closures create inventory pressure."
-          },
-          {
-            "label": "FTE Capacity",
-            "strength": 0.7713,
-            "rawValue": 0.272564,
-            "note": "Current workload compared with staffing capacity."
           }
         ],
         "metrics": {
           "sla": 0.98,
+          "sourceSla": 0.98,
+          "calculatedSla": 0.979974,
           "targetSla": 0.9,
           "slaChange": null,
           "startingInventory": 12284.0,
@@ -17482,10 +17827,12 @@ window.DASHBOARD_DATA = {
           "closures": 15922.0,
           "closuresChange": null,
           "gap": 4341.0,
+          "throughputBalance": -4341.0,
           "fte": 39.0,
           "fteChange": null,
           "productionToReceiptsRatio": 0.786102,
-          "capacityGap": 10.63
+          "capacityGap": 10.63,
+          "capacityStatus": "SHORTFALL"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -17499,7 +17846,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 12284.0,
           "projectedOutOfStandard": 246.0,
           "projectedSla": 0.98,
-          "summary": "If current movement continues, next-period SLA trends near 98% with OOS around 246.",
+          "summary": "If current trends continue, next-period SLA trends near 98% with OOS around 246.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -17527,9 +17874,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved -22 pts, OOS moved 5,166, gap is -793.",
           "whyItMatters": "CGS Disputes is critical with SLA at 76%.",
-          "staffing": "Production is 103% of receipts.",
+          "staffing": "Production is 103% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 74% with OOS around 10,578.",
+          "outlook": "If current trends continue, next-period SLA trends near 74% with OOS around 10,578.",
           "evidence": "SLA is 76%; out-of-standard inventory increased by 5,166"
         },
         "driverBars": [
@@ -17548,6 +17895,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.76,
+          "sourceSla": 0.76,
+          "calculatedSla": 0.759989,
           "targetSla": 0.9,
           "slaChange": -0.22,
           "startingInventory": 22549.0,
@@ -17559,10 +17908,12 @@ window.DASHBOARD_DATA = {
           "closures": 28879.0,
           "closuresChange": 0.81378,
           "gap": -793.0,
+          "throughputBalance": 793.0,
           "fte": 69.0,
           "fteChange": 30.0,
           "productionToReceiptsRatio": 1.028422,
-          "capacityGap": -1.89
+          "capacityGap": -1.89,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -17576,7 +17927,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 41391.85,
           "projectedOutOfStandard": 10578.0,
           "projectedSla": 0.7444,
-          "summary": "If current movement continues, next-period SLA trends near 74% with OOS around 10,578.",
+          "summary": "If current trends continue, next-period SLA trends near 74% with OOS around 10,578.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -17604,10 +17955,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +13 pts, OOS moved -3,019, gap is -603.",
           "whyItMatters": "CGS Disputes is at risk with SLA at 89%.",
-          "staffing": "Production is 102% of receipts.",
+          "staffing": "Production is 102% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
-          "evidence": "SLA is 89%; staffing decreased by 3 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
+          "evidence": "SLA is 89%"
         },
         "driverBars": [
           {
@@ -17625,6 +17976,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.89,
+          "sourceSla": 0.89,
+          "calculatedSla": 0.890007,
           "targetSla": 0.9,
           "slaChange": 0.13,
           "startingInventory": 21756.0,
@@ -17636,10 +17989,12 @@ window.DASHBOARD_DATA = {
           "closures": 33531.0,
           "closuresChange": 0.161086,
           "gap": -603.0,
+          "throughputBalance": 603.0,
           "fte": 66.0,
           "fteChange": -3.0,
           "productionToReceiptsRatio": 1.018036,
-          "capacityGap": -1.19
+          "capacityGap": -1.19,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -17653,7 +18008,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 20990.88,
           "projectedOutOfStandard": 0,
           "projectedSla": 1.0,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -17676,9 +18031,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +4 pts, OOS moved -912, gap is -5,705.",
           "whyItMatters": "CGS Disputes is meeting target with SLA at 93%.",
-          "staffing": "Production is 120% of receipts.",
+          "staffing": "Production is 120% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 97% with OOS around 569.",
+          "outlook": "If current trends continue, next-period SLA trends near 97% with OOS around 569.",
           "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [
@@ -17703,6 +18058,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.93,
+          "sourceSla": 0.93,
+          "calculatedSla": 0.929986,
           "targetSla": 0.9,
           "slaChange": 0.04,
           "startingInventory": 21153.0,
@@ -17714,10 +18071,12 @@ window.DASHBOARD_DATA = {
           "closures": 33524.0,
           "closuresChange": -0.000209,
           "gap": -5705.0,
+          "throughputBalance": 5705.0,
           "fte": 72.0,
           "fteChange": 6.0,
           "productionToReceiptsRatio": 1.204528,
-          "capacityGap": -12.25
+          "capacityGap": -12.25,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -17731,7 +18090,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 20566.72,
           "projectedOutOfStandard": 569.0,
           "projectedSla": 0.9723,
-          "summary": "If current movement continues, next-period SLA trends near 97% with OOS around 569.",
+          "summary": "If current trends continue, next-period SLA trends near 97% with OOS around 569.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -17756,7 +18115,7 @@ window.DASHBOARD_DATA = {
           "whyItMatters": "CGS Disputes is meeting target with SLA at 94%.",
           "staffing": "Staffing data is not available for this selected period.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 97% with OOS around 373.",
+          "outlook": "If current trends continue, next-period SLA trends near 97% with OOS around 373.",
           "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [
@@ -17769,6 +18128,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.94,
+          "sourceSla": 0.94,
+          "calculatedSla": 0.939992,
           "targetSla": 0.9,
           "slaChange": 0.01,
           "startingInventory": 15448.0,
@@ -17780,10 +18141,12 @@ window.DASHBOARD_DATA = {
           "closures": null,
           "closuresChange": null,
           "gap": null,
+          "throughputBalance": null,
           "fte": null,
           "fteChange": null,
           "productionToReceiptsRatio": null,
-          "capacityGap": null
+          "capacityGap": null,
+          "capacityStatus": "UNKNOWN"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -17797,7 +18160,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 11281.64,
           "projectedOutOfStandard": 373.0,
           "projectedSla": 0.9669,
-          "summary": "If current movement continues, next-period SLA trends near 97% with OOS around 373.",
+          "summary": "If current trends continue, next-period SLA trends near 97% with OOS around 373.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -17823,14 +18186,16 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "gap is -40,249.",
           "whyItMatters": "CGS Host is critical with SLA at 40%.",
-          "staffing": "Production is 213% of receipts.",
+          "staffing": "Production is 213% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 40% with OOS around 89,986.",
+          "outlook": "If current trends continue, next-period SLA trends near 40% with OOS around 89,986.",
           "evidence": "SLA is 40%"
         },
         "driverBars": [],
         "metrics": {
           "sla": 0.4,
+          "sourceSla": 0.4,
+          "calculatedSla": 0.399997,
           "targetSla": 0.9,
           "slaChange": null,
           "startingInventory": 149976.0,
@@ -17842,10 +18207,12 @@ window.DASHBOARD_DATA = {
           "closures": 75902.0,
           "closuresChange": null,
           "gap": -40249.0,
+          "throughputBalance": 40249.0,
           "fte": 38.0,
           "fteChange": null,
           "productionToReceiptsRatio": 2.128316,
-          "capacityGap": -20.15
+          "capacityGap": -20.15,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -17859,7 +18226,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 149976.0,
           "projectedOutOfStandard": 89986.0,
           "projectedSla": 0.4,
-          "summary": "If current movement continues, next-period SLA trends near 40% with OOS around 89,986.",
+          "summary": "If current trends continue, next-period SLA trends near 40% with OOS around 89,986.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -17888,9 +18255,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +36 pts, OOS moved -82,910, gap is 8,450.",
           "whyItMatters": "CGS Host is critical with SLA at 76%.",
-          "staffing": "Estimated capacity gap is about 19.9 FTE using current closures per FTE.",
+          "staffing": "Production is 85% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "evidence": "SLA is 76%; receipts exceeded closures by 8,450; daily production is 85% of daily receipts"
         },
         "driverBars": [
@@ -17913,20 +18280,22 @@ window.DASHBOARD_DATA = {
             "note": "Closure deterioration can widen the flow gap."
           },
           {
+            "label": "Workload Pressure",
+            "strength": 0.1019,
+            "rawValue": 0.286616,
+            "note": "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."
+          },
+          {
             "label": "Flow Gap",
             "strength": 0.1019,
             "rawValue": 0.286616,
             "note": "Receipts above closures create inventory pressure."
-          },
-          {
-            "label": "FTE Capacity",
-            "strength": 0.0621,
-            "rawValue": 0.174737,
-            "note": "Current workload compared with staffing capacity."
           }
         ],
         "metrics": {
           "sla": 0.76,
+          "sourceSla": 0.76,
+          "calculatedSla": 0.759989,
           "targetSla": 0.9,
           "slaChange": 0.36,
           "startingInventory": 29482.0,
@@ -17938,10 +18307,12 @@ window.DASHBOARD_DATA = {
           "closures": 48356.0,
           "closuresChange": -0.362915,
           "gap": 8450.0,
+          "throughputBalance": -8450.0,
           "fte": 114.0,
           "fteChange": 76.0,
           "productionToReceiptsRatio": 0.851386,
-          "capacityGap": 19.92
+          "capacityGap": 19.92,
+          "capacityStatus": "SHORTFALL"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -17955,7 +18326,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 5795.51,
           "projectedOutOfStandard": 0,
           "projectedSla": 1.0,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -17981,10 +18352,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +12 pts, OOS moved -2,524, gap is -11,356.",
           "whyItMatters": "CGS Host is at risk with SLA at 88%.",
-          "staffing": "Production is 136% of receipts.",
+          "staffing": "Production is 136% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 96% with OOS around 2,028.",
-          "evidence": "SLA is 88%; staffing decreased by 22 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 96% with OOS around 2,028.",
+          "evidence": "SLA is 88%"
         },
         "driverBars": [
           {
@@ -18008,6 +18379,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.88,
+          "sourceSla": 0.88,
+          "calculatedSla": 0.879996,
           "targetSla": 0.9,
           "slaChange": 0.12,
           "startingInventory": 37932.0,
@@ -18019,10 +18392,12 @@ window.DASHBOARD_DATA = {
           "closures": 42884.0,
           "closuresChange": -0.113161,
           "gap": -11356.0,
+          "throughputBalance": 11356.0,
           "fte": 92.0,
           "fteChange": -22.0,
           "productionToReceiptsRatio": 1.360084,
-          "capacityGap": -24.36
+          "capacityGap": -24.36,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -18036,7 +18411,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 48803.92,
           "projectedOutOfStandard": 2028.0,
           "projectedSla": 0.9584,
-          "summary": "If current movement continues, next-period SLA trends near 96% with OOS around 2,028.",
+          "summary": "If current trends continue, next-period SLA trends near 96% with OOS around 2,028.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -18065,10 +18440,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved -8 pts, OOS moved 763, gap is 2,468.",
           "whyItMatters": "CGS Host is at risk with SLA at 80%.",
-          "staffing": "Estimated capacity gap is about 3.1 FTE using current closures per FTE.",
+          "staffing": "Production is 93% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 67% with OOS around 6,078.",
-          "evidence": "SLA is 80%; out-of-standard inventory increased by 763; receipts exceeded closures by 2,468; staffing decreased by 54 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 67% with OOS around 6,078.",
+          "evidence": "SLA is 80%; out-of-standard inventory increased by 763; receipts exceeded closures by 2,468; daily production is 93% of daily receipts"
         },
         "driverBars": [
           {
@@ -18078,16 +18453,16 @@ window.DASHBOARD_DATA = {
             "note": "Closure deterioration can widen the flow gap."
           },
           {
+            "label": "Workload Pressure",
+            "strength": 0.3202,
+            "rawValue": 0.092866,
+            "note": "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."
+          },
+          {
             "label": "Flow Gap",
             "strength": 0.3202,
             "rawValue": 0.092866,
             "note": "Receipts above closures create inventory pressure."
-          },
-          {
-            "label": "FTE Capacity",
-            "strength": 0.2795,
-            "rawValue": 0.081053,
-            "note": "Current workload compared with staffing capacity."
           },
           {
             "label": "Receipt Growth",
@@ -18104,6 +18479,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.8,
+          "sourceSla": 0.8,
+          "calculatedSla": 0.800008,
           "targetSla": 0.9,
           "slaChange": -0.08,
           "startingInventory": 26576.0,
@@ -18115,10 +18492,12 @@ window.DASHBOARD_DATA = {
           "closures": 30447.0,
           "closuresChange": -0.290015,
           "gap": 2468.0,
+          "throughputBalance": -2468.0,
           "fte": 38.0,
           "fteChange": -54.0,
           "productionToReceiptsRatio": 0.925335,
-          "capacityGap": 3.08
+          "capacityGap": 3.08,
+          "capacityStatus": "SHORTFALL"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -18132,7 +18511,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 18619.73,
           "projectedOutOfStandard": 6078.0,
           "projectedSla": 0.6736,
-          "summary": "If current movement continues, next-period SLA trends near 67% with OOS around 6,078.",
+          "summary": "If current trends continue, next-period SLA trends near 67% with OOS around 6,078.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -18160,7 +18539,7 @@ window.DASHBOARD_DATA = {
           "whyItMatters": "CGS Host is at risk with SLA at 82%.",
           "staffing": "Staffing data is not available for this selected period.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 84% with OOS around 5,141.",
+          "outlook": "If current trends continue, next-period SLA trends near 84% with OOS around 5,141.",
           "evidence": "SLA is 82%"
         },
         "driverBars": [
@@ -18173,6 +18552,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.82,
+          "sourceSla": 0.82,
+          "calculatedSla": 0.819997,
           "targetSla": 0.9,
           "slaChange": 0.02,
           "startingInventory": 29044.0,
@@ -18184,10 +18565,12 @@ window.DASHBOARD_DATA = {
           "closures": null,
           "closuresChange": null,
           "gap": null,
+          "throughputBalance": null,
           "fte": null,
           "fteChange": null,
           "productionToReceiptsRatio": null,
-          "capacityGap": null
+          "capacityGap": null,
+          "capacityStatus": "UNKNOWN"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -18201,7 +18584,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 31741.2,
           "projectedOutOfStandard": 5141.0,
           "projectedSla": 0.838,
-          "summary": "If current movement continues, next-period SLA trends near 84% with OOS around 5,141.",
+          "summary": "If current trends continue, next-period SLA trends near 84% with OOS around 5,141.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -18229,9 +18612,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "gap is -67,170.",
           "whyItMatters": "CGS Validation/Adjustments is critical with SLA at 79%.",
-          "staffing": "Production is 135% of receipts.",
+          "staffing": "Production is 135% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 79% with OOS around 17,530.",
+          "outlook": "If current trends continue, next-period SLA trends near 79% with OOS around 17,530.",
           "evidence": "SLA is 79%"
         },
         "driverBars": [
@@ -18244,6 +18627,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.79,
+          "sourceSla": 0.79,
+          "calculatedSla": 0.790002,
           "targetSla": 0.9,
           "slaChange": null,
           "startingInventory": 83477.0,
@@ -18255,10 +18640,12 @@ window.DASHBOARD_DATA = {
           "closures": 258471.0,
           "closuresChange": null,
           "gap": -67170.0,
+          "throughputBalance": 67170.0,
           "fte": 56.0,
           "fteChange": null,
           "productionToReceiptsRatio": 1.351081,
-          "capacityGap": -14.55
+          "capacityGap": -14.55,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -18272,7 +18659,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 83477.0,
           "projectedOutOfStandard": 17530.0,
           "projectedSla": 0.79,
-          "summary": "If current movement continues, next-period SLA trends near 79% with OOS around 17,530.",
+          "summary": "If current trends continue, next-period SLA trends near 79% with OOS around 17,530.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -18302,10 +18689,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +11 pts, OOS moved -11,797, gap is -78,237.",
           "whyItMatters": "CGS Validation/Adjustments is meeting target with SLA at 90%.",
-          "staffing": "Production is 153% of receipts.",
+          "staffing": "Production is 153% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
-          "evidence": "staffing decreased by 19 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
+          "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [
           {
@@ -18335,6 +18722,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.9,
+          "sourceSla": 0.9,
+          "calculatedSla": 0.900005,
           "targetSla": 0.9,
           "slaChange": 0.11,
           "startingInventory": 57333.0,
@@ -18346,10 +18735,12 @@ window.DASHBOARD_DATA = {
           "closures": 225815.0,
           "closuresChange": -0.126343,
           "gap": -78237.0,
+          "throughputBalance": 78237.0,
           "fte": 37.0,
           "fteChange": -19.0,
           "productionToReceiptsRatio": 1.530023,
-          "capacityGap": -12.82
+          "capacityGap": -12.82,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -18363,7 +18754,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 39376.99,
           "projectedOutOfStandard": 0,
           "projectedSla": 1.0,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -18393,9 +18784,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +3 pts, OOS moved 149, gap is -46,174.",
           "whyItMatters": "CGS Validation/Adjustments is meeting target with SLA at 93%.",
-          "staffing": "Production is 125% of receipts.",
+          "staffing": "Production is 125% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 95% with OOS around 6,031.",
+          "outlook": "If current trends continue, next-period SLA trends near 95% with OOS around 6,031.",
           "evidence": "out-of-standard inventory increased by 149"
         },
         "driverBars": [
@@ -18420,6 +18811,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.93,
+          "sourceSla": 0.93,
+          "calculatedSla": 0.93,
           "targetSla": 0.9,
           "slaChange": 0.03,
           "startingInventory": 84029.0,
@@ -18431,10 +18824,12 @@ window.DASHBOARD_DATA = {
           "closures": 229386.0,
           "closuresChange": 0.015814,
           "gap": -46174.0,
+          "throughputBalance": 46174.0,
           "fte": 57.0,
           "fteChange": 20.0,
           "productionToReceiptsRatio": 1.252041,
-          "capacityGap": -11.47
+          "capacityGap": -11.47,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -18448,7 +18843,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 123155.51,
           "projectedOutOfStandard": 6031.0,
           "projectedSla": 0.951,
-          "summary": "If current movement continues, next-period SLA trends near 95% with OOS around 6,031.",
+          "summary": "If current trends continue, next-period SLA trends near 95% with OOS around 6,031.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -18476,9 +18871,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved -16 pts, OOS moved 13,411, gap is -121,490.",
           "whyItMatters": "CGS Validation/Adjustments is critical with SLA at 77%.",
-          "staffing": "Production is 227% of receipts.",
+          "staffing": "Production is 227% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 61% with OOS around 32,704.",
+          "outlook": "If current trends continue, next-period SLA trends near 61% with OOS around 32,704.",
           "evidence": "SLA is 77%; out-of-standard inventory increased by 13,411"
         },
         "driverBars": [
@@ -18509,6 +18904,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.77,
+          "sourceSla": 0.77,
+          "calculatedSla": 0.769996,
           "targetSla": 0.9,
           "slaChange": -0.16,
           "startingInventory": 83881.0,
@@ -18520,10 +18917,12 @@ window.DASHBOARD_DATA = {
           "closures": 216891.0,
           "closuresChange": -0.054472,
           "gap": -121490.0,
+          "throughputBalance": 121490.0,
           "fte": 60.0,
           "fteChange": 3.0,
           "productionToReceiptsRatio": 2.273388,
-          "capacityGap": -33.61
+          "capacityGap": -33.61,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -18537,7 +18936,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 83733.29,
           "projectedOutOfStandard": 32704.0,
           "projectedSla": 0.6094,
-          "summary": "If current movement continues, next-period SLA trends near 61% with OOS around 32,704.",
+          "summary": "If current trends continue, next-period SLA trends near 61% with OOS around 32,704.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -18565,7 +18964,7 @@ window.DASHBOARD_DATA = {
           "whyItMatters": "CGS Validation/Adjustments is critical with SLA at 68%.",
           "staffing": "Staffing data is not available for this selected period.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 59% with OOS around 10,859.",
+          "outlook": "If current trends continue, next-period SLA trends near 59% with OOS around 10,859.",
           "evidence": "SLA is 68%"
         },
         "driverBars": [
@@ -18578,6 +18977,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.68,
+          "sourceSla": 0.68,
+          "calculatedSla": 0.68001,
           "targetSla": 0.9,
           "slaChange": -0.09,
           "startingInventory": 47114.0,
@@ -18589,10 +18990,12 @@ window.DASHBOARD_DATA = {
           "closures": null,
           "closuresChange": null,
           "gap": null,
+          "throughputBalance": null,
           "fte": null,
           "fteChange": null,
           "productionToReceiptsRatio": null,
-          "capacityGap": null
+          "capacityGap": null,
+          "capacityStatus": "UNKNOWN"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -18606,7 +19009,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 26462.85,
           "projectedOutOfStandard": 10859.0,
           "projectedSla": 0.5897,
-          "summary": "If current movement continues, next-period SLA trends near 59% with OOS around 10,859.",
+          "summary": "If current trends continue, next-period SLA trends near 59% with OOS around 10,859.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -18634,12 +19037,18 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "gap is 23,242.",
           "whyItMatters": "GB Cash Posting is on watch with SLA at 90%.",
-          "staffing": "Estimated capacity gap is about 1.0 FTE using current closures per FTE.",
+          "staffing": "Production is 95% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 90% with OOS around 2,172.",
+          "outlook": "If current trends continue, next-period SLA trends near 90% with OOS around 2,172.",
           "evidence": "receipts exceeded closures by 23,242; reroutes added 2,917 units of movement; daily production is 95% of daily receipts"
         },
         "driverBars": [
+          {
+            "label": "Workload Pressure",
+            "strength": 1.0,
+            "rawValue": 1.070221,
+            "note": "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."
+          },
           {
             "label": "Flow Gap",
             "strength": 1.0,
@@ -18651,16 +19060,12 @@ window.DASHBOARD_DATA = {
             "strength": 0.1255,
             "rawValue": 0.134319,
             "note": "Reroutes can affect operational flow."
-          },
-          {
-            "label": "FTE Capacity",
-            "strength": 0.0519,
-            "rawValue": 0.055556,
-            "note": "Current workload compared with staffing capacity."
           }
         ],
         "metrics": {
           "sla": 0.9,
+          "sourceSla": 0.9,
+          "calculatedSla": 0.899986,
           "targetSla": 0.9,
           "slaChange": null,
           "startingInventory": 21717.0,
@@ -18672,10 +19077,12 @@ window.DASHBOARD_DATA = {
           "closures": 417437.0,
           "closuresChange": null,
           "gap": 23242.0,
+          "throughputBalance": -23242.0,
           "fte": 18.0,
           "fteChange": null,
           "productionToReceiptsRatio": 0.947232,
-          "capacityGap": 1.0
+          "capacityGap": 1.0,
+          "capacityStatus": "SHORTFALL"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -18689,7 +19096,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 21717.0,
           "projectedOutOfStandard": 2172.0,
           "projectedSla": 0.9,
-          "summary": "If current movement continues, next-period SLA trends near 90% with OOS around 2,172.",
+          "summary": "If current trends continue, next-period SLA trends near 90% with OOS around 2,172.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -18718,10 +19125,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved -7 pts, OOS moved 3,753, gap is 826.",
           "whyItMatters": "GB Cash Posting is at risk with SLA at 83%.",
-          "staffing": "Estimated capacity gap is about 0.0 FTE using current closures per FTE.",
+          "staffing": "Production is 100% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 83% with OOS around 9,678.",
-          "evidence": "SLA is 83%; out-of-standard inventory increased by 3,753; receipts exceeded closures by 826; staffing decreased by 1 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 83% with OOS around 9,678.",
+          "evidence": "SLA is 83%; out-of-standard inventory increased by 3,753; receipts exceeded closures by 826; daily production is 100% of daily receipts"
         },
         "driverBars": [
           {
@@ -18743,20 +19150,22 @@ window.DASHBOARD_DATA = {
             "note": "Closure deterioration can widen the flow gap."
           },
           {
+            "label": "Workload Pressure",
+            "strength": 0.1865,
+            "rawValue": 0.023347,
+            "note": "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."
+          },
+          {
             "label": "Flow Gap",
             "strength": 0.1865,
             "rawValue": 0.023347,
             "note": "Receipts above closures create inventory pressure."
-          },
-          {
-            "label": "Reroutes",
-            "strength": 0.0467,
-            "rawValue": 0.005851,
-            "note": "Reroutes can affect operational flow."
           }
         ],
         "metrics": {
           "sla": 0.83,
+          "sourceSla": 0.83,
+          "calculatedSla": 0.832528,
           "targetSla": 0.9,
           "slaChange": -0.07,
           "startingInventory": 35379.0,
@@ -18768,10 +19177,12 @@ window.DASHBOARD_DATA = {
           "closures": 384678.0,
           "closuresChange": -0.078477,
           "gap": 826.0,
+          "throughputBalance": -826.0,
           "fte": 17.0,
           "fteChange": -1.0,
           "productionToReceiptsRatio": 0.997875,
-          "capacityGap": 0.04
+          "capacityGap": 0.04,
+          "capacityStatus": "SUFFICIENT"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -18785,7 +19196,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 57635.65,
           "projectedOutOfStandard": 9678.0,
           "projectedSla": 0.8321,
-          "summary": "If current movement continues, next-period SLA trends near 83% with OOS around 9,678.",
+          "summary": "If current trends continue, next-period SLA trends near 83% with OOS around 9,678.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -18813,12 +19224,18 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +3 pts, OOS moved -728, gap is 6,478.",
           "whyItMatters": "GB Cash Posting is at risk with SLA at 86%.",
-          "staffing": "Estimated capacity gap is about 0.3 FTE using current closures per FTE.",
+          "staffing": "Production is 98% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 88% with OOS around 4,469.",
+          "outlook": "If current trends continue, next-period SLA trends near 88% with OOS around 4,469.",
           "evidence": "SLA is 86%; receipts exceeded closures by 6,478; daily production is 98% of daily receipts"
         },
         "driverBars": [
+          {
+            "label": "Workload Pressure",
+            "strength": 1.0,
+            "rawValue": 0.177908,
+            "note": "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."
+          },
           {
             "label": "Flow Gap",
             "strength": 1.0,
@@ -18842,16 +19259,12 @@ window.DASHBOARD_DATA = {
             "strength": 0.1124,
             "rawValue": 0.019993,
             "note": "Out-of-standard movement affects SLA risk."
-          },
-          {
-            "label": "FTE Capacity",
-            "strength": 0.0926,
-            "rawValue": 0.016471,
-            "note": "Current workload compared with staffing capacity."
           }
         ],
         "metrics": {
           "sla": 0.86,
+          "sourceSla": 0.86,
+          "calculatedSla": 0.857272,
           "targetSla": 0.9,
           "slaChange": 0.03,
           "startingInventory": 36412.0,
@@ -18863,10 +19276,12 @@ window.DASHBOARD_DATA = {
           "closures": 389128.0,
           "closuresChange": 0.011568,
           "gap": 6478.0,
+          "throughputBalance": -6478.0,
           "fte": 17.0,
           "fteChange": 0.0,
           "productionToReceiptsRatio": 0.98365,
-          "capacityGap": 0.28
+          "capacityGap": 0.28,
+          "capacityStatus": "SHORTFALL"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -18880,7 +19295,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 37475.16,
           "projectedOutOfStandard": 4469.0,
           "projectedSla": 0.8807,
-          "summary": "If current movement continues, next-period SLA trends near 88% with OOS around 4,469.",
+          "summary": "If current trends continue, next-period SLA trends near 88% with OOS around 4,469.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -18909,12 +19324,18 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved -7 pts, OOS moved 4,741, gap is 10,775.",
           "whyItMatters": "GB Cash Posting is critical with SLA at 79%.",
-          "staffing": "Estimated capacity gap is about 0.5 FTE using current closures per FTE.",
+          "staffing": "Production is 97% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 76% with OOS around 14,679.",
+          "outlook": "If current trends continue, next-period SLA trends near 76% with OOS around 14,679.",
           "evidence": "SLA is 79%; out-of-standard inventory increased by 4,741; receipts exceeded closures by 10,775; reroutes added 10,106 units of movement"
         },
         "driverBars": [
+          {
+            "label": "Workload Pressure",
+            "strength": 1.0,
+            "rawValue": 0.227167,
+            "note": "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."
+          },
           {
             "label": "Flow Gap",
             "strength": 1.0,
@@ -18934,12 +19355,6 @@ window.DASHBOARD_DATA = {
             "note": "Out-of-standard movement affects SLA risk."
           },
           {
-            "label": "FTE Capacity",
-            "strength": 0.1217,
-            "rawValue": 0.027647,
-            "note": "Current workload compared with staffing capacity."
-          },
-          {
             "label": "Receipt Growth",
             "strength": 0.0647,
             "rawValue": 0.014701,
@@ -18948,6 +19363,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.79,
+          "sourceSla": 0.79,
+          "calculatedSla": 0.790479,
           "targetSla": 0.9,
           "slaChange": -0.07,
           "startingInventory": 47432.0,
@@ -18959,10 +19376,12 @@ window.DASHBOARD_DATA = {
           "closures": 390647.0,
           "closuresChange": 0.003904,
           "gap": 10775.0,
+          "throughputBalance": -10775.0,
           "fte": 17.0,
           "fteChange": 0.0,
           "productionToReceiptsRatio": 0.973162,
-          "capacityGap": 0.47
+          "capacityGap": 0.47,
+          "capacityStatus": "SHORTFALL"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -18976,7 +19395,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 61787.15,
           "projectedOutOfStandard": 14679.0,
           "projectedSla": 0.7624,
-          "summary": "If current movement continues, next-period SLA trends near 76% with OOS around 14,679.",
+          "summary": "If current trends continue, next-period SLA trends near 76% with OOS around 14,679.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -19004,7 +19423,7 @@ window.DASHBOARD_DATA = {
           "whyItMatters": "GB Cash Posting is critical with SLA at 74%.",
           "staffing": "Staffing data is not available for this selected period.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 70% with OOS around 14,778.",
+          "outlook": "If current trends continue, next-period SLA trends near 70% with OOS around 14,778.",
           "evidence": "SLA is 74%; out-of-standard inventory increased by 2,420"
         },
         "driverBars": [
@@ -19017,6 +19436,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.74,
+          "sourceSla": 0.74,
+          "calculatedSla": 0.743082,
           "targetSla": 0.9,
           "slaChange": -0.05,
           "startingInventory": 48101.0,
@@ -19028,10 +19449,12 @@ window.DASHBOARD_DATA = {
           "closures": null,
           "closuresChange": null,
           "gap": null,
+          "throughputBalance": null,
           "fte": null,
           "fteChange": null,
           "productionToReceiptsRatio": null,
-          "capacityGap": null
+          "capacityGap": null,
+          "capacityStatus": "UNKNOWN"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -19045,7 +19468,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 48779.42,
           "projectedOutOfStandard": 14778.0,
           "projectedSla": 0.697,
-          "summary": "If current movement continues, next-period SLA trends near 70% with OOS around 14,778.",
+          "summary": "If current trends continue, next-period SLA trends near 70% with OOS around 14,778.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -19070,9 +19493,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "gap is -415.",
           "whyItMatters": "GB Correspondence is meeting target with SLA at 98%.",
-          "staffing": "Production is 106% of receipts.",
+          "staffing": "Production is 106% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 98% with OOS around 85.",
+          "outlook": "If current trends continue, next-period SLA trends near 98% with OOS around 85.",
           "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [
@@ -19085,6 +19508,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.98,
+          "sourceSla": 0.98,
+          "calculatedSla": 0.980084,
           "targetSla": 0.9,
           "slaChange": null,
           "startingInventory": 4268.0,
@@ -19096,10 +19521,12 @@ window.DASHBOARD_DATA = {
           "closures": 7707.0,
           "closuresChange": null,
           "gap": -415.0,
+          "throughputBalance": 415.0,
           "fte": 16.0,
           "fteChange": null,
           "productionToReceiptsRatio": 1.057402,
-          "capacityGap": -0.86
+          "capacityGap": -0.86,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -19113,7 +19540,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 4268.0,
           "projectedOutOfStandard": 85.0,
           "projectedSla": 0.9801,
-          "summary": "If current movement continues, next-period SLA trends near 98% with OOS around 85.",
+          "summary": "If current trends continue, next-period SLA trends near 98% with OOS around 85.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -19138,10 +19565,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +1 pts, OOS moved -53, gap is -3,480.",
           "whyItMatters": "GB Correspondence is meeting target with SLA at 99%.",
-          "staffing": "Production is 152% of receipts.",
+          "staffing": "Production is 152% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
-          "evidence": "staffing decreased by 2 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
+          "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [
           {
@@ -19165,6 +19592,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.99,
+          "sourceSla": 0.99,
+          "calculatedSla": 0.990142,
           "targetSla": 0.9,
           "slaChange": 0.01,
           "startingInventory": 3246.0,
@@ -19176,10 +19605,12 @@ window.DASHBOARD_DATA = {
           "closures": 10148.0,
           "closuresChange": 0.316725,
           "gap": -3480.0,
+          "throughputBalance": 3480.0,
           "fte": 14.0,
           "fteChange": -2.0,
           "productionToReceiptsRatio": 1.518868,
-          "capacityGap": -4.8
+          "capacityGap": -4.8,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -19193,7 +19624,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 2468.73,
           "projectedOutOfStandard": 0,
           "projectedSla": 1.0,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -19225,10 +19656,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved -1 pts, OOS moved 66, gap is -1,500.",
           "whyItMatters": "GB Correspondence is on watch with SLA at 98%.",
-          "staffing": "Production is 119% of receipts.",
+          "staffing": "Production is 119% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "OOS inventory increased by 66.; Workload is growing faster than FTE.",
-          "outlook": "If current movement continues, next-period SLA trends near 98% with OOS around 164.",
-          "evidence": "out-of-standard inventory increased by 66; staffing decreased by 1 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 98% with OOS around 164.",
+          "evidence": "out-of-standard inventory increased by 66"
         },
         "driverBars": [
           {
@@ -19258,6 +19689,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.98,
+          "sourceSla": 0.98,
+          "calculatedSla": 0.980053,
           "targetSla": 0.9,
           "slaChange": -0.01,
           "startingInventory": 4913.0,
@@ -19269,10 +19702,12 @@ window.DASHBOARD_DATA = {
           "closures": 9603.0,
           "closuresChange": -0.053705,
           "gap": -1500.0,
+          "throughputBalance": 1500.0,
           "fte": 13.0,
           "fteChange": -1.0,
           "productionToReceiptsRatio": 1.1875,
-          "capacityGap": -2.03
+          "capacityGap": -2.03,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -19286,7 +19721,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 7436.1,
           "projectedOutOfStandard": 164.0,
           "projectedSla": 0.9779,
-          "summary": "If current movement continues, next-period SLA trends near 98% with OOS around 164.",
+          "summary": "If current trends continue, next-period SLA trends near 98% with OOS around 164.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -19313,9 +19748,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +1 pts, OOS moved -62, gap is -1,318.",
           "whyItMatters": "GB Correspondence is meeting target with SLA at 99%.",
-          "staffing": "Production is 118% of receipts.",
+          "staffing": "Production is 118% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [
@@ -19346,6 +19781,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.99,
+          "sourceSla": 0.99,
+          "calculatedSla": 0.98989,
           "targetSla": 0.9,
           "slaChange": 0.01,
           "startingInventory": 3561.0,
@@ -19357,10 +19794,12 @@ window.DASHBOARD_DATA = {
           "closures": 8480.0,
           "closuresChange": -0.116943,
           "gap": -1318.0,
+          "throughputBalance": 1318.0,
           "fte": 13.0,
           "fteChange": 0.0,
           "productionToReceiptsRatio": 1.184751,
-          "capacityGap": -2.02
+          "capacityGap": -2.02,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -19374,7 +19813,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 2581.06,
           "projectedOutOfStandard": 0,
           "projectedSla": 1.0,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -19399,7 +19838,7 @@ window.DASHBOARD_DATA = {
           "whyItMatters": "GB Correspondence is meeting target with SLA at 99%.",
           "staffing": "Staffing data is not available for this selected period.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 99% with OOS around 32.",
+          "outlook": "If current trends continue, next-period SLA trends near 99% with OOS around 32.",
           "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [
@@ -19412,6 +19851,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.99,
+          "sourceSla": 0.99,
+          "calculatedSla": 0.989938,
           "targetSla": 0.9,
           "slaChange": 0.0,
           "startingInventory": 3379.0,
@@ -19423,10 +19864,12 @@ window.DASHBOARD_DATA = {
           "closures": null,
           "closuresChange": null,
           "gap": null,
+          "throughputBalance": null,
           "fte": null,
           "fteChange": null,
           "productionToReceiptsRatio": null,
-          "capacityGap": null
+          "capacityGap": null,
+          "capacityStatus": "UNKNOWN"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -19440,7 +19883,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 3206.3,
           "projectedOutOfStandard": 32.0,
           "projectedSla": 0.99,
-          "summary": "If current movement continues, next-period SLA trends near 99% with OOS around 32.",
+          "summary": "If current trends continue, next-period SLA trends near 99% with OOS around 32.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -19468,23 +19911,23 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "gap is 2,155.",
           "whyItMatters": "GB Disputes is meeting target with SLA at 90%.",
-          "staffing": "Estimated capacity gap is about 2.9 FTE using current closures per FTE.",
+          "staffing": "Production is 86% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 90% with OOS around 971.",
+          "outlook": "If current trends continue, next-period SLA trends near 90% with OOS around 971.",
           "evidence": "receipts exceeded closures by 2,155; daily production is 86% of daily receipts"
         },
         "driverBars": [
+          {
+            "label": "Workload Pressure",
+            "strength": 1.0,
+            "rawValue": 0.221982,
+            "note": "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."
+          },
           {
             "label": "Flow Gap",
             "strength": 1.0,
             "rawValue": 0.221982,
             "note": "Receipts above closures create inventory pressure."
-          },
-          {
-            "label": "FTE Capacity",
-            "strength": 0.7233,
-            "rawValue": 0.160556,
-            "note": "Current workload compared with staffing capacity."
           },
           {
             "label": "Reroutes",
@@ -19495,6 +19938,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.9,
+          "sourceSla": 0.9,
+          "calculatedSla": 0.899979,
           "targetSla": 0.9,
           "slaChange": null,
           "startingInventory": 9708.0,
@@ -19506,10 +19951,12 @@ window.DASHBOARD_DATA = {
           "closures": 13436.0,
           "closuresChange": null,
           "gap": 2155.0,
+          "throughputBalance": -2155.0,
           "fte": 18.0,
           "fteChange": null,
           "productionToReceiptsRatio": 0.861777,
-          "capacityGap": 2.89
+          "capacityGap": 2.89,
+          "capacityStatus": "SHORTFALL"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -19523,7 +19970,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 9708.0,
           "projectedOutOfStandard": 971.0,
           "projectedSla": 0.9,
-          "summary": "If current movement continues, next-period SLA trends near 90% with OOS around 971.",
+          "summary": "If current trends continue, next-period SLA trends near 90% with OOS around 971.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -19551,10 +19998,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved -6 pts, OOS moved 1,006, gap is -8,144.",
           "whyItMatters": "GB Disputes is at risk with SLA at 84%.",
-          "staffing": "Production is 154% of receipts.",
+          "staffing": "Production is 154% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 81% with OOS around 2,983.",
-          "evidence": "SLA is 84%; out-of-standard inventory increased by 1,006; staffing decreased by 1 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 81% with OOS around 2,983.",
+          "evidence": "SLA is 84%; out-of-standard inventory increased by 1,006"
         },
         "driverBars": [
           {
@@ -19578,6 +20025,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.84,
+          "sourceSla": 0.84,
+          "calculatedSla": 0.84001,
           "targetSla": 0.9,
           "slaChange": -0.06,
           "startingInventory": 12357.0,
@@ -19589,10 +20038,12 @@ window.DASHBOARD_DATA = {
           "closures": 23138.0,
           "closuresChange": 0.72209,
           "gap": -8144.0,
+          "throughputBalance": 8144.0,
           "fte": 17.0,
           "fteChange": -1.0,
           "productionToReceiptsRatio": 1.543417,
-          "capacityGap": -5.98
+          "capacityGap": -5.98,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -19606,7 +20057,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 15728.83,
           "projectedOutOfStandard": 2983.0,
           "projectedSla": 0.8103,
-          "summary": "If current movement continues, next-period SLA trends near 81% with OOS around 2,983.",
+          "summary": "If current trends continue, next-period SLA trends near 81% with OOS around 2,983.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -19632,9 +20083,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +2 pts, OOS moved -367, gap is -1,762.",
           "whyItMatters": "GB Disputes is at risk with SLA at 86%.",
-          "staffing": "Production is 112% of receipts.",
+          "staffing": "Production is 112% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 88% with OOS around 1,243.",
+          "outlook": "If current trends continue, next-period SLA trends near 88% with OOS around 1,243.",
           "evidence": "SLA is 86%; reroutes added 23 units of movement"
         },
         "driverBars": [
@@ -19665,6 +20116,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.86,
+          "sourceSla": 0.86,
+          "calculatedSla": 0.859988,
           "targetSla": 0.9,
           "slaChange": 0.02,
           "startingInventory": 11499.0,
@@ -19676,10 +20129,12 @@ window.DASHBOARD_DATA = {
           "closures": 16202.0,
           "closuresChange": -0.299767,
           "gap": -1762.0,
+          "throughputBalance": 1762.0,
           "fte": 18.0,
           "fteChange": 1.0,
           "productionToReceiptsRatio": 1.121951,
-          "capacityGap": -1.96
+          "capacityGap": -1.96,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -19693,7 +20148,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 10700.58,
           "projectedOutOfStandard": 1243.0,
           "projectedSla": 0.8838,
-          "summary": "If current movement continues, next-period SLA trends near 88% with OOS around 1,243.",
+          "summary": "If current trends continue, next-period SLA trends near 88% with OOS around 1,243.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -19725,9 +20180,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +6 pts, OOS moved -833, gap is 503.",
           "whyItMatters": "GB Disputes is on watch with SLA at 92%.",
-          "staffing": "Estimated capacity gap is about 0.7 FTE using current closures per FTE.",
+          "staffing": "Production is 96% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "Closures declined for 2 consecutive periods.; Production is 96% of receipts.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "evidence": "receipts exceeded closures by 503; reroutes added 154 units of movement; daily production is 96% of daily receipts"
         },
         "driverBars": [
@@ -19744,16 +20199,16 @@ window.DASHBOARD_DATA = {
             "note": "Out-of-standard movement affects SLA risk."
           },
           {
+            "label": "Workload Pressure",
+            "strength": 0.3071,
+            "rawValue": 0.051781,
+            "note": "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."
+          },
+          {
             "label": "Flow Gap",
             "strength": 0.3071,
             "rawValue": 0.051781,
             "note": "Receipts above closures create inventory pressure."
-          },
-          {
-            "label": "FTE Capacity",
-            "strength": 0.2207,
-            "rawValue": 0.037222,
-            "note": "Current workload compared with staffing capacity."
           },
           {
             "label": "Receipt Growth",
@@ -19764,6 +20219,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.92,
+          "sourceSla": 0.92,
+          "calculatedSla": 0.920012,
           "targetSla": 0.9,
           "slaChange": 0.06,
           "startingInventory": 9714.0,
@@ -19775,10 +20232,12 @@ window.DASHBOARD_DATA = {
           "closures": 13470.0,
           "closuresChange": -0.168621,
           "gap": 503.0,
+          "throughputBalance": -503.0,
           "fte": 18.0,
           "fteChange": 0.0,
           "productionToReceiptsRatio": 0.96391,
-          "capacityGap": 0.67
+          "capacityGap": 0.67,
+          "capacityStatus": "SHORTFALL"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -19792,7 +20251,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 8206.09,
           "projectedOutOfStandard": 0,
           "projectedSla": 1.0,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -19817,7 +20276,7 @@ window.DASHBOARD_DATA = {
           "whyItMatters": "GB Disputes is meeting target with SLA at 98%.",
           "staffing": "Staffing data is not available for this selected period.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [
@@ -19830,6 +20289,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.98,
+          "sourceSla": 0.98,
+          "calculatedSla": 0.980026,
           "targetSla": 0.9,
           "slaChange": 0.06,
           "startingInventory": 10063.0,
@@ -19841,10 +20302,12 @@ window.DASHBOARD_DATA = {
           "closures": null,
           "closuresChange": null,
           "gap": null,
+          "throughputBalance": null,
           "fte": null,
           "fteChange": null,
           "productionToReceiptsRatio": null,
-          "capacityGap": null
+          "capacityGap": null,
+          "capacityStatus": "UNKNOWN"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -19858,7 +20321,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 10424.54,
           "projectedOutOfStandard": 0,
           "projectedSla": 1.0,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 0.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 0.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -19881,9 +20344,9 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "gap is -28,370.",
           "whyItMatters": "GB Validation/Adjustments is meeting target with SLA at 100%.",
-          "staffing": "Production is 103% of receipts.",
+          "staffing": "Production is 103% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 150.",
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 150.",
           "evidence": "reroutes added 568 units of movement"
         },
         "driverBars": [
@@ -19896,6 +20359,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 1.0,
+          "sourceSla": 1.0,
+          "calculatedSla": 0.999159,
           "targetSla": 0.9,
           "slaChange": null,
           "startingInventory": 178274.0,
@@ -19907,10 +20372,12 @@ window.DASHBOARD_DATA = {
           "closures": 1062060.0,
           "closuresChange": null,
           "gap": -28370.0,
+          "throughputBalance": 28370.0,
           "fte": 59.0,
           "fteChange": null,
           "productionToReceiptsRatio": 1.027434,
-          "capacityGap": -1.58
+          "capacityGap": -1.58,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -19924,7 +20391,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 178274.0,
           "projectedOutOfStandard": 150.0,
           "projectedSla": 0.9992,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 150.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 150.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -19953,10 +20420,10 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved +0 pts, OOS moved 201, gap is -64,816.",
           "whyItMatters": "GB Validation/Adjustments is on watch with SLA at 100%.",
-          "staffing": "Production is 107% of receipts.",
+          "staffing": "Production is 107% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "OOS inventory increased by 201.; Workload is growing faster than FTE.",
-          "outlook": "If current movement continues, next-period SLA trends near 100% with OOS around 552.",
-          "evidence": "out-of-standard inventory increased by 201; staffing decreased by 13 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 100% with OOS around 552.",
+          "evidence": "out-of-standard inventory increased by 201"
         },
         "driverBars": [
           {
@@ -19986,6 +20453,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 1.0,
+          "sourceSla": 1.0,
+          "calculatedSla": 0.998914,
           "targetSla": 0.9,
           "slaChange": 0.0,
           "startingInventory": 323350.0,
@@ -19997,10 +20466,12 @@ window.DASHBOARD_DATA = {
           "closures": 1041034.0,
           "closuresChange": -0.019797,
           "gap": -64816.0,
+          "throughputBalance": 64816.0,
           "fte": 46.0,
           "fteChange": -13.0,
           "productionToReceiptsRatio": 1.066384,
-          "capacityGap": -2.86
+          "capacityGap": -2.86,
+          "capacityStatus": "SURPLUS"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -20014,7 +20485,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 586486.09,
           "projectedOutOfStandard": 552.0,
           "projectedSla": 0.9991,
-          "summary": "If current movement continues, next-period SLA trends near 100% with OOS around 552.",
+          "summary": "If current trends continue, next-period SLA trends near 100% with OOS around 552.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -20047,12 +20518,18 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved -1 pts, OOS moved 1,369, gap is 53,791.",
           "whyItMatters": "GB Validation/Adjustments is on watch with SLA at 99%.",
-          "staffing": "Estimated capacity gap is about 2.2 FTE using current closures per FTE.",
+          "staffing": "Production is 95% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "Production is 95% of receipts.; OOS inventory increased by 1,369.",
-          "outlook": "If current movement continues, next-period SLA trends near 99% with OOS around 3,089.",
-          "evidence": "out-of-standard inventory increased by 1,369; receipts exceeded closures by 53,791; reroutes added 7,210 units of movement; staffing decreased by 1 FTE"
+          "outlook": "If current trends continue, next-period SLA trends near 99% with OOS around 3,089.",
+          "evidence": "out-of-standard inventory increased by 1,369; receipts exceeded closures by 53,791; reroutes added 7,210 units of movement; daily production is 95% of daily receipts"
         },
         "driverBars": [
+          {
+            "label": "Workload Pressure",
+            "strength": 1.0,
+            "rawValue": 0.201997,
+            "note": "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."
+          },
           {
             "label": "Flow Gap",
             "strength": 1.0,
@@ -20064,12 +20541,6 @@ window.DASHBOARD_DATA = {
             "strength": 0.9493,
             "rawValue": 0.191752,
             "note": "Receipt movement is historically associated with workload pressure."
-          },
-          {
-            "label": "FTE Capacity",
-            "strength": 0.2398,
-            "rawValue": 0.048444,
-            "note": "Current workload compared with staffing capacity."
           },
           {
             "label": "Reroutes",
@@ -20086,6 +20557,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.99,
+          "sourceSla": 0.99,
+          "calculatedSla": 0.993541,
           "targetSla": 0.9,
           "slaChange": -0.01,
           "startingInventory": 266296.0,
@@ -20097,10 +20570,12 @@ window.DASHBOARD_DATA = {
           "closures": 1109619.0,
           "closuresChange": 0.065882,
           "gap": 53791.0,
+          "throughputBalance": -53791.0,
           "fte": 45.0,
           "fteChange": -1.0,
           "productionToReceiptsRatio": 0.953765,
-          "capacityGap": 2.18
+          "capacityGap": 2.18,
+          "capacityStatus": "SHORTFALL"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -20114,7 +20589,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 219308.87,
           "projectedOutOfStandard": 3089.0,
           "projectedSla": 0.9859,
-          "summary": "If current movement continues, next-period SLA trends near 99% with OOS around 3,089.",
+          "summary": "If current trends continue, next-period SLA trends near 99% with OOS around 3,089.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -20149,12 +20624,18 @@ window.DASHBOARD_DATA = {
         "brief": {
           "whatChanged": "SLA moved -3 pts, OOS moved 10,181, gap is 88,681.",
           "whyItMatters": "GB Validation/Adjustments is on watch with SLA at 96%.",
-          "staffing": "Estimated capacity gap is about 3.3 FTE using current closures per FTE.",
+          "staffing": "Production is 94% of receipts for this workload bucket; FTE capacity actions should be interpreted at the department grain unless reliable bucket allocation is supplied.",
           "earlyWarning": "Receipts increased for 2 consecutive periods.; Receipt/closure gap was positive for 2 periods.",
-          "outlook": "If current movement continues, next-period SLA trends near 94% with OOS around 22,082.",
+          "outlook": "If current trends continue, next-period SLA trends near 94% with OOS around 22,082.",
           "evidence": "out-of-standard inventory increased by 10,181; receipts exceeded closures by 88,681; daily production is 94% of daily receipts"
         },
         "driverBars": [
+          {
+            "label": "Workload Pressure",
+            "strength": 1.0,
+            "rawValue": 0.283437,
+            "note": "Workload bucket pressure based on receipts, closures, and inventory; not a bucket-level FTE allocation claim."
+          },
           {
             "label": "Flow Gap",
             "strength": 1.0,
@@ -20166,12 +20647,6 @@ window.DASHBOARD_DATA = {
             "strength": 0.6976,
             "rawValue": 0.197724,
             "note": "Receipt movement is historically associated with workload pressure."
-          },
-          {
-            "label": "FTE Capacity",
-            "strength": 0.2396,
-            "rawValue": 0.067917,
-            "note": "Current workload compared with staffing capacity."
           },
           {
             "label": "OOS Movement",
@@ -20188,6 +20663,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.96,
+          "sourceSla": 0.96,
+          "calculatedSla": 0.961963,
           "targetSla": 0.9,
           "slaChange": -0.03,
           "startingInventory": 312877.0,
@@ -20199,10 +20676,12 @@ window.DASHBOARD_DATA = {
           "closures": 1304763.0,
           "closuresChange": 0.175866,
           "gap": 88681.0,
+          "throughputBalance": -88681.0,
           "fte": 48.0,
           "fteChange": 3.0,
           "productionToReceiptsRatio": 0.936372,
-          "capacityGap": 3.26
+          "capacityGap": 3.26,
+          "capacityStatus": "SHORTFALL"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -20216,7 +20695,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 367606.07,
           "projectedOutOfStandard": 22082.0,
           "projectedSla": 0.9399,
-          "summary": "If current movement continues, next-period SLA trends near 94% with OOS around 22,082.",
+          "summary": "If current trends continue, next-period SLA trends near 94% with OOS around 22,082.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       },
@@ -20241,7 +20720,7 @@ window.DASHBOARD_DATA = {
           "whyItMatters": "GB Validation/Adjustments is meeting target with SLA at 98%.",
           "staffing": "Staffing data is not available for this selected period.",
           "earlyWarning": "No active early-warning signal in this period.",
-          "outlook": "If current movement continues, next-period SLA trends near 99% with OOS around 6,209.",
+          "outlook": "If current trends continue, next-period SLA trends near 99% with OOS around 6,209.",
           "evidence": "inventory, staffing, and production are connected but no single driver dominates"
         },
         "driverBars": [
@@ -20254,6 +20733,8 @@ window.DASHBOARD_DATA = {
         ],
         "metrics": {
           "sla": 0.98,
+          "sourceSla": 0.98,
+          "calculatedSla": 0.977539,
           "targetSla": 0.9,
           "slaChange": 0.02,
           "startingInventory": 403138.0,
@@ -20265,10 +20746,12 @@ window.DASHBOARD_DATA = {
           "closures": null,
           "closuresChange": null,
           "gap": null,
+          "throughputBalance": null,
           "fte": null,
           "fteChange": null,
           "productionToReceiptsRatio": null,
-          "capacityGap": null
+          "capacityGap": null,
+          "capacityStatus": "UNKNOWN"
         },
         "whatWouldItTake": {
           "target": "Reach 90% SLA",
@@ -20282,7 +20765,7 @@ window.DASHBOARD_DATA = {
           "projectedInventory": 519438.07,
           "projectedOutOfStandard": 6209.0,
           "projectedSla": 0.988,
-          "summary": "If current movement continues, next-period SLA trends near 99% with OOS around 6,209.",
+          "summary": "If current trends continue, next-period SLA trends near 99% with OOS around 6,209.",
           "method": "Directional continuation of recent inventory and OOS movement."
         }
       }
@@ -20670,7 +21153,7 @@ window.DASHBOARD_DATA = {
         "workCategory": "Cash Posting",
         "period": "2026-08",
         "title": "GB Cash Posting needs attention",
-        "summary": "GB Cash Posting has 47,432 starting inventory, 9,938 out of standard, and 17 FTE. Key context: SLA is 79%, out-of-standard inventory increased by 4,741, receipts exceeded closures by 10,775.",
+        "summary": "GB Cash Posting has 47,432 starting inventory, and 9,938 out of standard. Key context: SLA is 79%, out-of-standard inventory increased by 4,741, receipts exceeded closures by 10,775.",
         "drivers": [
           "SLA is 79%",
           "out-of-standard inventory increased by 4,741",
@@ -20711,10 +21194,9 @@ window.DASHBOARD_DATA = {
         "workCategory": "Correspondence",
         "period": "2026-08",
         "title": "CGS Correspondence needs attention",
-        "summary": "CGS Correspondence has 1,944 starting inventory, 117 out of standard, and 8 FTE. Key context: receipts exceeded closures by 1,402, staffing decreased by 10 FTE, daily production is 85% of daily receipts.",
+        "summary": "CGS Correspondence has 1,944 starting inventory, and 117 out of standard. Key context: receipts exceeded closures by 1,402, daily production is 85% of daily receipts.",
         "drivers": [
           "receipts exceeded closures by 1,402",
-          "staffing decreased by 10 FTE",
           "daily production is 85% of daily receipts"
         ],
         "confidence": "LIMITED_DATA",
@@ -20753,7 +21235,7 @@ window.DASHBOARD_DATA = {
         "workCategory": "Validation/Adjustments",
         "period": "2026-08",
         "title": "GB Validation/Adjustments needs attention",
-        "summary": "GB Validation/Adjustments has 312,877 starting inventory, 11,901 out of standard, and 48 FTE. Key context: out-of-standard inventory increased by 10,181, receipts exceeded closures by 88,681, daily production is 94% of daily receipts.",
+        "summary": "GB Validation/Adjustments has 312,877 starting inventory, and 11,901 out of standard. Key context: out-of-standard inventory increased by 10,181, receipts exceeded closures by 88,681, daily production is 94% of daily receipts.",
         "drivers": [
           "out-of-standard inventory increased by 10,181",
           "receipts exceeded closures by 88,681",
@@ -20798,7 +21280,7 @@ window.DASHBOARD_DATA = {
         "workCategory": "Correspondence",
         "period": "2026-08",
         "title": "CB Correspondence needs attention",
-        "summary": "CB Correspondence has 775 starting inventory, 101 out of standard, and 11 FTE. Key context: SLA is 87%, receipts exceeded closures by 415, daily production is 84% of daily receipts.",
+        "summary": "CB Correspondence has 775 starting inventory, and 101 out of standard. Key context: SLA is 87%, receipts exceeded closures by 415, daily production is 84% of daily receipts.",
         "drivers": [
           "SLA is 87%",
           "receipts exceeded closures by 415",
@@ -20837,12 +21319,11 @@ window.DASHBOARD_DATA = {
         "workCategory": "Host",
         "period": "2026-08",
         "title": "CGS Host needs attention",
-        "summary": "CGS Host has 26,576 starting inventory, 5,315 out of standard, and 38 FTE. Key context: SLA is 80%, out-of-standard inventory increased by 763, receipts exceeded closures by 2,468.",
+        "summary": "CGS Host has 26,576 starting inventory, and 5,315 out of standard. Key context: SLA is 80%, out-of-standard inventory increased by 763, receipts exceeded closures by 2,468.",
         "drivers": [
           "SLA is 80%",
           "out-of-standard inventory increased by 763",
           "receipts exceeded closures by 2,468",
-          "staffing decreased by 54 FTE",
           "daily production is 93% of daily receipts"
         ],
         "confidence": "LIMITED_DATA",
@@ -20878,7 +21359,7 @@ window.DASHBOARD_DATA = {
         "workCategory": "Validation/Adjustments",
         "period": "2026-08",
         "title": "CGS Validation/Adjustments needs attention",
-        "summary": "CGS Validation/Adjustments has 83,881 starting inventory, 19,293 out of standard, and 60 FTE. Key context: SLA is 77%, out-of-standard inventory increased by 13,411.",
+        "summary": "CGS Validation/Adjustments has 83,881 starting inventory, and 19,293 out of standard. Key context: SLA is 77%, out-of-standard inventory increased by 13,411.",
         "drivers": [
           "SLA is 77%",
           "out-of-standard inventory increased by 13,411"
@@ -20915,7 +21396,7 @@ window.DASHBOARD_DATA = {
         "workCategory": "Validation/Adjustments",
         "period": "2026-08",
         "title": "CB Validation/Adjustments needs attention",
-        "summary": "CB Validation/Adjustments has 125,417 starting inventory, 23,829 out of standard, and 100 FTE. Key context: SLA is 81%, out-of-standard inventory increased by 7,615.",
+        "summary": "CB Validation/Adjustments has 125,417 starting inventory, and 23,829 out of standard. Key context: SLA is 81%, out-of-standard inventory increased by 7,615.",
         "drivers": [
           "SLA is 81%",
           "out-of-standard inventory increased by 7,615"
@@ -20952,7 +21433,7 @@ window.DASHBOARD_DATA = {
         "workCategory": "Cash Posting",
         "period": "2026-08",
         "title": "CGS Cash Posting needs attention",
-        "summary": "CGS Cash Posting has 22,172 starting inventory, 1,995 out of standard, and 57 FTE. Key context: out-of-standard inventory increased by 1,617.",
+        "summary": "CGS Cash Posting has 22,172 starting inventory, and 1,995 out of standard. Key context: out-of-standard inventory increased by 1,617.",
         "drivers": [
           "out-of-standard inventory increased by 1,617"
         ],
@@ -20991,11 +21472,10 @@ window.DASHBOARD_DATA = {
         "workCategory": "Cash Posting",
         "period": "2026-08",
         "title": "CB Cash Posting needs attention",
-        "summary": "CB Cash Posting has 16,305 starting inventory, 1,304 out of standard, and 35 FTE. Key context: out-of-standard inventory increased by 506, reroutes added 202 units of movement, staffing decreased by 2 FTE.",
+        "summary": "CB Cash Posting has 16,305 starting inventory, and 1,304 out of standard. Key context: out-of-standard inventory increased by 506, reroutes added 202 units of movement.",
         "drivers": [
           "out-of-standard inventory increased by 506",
-          "reroutes added 202 units of movement",
-          "staffing decreased by 2 FTE"
+          "reroutes added 202 units of movement"
         ],
         "confidence": "LIMITED_DATA",
         "pressureTypes": [
@@ -21033,7 +21513,7 @@ window.DASHBOARD_DATA = {
         "workCategory": "Disputes",
         "period": "2026-08",
         "title": "GB Disputes needs attention",
-        "summary": "GB Disputes has 9,714 starting inventory, 777 out of standard, and 18 FTE. Key context: receipts exceeded closures by 503, reroutes added 154 units of movement, daily production is 96% of daily receipts.",
+        "summary": "GB Disputes has 9,714 starting inventory, and 777 out of standard. Key context: receipts exceeded closures by 503, reroutes added 154 units of movement, daily production is 96% of daily receipts.",
         "drivers": [
           "receipts exceeded closures by 503",
           "reroutes added 154 units of movement",
@@ -21199,6 +21679,8647 @@ window.DASHBOARD_DATA = {
         "outOfStandard": 0,
         "sla": 1.0,
         "method": "last-period trend"
+      }
+    ],
+    "forecastEngine": {
+      "method": "adaptive_directional_operational_forecast",
+      "horizonPeriods": 3,
+      "historyAvailable": [
+        "2026-01",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09"
+      ],
+      "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+      "contexts": [
+        {
+          "id": "CB::Cash Posting",
+          "businessUnit": "CB",
+          "workCategory": "Cash Posting",
+          "basePeriod": "2026-01",
+          "operationalBasePeriod": "2026-01",
+          "historyPeriods": 1,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.31,
+            "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts are exceeding closures"
+          ],
+          "operationalBacklogTarget": 3637.4,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-01",
+              "operationalBasePeriod": "2026-01",
+              "receipts": 209581.0,
+              "closures": 41728.0,
+              "inventory": 36374.0,
+              "outOfStandard": 2546.0,
+              "sla": 0.93,
+              "fte": 39.0,
+              "throughputBalance": -167853.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.31,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-02",
+              "horizon": 1,
+              "receipts": 209581.0,
+              "closures": 41728.0,
+              "inventory": 204227.0,
+              "outOfStandard": 2546.0,
+              "sla": 0.9875,
+              "fte": 39.0,
+              "throughputBalance": -167853.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.25,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9439,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-03",
+              "horizon": 2,
+              "receipts": 209581.0,
+              "closures": 41728.0,
+              "inventory": 372080.0,
+              "outOfStandard": 2546.0,
+              "sla": 0.9932,
+              "fte": 39.0,
+              "throughputBalance": -167853.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.19,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9333,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-04",
+              "horizon": 3,
+              "receipts": 209581.0,
+              "closures": 41728.0,
+              "inventory": 539933.0,
+              "outOfStandard": 2546.0,
+              "sla": 0.9953,
+              "fte": 39.0,
+              "throughputBalance": -167853.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.13,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.919,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Cash Posting",
+          "businessUnit": "CB",
+          "workCategory": "Cash Posting",
+          "basePeriod": "2026-06",
+          "operationalBasePeriod": "2026-06",
+          "historyPeriods": 2,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -76%",
+            "production trending -31%",
+            "FTE changed by -2",
+            "receipts are exceeding closures"
+          ],
+          "operationalBacklogTarget": 2388.2,
+          "crossoverPeriod": "2026-07",
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-06",
+              "operationalBasePeriod": "2026-06",
+              "receipts": 49690.0,
+              "closures": 27648.0,
+              "inventory": 23882.0,
+              "outOfStandard": 716.0,
+              "sla": 0.97,
+              "fte": 37.0,
+              "throughputBalance": -22042.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -76%",
+                "production trending -31%",
+                "FTE changed by -2",
+                "receipts are exceeding closures"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-07",
+              "horizon": 1,
+              "receipts": 0,
+              "closures": 13568.0,
+              "inventory": 10314.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 35.0,
+              "throughputBalance": 13568.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9576,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -76%",
+                "production trending -31%",
+                "FTE changed by -2",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-08",
+              "horizon": 2,
+              "receipts": 0,
+              "closures": 0,
+              "inventory": 10314.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 33.0,
+              "throughputBalance": 0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9417,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -76%",
+                "production trending -31%",
+                "FTE changed by -2",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-09",
+              "horizon": 3,
+              "receipts": 0,
+              "closures": 0,
+              "inventory": 10314.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 31.0,
+              "throughputBalance": 0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9258,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -76%",
+                "production trending -31%",
+                "FTE changed by -2",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Cash Posting",
+          "businessUnit": "CB",
+          "workCategory": "Cash Posting",
+          "basePeriod": "2026-07",
+          "operationalBasePeriod": "2026-07",
+          "historyPeriods": 3,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.42,
+            "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -56%",
+            "OOS inventory increased by 82",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 1995.7,
+          "crossoverPeriod": "2026-08",
+          "clearancePeriod": "2026-08",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-07",
+              "operationalBasePeriod": "2026-07",
+              "receipts": 21717.0,
+              "closures": 28519.0,
+              "inventory": 19957.0,
+              "outOfStandard": 798.0,
+              "sla": 0.96,
+              "fte": 37.0,
+              "throughputBalance": 6802.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.42,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -56%",
+                "OOS inventory increased by 82",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-08",
+              "horizon": 1,
+              "receipts": 0,
+              "closures": 21914.5,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 36.0,
+              "throughputBalance": 21914.5,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.36,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -56%",
+                "OOS inventory increased by 82",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-09",
+              "horizon": 2,
+              "receipts": 0,
+              "closures": 15310.0,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 35.0,
+              "throughputBalance": 15310.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.3,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -56%",
+                "OOS inventory increased by 82",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-10",
+              "horizon": 3,
+              "receipts": 0,
+              "closures": 8705.5,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 34.0,
+              "throughputBalance": 8705.5,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.24,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -56%",
+                "OOS inventory increased by 82",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Cash Posting",
+          "businessUnit": "CB",
+          "workCategory": "Cash Posting",
+          "basePeriod": "2026-08",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 4,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.44,
+            "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending +26%",
+            "production trending +10%",
+            "FTE changed by -2",
+            "OOS inventory increased by 506",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 1630.5,
+          "crossoverPeriod": "2026-09",
+          "clearancePeriod": "2026-09",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-08",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 27446.0,
+              "closures": 29879.0,
+              "inventory": 16305.0,
+              "outOfStandard": 1304.0,
+              "sla": 0.92,
+              "fte": 35.0,
+              "throughputBalance": 2433.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.44,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending +26%",
+                "production trending +10%",
+                "FTE changed by -2",
+                "OOS inventory increased by 506",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-09",
+              "horizon": 1,
+              "receipts": 0,
+              "closures": 25929.33,
+              "inventory": 0,
+              "outOfStandard": 890.0,
+              "sla": null,
+              "fte": 33.67,
+              "throughputBalance": 25929.33,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.38,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending +26%",
+                "production trending +10%",
+                "FTE changed by -2",
+                "OOS inventory increased by 506",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-10",
+              "horizon": 2,
+              "receipts": 0,
+              "closures": 21979.67,
+              "inventory": 0,
+              "outOfStandard": 476.0,
+              "sla": null,
+              "fte": 32.33,
+              "throughputBalance": 21979.67,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.32,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending +26%",
+                "production trending +10%",
+                "FTE changed by -2",
+                "OOS inventory increased by 506",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-11",
+              "horizon": 3,
+              "receipts": 0,
+              "closures": 18030.0,
+              "inventory": 0,
+              "outOfStandard": 62.0,
+              "sla": null,
+              "fte": 31.0,
+              "throughputBalance": 18030.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.26,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending +26%",
+                "production trending +10%",
+                "FTE changed by -2",
+                "OOS inventory increased by 506",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Cash Posting",
+          "businessUnit": "CB",
+          "workCategory": "Cash Posting",
+          "basePeriod": "2026-09",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 5,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.35,
+            "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "limited movement detected in recent source data"
+          ],
+          "operationalBacklogTarget": 1367.0,
+          "crossoverPeriod": "2026-10",
+          "clearancePeriod": "2026-10",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-09",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 27446.0,
+              "closures": 29879.0,
+              "inventory": 13670.0,
+              "outOfStandard": 1094.0,
+              "sla": 0.92,
+              "fte": 35.0,
+              "throughputBalance": 2433.0,
+              "capacityStatus": "UNKNOWN",
+              "confidence": {
+                "label": "Low",
+                "score": 0.35,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-10",
+              "horizon": 1,
+              "receipts": 0,
+              "closures": 25929.33,
+              "inventory": 0,
+              "outOfStandard": 1220.0,
+              "sla": null,
+              "fte": 33.67,
+              "throughputBalance": 25929.33,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.29,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-11",
+              "horizon": 2,
+              "receipts": 0,
+              "closures": 21979.67,
+              "inventory": 0,
+              "outOfStandard": 1346.0,
+              "sla": null,
+              "fte": 32.33,
+              "throughputBalance": 21979.67,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.23,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-12",
+              "horizon": 3,
+              "receipts": 0,
+              "closures": 18030.0,
+              "inventory": 0,
+              "outOfStandard": 1472.0,
+              "sla": null,
+              "fte": 31.0,
+              "throughputBalance": 18030.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.17,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Correspondence",
+          "businessUnit": "CB",
+          "workCategory": "Correspondence",
+          "basePeriod": "2026-01",
+          "operationalBasePeriod": "2026-01",
+          "historyPeriods": 1,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.31,
+            "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 16923.0,
+          "crossoverPeriod": "2026-02",
+          "clearancePeriod": "2026-03",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-01",
+              "operationalBasePeriod": "2026-01",
+              "receipts": 9230.0,
+              "closures": 13168.0,
+              "inventory": 23182.0,
+              "outOfStandard": 16923.0,
+              "sla": 0.27,
+              "fte": 10.0,
+              "throughputBalance": 3938.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.31,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-02",
+              "horizon": 1,
+              "receipts": 9230.0,
+              "closures": 13168.0,
+              "inventory": 19244.0,
+              "outOfStandard": 16923.0,
+              "sla": 0.1206,
+              "fte": 10.0,
+              "throughputBalance": 3938.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.25,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.077,
+                "high": 0.1642
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-03",
+              "horizon": 2,
+              "receipts": 9230.0,
+              "closures": 13168.0,
+              "inventory": 15306.0,
+              "outOfStandard": 16923.0,
+              "sla": 0.0,
+              "fte": 10.0,
+              "throughputBalance": 3938.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.19,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.0,
+                "high": 0.0599
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-04",
+              "horizon": 3,
+              "receipts": 9230.0,
+              "closures": 13168.0,
+              "inventory": 11368.0,
+              "outOfStandard": 16923.0,
+              "sla": 0.0,
+              "fte": 10.0,
+              "throughputBalance": 3938.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.13,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.0,
+                "high": 0.0763
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Correspondence",
+          "businessUnit": "CB",
+          "workCategory": "Correspondence",
+          "basePeriod": "2026-06",
+          "operationalBasePeriod": "2026-06",
+          "historyPeriods": 2,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -48%",
+            "production trending -45%",
+            "FTE changed by -2",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 1359.0,
+          "crossoverPeriod": "2026-07",
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-06",
+              "operationalBasePeriod": "2026-06",
+              "receipts": 4773.0,
+              "closures": 6881.0,
+              "inventory": 3485.0,
+              "outOfStandard": 1359.0,
+              "sla": 0.61,
+              "fte": 8.0,
+              "throughputBalance": 2108.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -48%",
+                "production trending -45%",
+                "FTE changed by -2",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-07",
+              "horizon": 1,
+              "receipts": 316.0,
+              "closures": 594.0,
+              "inventory": 3207.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 6.0,
+              "throughputBalance": 278.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9576,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -48%",
+                "production trending -45%",
+                "FTE changed by -2",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-08",
+              "horizon": 2,
+              "receipts": 0,
+              "closures": 0,
+              "inventory": 3207.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 4.0,
+              "throughputBalance": 0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9417,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -48%",
+                "production trending -45%",
+                "FTE changed by -2",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-09",
+              "horizon": 3,
+              "receipts": 0,
+              "closures": 0,
+              "inventory": 3207.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 2.0,
+              "throughputBalance": 0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9258,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -48%",
+                "production trending -45%",
+                "FTE changed by -2",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Correspondence",
+          "businessUnit": "CB",
+          "workCategory": "Correspondence",
+          "basePeriod": "2026-07",
+          "operationalBasePeriod": "2026-07",
+          "historyPeriods": 3,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.3,
+            "rationale": "3 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -30%",
+            "production trending -45%",
+            "FTE changed by 2",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 234.0,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-07",
+              "operationalBasePeriod": "2026-07",
+              "receipts": 3349.0,
+              "closures": 3951.0,
+              "inventory": 1377.0,
+              "outOfStandard": 234.0,
+              "sla": 0.83,
+              "fte": 10.0,
+              "throughputBalance": 602.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.3,
+                "rationale": "3 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -30%",
+                "production trending -45%",
+                "FTE changed by 2",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-08",
+              "horizon": 1,
+              "receipts": 408.5,
+              "closures": 0,
+              "inventory": 1785.5,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 10.0,
+              "throughputBalance": -408.5,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.24,
+                "rationale": "3 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.956,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -30%",
+                "production trending -45%",
+                "FTE changed by 2",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-09",
+              "horizon": 2,
+              "receipts": 0,
+              "closures": 0,
+              "inventory": 1785.5,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 10.0,
+              "throughputBalance": 0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.18,
+                "rationale": "3 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9395,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -30%",
+                "production trending -45%",
+                "FTE changed by 2",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-10",
+              "horizon": 3,
+              "receipts": 0,
+              "closures": 0,
+              "inventory": 1785.5,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 10.0,
+              "throughputBalance": 0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.12,
+                "rationale": "3 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.923,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -30%",
+                "production trending -45%",
+                "FTE changed by 2",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Correspondence",
+          "businessUnit": "CB",
+          "workCategory": "Correspondence",
+          "basePeriod": "2026-08",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 4,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "4 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -21%",
+            "production trending -41%",
+            "FTE changed by 1",
+            "receipts are exceeding closures"
+          ],
+          "operationalBacklogTarget": 101.0,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-08",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 2647.0,
+              "closures": 2232.0,
+              "inventory": 775.0,
+              "outOfStandard": 101.0,
+              "sla": 0.87,
+              "fte": 11.0,
+              "throughputBalance": -415.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "4 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -21%",
+                "production trending -41%",
+                "FTE changed by 1",
+                "receipts are exceeding closures"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-09",
+              "horizon": 1,
+              "receipts": 452.67,
+              "closures": 0,
+              "inventory": 1227.67,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 11.33,
+              "throughputBalance": -452.67,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "4 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9576,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -21%",
+                "production trending -41%",
+                "FTE changed by 1",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-10",
+              "horizon": 2,
+              "receipts": 0,
+              "closures": 0,
+              "inventory": 1227.67,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 11.67,
+              "throughputBalance": 0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "4 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9417,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -21%",
+                "production trending -41%",
+                "FTE changed by 1",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-11",
+              "horizon": 3,
+              "receipts": 0,
+              "closures": 0,
+              "inventory": 1227.67,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 12.0,
+              "throughputBalance": 0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "4 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9258,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -21%",
+                "production trending -41%",
+                "FTE changed by 1",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Correspondence",
+          "businessUnit": "CB",
+          "workCategory": "Correspondence",
+          "basePeriod": "2026-09",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 5,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.26,
+            "rationale": "5 historical periods available; recent fields are incomplete; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "OOS inventory increased by 30"
+          ],
+          "operationalBacklogTarget": 131.0,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-09",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 2647.0,
+              "closures": 2232.0,
+              "inventory": 1190.0,
+              "outOfStandard": 131.0,
+              "sla": 0.89,
+              "fte": 11.0,
+              "throughputBalance": -415.0,
+              "capacityStatus": "UNKNOWN",
+              "confidence": {
+                "label": "Low",
+                "score": 0.26,
+                "rationale": "5 historical periods available; recent fields are incomplete; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "OOS inventory increased by 30"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-10",
+              "horizon": 1,
+              "receipts": 452.67,
+              "closures": 0,
+              "inventory": 1642.67,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 11.33,
+              "throughputBalance": -452.67,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.2,
+                "rationale": "5 historical periods available; recent fields are incomplete; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9544,
+                "high": 1.0
+              },
+              "drivers": [
+                "OOS inventory increased by 30"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-11",
+              "horizon": 2,
+              "receipts": 0,
+              "closures": 0,
+              "inventory": 1642.67,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 11.67,
+              "throughputBalance": 0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.14,
+                "rationale": "5 historical periods available; recent fields are incomplete; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9373,
+                "high": 1.0
+              },
+              "drivers": [
+                "OOS inventory increased by 30"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-12",
+              "horizon": 3,
+              "receipts": 0,
+              "closures": 0,
+              "inventory": 1642.67,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 12.0,
+              "throughputBalance": 0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.08,
+                "rationale": "5 historical periods available; recent fields are incomplete; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9202,
+                "high": 1.0
+              },
+              "drivers": [
+                "OOS inventory increased by 30"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Disputes",
+          "businessUnit": "CB",
+          "workCategory": "Disputes",
+          "basePeriod": "2026-01",
+          "operationalBasePeriod": "2026-01",
+          "historyPeriods": 1,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.31,
+            "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts are exceeding closures"
+          ],
+          "operationalBacklogTarget": 1220.7,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-01",
+              "operationalBasePeriod": "2026-01",
+              "receipts": 16629.0,
+              "closures": 13183.0,
+              "inventory": 12207.0,
+              "outOfStandard": 732.0,
+              "sla": 0.94,
+              "fte": 31.0,
+              "throughputBalance": -3446.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.31,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-02",
+              "horizon": 1,
+              "receipts": 16629.0,
+              "closures": 13183.0,
+              "inventory": 15653.0,
+              "outOfStandard": 732.0,
+              "sla": 0.9532,
+              "fte": 31.0,
+              "throughputBalance": -3446.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.25,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9096,
+                "high": 0.9968
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-03",
+              "horizon": 2,
+              "receipts": 16629.0,
+              "closures": 13183.0,
+              "inventory": 19099.0,
+              "outOfStandard": 732.0,
+              "sla": 0.9617,
+              "fte": 31.0,
+              "throughputBalance": -3446.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.19,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9018,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-04",
+              "horizon": 3,
+              "receipts": 16629.0,
+              "closures": 13183.0,
+              "inventory": 22545.0,
+              "outOfStandard": 732.0,
+              "sla": 0.9675,
+              "fte": 31.0,
+              "throughputBalance": -3446.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.13,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.8912,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Disputes",
+          "businessUnit": "CB",
+          "workCategory": "Disputes",
+          "basePeriod": "2026-06",
+          "operationalBasePeriod": "2026-06",
+          "historyPeriods": 2,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -23%",
+            "production trending +13%",
+            "FTE changed by -5",
+            "OOS inventory increased by 1,689",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 2421.0,
+          "crossoverPeriod": "2026-07",
+          "clearancePeriod": "2026-08",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-06",
+              "operationalBasePeriod": "2026-06",
+              "receipts": 12799.0,
+              "closures": 14154.0,
+              "inventory": 13452.0,
+              "outOfStandard": 2421.0,
+              "sla": 0.82,
+              "fte": 26.0,
+              "throughputBalance": 1355.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -23%",
+                "production trending +13%",
+                "FTE changed by -5",
+                "OOS inventory increased by 1,689",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-07",
+              "horizon": 1,
+              "receipts": 8969.0,
+              "closures": 15125.0,
+              "inventory": 7296.0,
+              "outOfStandard": 4110.0,
+              "sla": 0.4367,
+              "fte": 21.0,
+              "throughputBalance": 6156.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.3943,
+                "high": 0.4791
+              },
+              "drivers": [
+                "receipts trending -23%",
+                "production trending +13%",
+                "FTE changed by -5",
+                "OOS inventory increased by 1,689",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-08",
+              "horizon": 2,
+              "receipts": 5139.0,
+              "closures": 16096.0,
+              "inventory": 0,
+              "outOfStandard": 5799.0,
+              "sla": null,
+              "fte": 16.0,
+              "throughputBalance": 10957.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -23%",
+                "production trending +13%",
+                "FTE changed by -5",
+                "OOS inventory increased by 1,689",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-09",
+              "horizon": 3,
+              "receipts": 1309.0,
+              "closures": 17067.0,
+              "inventory": 0,
+              "outOfStandard": 7488.0,
+              "sla": null,
+              "fte": 11.0,
+              "throughputBalance": 15758.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -23%",
+                "production trending +13%",
+                "FTE changed by -5",
+                "OOS inventory increased by 1,689",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Disputes",
+          "businessUnit": "CB",
+          "workCategory": "Disputes",
+          "basePeriod": "2026-07",
+          "operationalBasePeriod": "2026-07",
+          "historyPeriods": 3,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.41,
+            "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -7%",
+            "production trending -10%",
+            "FTE changed by 5",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 1209.7,
+          "crossoverPeriod": "2026-08",
+          "clearancePeriod": "2026-10",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-07",
+              "operationalBasePeriod": "2026-07",
+              "receipts": 11840.0,
+              "closures": 13406.0,
+              "inventory": 12097.0,
+              "outOfStandard": 968.0,
+              "sla": 0.92,
+              "fte": 31.0,
+              "throughputBalance": 1566.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.41,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -7%",
+                "production trending -10%",
+                "FTE changed by 5",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-08",
+              "horizon": 1,
+              "receipts": 9445.5,
+              "closures": 13517.5,
+              "inventory": 8025.0,
+              "outOfStandard": 1086.0,
+              "sla": 0.8647,
+              "fte": 31.0,
+              "throughputBalance": 4072.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.35,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.8251,
+                "high": 0.9043
+              },
+              "drivers": [
+                "receipts trending -7%",
+                "production trending -10%",
+                "FTE changed by 5",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-09",
+              "horizon": 2,
+              "receipts": 7051.0,
+              "closures": 13629.0,
+              "inventory": 1447.0,
+              "outOfStandard": 1204.0,
+              "sla": 0.1679,
+              "fte": 31.0,
+              "throughputBalance": 6578.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.29,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.1134,
+                "high": 0.2223
+              },
+              "drivers": [
+                "receipts trending -7%",
+                "production trending -10%",
+                "FTE changed by 5",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-10",
+              "horizon": 3,
+              "receipts": 4656.5,
+              "closures": 13740.5,
+              "inventory": 0,
+              "outOfStandard": 1322.0,
+              "sla": null,
+              "fte": 31.0,
+              "throughputBalance": 9084.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.23,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -7%",
+                "production trending -10%",
+                "FTE changed by 5",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Disputes",
+          "businessUnit": "CB",
+          "workCategory": "Disputes",
+          "basePeriod": "2026-08",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 4,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.44,
+            "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -14%",
+            "production trending -15%",
+            "FTE changed by -1",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 1053.1,
+          "crossoverPeriod": "2026-09",
+          "clearancePeriod": "2026-11",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-08",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 10167.0,
+              "closures": 10918.0,
+              "inventory": 10531.0,
+              "outOfStandard": 948.0,
+              "sla": 0.91,
+              "fte": 30.0,
+              "throughputBalance": 751.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.44,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -14%",
+                "production trending -15%",
+                "FTE changed by -1",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-09",
+              "horizon": 1,
+              "receipts": 8013.0,
+              "closures": 10163.0,
+              "inventory": 8381.0,
+              "outOfStandard": 1020.0,
+              "sla": 0.8783,
+              "fte": 29.67,
+              "throughputBalance": 2150.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.38,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.8399,
+                "high": 0.9167
+              },
+              "drivers": [
+                "receipts trending -14%",
+                "production trending -15%",
+                "FTE changed by -1",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-10",
+              "horizon": 2,
+              "receipts": 5859.0,
+              "closures": 9408.0,
+              "inventory": 4832.0,
+              "outOfStandard": 1092.0,
+              "sla": 0.774,
+              "fte": 29.33,
+              "throughputBalance": 3549.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.32,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.7212,
+                "high": 0.8268
+              },
+              "drivers": [
+                "receipts trending -14%",
+                "production trending -15%",
+                "FTE changed by -1",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-11",
+              "horizon": 3,
+              "receipts": 3705.0,
+              "closures": 8653.0,
+              "inventory": 0,
+              "outOfStandard": 1164.0,
+              "sla": null,
+              "fte": 29.0,
+              "throughputBalance": 4948.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.26,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -14%",
+                "production trending -15%",
+                "FTE changed by -1",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Disputes",
+          "businessUnit": "CB",
+          "workCategory": "Disputes",
+          "basePeriod": "2026-09",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 5,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "limited movement detected in recent source data"
+          ],
+          "operationalBacklogTarget": 978.0,
+          "crossoverPeriod": "2026-10",
+          "clearancePeriod": "2026-12",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-09",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 10167.0,
+              "closures": 10918.0,
+              "inventory": 9780.0,
+              "outOfStandard": 685.0,
+              "sla": 0.93,
+              "fte": 30.0,
+              "throughputBalance": 751.0,
+              "capacityStatus": "UNKNOWN",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-10",
+              "horizon": 1,
+              "receipts": 8013.0,
+              "closures": 10163.0,
+              "inventory": 7630.0,
+              "outOfStandard": 106.33,
+              "sla": 0.9861,
+              "fte": 29.67,
+              "throughputBalance": 2150.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9437,
+                "high": 1.0
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-11",
+              "horizon": 2,
+              "receipts": 5859.0,
+              "closures": 9408.0,
+              "inventory": 4081.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 29.33,
+              "throughputBalance": 3549.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9417,
+                "high": 1.0
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-12",
+              "horizon": 3,
+              "receipts": 3705.0,
+              "closures": 8653.0,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 29.0,
+              "throughputBalance": 4948.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Validation/Adjustments",
+          "businessUnit": "CB",
+          "workCategory": "Validation/Adjustments",
+          "basePeriod": "2026-01",
+          "operationalBasePeriod": "2026-01",
+          "historyPeriods": 1,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.31,
+            "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 22163.0,
+          "crossoverPeriod": "2026-02",
+          "clearancePeriod": "2026-03",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-01",
+              "operationalBasePeriod": "2026-01",
+              "receipts": 179477.0,
+              "closures": 318636.0,
+              "inventory": 201479.0,
+              "outOfStandard": 22163.0,
+              "sla": 0.89,
+              "fte": 109.0,
+              "throughputBalance": 139159.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.31,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-02",
+              "horizon": 1,
+              "receipts": 179477.0,
+              "closures": 318636.0,
+              "inventory": 62320.0,
+              "outOfStandard": 22163.0,
+              "sla": 0.6444,
+              "fte": 109.0,
+              "throughputBalance": 139159.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.25,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.6008,
+                "high": 0.688
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-03",
+              "horizon": 2,
+              "receipts": 179477.0,
+              "closures": 318636.0,
+              "inventory": 0,
+              "outOfStandard": 22163.0,
+              "sla": null,
+              "fte": 109.0,
+              "throughputBalance": 139159.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.19,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-04",
+              "horizon": 3,
+              "receipts": 179477.0,
+              "closures": 318636.0,
+              "inventory": 0,
+              "outOfStandard": 22163.0,
+              "sla": null,
+              "fte": 109.0,
+              "throughputBalance": 139159.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.13,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Validation/Adjustments",
+          "businessUnit": "CB",
+          "workCategory": "Validation/Adjustments",
+          "basePeriod": "2026-06",
+          "operationalBasePeriod": "2026-06",
+          "historyPeriods": 2,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending +45%",
+            "FTE changed by -13",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 16117.0,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-06",
+              "operationalBasePeriod": "2026-06",
+              "receipts": 260411.0,
+              "closures": 291572.0,
+              "inventory": 107448.0,
+              "outOfStandard": 16117.0,
+              "sla": 0.85,
+              "fte": 96.0,
+              "throughputBalance": 31161.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending +45%",
+                "FTE changed by -13",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-07",
+              "horizon": 1,
+              "receipts": 341345.0,
+              "closures": 264508.0,
+              "inventory": 184285.0,
+              "outOfStandard": 10071.0,
+              "sla": 0.9454,
+              "fte": 83.0,
+              "throughputBalance": -76837.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.903,
+                "high": 0.9878
+              },
+              "drivers": [
+                "receipts trending +45%",
+                "FTE changed by -13",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-08",
+              "horizon": 2,
+              "receipts": 422279.0,
+              "closures": 237444.0,
+              "inventory": 369120.0,
+              "outOfStandard": 4025.0,
+              "sla": 0.9891,
+              "fte": 70.0,
+              "throughputBalance": -184835.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9308,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +45%",
+                "FTE changed by -13",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-09",
+              "horizon": 3,
+              "receipts": 503213.0,
+              "closures": 210380.0,
+              "inventory": 661953.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 57.0,
+              "throughputBalance": -292833.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9258,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +45%",
+                "FTE changed by -13",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Validation/Adjustments",
+          "businessUnit": "CB",
+          "workCategory": "Validation/Adjustments",
+          "basePeriod": "2026-07",
+          "operationalBasePeriod": "2026-07",
+          "historyPeriods": 3,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.42,
+            "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -19%",
+            "production trending -24%",
+            "FTE changed by 4",
+            "OOS inventory increased by 97",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 16214.0,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-07",
+              "operationalBasePeriod": "2026-07",
+              "receipts": 210593.0,
+              "closures": 230803.0,
+              "inventory": 162137.0,
+              "outOfStandard": 16214.0,
+              "sla": 0.9,
+              "fte": 100.0,
+              "throughputBalance": 20210.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.42,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -19%",
+                "production trending -24%",
+                "FTE changed by 4",
+                "OOS inventory increased by 97",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-08",
+              "horizon": 1,
+              "receipts": 226151.0,
+              "closures": 186886.5,
+              "inventory": 201401.5,
+              "outOfStandard": 13239.5,
+              "sla": 0.9343,
+              "fte": 95.5,
+              "throughputBalance": -39264.5,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.36,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.8951,
+                "high": 0.9735
+              },
+              "drivers": [
+                "receipts trending -19%",
+                "production trending -24%",
+                "FTE changed by 4",
+                "OOS inventory increased by 97",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-09",
+              "horizon": 2,
+              "receipts": 241709.0,
+              "closures": 142970.0,
+              "inventory": 300140.5,
+              "outOfStandard": 10265.0,
+              "sla": 0.9658,
+              "fte": 91.0,
+              "throughputBalance": -98739.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.3,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9119,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -19%",
+                "production trending -24%",
+                "FTE changed by 4",
+                "OOS inventory increased by 97",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-10",
+              "horizon": 3,
+              "receipts": 257267.0,
+              "closures": 99053.5,
+              "inventory": 458354.0,
+              "outOfStandard": 7290.5,
+              "sla": 0.9841,
+              "fte": 86.5,
+              "throughputBalance": -158213.5,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.24,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9155,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -19%",
+                "production trending -24%",
+                "FTE changed by 4",
+                "OOS inventory increased by 97",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Validation/Adjustments",
+          "businessUnit": "CB",
+          "workCategory": "Validation/Adjustments",
+          "basePeriod": "2026-08",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 4,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.44,
+            "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -9%",
+            "production trending +8%",
+            "OOS inventory increased by 7,615",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 23829.0,
+          "crossoverPeriod": "2026-09",
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-08",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 191304.0,
+              "closures": 238005.0,
+              "inventory": 125417.0,
+              "outOfStandard": 23829.0,
+              "sla": 0.81,
+              "fte": 100.0,
+              "throughputBalance": 46701.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.44,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -9%",
+                "production trending +8%",
+                "OOS inventory increased by 7,615",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-09",
+              "horizon": 1,
+              "receipts": 195246.33,
+              "closures": 211128.0,
+              "inventory": 109535.33,
+              "outOfStandard": 24384.33,
+              "sla": 0.7774,
+              "fte": 97.0,
+              "throughputBalance": 15881.67,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.38,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.739,
+                "high": 0.8158
+              },
+              "drivers": [
+                "receipts trending -9%",
+                "production trending +8%",
+                "OOS inventory increased by 7,615",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-10",
+              "horizon": 2,
+              "receipts": 199188.67,
+              "closures": 184251.0,
+              "inventory": 124473.0,
+              "outOfStandard": 24939.66,
+              "sla": 0.7996,
+              "fte": 94.0,
+              "throughputBalance": -14937.67,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.32,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.7468,
+                "high": 0.8524
+              },
+              "drivers": [
+                "receipts trending -9%",
+                "production trending +8%",
+                "OOS inventory increased by 7,615",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-11",
+              "horizon": 3,
+              "receipts": 203131.0,
+              "closures": 157374.0,
+              "inventory": 170230.0,
+              "outOfStandard": 25494.99,
+              "sla": 0.8502,
+              "fte": 91.0,
+              "throughputBalance": -45757.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.26,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.783,
+                "high": 0.9174
+              },
+              "drivers": [
+                "receipts trending -9%",
+                "production trending +8%",
+                "OOS inventory increased by 7,615",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CB::Validation/Adjustments",
+          "businessUnit": "CB",
+          "workCategory": "Validation/Adjustments",
+          "basePeriod": "2026-09",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 5,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "OOS inventory increased by 5,542"
+          ],
+          "operationalBacklogTarget": 29371.0,
+          "crossoverPeriod": "2026-10",
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-09",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 191304.0,
+              "closures": 238005.0,
+              "inventory": 112966.0,
+              "outOfStandard": 29371.0,
+              "sla": 0.74,
+              "fte": 100.0,
+              "throughputBalance": 46701.0,
+              "capacityStatus": "UNKNOWN",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "OOS inventory increased by 5,542"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-10",
+              "horizon": 1,
+              "receipts": 195246.33,
+              "closures": 211128.0,
+              "inventory": 97084.33,
+              "outOfStandard": 33789.0,
+              "sla": 0.652,
+              "fte": 97.0,
+              "throughputBalance": 15881.67,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.6096,
+                "high": 0.6944
+              },
+              "drivers": [
+                "OOS inventory increased by 5,542"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-11",
+              "horizon": 2,
+              "receipts": 199188.67,
+              "closures": 184251.0,
+              "inventory": 112022.0,
+              "outOfStandard": 38207.0,
+              "sla": 0.6589,
+              "fte": 94.0,
+              "throughputBalance": -14937.67,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.6006,
+                "high": 0.7172
+              },
+              "drivers": [
+                "OOS inventory increased by 5,542"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-12",
+              "horizon": 3,
+              "receipts": 203131.0,
+              "closures": 157374.0,
+              "inventory": 157779.0,
+              "outOfStandard": 42625.0,
+              "sla": 0.7298,
+              "fte": 91.0,
+              "throughputBalance": -45757.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.6556,
+                "high": 0.804
+              },
+              "drivers": [
+                "OOS inventory increased by 5,542"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Cash Posting",
+          "businessUnit": "CGS",
+          "workCategory": "Cash Posting",
+          "basePeriod": "2026-01",
+          "operationalBasePeriod": "2026-01",
+          "historyPeriods": 1,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.31,
+            "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts are exceeding closures"
+          ],
+          "operationalBacklogTarget": 1229.6,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-01",
+              "operationalBasePeriod": "2026-01",
+              "receipts": 63101.0,
+              "closures": 14318.0,
+              "inventory": 12296.0,
+              "outOfStandard": 861.0,
+              "sla": 0.93,
+              "fte": 45.0,
+              "throughputBalance": -48783.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.31,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-02",
+              "horizon": 1,
+              "receipts": 63101.0,
+              "closures": 14318.0,
+              "inventory": 61079.0,
+              "outOfStandard": 861.0,
+              "sla": 0.9859,
+              "fte": 45.0,
+              "throughputBalance": -48783.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.25,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9423,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-03",
+              "horizon": 2,
+              "receipts": 63101.0,
+              "closures": 14318.0,
+              "inventory": 109862.0,
+              "outOfStandard": 861.0,
+              "sla": 0.9922,
+              "fte": 45.0,
+              "throughputBalance": -48783.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.19,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9323,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-04",
+              "horizon": 3,
+              "receipts": 63101.0,
+              "closures": 14318.0,
+              "inventory": 158645.0,
+              "outOfStandard": 861.0,
+              "sla": 0.9946,
+              "fte": 45.0,
+              "throughputBalance": -48783.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.13,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9183,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Cash Posting",
+          "businessUnit": "CGS",
+          "workCategory": "Cash Posting",
+          "basePeriod": "2026-06",
+          "operationalBasePeriod": "2026-06",
+          "historyPeriods": 2,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -75%",
+            "production trending +16%",
+            "FTE changed by -5",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 1308.7,
+          "crossoverPeriod": "2026-07",
+          "clearancePeriod": "2026-07",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-06",
+              "operationalBasePeriod": "2026-06",
+              "receipts": 15807.0,
+              "closures": 15916.0,
+              "inventory": 13087.0,
+              "outOfStandard": 262.0,
+              "sla": 0.98,
+              "fte": 40.0,
+              "throughputBalance": 109.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -75%",
+                "production trending +16%",
+                "FTE changed by -5",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-07",
+              "horizon": 1,
+              "receipts": 0,
+              "closures": 17514.0,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 35.0,
+              "throughputBalance": 17514.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -75%",
+                "production trending +16%",
+                "FTE changed by -5",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-08",
+              "horizon": 2,
+              "receipts": 0,
+              "closures": 19112.0,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 30.0,
+              "throughputBalance": 19112.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -75%",
+                "production trending +16%",
+                "FTE changed by -5",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-09",
+              "horizon": 3,
+              "receipts": 0,
+              "closures": 20710.0,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 25.0,
+              "throughputBalance": 20710.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -75%",
+                "production trending +16%",
+                "FTE changed by -5",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Cash Posting",
+          "businessUnit": "CGS",
+          "workCategory": "Cash Posting",
+          "basePeriod": "2026-07",
+          "operationalBasePeriod": "2026-07",
+          "historyPeriods": 3,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.42,
+            "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending +6%",
+            "production trending +28%",
+            "OOS inventory increased by 116",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 1888.5,
+          "crossoverPeriod": "2026-08",
+          "clearancePeriod": "2026-08",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-07",
+              "operationalBasePeriod": "2026-07",
+              "receipts": 16809.0,
+              "closures": 21308.0,
+              "inventory": 18885.0,
+              "outOfStandard": 378.0,
+              "sla": 0.98,
+              "fte": 40.0,
+              "throughputBalance": 4499.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.42,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending +6%",
+                "production trending +28%",
+                "OOS inventory increased by 116",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-08",
+              "horizon": 1,
+              "receipts": 0,
+              "closures": 24803.0,
+              "inventory": 0,
+              "outOfStandard": 136.5,
+              "sla": null,
+              "fte": 37.5,
+              "throughputBalance": 24803.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.36,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending +6%",
+                "production trending +28%",
+                "OOS inventory increased by 116",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-09",
+              "horizon": 2,
+              "receipts": 0,
+              "closures": 28298.0,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 35.0,
+              "throughputBalance": 28298.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.3,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending +6%",
+                "production trending +28%",
+                "OOS inventory increased by 116",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-10",
+              "horizon": 3,
+              "receipts": 0,
+              "closures": 31793.0,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 32.5,
+              "throughputBalance": 31793.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.24,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending +6%",
+                "production trending +28%",
+                "OOS inventory increased by 116",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Cash Posting",
+          "businessUnit": "CGS",
+          "workCategory": "Cash Posting",
+          "basePeriod": "2026-08",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 4,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.44,
+            "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending +10%",
+            "production trending +23%",
+            "FTE changed by 17",
+            "OOS inventory increased by 1,617",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 2217.2,
+          "crossoverPeriod": "2026-09",
+          "clearancePeriod": "2026-09",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-08",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 18467.0,
+              "closures": 24993.0,
+              "inventory": 22172.0,
+              "outOfStandard": 1995.0,
+              "sla": 0.91,
+              "fte": 57.0,
+              "throughputBalance": 6526.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.44,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending +10%",
+                "production trending +23%",
+                "FTE changed by 17",
+                "OOS inventory increased by 1,617",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-09",
+              "horizon": 1,
+              "receipts": 3589.0,
+              "closures": 28551.33,
+              "inventory": 0,
+              "outOfStandard": 2373.0,
+              "sla": null,
+              "fte": 61.0,
+              "throughputBalance": 24962.33,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.38,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending +10%",
+                "production trending +23%",
+                "FTE changed by 17",
+                "OOS inventory increased by 1,617",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-10",
+              "horizon": 2,
+              "receipts": 0,
+              "closures": 32109.67,
+              "inventory": 0,
+              "outOfStandard": 2751.0,
+              "sla": null,
+              "fte": 65.0,
+              "throughputBalance": 32109.67,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.32,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending +10%",
+                "production trending +23%",
+                "FTE changed by 17",
+                "OOS inventory increased by 1,617",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-11",
+              "horizon": 3,
+              "receipts": 0,
+              "closures": 35668.0,
+              "inventory": 0,
+              "outOfStandard": 3129.0,
+              "sla": null,
+              "fte": 69.0,
+              "throughputBalance": 35668.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.26,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending +10%",
+                "production trending +23%",
+                "FTE changed by 17",
+                "OOS inventory increased by 1,617",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Cash Posting",
+          "businessUnit": "CGS",
+          "workCategory": "Cash Posting",
+          "basePeriod": "2026-09",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 5,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.35,
+            "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "limited movement detected in recent source data"
+          ],
+          "operationalBacklogTarget": 2094.4,
+          "crossoverPeriod": "2026-10",
+          "clearancePeriod": "2026-10",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-09",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 18467.0,
+              "closures": 24993.0,
+              "inventory": 20944.0,
+              "outOfStandard": 1676.0,
+              "sla": 0.92,
+              "fte": 57.0,
+              "throughputBalance": 6526.0,
+              "capacityStatus": "UNKNOWN",
+              "confidence": {
+                "label": "Low",
+                "score": 0.35,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-10",
+              "horizon": 1,
+              "receipts": 3589.0,
+              "closures": 28551.33,
+              "inventory": 0,
+              "outOfStandard": 2147.33,
+              "sla": null,
+              "fte": 61.0,
+              "throughputBalance": 24962.33,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.29,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-11",
+              "horizon": 2,
+              "receipts": 0,
+              "closures": 32109.67,
+              "inventory": 0,
+              "outOfStandard": 2618.66,
+              "sla": null,
+              "fte": 65.0,
+              "throughputBalance": 32109.67,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.23,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-12",
+              "horizon": 3,
+              "receipts": 0,
+              "closures": 35668.0,
+              "inventory": 0,
+              "outOfStandard": 3089.99,
+              "sla": null,
+              "fte": 69.0,
+              "throughputBalance": 35668.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.17,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Correspondence",
+          "businessUnit": "CGS",
+          "workCategory": "Correspondence",
+          "basePeriod": "2026-01",
+          "operationalBasePeriod": "2026-01",
+          "historyPeriods": 1,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.31,
+            "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 1407.1,
+          "crossoverPeriod": "2026-02",
+          "clearancePeriod": "2026-03",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-01",
+              "operationalBasePeriod": "2026-01",
+              "receipts": 11342.0,
+              "closures": 23828.0,
+              "inventory": 14071.0,
+              "outOfStandard": 422.0,
+              "sla": 0.97,
+              "fte": 54.0,
+              "throughputBalance": 12486.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.31,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-02",
+              "horizon": 1,
+              "receipts": 11342.0,
+              "closures": 23828.0,
+              "inventory": 1585.0,
+              "outOfStandard": 422.0,
+              "sla": 0.7338,
+              "fte": 54.0,
+              "throughputBalance": 12486.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.25,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.6902,
+                "high": 0.7774
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-03",
+              "horizon": 2,
+              "receipts": 11342.0,
+              "closures": 23828.0,
+              "inventory": 0,
+              "outOfStandard": 422.0,
+              "sla": null,
+              "fte": 54.0,
+              "throughputBalance": 12486.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.19,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-04",
+              "horizon": 3,
+              "receipts": 11342.0,
+              "closures": 23828.0,
+              "inventory": 0,
+              "outOfStandard": 422.0,
+              "sla": null,
+              "fte": 54.0,
+              "throughputBalance": 12486.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.13,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Correspondence",
+          "businessUnit": "CGS",
+          "workCategory": "Correspondence",
+          "basePeriod": "2026-06",
+          "operationalBasePeriod": "2026-06",
+          "historyPeriods": 2,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending +43%",
+            "production trending -16%",
+            "FTE changed by -35",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 620.1,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-06",
+              "operationalBasePeriod": "2026-06",
+              "receipts": 16205.0,
+              "closures": 19010.0,
+              "inventory": 6201.0,
+              "outOfStandard": 124.0,
+              "sla": 0.98,
+              "fte": 19.0,
+              "throughputBalance": 2805.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending +43%",
+                "production trending -16%",
+                "FTE changed by -35",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-07",
+              "horizon": 1,
+              "receipts": 21068.0,
+              "closures": 14192.0,
+              "inventory": 13077.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 0,
+              "throughputBalance": -6876.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9576,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +43%",
+                "production trending -16%",
+                "FTE changed by -35",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-08",
+              "horizon": 2,
+              "receipts": 25931.0,
+              "closures": 9374.0,
+              "inventory": 29634.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 0,
+              "throughputBalance": -16557.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9417,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +43%",
+                "production trending -16%",
+                "FTE changed by -35",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-09",
+              "horizon": 3,
+              "receipts": 30794.0,
+              "closures": 4556.0,
+              "inventory": 55872.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 0,
+              "throughputBalance": -26238.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9258,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +43%",
+                "production trending -16%",
+                "FTE changed by -35",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Correspondence",
+          "businessUnit": "CGS",
+          "workCategory": "Correspondence",
+          "basePeriod": "2026-07",
+          "operationalBasePeriod": "2026-07",
+          "historyPeriods": 3,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.42,
+            "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -32%",
+            "production trending -38%",
+            "FTE changed by -1",
+            "OOS inventory increased by 148",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 339.6,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-07",
+              "operationalBasePeriod": "2026-07",
+              "receipts": 10968.0,
+              "closures": 12420.0,
+              "inventory": 3396.0,
+              "outOfStandard": 272.0,
+              "sla": 0.92,
+              "fte": 18.0,
+              "throughputBalance": 1452.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.42,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -32%",
+                "production trending -38%",
+                "FTE changed by -1",
+                "OOS inventory increased by 148",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-08",
+              "horizon": 1,
+              "receipts": 10781.0,
+              "closures": 6716.0,
+              "inventory": 7461.0,
+              "outOfStandard": 197.0,
+              "sla": 0.9736,
+              "fte": 0,
+              "throughputBalance": -4065.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.36,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9344,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -32%",
+                "production trending -38%",
+                "FTE changed by -1",
+                "OOS inventory increased by 148",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-09",
+              "horizon": 2,
+              "receipts": 10594.0,
+              "closures": 1012.0,
+              "inventory": 17043.0,
+              "outOfStandard": 122.0,
+              "sla": 0.9928,
+              "fte": 0,
+              "throughputBalance": -9582.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.3,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9389,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -32%",
+                "production trending -38%",
+                "FTE changed by -1",
+                "OOS inventory increased by 148",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-10",
+              "horizon": 3,
+              "receipts": 10407.0,
+              "closures": 0,
+              "inventory": 27450.0,
+              "outOfStandard": 47.0,
+              "sla": 0.9983,
+              "fte": 0,
+              "throughputBalance": -10407.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.24,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9297,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -32%",
+                "production trending -38%",
+                "FTE changed by -1",
+                "OOS inventory increased by 148",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Correspondence",
+          "businessUnit": "CGS",
+          "workCategory": "Correspondence",
+          "basePeriod": "2026-08",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 4,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.44,
+            "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -14%",
+            "production trending -33%",
+            "FTE changed by -10",
+            "receipts are exceeding closures"
+          ],
+          "operationalBacklogTarget": 194.4,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-08",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 9380.0,
+              "closures": 7978.0,
+              "inventory": 1944.0,
+              "outOfStandard": 117.0,
+              "sla": 0.94,
+              "fte": 8.0,
+              "throughputBalance": -1402.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.44,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -14%",
+                "production trending -33%",
+                "FTE changed by -10",
+                "receipts are exceeding closures"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-09",
+              "horizon": 1,
+              "receipts": 8726.0,
+              "closures": 2694.67,
+              "inventory": 7975.33,
+              "outOfStandard": 15.33,
+              "sla": 0.9981,
+              "fte": 0,
+              "throughputBalance": -6031.33,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.38,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9597,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -14%",
+                "production trending -33%",
+                "FTE changed by -10",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-10",
+              "horizon": 2,
+              "receipts": 8072.0,
+              "closures": 0,
+              "inventory": 16047.33,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 0,
+              "throughputBalance": -8072.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.32,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9472,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -14%",
+                "production trending -33%",
+                "FTE changed by -10",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-11",
+              "horizon": 3,
+              "receipts": 7418.0,
+              "closures": 0,
+              "inventory": 23465.33,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 0,
+              "throughputBalance": -7418.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.26,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9328,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -14%",
+                "production trending -33%",
+                "FTE changed by -10",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Correspondence",
+          "businessUnit": "CGS",
+          "workCategory": "Correspondence",
+          "basePeriod": "2026-09",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 5,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.35,
+            "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "limited movement detected in recent source data"
+          ],
+          "operationalBacklogTarget": 334.6,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-09",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 9380.0,
+              "closures": 7978.0,
+              "inventory": 3346.0,
+              "outOfStandard": 67.0,
+              "sla": 0.98,
+              "fte": 8.0,
+              "throughputBalance": -1402.0,
+              "capacityStatus": "UNKNOWN",
+              "confidence": {
+                "label": "Low",
+                "score": 0.35,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-10",
+              "horizon": 1,
+              "receipts": 8726.0,
+              "closures": 2694.67,
+              "inventory": 9377.33,
+              "outOfStandard": 48.0,
+              "sla": 0.9949,
+              "fte": 0,
+              "throughputBalance": -6031.33,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.29,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9529,
+                "high": 1.0
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-11",
+              "horizon": 2,
+              "receipts": 8072.0,
+              "closures": 0,
+              "inventory": 17449.33,
+              "outOfStandard": 29.0,
+              "sla": 0.9983,
+              "fte": 0,
+              "throughputBalance": -8072.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.23,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9405,
+                "high": 1.0
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-12",
+              "horizon": 3,
+              "receipts": 7418.0,
+              "closures": 0,
+              "inventory": 24867.33,
+              "outOfStandard": 10.0,
+              "sla": 0.9996,
+              "fte": 0,
+              "throughputBalance": -7418.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.17,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9261,
+                "high": 1.0
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Disputes",
+          "businessUnit": "CGS",
+          "workCategory": "Disputes",
+          "basePeriod": "2026-01",
+          "operationalBasePeriod": "2026-01",
+          "historyPeriods": 1,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.31,
+            "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts are exceeding closures"
+          ],
+          "operationalBacklogTarget": 1228.4,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-01",
+              "operationalBasePeriod": "2026-01",
+              "receipts": 20263.0,
+              "closures": 15922.0,
+              "inventory": 12284.0,
+              "outOfStandard": 246.0,
+              "sla": 0.98,
+              "fte": 39.0,
+              "throughputBalance": -4341.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.31,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-02",
+              "horizon": 1,
+              "receipts": 20263.0,
+              "closures": 15922.0,
+              "inventory": 16625.0,
+              "outOfStandard": 246.0,
+              "sla": 0.9852,
+              "fte": 39.0,
+              "throughputBalance": -4341.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.25,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9416,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-03",
+              "horizon": 2,
+              "receipts": 20263.0,
+              "closures": 15922.0,
+              "inventory": 20966.0,
+              "outOfStandard": 246.0,
+              "sla": 0.9883,
+              "fte": 39.0,
+              "throughputBalance": -4341.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.19,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9284,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-04",
+              "horizon": 3,
+              "receipts": 20263.0,
+              "closures": 15922.0,
+              "inventory": 25307.0,
+              "outOfStandard": 246.0,
+              "sla": 0.9903,
+              "fte": 39.0,
+              "throughputBalance": -4341.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.13,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.914,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Disputes",
+          "businessUnit": "CGS",
+          "workCategory": "Disputes",
+          "basePeriod": "2026-06",
+          "operationalBasePeriod": "2026-06",
+          "historyPeriods": 2,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending +39%",
+            "production trending +90%",
+            "FTE changed by 30",
+            "OOS inventory increased by 5,166",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 5412.0,
+          "crossoverPeriod": "2026-07",
+          "clearancePeriod": "2026-09",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-06",
+              "operationalBasePeriod": "2026-06",
+              "receipts": 28086.0,
+              "closures": 28879.0,
+              "inventory": 22549.0,
+              "outOfStandard": 5412.0,
+              "sla": 0.76,
+              "fte": 69.0,
+              "throughputBalance": 793.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending +39%",
+                "production trending +90%",
+                "FTE changed by 30",
+                "OOS inventory increased by 5,166",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-07",
+              "horizon": 1,
+              "receipts": 35909.0,
+              "closures": 41836.0,
+              "inventory": 16622.0,
+              "outOfStandard": 10578.0,
+              "sla": 0.3636,
+              "fte": 99.0,
+              "throughputBalance": 5927.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.3212,
+                "high": 0.406
+              },
+              "drivers": [
+                "receipts trending +39%",
+                "production trending +90%",
+                "FTE changed by 30",
+                "OOS inventory increased by 5,166",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-08",
+              "horizon": 2,
+              "receipts": 43732.0,
+              "closures": 54793.0,
+              "inventory": 5561.0,
+              "outOfStandard": 15744.0,
+              "sla": 0.0,
+              "fte": 129.0,
+              "throughputBalance": 11061.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.0,
+                "high": 0.0583
+              },
+              "drivers": [
+                "receipts trending +39%",
+                "production trending +90%",
+                "FTE changed by 30",
+                "OOS inventory increased by 5,166",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-09",
+              "horizon": 3,
+              "receipts": 51555.0,
+              "closures": 67750.0,
+              "inventory": 0,
+              "outOfStandard": 20910.0,
+              "sla": null,
+              "fte": 159.0,
+              "throughputBalance": 16195.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending +39%",
+                "production trending +90%",
+                "FTE changed by 30",
+                "OOS inventory increased by 5,166",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Disputes",
+          "businessUnit": "CGS",
+          "workCategory": "Disputes",
+          "basePeriod": "2026-07",
+          "operationalBasePeriod": "2026-07",
+          "historyPeriods": 3,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.39,
+            "rationale": "3 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending +17%",
+            "production trending +11%",
+            "FTE changed by -3",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 2393.0,
+          "crossoverPeriod": "2026-08",
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-07",
+              "operationalBasePeriod": "2026-07",
+              "receipts": 32928.0,
+              "closures": 33531.0,
+              "inventory": 21756.0,
+              "outOfStandard": 2393.0,
+              "sla": 0.89,
+              "fte": 66.0,
+              "throughputBalance": 603.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.39,
+                "rationale": "3 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending +17%",
+                "production trending +11%",
+                "FTE changed by -3",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-08",
+              "horizon": 1,
+              "receipts": 39260.5,
+              "closures": 42335.5,
+              "inventory": 18681.0,
+              "outOfStandard": 3466.5,
+              "sla": 0.8144,
+              "fte": 79.5,
+              "throughputBalance": 3075.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.33,
+                "rationale": "3 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.774,
+                "high": 0.8548
+              },
+              "drivers": [
+                "receipts trending +17%",
+                "production trending +11%",
+                "FTE changed by -3",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-09",
+              "horizon": 2,
+              "receipts": 45593.0,
+              "closures": 51140.0,
+              "inventory": 13134.0,
+              "outOfStandard": 4540.0,
+              "sla": 0.6543,
+              "fte": 93.0,
+              "throughputBalance": 5547.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.27,
+                "rationale": "3 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.5988,
+                "high": 0.7098
+              },
+              "drivers": [
+                "receipts trending +17%",
+                "production trending +11%",
+                "FTE changed by -3",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-10",
+              "horizon": 3,
+              "receipts": 51925.5,
+              "closures": 59944.5,
+              "inventory": 5115.0,
+              "outOfStandard": 5613.5,
+              "sla": 0.0,
+              "fte": 106.5,
+              "throughputBalance": 8019.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.21,
+                "rationale": "3 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.0,
+                "high": 0.0707
+              },
+              "drivers": [
+                "receipts trending +17%",
+                "production trending +11%",
+                "FTE changed by -3",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Disputes",
+          "businessUnit": "CGS",
+          "workCategory": "Disputes",
+          "basePeriod": "2026-08",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 4,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.42,
+            "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -16%",
+            "FTE changed by 6",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 2115.3,
+          "crossoverPeriod": "2026-09",
+          "clearancePeriod": "2026-10",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-08",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 27819.0,
+              "closures": 33524.0,
+              "inventory": 21153.0,
+              "outOfStandard": 1481.0,
+              "sla": 0.93,
+              "fte": 72.0,
+              "throughputBalance": 5705.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.42,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -16%",
+                "FTE changed by 6",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-09",
+              "horizon": 1,
+              "receipts": 30337.67,
+              "closures": 39391.33,
+              "inventory": 12099.34,
+              "outOfStandard": 1892.67,
+              "sla": 0.8436,
+              "fte": 83.0,
+              "throughputBalance": 9053.66,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.36,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.8044,
+                "high": 0.8828
+              },
+              "drivers": [
+                "receipts trending -16%",
+                "FTE changed by 6",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-10",
+              "horizon": 2,
+              "receipts": 32856.33,
+              "closures": 45258.67,
+              "inventory": 0,
+              "outOfStandard": 2304.34,
+              "sla": null,
+              "fte": 94.0,
+              "throughputBalance": 12402.34,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.3,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -16%",
+                "FTE changed by 6",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-11",
+              "horizon": 3,
+              "receipts": 35375.0,
+              "closures": 51126.0,
+              "inventory": 0,
+              "outOfStandard": 2716.01,
+              "sla": null,
+              "fte": 105.0,
+              "throughputBalance": 15751.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.24,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -16%",
+                "FTE changed by 6",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Disputes",
+          "businessUnit": "CGS",
+          "workCategory": "Disputes",
+          "basePeriod": "2026-09",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 5,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.33,
+            "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "limited movement detected in recent source data"
+          ],
+          "operationalBacklogTarget": 1544.8,
+          "crossoverPeriod": "2026-10",
+          "clearancePeriod": "2026-11",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-09",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 27819.0,
+              "closures": 33524.0,
+              "inventory": 15448.0,
+              "outOfStandard": 927.0,
+              "sla": 0.94,
+              "fte": 72.0,
+              "throughputBalance": 5705.0,
+              "capacityStatus": "UNKNOWN",
+              "confidence": {
+                "label": "Low",
+                "score": 0.33,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-10",
+              "horizon": 1,
+              "receipts": 30337.67,
+              "closures": 39391.33,
+              "inventory": 6394.34,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 83.0,
+              "throughputBalance": 9053.66,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.27,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9572,
+                "high": 1.0
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-11",
+              "horizon": 2,
+              "receipts": 32856.33,
+              "closures": 45258.67,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 94.0,
+              "throughputBalance": 12402.34,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.21,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-12",
+              "horizon": 3,
+              "receipts": 35375.0,
+              "closures": 51126.0,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 105.0,
+              "throughputBalance": 15751.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.15,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Host",
+          "businessUnit": "CGS",
+          "workCategory": "Host",
+          "basePeriod": "2026-01",
+          "operationalBasePeriod": "2026-01",
+          "historyPeriods": 1,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.31,
+            "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 89986.0,
+          "crossoverPeriod": "2026-02",
+          "clearancePeriod": "2026-03",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-01",
+              "operationalBasePeriod": "2026-01",
+              "receipts": 35653.0,
+              "closures": 75902.0,
+              "inventory": 149976.0,
+              "outOfStandard": 89986.0,
+              "sla": 0.4,
+              "fte": 38.0,
+              "throughputBalance": 40249.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.31,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-02",
+              "horizon": 1,
+              "receipts": 35653.0,
+              "closures": 75902.0,
+              "inventory": 109727.0,
+              "outOfStandard": 89986.0,
+              "sla": 0.1799,
+              "fte": 38.0,
+              "throughputBalance": 40249.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.25,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.1363,
+                "high": 0.2235
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-03",
+              "horizon": 2,
+              "receipts": 35653.0,
+              "closures": 75902.0,
+              "inventory": 69478.0,
+              "outOfStandard": 89986.0,
+              "sla": 0.0,
+              "fte": 38.0,
+              "throughputBalance": 40249.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.19,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.0,
+                "high": 0.0599
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-04",
+              "horizon": 3,
+              "receipts": 35653.0,
+              "closures": 75902.0,
+              "inventory": 29229.0,
+              "outOfStandard": 89986.0,
+              "sla": 0.0,
+              "fte": 38.0,
+              "throughputBalance": 40249.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.13,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.0,
+                "high": 0.0763
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Host",
+          "businessUnit": "CGS",
+          "workCategory": "Host",
+          "basePeriod": "2026-06",
+          "operationalBasePeriod": "2026-06",
+          "historyPeriods": 2,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending +59%",
+            "production trending -33%",
+            "FTE changed by 76",
+            "receipts are exceeding closures"
+          ],
+          "operationalBacklogTarget": 7076.0,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-06",
+              "operationalBasePeriod": "2026-06",
+              "receipts": 56806.0,
+              "closures": 48356.0,
+              "inventory": 29482.0,
+              "outOfStandard": 7076.0,
+              "sla": 0.76,
+              "fte": 114.0,
+              "throughputBalance": -8450.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending +59%",
+                "production trending -33%",
+                "FTE changed by 76",
+                "receipts are exceeding closures"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-07",
+              "horizon": 1,
+              "receipts": 77959.0,
+              "closures": 20810.0,
+              "inventory": 86631.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 190.0,
+              "throughputBalance": -57149.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9576,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +59%",
+                "production trending -33%",
+                "FTE changed by 76",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-08",
+              "horizon": 2,
+              "receipts": 99112.0,
+              "closures": 0,
+              "inventory": 185743.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 266.0,
+              "throughputBalance": -99112.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9417,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +59%",
+                "production trending -33%",
+                "FTE changed by 76",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-09",
+              "horizon": 3,
+              "receipts": 120265.0,
+              "closures": 0,
+              "inventory": 306008.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 342.0,
+              "throughputBalance": -120265.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9258,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +59%",
+                "production trending -33%",
+                "FTE changed by 76",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Host",
+          "businessUnit": "CGS",
+          "workCategory": "Host",
+          "basePeriod": "2026-07",
+          "operationalBasePeriod": "2026-07",
+          "historyPeriods": 3,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.33,
+            "rationale": "3 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -44%",
+            "production trending -15%",
+            "FTE changed by -22",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 4552.0,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-07",
+              "operationalBasePeriod": "2026-07",
+              "receipts": 31528.0,
+              "closures": 42884.0,
+              "inventory": 37932.0,
+              "outOfStandard": 4552.0,
+              "sla": 0.88,
+              "fte": 92.0,
+              "throughputBalance": 11356.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.33,
+                "rationale": "3 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -44%",
+                "production trending -15%",
+                "FTE changed by -22",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-08",
+              "horizon": 1,
+              "receipts": 29465.5,
+              "closures": 26375.0,
+              "inventory": 41022.5,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 119.0,
+              "throughputBalance": -3090.5,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.27,
+                "rationale": "3 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9572,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -44%",
+                "production trending -15%",
+                "FTE changed by -22",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-09",
+              "horizon": 2,
+              "receipts": 27403.0,
+              "closures": 9866.0,
+              "inventory": 58559.5,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 146.0,
+              "throughputBalance": -17537.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.21,
+                "rationale": "3 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9412,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -44%",
+                "production trending -15%",
+                "FTE changed by -22",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-10",
+              "horizon": 3,
+              "receipts": 25340.5,
+              "closures": 0,
+              "inventory": 83900.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 173.0,
+              "throughputBalance": -25340.5,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.15,
+                "rationale": "3 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9251,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -44%",
+                "production trending -15%",
+                "FTE changed by -22",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Host",
+          "businessUnit": "CGS",
+          "workCategory": "Host",
+          "basePeriod": "2026-08",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 4,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.38,
+            "rationale": "4 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "production trending -26%",
+            "FTE changed by -54",
+            "OOS inventory increased by 763",
+            "receipts are exceeding closures"
+          ],
+          "operationalBacklogTarget": 5315.0,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-08",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 32915.0,
+              "closures": 30447.0,
+              "inventory": 26576.0,
+              "outOfStandard": 5315.0,
+              "sla": 0.8,
+              "fte": 38.0,
+              "throughputBalance": -2468.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.38,
+                "rationale": "4 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "production trending -26%",
+                "FTE changed by -54",
+                "OOS inventory increased by 763",
+                "receipts are exceeding closures"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-09",
+              "horizon": 1,
+              "receipts": 32002.33,
+              "closures": 15295.33,
+              "inventory": 43283.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 38.0,
+              "throughputBalance": -16707.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.32,
+                "rationale": "4 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9592,
+                "high": 1.0
+              },
+              "drivers": [
+                "production trending -26%",
+                "FTE changed by -54",
+                "OOS inventory increased by 763",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-10",
+              "horizon": 2,
+              "receipts": 31089.67,
+              "closures": 143.67,
+              "inventory": 74229.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 38.0,
+              "throughputBalance": -30946.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.26,
+                "rationale": "4 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9439,
+                "high": 1.0
+              },
+              "drivers": [
+                "production trending -26%",
+                "FTE changed by -54",
+                "OOS inventory increased by 763",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-11",
+              "horizon": 3,
+              "receipts": 30177.0,
+              "closures": 0,
+              "inventory": 104406.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 38.0,
+              "throughputBalance": -30177.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.2,
+                "rationale": "4 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9286,
+                "high": 1.0
+              },
+              "drivers": [
+                "production trending -26%",
+                "FTE changed by -54",
+                "OOS inventory increased by 763",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Host",
+          "businessUnit": "CGS",
+          "workCategory": "Host",
+          "basePeriod": "2026-09",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 5,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.29,
+            "rationale": "5 historical periods available; recent fields are incomplete; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "limited movement detected in recent source data"
+          ],
+          "operationalBacklogTarget": 5228.0,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-09",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 32915.0,
+              "closures": 30447.0,
+              "inventory": 29044.0,
+              "outOfStandard": 5228.0,
+              "sla": 0.82,
+              "fte": 38.0,
+              "throughputBalance": -2468.0,
+              "capacityStatus": "UNKNOWN",
+              "confidence": {
+                "label": "Low",
+                "score": 0.29,
+                "rationale": "5 historical periods available; recent fields are incomplete; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-10",
+              "horizon": 1,
+              "receipts": 32002.33,
+              "closures": 15295.33,
+              "inventory": 45751.0,
+              "outOfStandard": 4612.0,
+              "sla": 0.8992,
+              "fte": 38.0,
+              "throughputBalance": -16707.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.23,
+                "rationale": "5 historical periods available; recent fields are incomplete; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.8548,
+                "high": 0.9436
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-11",
+              "horizon": 2,
+              "receipts": 31089.67,
+              "closures": 143.67,
+              "inventory": 76697.0,
+              "outOfStandard": 3996.0,
+              "sla": 0.9479,
+              "fte": 38.0,
+              "throughputBalance": -30946.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.17,
+                "rationale": "5 historical periods available; recent fields are incomplete; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.8868,
+                "high": 1.0
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-12",
+              "horizon": 3,
+              "receipts": 30177.0,
+              "closures": 0,
+              "inventory": 106874.0,
+              "outOfStandard": 3380.0,
+              "sla": 0.9684,
+              "fte": 38.0,
+              "throughputBalance": -30177.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.11,
+                "rationale": "5 historical periods available; recent fields are incomplete; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.8907,
+                "high": 1.0
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Validation/Adjustments",
+          "businessUnit": "CGS",
+          "workCategory": "Validation/Adjustments",
+          "basePeriod": "2026-01",
+          "operationalBasePeriod": "2026-01",
+          "historyPeriods": 1,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.31,
+            "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 17530.0,
+          "crossoverPeriod": "2026-02",
+          "clearancePeriod": "2026-02",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-01",
+              "operationalBasePeriod": "2026-01",
+              "receipts": 191301.0,
+              "closures": 258471.0,
+              "inventory": 83477.0,
+              "outOfStandard": 17530.0,
+              "sla": 0.79,
+              "fte": 56.0,
+              "throughputBalance": 67170.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.31,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-02",
+              "horizon": 1,
+              "receipts": 191301.0,
+              "closures": 258471.0,
+              "inventory": 16307.0,
+              "outOfStandard": 17530.0,
+              "sla": 0.0,
+              "fte": 56.0,
+              "throughputBalance": 67170.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.25,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.0,
+                "high": 0.0436
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-03",
+              "horizon": 2,
+              "receipts": 191301.0,
+              "closures": 258471.0,
+              "inventory": 0,
+              "outOfStandard": 17530.0,
+              "sla": null,
+              "fte": 56.0,
+              "throughputBalance": 67170.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.19,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-04",
+              "horizon": 3,
+              "receipts": 191301.0,
+              "closures": 258471.0,
+              "inventory": 0,
+              "outOfStandard": 17530.0,
+              "sla": null,
+              "fte": 56.0,
+              "throughputBalance": 67170.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.13,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Validation/Adjustments",
+          "businessUnit": "CGS",
+          "workCategory": "Validation/Adjustments",
+          "basePeriod": "2026-06",
+          "operationalBasePeriod": "2026-06",
+          "historyPeriods": 2,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -23%",
+            "production trending -8%",
+            "FTE changed by -19",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 5733.3,
+          "crossoverPeriod": "2026-07",
+          "clearancePeriod": "2026-07",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-06",
+              "operationalBasePeriod": "2026-06",
+              "receipts": 147578.0,
+              "closures": 225815.0,
+              "inventory": 57333.0,
+              "outOfStandard": 5733.0,
+              "sla": 0.9,
+              "fte": 37.0,
+              "throughputBalance": 78237.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -23%",
+                "production trending -8%",
+                "FTE changed by -19",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-07",
+              "horizon": 1,
+              "receipts": 103855.0,
+              "closures": 193159.0,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 18.0,
+              "throughputBalance": 89304.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -23%",
+                "production trending -8%",
+                "FTE changed by -19",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-08",
+              "horizon": 2,
+              "receipts": 60132.0,
+              "closures": 160503.0,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 0,
+              "throughputBalance": 100371.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -23%",
+                "production trending -8%",
+                "FTE changed by -19",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-09",
+              "horizon": 3,
+              "receipts": 16409.0,
+              "closures": 127847.0,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 0,
+              "throughputBalance": 111438.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -23%",
+                "production trending -8%",
+                "FTE changed by -19",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Validation/Adjustments",
+          "businessUnit": "CGS",
+          "workCategory": "Validation/Adjustments",
+          "basePeriod": "2026-07",
+          "operationalBasePeriod": "2026-07",
+          "historyPeriods": 3,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.4,
+            "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending +24%",
+            "FTE changed by 20",
+            "OOS inventory increased by 149",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 8402.9,
+          "crossoverPeriod": "2026-08",
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-07",
+              "operationalBasePeriod": "2026-07",
+              "receipts": 183212.0,
+              "closures": 229386.0,
+              "inventory": 84029.0,
+              "outOfStandard": 5882.0,
+              "sla": 0.93,
+              "fte": 57.0,
+              "throughputBalance": 46174.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.4,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending +24%",
+                "FTE changed by 20",
+                "OOS inventory increased by 149",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-08",
+              "horizon": 1,
+              "receipts": 179167.5,
+              "closures": 214843.5,
+              "inventory": 48353.0,
+              "outOfStandard": 58.0,
+              "sla": 0.9988,
+              "fte": 57.5,
+              "throughputBalance": 35676.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9588,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +24%",
+                "FTE changed by 20",
+                "OOS inventory increased by 149",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-09",
+              "horizon": 2,
+              "receipts": 175123.0,
+              "closures": 200301.0,
+              "inventory": 23175.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 58.0,
+              "throughputBalance": 25178.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.945,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +24%",
+                "FTE changed by 20",
+                "OOS inventory increased by 149",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-10",
+              "horizon": 3,
+              "receipts": 171078.5,
+              "closures": 185758.5,
+              "inventory": 8495.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 58.5,
+              "throughputBalance": 14680.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.93,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +24%",
+                "FTE changed by 20",
+                "OOS inventory increased by 149",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Validation/Adjustments",
+          "businessUnit": "CGS",
+          "workCategory": "Validation/Adjustments",
+          "basePeriod": "2026-08",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 4,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.43,
+            "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -48%",
+            "FTE changed by 3",
+            "OOS inventory increased by 13,411",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 19293.0,
+          "crossoverPeriod": "2026-09",
+          "clearancePeriod": "2026-09",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-08",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 95401.0,
+              "closures": 216891.0,
+              "inventory": 83881.0,
+              "outOfStandard": 19293.0,
+              "sla": 0.77,
+              "fte": 60.0,
+              "throughputBalance": 121490.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.43,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -48%",
+                "FTE changed by 3",
+                "OOS inventory increased by 13,411",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-09",
+              "horizon": 1,
+              "receipts": 63434.33,
+              "closures": 203031.0,
+              "inventory": 0,
+              "outOfStandard": 19880.67,
+              "sla": null,
+              "fte": 61.33,
+              "throughputBalance": 139596.67,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.37,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -48%",
+                "FTE changed by 3",
+                "OOS inventory increased by 13,411",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-10",
+              "horizon": 2,
+              "receipts": 31467.67,
+              "closures": 189171.0,
+              "inventory": 0,
+              "outOfStandard": 20468.34,
+              "sla": null,
+              "fte": 62.67,
+              "throughputBalance": 157703.33,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.31,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -48%",
+                "FTE changed by 3",
+                "OOS inventory increased by 13,411",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-11",
+              "horizon": 3,
+              "receipts": 0,
+              "closures": 175311.0,
+              "inventory": 0,
+              "outOfStandard": 21056.01,
+              "sla": null,
+              "fte": 64.0,
+              "throughputBalance": 175311.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.25,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -48%",
+                "FTE changed by 3",
+                "OOS inventory increased by 13,411",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "CGS::Validation/Adjustments",
+          "businessUnit": "CGS",
+          "workCategory": "Validation/Adjustments",
+          "basePeriod": "2026-09",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 5,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.32,
+            "rationale": "5 historical periods available; recent fields are incomplete; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "limited movement detected in recent source data"
+          ],
+          "operationalBacklogTarget": 15076.0,
+          "crossoverPeriod": "2026-10",
+          "clearancePeriod": "2026-10",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-09",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 95401.0,
+              "closures": 216891.0,
+              "inventory": 47114.0,
+              "outOfStandard": 15076.0,
+              "sla": 0.68,
+              "fte": 60.0,
+              "throughputBalance": 121490.0,
+              "capacityStatus": "UNKNOWN",
+              "confidence": {
+                "label": "Low",
+                "score": 0.32,
+                "rationale": "5 historical periods available; recent fields are incomplete; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-10",
+              "horizon": 1,
+              "receipts": 63434.33,
+              "closures": 203031.0,
+              "inventory": 0,
+              "outOfStandard": 18190.33,
+              "sla": null,
+              "fte": 61.33,
+              "throughputBalance": 139596.67,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.26,
+                "rationale": "5 historical periods available; recent fields are incomplete; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-11",
+              "horizon": 2,
+              "receipts": 31467.67,
+              "closures": 189171.0,
+              "inventory": 0,
+              "outOfStandard": 21304.66,
+              "sla": null,
+              "fte": 62.67,
+              "throughputBalance": 157703.33,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.2,
+                "rationale": "5 historical periods available; recent fields are incomplete; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-12",
+              "horizon": 3,
+              "receipts": 0,
+              "closures": 175311.0,
+              "inventory": 0,
+              "outOfStandard": 24418.99,
+              "sla": null,
+              "fte": 64.0,
+              "throughputBalance": 175311.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.14,
+                "rationale": "5 historical periods available; recent fields are incomplete; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Cash Posting",
+          "businessUnit": "GB",
+          "workCategory": "Cash Posting",
+          "basePeriod": "2026-01",
+          "operationalBasePeriod": "2026-01",
+          "historyPeriods": 1,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.31,
+            "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts are exceeding closures"
+          ],
+          "operationalBacklogTarget": 2172.0,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-01",
+              "operationalBasePeriod": "2026-01",
+              "receipts": 440679.0,
+              "closures": 417437.0,
+              "inventory": 21717.0,
+              "outOfStandard": 2172.0,
+              "sla": 0.9,
+              "fte": 18.0,
+              "throughputBalance": -23242.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.31,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-02",
+              "horizon": 1,
+              "receipts": 440679.0,
+              "closures": 417437.0,
+              "inventory": 44959.0,
+              "outOfStandard": 2172.0,
+              "sla": 0.9517,
+              "fte": 18.0,
+              "throughputBalance": -23242.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.25,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9081,
+                "high": 0.9953
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-03",
+              "horizon": 2,
+              "receipts": 440679.0,
+              "closures": 417437.0,
+              "inventory": 68201.0,
+              "outOfStandard": 2172.0,
+              "sla": 0.9682,
+              "fte": 18.0,
+              "throughputBalance": -23242.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.19,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9083,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-04",
+              "horizon": 3,
+              "receipts": 440679.0,
+              "closures": 417437.0,
+              "inventory": 91443.0,
+              "outOfStandard": 2172.0,
+              "sla": 0.9762,
+              "fte": 18.0,
+              "throughputBalance": -23242.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.13,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.8999,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Cash Posting",
+          "businessUnit": "GB",
+          "workCategory": "Cash Posting",
+          "basePeriod": "2026-06",
+          "operationalBasePeriod": "2026-06",
+          "historyPeriods": 2,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -13%",
+            "FTE changed by -1",
+            "OOS inventory increased by 3,753",
+            "receipts are exceeding closures"
+          ],
+          "operationalBacklogTarget": 5925.0,
+          "crossoverPeriod": "2026-07",
+          "clearancePeriod": "2026-08",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-06",
+              "operationalBasePeriod": "2026-06",
+              "receipts": 385504.0,
+              "closures": 384678.0,
+              "inventory": 35379.0,
+              "outOfStandard": 5925.0,
+              "sla": 0.83,
+              "fte": 17.0,
+              "throughputBalance": -826.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -13%",
+                "FTE changed by -1",
+                "OOS inventory increased by 3,753",
+                "receipts are exceeding closures"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-07",
+              "horizon": 1,
+              "receipts": 330329.0,
+              "closures": 351919.0,
+              "inventory": 13789.0,
+              "outOfStandard": 9678.0,
+              "sla": 0.2981,
+              "fte": 16.0,
+              "throughputBalance": 21590.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.2557,
+                "high": 0.3405
+              },
+              "drivers": [
+                "receipts trending -13%",
+                "FTE changed by -1",
+                "OOS inventory increased by 3,753",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-08",
+              "horizon": 2,
+              "receipts": 275154.0,
+              "closures": 319160.0,
+              "inventory": 0,
+              "outOfStandard": 13431.0,
+              "sla": null,
+              "fte": 15.0,
+              "throughputBalance": 44006.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -13%",
+                "FTE changed by -1",
+                "OOS inventory increased by 3,753",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-09",
+              "horizon": 3,
+              "receipts": 219979.0,
+              "closures": 286401.0,
+              "inventory": 0,
+              "outOfStandard": 17184.0,
+              "sla": null,
+              "fte": 14.0,
+              "throughputBalance": 66422.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -13%",
+                "FTE changed by -1",
+                "OOS inventory increased by 3,753",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Cash Posting",
+          "businessUnit": "GB",
+          "workCategory": "Cash Posting",
+          "basePeriod": "2026-07",
+          "operationalBasePeriod": "2026-07",
+          "historyPeriods": 3,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.41,
+            "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts are exceeding closures"
+          ],
+          "operationalBacklogTarget": 5197.0,
+          "crossoverPeriod": "2026-08",
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-07",
+              "operationalBasePeriod": "2026-07",
+              "receipts": 395606.0,
+              "closures": 389128.0,
+              "inventory": 36412.0,
+              "outOfStandard": 5197.0,
+              "sla": 0.86,
+              "fte": 17.0,
+              "throughputBalance": -6478.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.41,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-08",
+              "horizon": 1,
+              "receipts": 373069.5,
+              "closures": 374973.5,
+              "inventory": 34508.0,
+              "outOfStandard": 6709.5,
+              "sla": 0.8056,
+              "fte": 16.5,
+              "throughputBalance": 1904.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.35,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.766,
+                "high": 0.8452
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-09",
+              "horizon": 2,
+              "receipts": 350533.0,
+              "closures": 360819.0,
+              "inventory": 24222.0,
+              "outOfStandard": 8222.0,
+              "sla": 0.6606,
+              "fte": 16.0,
+              "throughputBalance": 10286.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.29,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.6061,
+                "high": 0.715
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-10",
+              "horizon": 3,
+              "receipts": 327996.5,
+              "closures": 346664.5,
+              "inventory": 5554.0,
+              "outOfStandard": 9734.5,
+              "sla": 0.0,
+              "fte": 15.5,
+              "throughputBalance": 18668.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.23,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.0,
+                "high": 0.0693
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Cash Posting",
+          "businessUnit": "GB",
+          "workCategory": "Cash Posting",
+          "basePeriod": "2026-08",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 4,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.44,
+            "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "production trending +5%",
+            "OOS inventory increased by 4,741",
+            "receipts are exceeding closures"
+          ],
+          "operationalBacklogTarget": 9938.0,
+          "crossoverPeriod": "2026-11",
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-08",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 401422.0,
+              "closures": 390647.0,
+              "inventory": 47432.0,
+              "outOfStandard": 9938.0,
+              "sla": 0.79,
+              "fte": 17.0,
+              "throughputBalance": -10775.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.44,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "production trending +5%",
+                "OOS inventory increased by 4,741",
+                "receipts are exceeding closures"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-09",
+              "horizon": 1,
+              "receipts": 388336.33,
+              "closures": 381717.0,
+              "inventory": 54051.33,
+              "outOfStandard": 12526.67,
+              "sla": 0.7682,
+              "fte": 16.67,
+              "throughputBalance": -6619.33,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.38,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.7298,
+                "high": 0.8066
+              },
+              "drivers": [
+                "production trending +5%",
+                "OOS inventory increased by 4,741",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-10",
+              "horizon": 2,
+              "receipts": 375250.67,
+              "closures": 372787.0,
+              "inventory": 56515.0,
+              "outOfStandard": 15115.34,
+              "sla": 0.7325,
+              "fte": 16.33,
+              "throughputBalance": -2463.67,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.32,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.6797,
+                "high": 0.7853
+              },
+              "drivers": [
+                "production trending +5%",
+                "OOS inventory increased by 4,741",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-11",
+              "horizon": 3,
+              "receipts": 362165.0,
+              "closures": 363857.0,
+              "inventory": 54823.0,
+              "outOfStandard": 17704.01,
+              "sla": 0.6771,
+              "fte": 16.0,
+              "throughputBalance": 1692.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.26,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.6099,
+                "high": 0.7443
+              },
+              "drivers": [
+                "production trending +5%",
+                "OOS inventory increased by 4,741",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Cash Posting",
+          "businessUnit": "GB",
+          "workCategory": "Cash Posting",
+          "basePeriod": "2026-09",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 5,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "OOS inventory increased by 2,420"
+          ],
+          "operationalBacklogTarget": 12358.0,
+          "crossoverPeriod": "2026-12",
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-09",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 401422.0,
+              "closures": 390647.0,
+              "inventory": 48101.0,
+              "outOfStandard": 12358.0,
+              "sla": 0.74,
+              "fte": 17.0,
+              "throughputBalance": -10775.0,
+              "capacityStatus": "UNKNOWN",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "OOS inventory increased by 2,420"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-10",
+              "horizon": 1,
+              "receipts": 388336.33,
+              "closures": 381717.0,
+              "inventory": 54720.33,
+              "outOfStandard": 14502.33,
+              "sla": 0.735,
+              "fte": 16.67,
+              "throughputBalance": -6619.33,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.6926,
+                "high": 0.7774
+              },
+              "drivers": [
+                "OOS inventory increased by 2,420"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-11",
+              "horizon": 2,
+              "receipts": 375250.67,
+              "closures": 372787.0,
+              "inventory": 57184.0,
+              "outOfStandard": 16646.66,
+              "sla": 0.7089,
+              "fte": 16.33,
+              "throughputBalance": -2463.67,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.6506,
+                "high": 0.7672
+              },
+              "drivers": [
+                "OOS inventory increased by 2,420"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-12",
+              "horizon": 3,
+              "receipts": 362165.0,
+              "closures": 363857.0,
+              "inventory": 55492.0,
+              "outOfStandard": 18790.99,
+              "sla": 0.6614,
+              "fte": 16.0,
+              "throughputBalance": 1692.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.5872,
+                "high": 0.7356
+              },
+              "drivers": [
+                "OOS inventory increased by 2,420"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Correspondence",
+          "businessUnit": "GB",
+          "workCategory": "Correspondence",
+          "basePeriod": "2026-01",
+          "operationalBasePeriod": "2026-01",
+          "historyPeriods": 1,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.31,
+            "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 426.8,
+          "crossoverPeriod": "2026-02",
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-01",
+              "operationalBasePeriod": "2026-01",
+              "receipts": 7292.0,
+              "closures": 7707.0,
+              "inventory": 4268.0,
+              "outOfStandard": 85.0,
+              "sla": 0.98,
+              "fte": 16.0,
+              "throughputBalance": 415.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.31,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-02",
+              "horizon": 1,
+              "receipts": 7292.0,
+              "closures": 7707.0,
+              "inventory": 3853.0,
+              "outOfStandard": 85.0,
+              "sla": 0.9779,
+              "fte": 16.0,
+              "throughputBalance": 415.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.25,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9343,
+                "high": 1.0
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-03",
+              "horizon": 2,
+              "receipts": 7292.0,
+              "closures": 7707.0,
+              "inventory": 3438.0,
+              "outOfStandard": 85.0,
+              "sla": 0.9753,
+              "fte": 16.0,
+              "throughputBalance": 415.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.19,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9153,
+                "high": 1.0
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-04",
+              "horizon": 3,
+              "receipts": 7292.0,
+              "closures": 7707.0,
+              "inventory": 3023.0,
+              "outOfStandard": 85.0,
+              "sla": 0.9719,
+              "fte": 16.0,
+              "throughputBalance": 415.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.13,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.8956,
+                "high": 1.0
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Correspondence",
+          "businessUnit": "GB",
+          "workCategory": "Correspondence",
+          "basePeriod": "2026-06",
+          "operationalBasePeriod": "2026-06",
+          "historyPeriods": 2,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -9%",
+            "production trending +38%",
+            "FTE changed by -2",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 324.6,
+          "crossoverPeriod": "2026-07",
+          "clearancePeriod": "2026-07",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-06",
+              "operationalBasePeriod": "2026-06",
+              "receipts": 6668.0,
+              "closures": 10148.0,
+              "inventory": 3246.0,
+              "outOfStandard": 32.0,
+              "sla": 0.99,
+              "fte": 14.0,
+              "throughputBalance": 3480.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -9%",
+                "production trending +38%",
+                "FTE changed by -2",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-07",
+              "horizon": 1,
+              "receipts": 6044.0,
+              "closures": 12589.0,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 12.0,
+              "throughputBalance": 6545.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -9%",
+                "production trending +38%",
+                "FTE changed by -2",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-08",
+              "horizon": 2,
+              "receipts": 5420.0,
+              "closures": 15030.0,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 10.0,
+              "throughputBalance": 9610.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -9%",
+                "production trending +38%",
+                "FTE changed by -2",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-09",
+              "horizon": 3,
+              "receipts": 4796.0,
+              "closures": 17471.0,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 8.0,
+              "throughputBalance": 12675.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -9%",
+                "production trending +38%",
+                "FTE changed by -2",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Correspondence",
+          "businessUnit": "GB",
+          "workCategory": "Correspondence",
+          "basePeriod": "2026-07",
+          "operationalBasePeriod": "2026-07",
+          "historyPeriods": 3,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.42,
+            "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending +22%",
+            "production trending -10%",
+            "FTE changed by -1",
+            "OOS inventory increased by 66",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 491.3,
+          "crossoverPeriod": "2026-08",
+          "clearancePeriod": "2026-09",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-07",
+              "operationalBasePeriod": "2026-07",
+              "receipts": 8103.0,
+              "closures": 9603.0,
+              "inventory": 4913.0,
+              "outOfStandard": 98.0,
+              "sla": 0.98,
+              "fte": 13.0,
+              "throughputBalance": 1500.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.42,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending +22%",
+                "production trending -10%",
+                "FTE changed by -1",
+                "OOS inventory increased by 66",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-08",
+              "horizon": 1,
+              "receipts": 8508.5,
+              "closures": 10551.0,
+              "inventory": 2870.5,
+              "outOfStandard": 104.5,
+              "sla": 0.9636,
+              "fte": 11.5,
+              "throughputBalance": 2042.5,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.36,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9244,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +22%",
+                "production trending -10%",
+                "FTE changed by -1",
+                "OOS inventory increased by 66",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-09",
+              "horizon": 2,
+              "receipts": 8914.0,
+              "closures": 11499.0,
+              "inventory": 285.5,
+              "outOfStandard": 111.0,
+              "sla": 0.6112,
+              "fte": 10.0,
+              "throughputBalance": 2585.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.3,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.5573,
+                "high": 0.6651
+              },
+              "drivers": [
+                "receipts trending +22%",
+                "production trending -10%",
+                "FTE changed by -1",
+                "OOS inventory increased by 66",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-10",
+              "horizon": 3,
+              "receipts": 9319.5,
+              "closures": 12447.0,
+              "inventory": 0,
+              "outOfStandard": 117.5,
+              "sla": null,
+              "fte": 8.5,
+              "throughputBalance": 3127.5,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.24,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending +22%",
+                "production trending -10%",
+                "FTE changed by -1",
+                "OOS inventory increased by 66",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Correspondence",
+          "businessUnit": "GB",
+          "workCategory": "Correspondence",
+          "basePeriod": "2026-08",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 4,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.45,
+            "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -12%",
+            "production trending -8%",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 356.1,
+          "crossoverPeriod": "2026-09",
+          "clearancePeriod": "2026-10",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-08",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 7162.0,
+              "closures": 8480.0,
+              "inventory": 3561.0,
+              "outOfStandard": 36.0,
+              "sla": 0.99,
+              "fte": 13.0,
+              "throughputBalance": 1318.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.45,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -12%",
+                "production trending -8%",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-09",
+              "horizon": 1,
+              "receipts": 7118.67,
+              "closures": 8737.67,
+              "inventory": 1942.0,
+              "outOfStandard": 19.67,
+              "sla": 0.9899,
+              "fte": 12.0,
+              "throughputBalance": 1619.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.39,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9519,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -12%",
+                "production trending -8%",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-10",
+              "horizon": 2,
+              "receipts": 7075.33,
+              "closures": 8995.33,
+              "inventory": 22.0,
+              "outOfStandard": 3.34,
+              "sla": 0.8482,
+              "fte": 11.0,
+              "throughputBalance": 1920.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.33,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.7959,
+                "high": 0.9004
+              },
+              "drivers": [
+                "receipts trending -12%",
+                "production trending -8%",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-11",
+              "horizon": 3,
+              "receipts": 7032.0,
+              "closures": 9253.0,
+              "inventory": 0,
+              "outOfStandard": 0,
+              "sla": null,
+              "fte": 10.0,
+              "throughputBalance": 2221.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.27,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -12%",
+                "production trending -8%",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Correspondence",
+          "businessUnit": "GB",
+          "workCategory": "Correspondence",
+          "basePeriod": "2026-09",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 5,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.35,
+            "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "limited movement detected in recent source data"
+          ],
+          "operationalBacklogTarget": 337.9,
+          "crossoverPeriod": "2026-10",
+          "clearancePeriod": "2026-11",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-09",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 7162.0,
+              "closures": 8480.0,
+              "inventory": 3379.0,
+              "outOfStandard": 34.0,
+              "sla": 0.99,
+              "fte": 13.0,
+              "throughputBalance": 1318.0,
+              "capacityStatus": "UNKNOWN",
+              "confidence": {
+                "label": "Low",
+                "score": 0.35,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-10",
+              "horizon": 1,
+              "receipts": 7118.67,
+              "closures": 8737.67,
+              "inventory": 1760.0,
+              "outOfStandard": 34.67,
+              "sla": 0.9803,
+              "fte": 12.0,
+              "throughputBalance": 1619.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.29,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9383,
+                "high": 1.0
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-11",
+              "horizon": 2,
+              "receipts": 7075.33,
+              "closures": 8995.33,
+              "inventory": 0,
+              "outOfStandard": 35.34,
+              "sla": null,
+              "fte": 11.0,
+              "throughputBalance": 1920.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.23,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-12",
+              "horizon": 3,
+              "receipts": 7032.0,
+              "closures": 9253.0,
+              "inventory": 0,
+              "outOfStandard": 36.01,
+              "sla": null,
+              "fte": 10.0,
+              "throughputBalance": 2221.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.17,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Disputes",
+          "businessUnit": "GB",
+          "workCategory": "Disputes",
+          "basePeriod": "2026-01",
+          "operationalBasePeriod": "2026-01",
+          "historyPeriods": 1,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.31,
+            "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts are exceeding closures"
+          ],
+          "operationalBacklogTarget": 971.0,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-01",
+              "operationalBasePeriod": "2026-01",
+              "receipts": 15591.0,
+              "closures": 13436.0,
+              "inventory": 9708.0,
+              "outOfStandard": 971.0,
+              "sla": 0.9,
+              "fte": 18.0,
+              "throughputBalance": -2155.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.31,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-02",
+              "horizon": 1,
+              "receipts": 15591.0,
+              "closures": 13436.0,
+              "inventory": 11863.0,
+              "outOfStandard": 971.0,
+              "sla": 0.9181,
+              "fte": 18.0,
+              "throughputBalance": -2155.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.25,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.8745,
+                "high": 0.9617
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-03",
+              "horizon": 2,
+              "receipts": 15591.0,
+              "closures": 13436.0,
+              "inventory": 14018.0,
+              "outOfStandard": 971.0,
+              "sla": 0.9307,
+              "fte": 18.0,
+              "throughputBalance": -2155.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.19,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.8708,
+                "high": 0.9906
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-04",
+              "horizon": 3,
+              "receipts": 15591.0,
+              "closures": 13436.0,
+              "inventory": 16173.0,
+              "outOfStandard": 971.0,
+              "sla": 0.94,
+              "fte": 18.0,
+              "throughputBalance": -2155.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.13,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.8637,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Disputes",
+          "businessUnit": "GB",
+          "workCategory": "Disputes",
+          "basePeriod": "2026-06",
+          "operationalBasePeriod": "2026-06",
+          "historyPeriods": 2,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "production trending +80%",
+            "FTE changed by -1",
+            "OOS inventory increased by 1,006",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 1977.0,
+          "crossoverPeriod": "2026-07",
+          "clearancePeriod": "2026-07",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-06",
+              "operationalBasePeriod": "2026-06",
+              "receipts": 14994.0,
+              "closures": 23138.0,
+              "inventory": 12357.0,
+              "outOfStandard": 1977.0,
+              "sla": 0.84,
+              "fte": 17.0,
+              "throughputBalance": 8144.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "production trending +80%",
+                "FTE changed by -1",
+                "OOS inventory increased by 1,006",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-07",
+              "horizon": 1,
+              "receipts": 14397.0,
+              "closures": 32840.0,
+              "inventory": 0,
+              "outOfStandard": 2983.0,
+              "sla": null,
+              "fte": 16.0,
+              "throughputBalance": 18443.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "production trending +80%",
+                "FTE changed by -1",
+                "OOS inventory increased by 1,006",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-08",
+              "horizon": 2,
+              "receipts": 13800.0,
+              "closures": 42542.0,
+              "inventory": 0,
+              "outOfStandard": 3989.0,
+              "sla": null,
+              "fte": 15.0,
+              "throughputBalance": 28742.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "production trending +80%",
+                "FTE changed by -1",
+                "OOS inventory increased by 1,006",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-09",
+              "horizon": 3,
+              "receipts": 13203.0,
+              "closures": 52244.0,
+              "inventory": 0,
+              "outOfStandard": 4995.0,
+              "sla": null,
+              "fte": 14.0,
+              "throughputBalance": 39041.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "production trending +80%",
+                "FTE changed by -1",
+                "OOS inventory increased by 1,006",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Disputes",
+          "businessUnit": "GB",
+          "workCategory": "Disputes",
+          "basePeriod": "2026-07",
+          "operationalBasePeriod": "2026-07",
+          "historyPeriods": 3,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.42,
+            "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "production trending -33%",
+            "FTE changed by 1",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 1610.0,
+          "crossoverPeriod": "2026-08",
+          "clearancePeriod": "2026-10",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-07",
+              "operationalBasePeriod": "2026-07",
+              "receipts": 14440.0,
+              "closures": 16202.0,
+              "inventory": 11499.0,
+              "outOfStandard": 1610.0,
+              "sla": 0.86,
+              "fte": 18.0,
+              "throughputBalance": 1762.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.42,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "production trending -33%",
+                "FTE changed by 1",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-08",
+              "horizon": 1,
+              "receipts": 13864.5,
+              "closures": 17585.0,
+              "inventory": 7778.5,
+              "outOfStandard": 1929.5,
+              "sla": 0.7519,
+              "fte": 18.0,
+              "throughputBalance": 3720.5,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.36,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.7127,
+                "high": 0.7911
+              },
+              "drivers": [
+                "production trending -33%",
+                "FTE changed by 1",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-09",
+              "horizon": 2,
+              "receipts": 13289.0,
+              "closures": 18968.0,
+              "inventory": 2099.5,
+              "outOfStandard": 2249.0,
+              "sla": 0.0,
+              "fte": 18.0,
+              "throughputBalance": 5679.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.3,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.0,
+                "high": 0.0539
+              },
+              "drivers": [
+                "production trending -33%",
+                "FTE changed by 1",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-10",
+              "horizon": 3,
+              "receipts": 12713.5,
+              "closures": 20351.0,
+              "inventory": 0,
+              "outOfStandard": 2568.5,
+              "sla": null,
+              "fte": 18.0,
+              "throughputBalance": 7637.5,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.24,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "production trending -33%",
+                "FTE changed by 1",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Disputes",
+          "businessUnit": "GB",
+          "workCategory": "Disputes",
+          "basePeriod": "2026-08",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 4,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.44,
+            "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "production trending -13%",
+            "receipts are exceeding closures"
+          ],
+          "operationalBacklogTarget": 971.4,
+          "crossoverPeriod": "2026-09",
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-08",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 13973.0,
+              "closures": 13470.0,
+              "inventory": 9714.0,
+              "outOfStandard": 777.0,
+              "sla": 0.92,
+              "fte": 18.0,
+              "throughputBalance": -503.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.44,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "production trending -13%",
+                "receipts are exceeding closures"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-09",
+              "horizon": 1,
+              "receipts": 13433.67,
+              "closures": 13481.33,
+              "inventory": 9666.34,
+              "outOfStandard": 712.33,
+              "sla": 0.9263,
+              "fte": 18.0,
+              "throughputBalance": 47.66,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.38,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.8879,
+                "high": 0.9647
+              },
+              "drivers": [
+                "production trending -13%",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-10",
+              "horizon": 2,
+              "receipts": 12894.33,
+              "closures": 13492.67,
+              "inventory": 9068.0,
+              "outOfStandard": 647.66,
+              "sla": 0.9286,
+              "fte": 18.0,
+              "throughputBalance": 598.34,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.32,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.8758,
+                "high": 0.9814
+              },
+              "drivers": [
+                "production trending -13%",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-11",
+              "horizon": 3,
+              "receipts": 12355.0,
+              "closures": 13504.0,
+              "inventory": 7919.0,
+              "outOfStandard": 582.99,
+              "sla": 0.9264,
+              "fte": 18.0,
+              "throughputBalance": 1149.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.26,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.8592,
+                "high": 0.9936
+              },
+              "drivers": [
+                "production trending -13%",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Disputes",
+          "businessUnit": "GB",
+          "workCategory": "Disputes",
+          "basePeriod": "2026-09",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 5,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "limited movement detected in recent source data"
+          ],
+          "operationalBacklogTarget": 1006.3,
+          "crossoverPeriod": "2026-10",
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-09",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 13973.0,
+              "closures": 13470.0,
+              "inventory": 10063.0,
+              "outOfStandard": 201.0,
+              "sla": 0.98,
+              "fte": 18.0,
+              "throughputBalance": -503.0,
+              "capacityStatus": "UNKNOWN",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-10",
+              "horizon": 1,
+              "receipts": 13433.67,
+              "closures": 13481.33,
+              "inventory": 10015.34,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 18.0,
+              "throughputBalance": 47.66,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9576,
+                "high": 1.0
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-11",
+              "horizon": 2,
+              "receipts": 12894.33,
+              "closures": 13492.67,
+              "inventory": 9417.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 18.0,
+              "throughputBalance": 598.34,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9417,
+                "high": 1.0
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-12",
+              "horizon": 3,
+              "receipts": 12355.0,
+              "closures": 13504.0,
+              "inventory": 8268.0,
+              "outOfStandard": 0,
+              "sla": 1.0,
+              "fte": 18.0,
+              "throughputBalance": 1149.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9258,
+                "high": 1.0
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Validation/Adjustments",
+          "businessUnit": "GB",
+          "workCategory": "Validation/Adjustments",
+          "basePeriod": "2026-01",
+          "operationalBasePeriod": "2026-01",
+          "historyPeriods": 1,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.31,
+            "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 17827.4,
+          "crossoverPeriod": "2026-02",
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-01",
+              "operationalBasePeriod": "2026-01",
+              "receipts": 1033690.0,
+              "closures": 1062060.0,
+              "inventory": 178274.0,
+              "outOfStandard": 150.0,
+              "sla": 1.0,
+              "fte": 59.0,
+              "throughputBalance": 28370.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.31,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-02",
+              "horizon": 1,
+              "receipts": 1033690.0,
+              "closures": 1062060.0,
+              "inventory": 149904.0,
+              "outOfStandard": 150.0,
+              "sla": 0.999,
+              "fte": 59.0,
+              "throughputBalance": 28370.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.25,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9554,
+                "high": 1.0
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-03",
+              "horizon": 2,
+              "receipts": 1033690.0,
+              "closures": 1062060.0,
+              "inventory": 121534.0,
+              "outOfStandard": 150.0,
+              "sla": 0.9988,
+              "fte": 59.0,
+              "throughputBalance": 28370.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.19,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9389,
+                "high": 1.0
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-04",
+              "horizon": 3,
+              "receipts": 1033690.0,
+              "closures": 1062060.0,
+              "inventory": 93164.0,
+              "outOfStandard": 150.0,
+              "sla": 0.9984,
+              "fte": 59.0,
+              "throughputBalance": 28370.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.13,
+                "rationale": "1 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9221,
+                "high": 1.0
+              },
+              "drivers": [
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Validation/Adjustments",
+          "businessUnit": "GB",
+          "workCategory": "Validation/Adjustments",
+          "basePeriod": "2026-06",
+          "operationalBasePeriod": "2026-06",
+          "historyPeriods": 2,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.34,
+            "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending -6%",
+            "FTE changed by -13",
+            "OOS inventory increased by 201",
+            "closures are exceeding receipts"
+          ],
+          "operationalBacklogTarget": 32335.0,
+          "crossoverPeriod": "2026-07",
+          "clearancePeriod": "2026-09",
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-06",
+              "operationalBasePeriod": "2026-06",
+              "receipts": 976218.0,
+              "closures": 1041034.0,
+              "inventory": 323350.0,
+              "outOfStandard": 351.0,
+              "sla": 1.0,
+              "fte": 46.0,
+              "throughputBalance": 64816.0,
+              "capacityStatus": "SURPLUS",
+              "confidence": {
+                "label": "Low",
+                "score": 0.34,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending -6%",
+                "FTE changed by -13",
+                "OOS inventory increased by 201",
+                "closures are exceeding receipts"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-07",
+              "horizon": 1,
+              "receipts": 918746.0,
+              "closures": 1020008.0,
+              "inventory": 222088.0,
+              "outOfStandard": 552.0,
+              "sla": 0.9975,
+              "fte": 33.0,
+              "throughputBalance": 101262.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.28,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9551,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -6%",
+                "FTE changed by -13",
+                "OOS inventory increased by 201",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-08",
+              "horizon": 2,
+              "receipts": 861274.0,
+              "closures": 998982.0,
+              "inventory": 84380.0,
+              "outOfStandard": 753.0,
+              "sla": 0.9911,
+              "fte": 20.0,
+              "throughputBalance": 137708.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.22,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9328,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending -6%",
+                "FTE changed by -13",
+                "OOS inventory increased by 201",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-09",
+              "horizon": 3,
+              "receipts": 803802.0,
+              "closures": 977956.0,
+              "inventory": 0,
+              "outOfStandard": 954.0,
+              "sla": null,
+              "fte": 7.0,
+              "throughputBalance": 174154.0,
+              "capacityStatus": "SUFFICIENT",
+              "confidence": {
+                "label": "Low",
+                "score": 0.16,
+                "rationale": "2 historical periods available; recent SLA is volatile; forecast is directional until more history is loaded."
+              },
+              "expectedRange": null,
+              "drivers": [
+                "receipts trending -6%",
+                "FTE changed by -13",
+                "OOS inventory increased by 201",
+                "closures are exceeding receipts"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Validation/Adjustments",
+          "businessUnit": "GB",
+          "workCategory": "Validation/Adjustments",
+          "basePeriod": "2026-07",
+          "operationalBasePeriod": "2026-07",
+          "historyPeriods": 3,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.42,
+            "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending +19%",
+            "FTE changed by -1",
+            "OOS inventory increased by 1,369",
+            "receipts are exceeding closures"
+          ],
+          "operationalBacklogTarget": 26629.6,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-07",
+              "operationalBasePeriod": "2026-07",
+              "receipts": 1163410.0,
+              "closures": 1109619.0,
+              "inventory": 266296.0,
+              "outOfStandard": 1720.0,
+              "sla": 0.99,
+              "fte": 45.0,
+              "throughputBalance": -53791.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.42,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending +19%",
+                "FTE changed by -1",
+                "OOS inventory increased by 1,369",
+                "receipts are exceeding closures"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-08",
+              "horizon": 1,
+              "receipts": 1228270.0,
+              "closures": 1133398.5,
+              "inventory": 361167.5,
+              "outOfStandard": 2505.0,
+              "sla": 0.9931,
+              "fte": 38.0,
+              "throughputBalance": -94871.5,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.36,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9539,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +19%",
+                "FTE changed by -1",
+                "OOS inventory increased by 1,369",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-09",
+              "horizon": 2,
+              "receipts": 1293130.0,
+              "closures": 1157178.0,
+              "inventory": 497119.5,
+              "outOfStandard": 3290.0,
+              "sla": 0.9934,
+              "fte": 31.0,
+              "throughputBalance": -135952.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.3,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9395,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +19%",
+                "FTE changed by -1",
+                "OOS inventory increased by 1,369",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-10",
+              "horizon": 3,
+              "receipts": 1357990.0,
+              "closures": 1180957.5,
+              "inventory": 674152.0,
+              "outOfStandard": 4075.0,
+              "sla": 0.994,
+              "fte": 24.0,
+              "throughputBalance": -177032.5,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.24,
+                "rationale": "3 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9254,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +19%",
+                "FTE changed by -1",
+                "OOS inventory increased by 1,369",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Validation/Adjustments",
+          "businessUnit": "GB",
+          "workCategory": "Validation/Adjustments",
+          "basePeriod": "2026-08",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 4,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.45,
+            "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "receipts trending +20%",
+            "production trending +23%",
+            "FTE changed by 3",
+            "OOS inventory increased by 10,181",
+            "receipts are exceeding closures"
+          ],
+          "operationalBacklogTarget": 31287.7,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-08",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 1393444.0,
+              "closures": 1304763.0,
+              "inventory": 312877.0,
+              "outOfStandard": 11901.0,
+              "sla": 0.96,
+              "fte": 48.0,
+              "throughputBalance": -88681.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.45,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "receipts trending +20%",
+                "production trending +23%",
+                "FTE changed by 3",
+                "OOS inventory increased by 10,181",
+                "receipts are exceeding closures"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-09",
+              "horizon": 1,
+              "receipts": 1513362.0,
+              "closures": 1385664.0,
+              "inventory": 440575.0,
+              "outOfStandard": 15818.0,
+              "sla": 0.9641,
+              "fte": 44.33,
+              "throughputBalance": -127698.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.39,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9261,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +20%",
+                "production trending +23%",
+                "FTE changed by 3",
+                "OOS inventory increased by 10,181",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-10",
+              "horizon": 2,
+              "receipts": 1633280.0,
+              "closures": 1466565.0,
+              "inventory": 607290.0,
+              "outOfStandard": 19735.0,
+              "sla": 0.9675,
+              "fte": 40.67,
+              "throughputBalance": -166715.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.33,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9153,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +20%",
+                "production trending +23%",
+                "FTE changed by 3",
+                "OOS inventory increased by 10,181",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-11",
+              "horizon": 3,
+              "receipts": 1753198.0,
+              "closures": 1547466.0,
+              "inventory": 813022.0,
+              "outOfStandard": 23652.0,
+              "sla": 0.9709,
+              "fte": 37.0,
+              "throughputBalance": -205732.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.27,
+                "rationale": "4 historical periods available; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9044,
+                "high": 1.0
+              },
+              "drivers": [
+                "receipts trending +20%",
+                "production trending +23%",
+                "FTE changed by 3",
+                "OOS inventory increased by 10,181",
+                "receipts are exceeding closures"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        },
+        {
+          "id": "GB::Validation/Adjustments",
+          "businessUnit": "GB",
+          "workCategory": "Validation/Adjustments",
+          "basePeriod": "2026-09",
+          "operationalBasePeriod": "2026-08",
+          "historyPeriods": 5,
+          "maturity": "LIMITED_HISTORY_DIRECTIONAL",
+          "confidence": {
+            "label": "Low",
+            "score": 0.35,
+            "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+          },
+          "primaryDrivers": [
+            "limited movement detected in recent source data"
+          ],
+          "operationalBacklogTarget": 40313.8,
+          "crossoverPeriod": null,
+          "clearancePeriod": null,
+          "projection": [
+            {
+              "label": "Current",
+              "horizon": 0,
+              "period": "2026-09",
+              "operationalBasePeriod": "2026-08",
+              "receipts": 1393444.0,
+              "closures": 1304763.0,
+              "inventory": 403138.0,
+              "outOfStandard": 9055.0,
+              "sla": 0.98,
+              "fte": 48.0,
+              "throughputBalance": -88681.0,
+              "capacityStatus": "UNKNOWN",
+              "confidence": {
+                "label": "Low",
+                "score": 0.35,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ]
+            },
+            {
+              "label": "Month +1",
+              "period": "2026-10",
+              "horizon": 1,
+              "receipts": 1513362.0,
+              "closures": 1385664.0,
+              "inventory": 530836.0,
+              "outOfStandard": 11956.33,
+              "sla": 0.9775,
+              "fte": 44.33,
+              "throughputBalance": -127698.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.29,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9355,
+                "high": 1.0
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +2",
+              "period": "2026-11",
+              "horizon": 2,
+              "receipts": 1633280.0,
+              "closures": 1466565.0,
+              "inventory": 697551.0,
+              "outOfStandard": 14857.66,
+              "sla": 0.9787,
+              "fte": 40.67,
+              "throughputBalance": -166715.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.23,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.921,
+                "high": 1.0
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            },
+            {
+              "label": "Month +3",
+              "period": "2026-12",
+              "horizon": 3,
+              "receipts": 1753198.0,
+              "closures": 1547466.0,
+              "inventory": 903283.0,
+              "outOfStandard": 17758.99,
+              "sla": 0.9803,
+              "fte": 37.0,
+              "throughputBalance": -205732.0,
+              "capacityStatus": "SHORTFALL",
+              "confidence": {
+                "label": "Low",
+                "score": 0.17,
+                "rationale": "5 historical periods available; recent fields are incomplete; forecast is directional until more history is loaded."
+              },
+              "expectedRange": {
+                "low": 0.9068,
+                "high": 1.0
+              },
+              "drivers": [
+                "limited movement detected in recent source data"
+              ],
+              "inventoryMethod": "Prior projected inventory + projected receipts - projected closures."
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Uses observed operational history and rolling movement when limited history is available.",
+        "Seasonality, backtesting, and statistical uncertainty become more meaningful as additional monthly periods are loaded.",
+        "Scenario adjustments are temporary and do not modify source data."
+      ]
+    },
+    "departmentCapacity": [
+      {
+        "businessUnit": "CB",
+        "period": "2026-01",
+        "capacityGrain": "BUSINESS_UNIT_DEPARTMENT",
+        "fte": 189.0,
+        "receipts": 414917.0,
+        "closures": 386715.0,
+        "dailyReceipts": 18860.0,
+        "dailyProduction": 17578.0,
+        "productionToReceiptsRatio": 0.932025,
+        "closuresPerFte": 2046.111111,
+        "requiredFteToKeepPace": 202.78,
+        "capacityGap": 13.78,
+        "capacityGapMagnitude": 13.78,
+        "capacityStatus": "SHORTFALL",
+        "throughputBalance": -28202.0,
+        "primaryWorkloadPressure": "Cash Posting",
+        "primaryWorkloadPressureStatus": "WATCH",
+        "note": "Capacity is calculated at business-unit/department grain; work-category pressure remains operational workload context."
+      },
+      {
+        "businessUnit": "CGS",
+        "period": "2026-01",
+        "capacityGrain": "BUSINESS_UNIT_DEPARTMENT",
+        "fte": 232.0,
+        "receipts": 321660.0,
+        "closures": 388441.0,
+        "dailyReceipts": 14622.0,
+        "dailyProduction": 17657.0,
+        "productionToReceiptsRatio": 1.207564,
+        "closuresPerFte": 1674.314655,
+        "requiredFteToKeepPace": 192.11,
+        "capacityGap": -39.89,
+        "capacityGapMagnitude": 39.89,
+        "capacityStatus": "SURPLUS",
+        "throughputBalance": 66781.0,
+        "primaryWorkloadPressure": "Cash Posting",
+        "primaryWorkloadPressureStatus": "WATCH",
+        "note": "Capacity is calculated at business-unit/department grain; work-category pressure remains operational workload context."
+      },
+      {
+        "businessUnit": "GB",
+        "period": "2026-01",
+        "capacityGrain": "BUSINESS_UNIT_DEPARTMENT",
+        "fte": 111.0,
+        "receipts": 1497252.0,
+        "closures": 1500640.0,
+        "dailyReceipts": 68057.0,
+        "dailyProduction": 68210.0,
+        "productionToReceiptsRatio": 1.002248,
+        "closuresPerFte": 13519.279279,
+        "requiredFteToKeepPace": 110.75,
+        "capacityGap": -0.25,
+        "capacityGapMagnitude": 0.25,
+        "capacityStatus": "SUFFICIENT",
+        "throughputBalance": 3388.0,
+        "primaryWorkloadPressure": "Cash Posting",
+        "primaryWorkloadPressureStatus": "WATCH",
+        "note": "Capacity is calculated at business-unit/department grain; work-category pressure remains operational workload context."
+      },
+      {
+        "businessUnit": "CB",
+        "period": "2026-06",
+        "capacityGrain": "BUSINESS_UNIT_DEPARTMENT",
+        "fte": 167.0,
+        "receipts": 327673.0,
+        "closures": 340255.0,
+        "dailyReceipts": 15603.0,
+        "dailyProduction": 16203.0,
+        "productionToReceiptsRatio": 1.038454,
+        "closuresPerFte": 2037.45509,
+        "requiredFteToKeepPace": 160.82,
+        "capacityGap": -6.18,
+        "capacityGapMagnitude": 6.18,
+        "capacityStatus": "SURPLUS",
+        "throughputBalance": 12582.0,
+        "primaryWorkloadPressure": "Cash Posting",
+        "primaryWorkloadPressureStatus": "WATCH",
+        "note": "Capacity is calculated at business-unit/department grain; work-category pressure remains operational workload context."
+      },
+      {
+        "businessUnit": "CGS",
+        "period": "2026-06",
+        "capacityGrain": "BUSINESS_UNIT_DEPARTMENT",
+        "fte": 279.0,
+        "receipts": 264482.0,
+        "closures": 337976.0,
+        "dailyReceipts": 12595.0,
+        "dailyProduction": 16094.0,
+        "productionToReceiptsRatio": 1.277809,
+        "closuresPerFte": 1211.383513,
+        "requiredFteToKeepPace": 218.33,
+        "capacityGap": -60.67,
+        "capacityGapMagnitude": 60.67,
+        "capacityStatus": "SURPLUS",
+        "throughputBalance": 73494.0,
+        "primaryWorkloadPressure": "Host",
+        "primaryWorkloadPressureStatus": "CRITICAL",
+        "note": "Capacity is calculated at business-unit/department grain; work-category pressure remains operational workload context."
+      },
+      {
+        "businessUnit": "GB",
+        "period": "2026-06",
+        "capacityGrain": "BUSINESS_UNIT_DEPARTMENT",
+        "fte": 94.0,
+        "receipts": 1383384.0,
+        "closures": 1458998.0,
+        "dailyReceipts": 65876.0,
+        "dailyProduction": 69476.0,
+        "productionToReceiptsRatio": 1.054648,
+        "closuresPerFte": 15521.255319,
+        "requiredFteToKeepPace": 89.13,
+        "capacityGap": -4.87,
+        "capacityGapMagnitude": 4.87,
+        "capacityStatus": "SURPLUS",
+        "throughputBalance": 75614.0,
+        "primaryWorkloadPressure": "Cash Posting",
+        "primaryWorkloadPressureStatus": "AT_RISK",
+        "note": "Capacity is calculated at business-unit/department grain; work-category pressure remains operational workload context."
+      },
+      {
+        "businessUnit": "CB",
+        "period": "2026-07",
+        "capacityGrain": "BUSINESS_UNIT_DEPARTMENT",
+        "fte": 178.0,
+        "receipts": 247499.0,
+        "closures": 276679.0,
+        "dailyReceipts": 11249.0,
+        "dailyProduction": 12576.0,
+        "productionToReceiptsRatio": 1.117966,
+        "closuresPerFte": 1554.376404,
+        "requiredFteToKeepPace": 159.23,
+        "capacityGap": -18.77,
+        "capacityGapMagnitude": 18.77,
+        "capacityStatus": "SURPLUS",
+        "throughputBalance": 29180.0,
+        "primaryWorkloadPressure": "Correspondence",
+        "primaryWorkloadPressureStatus": "AT_RISK",
+        "note": "Capacity is calculated at business-unit/department grain; work-category pressure remains operational workload context."
+      },
+      {
+        "businessUnit": "CGS",
+        "period": "2026-07",
+        "capacityGrain": "BUSINESS_UNIT_DEPARTMENT",
+        "fte": 273.0,
+        "receipts": 275445.0,
+        "closures": 339529.0,
+        "dailyReceipts": 12521.0,
+        "dailyProduction": 15434.0,
+        "productionToReceiptsRatio": 1.232649,
+        "closuresPerFte": 1243.695971,
+        "requiredFteToKeepPace": 221.47,
+        "capacityGap": -51.53,
+        "capacityGapMagnitude": 51.53,
+        "capacityStatus": "SURPLUS",
+        "throughputBalance": 64084.0,
+        "primaryWorkloadPressure": "Correspondence",
+        "primaryWorkloadPressureStatus": "WATCH",
+        "note": "Capacity is calculated at business-unit/department grain; work-category pressure remains operational workload context."
+      },
+      {
+        "businessUnit": "GB",
+        "period": "2026-07",
+        "capacityGrain": "BUSINESS_UNIT_DEPARTMENT",
+        "fte": 93.0,
+        "receipts": 1581559.0,
+        "closures": 1524552.0,
+        "dailyReceipts": 71888.0,
+        "dailyProduction": 69298.0,
+        "productionToReceiptsRatio": 0.963972,
+        "closuresPerFte": 16393.032258,
+        "requiredFteToKeepPace": 96.48,
+        "capacityGap": 3.48,
+        "capacityGapMagnitude": 3.48,
+        "capacityStatus": "SHORTFALL",
+        "throughputBalance": -57007.0,
+        "primaryWorkloadPressure": "Cash Posting",
+        "primaryWorkloadPressureStatus": "AT_RISK",
+        "note": "Capacity is calculated at business-unit/department grain; work-category pressure remains operational workload context."
+      },
+      {
+        "businessUnit": "CB",
+        "period": "2026-08",
+        "capacityGrain": "BUSINESS_UNIT_DEPARTMENT",
+        "fte": 176.0,
+        "receipts": 231564.0,
+        "closures": 281034.0,
+        "dailyReceipts": 11027.0,
+        "dailyProduction": 13383.0,
+        "productionToReceiptsRatio": 1.213657,
+        "closuresPerFte": 1596.784091,
+        "requiredFteToKeepPace": 145.02,
+        "capacityGap": -30.98,
+        "capacityGapMagnitude": 30.98,
+        "capacityStatus": "SURPLUS",
+        "throughputBalance": 49470.0,
+        "primaryWorkloadPressure": "Correspondence",
+        "primaryWorkloadPressureStatus": "AT_RISK",
+        "note": "Capacity is calculated at business-unit/department grain; work-category pressure remains operational workload context."
+      },
+      {
+        "businessUnit": "CGS",
+        "period": "2026-08",
+        "capacityGrain": "BUSINESS_UNIT_DEPARTMENT",
+        "fte": 235.0,
+        "receipts": 183982.0,
+        "closures": 313833.0,
+        "dailyReceipts": 8761.0,
+        "dailyProduction": 14944.0,
+        "productionToReceiptsRatio": 1.705741,
+        "closuresPerFte": 1335.459574,
+        "requiredFteToKeepPace": 137.77,
+        "capacityGap": -97.23,
+        "capacityGapMagnitude": 97.23,
+        "capacityStatus": "SURPLUS",
+        "throughputBalance": 129851.0,
+        "primaryWorkloadPressure": "Correspondence",
+        "primaryWorkloadPressureStatus": "WATCH",
+        "note": "Capacity is calculated at business-unit/department grain; work-category pressure remains operational workload context."
+      },
+      {
+        "businessUnit": "GB",
+        "period": "2026-08",
+        "capacityGrain": "BUSINESS_UNIT_DEPARTMENT",
+        "fte": 96.0,
+        "receipts": 1816001.0,
+        "closures": 1717360.0,
+        "dailyReceipts": 86475.0,
+        "dailyProduction": 81779.0,
+        "productionToReceiptsRatio": 0.945695,
+        "closuresPerFte": 17889.166667,
+        "requiredFteToKeepPace": 101.51,
+        "capacityGap": 5.51,
+        "capacityGapMagnitude": 5.51,
+        "capacityStatus": "SHORTFALL",
+        "throughputBalance": -98641.0,
+        "primaryWorkloadPressure": "Cash Posting",
+        "primaryWorkloadPressureStatus": "CRITICAL",
+        "note": "Capacity is calculated at business-unit/department grain; work-category pressure remains operational workload context."
+      },
+      {
+        "businessUnit": "CB",
+        "period": "2026-09",
+        "capacityGrain": "BUSINESS_UNIT_DEPARTMENT",
+        "fte": null,
+        "receipts": null,
+        "closures": null,
+        "dailyReceipts": null,
+        "dailyProduction": null,
+        "productionToReceiptsRatio": null,
+        "closuresPerFte": null,
+        "requiredFteToKeepPace": null,
+        "capacityGap": null,
+        "capacityGapMagnitude": null,
+        "capacityStatus": "UNKNOWN",
+        "throughputBalance": null,
+        "primaryWorkloadPressure": "Validation/Adjustments",
+        "primaryWorkloadPressureStatus": "CRITICAL",
+        "note": "Capacity is calculated at business-unit/department grain; work-category pressure remains operational workload context."
+      },
+      {
+        "businessUnit": "CGS",
+        "period": "2026-09",
+        "capacityGrain": "BUSINESS_UNIT_DEPARTMENT",
+        "fte": null,
+        "receipts": null,
+        "closures": null,
+        "dailyReceipts": null,
+        "dailyProduction": null,
+        "productionToReceiptsRatio": null,
+        "closuresPerFte": null,
+        "requiredFteToKeepPace": null,
+        "capacityGap": null,
+        "capacityGapMagnitude": null,
+        "capacityStatus": "UNKNOWN",
+        "throughputBalance": null,
+        "primaryWorkloadPressure": "Validation/Adjustments",
+        "primaryWorkloadPressureStatus": "CRITICAL",
+        "note": "Capacity is calculated at business-unit/department grain; work-category pressure remains operational workload context."
+      },
+      {
+        "businessUnit": "GB",
+        "period": "2026-09",
+        "capacityGrain": "BUSINESS_UNIT_DEPARTMENT",
+        "fte": null,
+        "receipts": null,
+        "closures": null,
+        "dailyReceipts": null,
+        "dailyProduction": null,
+        "productionToReceiptsRatio": null,
+        "closuresPerFte": null,
+        "requiredFteToKeepPace": null,
+        "capacityGap": null,
+        "capacityGapMagnitude": null,
+        "capacityStatus": "UNKNOWN",
+        "throughputBalance": null,
+        "primaryWorkloadPressure": "Cash Posting",
+        "primaryWorkloadPressureStatus": "CRITICAL",
+        "note": "Capacity is calculated at business-unit/department grain; work-category pressure remains operational workload context."
       }
     ],
     "correlationExplorer": [
@@ -23973,8 +33094,7 @@ window.DASHBOARD_DATA = {
         "summary": "CB Cash Posting is on watch with SLA at 92%.",
         "evidence": [
           "out-of-standard inventory increased by 506",
-          "reroutes added 202 units of movement",
-          "staffing decreased by 2 FTE"
+          "reroutes added 202 units of movement"
         ]
       },
       "topCapacityConcern": {
@@ -24002,7 +33122,13 @@ window.DASHBOARD_DATA = {
       }
     },
     "dataQuality": {
-      "warnings": []
+      "warnings": [
+        {
+          "severity": "warning",
+          "type": "incomplete_period",
+          "summary": "2026-09 is missing operational fields: averageDailyProduction, averageDailyReceipts, ftes, monthlyClosures, monthlyReceipts."
+        }
+      ]
     },
     "modelDiagnostics": {
       "analyticalMaturity": "PHASE_1_LIMITED_HISTORY",
@@ -24029,7 +33155,7 @@ window.DASHBOARD_DATA = {
         "change_point_detection"
       ],
       "confidenceRationale": "Only five source periods are currently available, and operational metrics are missing for September. Outputs are directional until more history is loaded.",
-      "dataQualityWarningCount": 0
+      "dataQualityWarningCount": 1
     },
     "modelContext": {
       "grain": "business_unit_work_category_month",
