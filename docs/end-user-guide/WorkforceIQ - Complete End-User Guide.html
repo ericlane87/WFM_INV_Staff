@@ -1,0 +1,173 @@
+<!doctype html><html><head><meta charset="utf-8"><title>WorkforceIQ - Complete End-User Guide</title>
+    <style>body{font-family:Arial,Helvetica,sans-serif;color:#172033;line-height:1.45;max-width:840px;margin:40px auto}h1{color:#102642;font-size:30px}h2{color:#123a66;page-break-before:always;border-bottom:2px solid #d8e0ea;padding-bottom:5px}h3{color:#0d7f86}img{border:1px solid #d8e0ea;margin:10px 0}table{border-collapse:collapse;width:100%;margin:12px 0}th{background:#123a66;color:white;text-align:left}td,th{border:1px solid #d8e0ea;padding:7px;vertical-align:top}code{background:#eef4fa;padding:2px 4px}</style></head><body>
+    <h1>WorkforceIQ - Complete End-User Guide</h1>
+    <p><b>Purpose:</b> This editable document explains the current WorkforceIQ dashboard for end users. It is generated from the same reviewed content as the PDF manual and is intended for operational leaders, department managers, WFM personnel, analysts, associates, and executive stakeholders.</p>
+    <p><b>Last Dashboard Refresh:</b> 2026-09-30T15:31:21<br><b>Latest Source Period:</b> 2026-09<br><b>Latest Full Operational Period:</b> 2026-08<br><b>Available Periods:</b> 2026-01, 2026-06, 2026-07, 2026-08, 2026-09</p>
+    <p><b>Important:</b> WorkforceIQ uses transparent operational calculations, rule-based intelligence, and directional forecasts. It does not currently use a trained machine-learning model, and forecasts are not guaranteed outcomes.</p>
+
+    <h2>Table of Contents</h2>
+    <ol>
+      <li>Welcome to WorkforceIQ</li>
+      <li>Getting Started and Navigation</li>
+      <li>Understanding the Executive KPI Cards</li>
+      <li>Workforce Pulse</li>
+      <li>Flow: Understanding Workload Movement</li>
+      <li>Staffing and Productive Capacity</li>
+      <li>Forecast: Understanding What May Happen Next</li>
+      <li>Interactive What-If Forecasting</li>
+      <li>Intelligence: Understanding Operational Drivers</li>
+      <li>Detail: Reviewing Actual Operational Information</li>
+      <li>Understanding the Intelligence Rail</li>
+      <li>Practical WorkforceIQ Walkthroughs</li>
+      <li>WorkforceIQ Metric Glossary</li>
+      <li>Frequently Asked Questions and Troubleshooting</li>
+    </ol>
+
+    <h2>1. Welcome to WorkforceIQ</h2>
+    <p>WorkforceIQ converts staffing, inventory, SLA, receipts, closures, production, and FTE reporting into a local operational intelligence dashboard. It helps users answer practical operating questions: Are we meeting expectations? Is backlog increasing or decreasing? Are receipts and closures balanced? Do we have sufficient productive capacity? Which areas need attention? What may happen if current trends continue?</p>
+    <p>The dashboard is designed to reduce the amount of manual interpretation required from wide operational reports. It organizes actual source information into executive KPI cards, visual workflow views, drill-down tables, contextual explanations, and directional forecasts.</p>
+    <table><tr><th>Section</th><th>Purpose</th></tr>
+      <tr><td>Pulse</td><td>Executive health, ranked attention areas, and business-unit status.</td></tr>
+      <tr><td>Flow</td><td>Receipts, closures, throughput balance, inventory, and burn-down runway.</td></tr>
+      <tr><td>Staffing</td><td>Department-level capacity, FTE, productivity, and workload pressure.</td></tr>
+      <tr><td>Forecast</td><td>Directional projections, crossover, backlog goals, and temporary scenarios.</td></tr>
+      <tr><td>Intelligence</td><td>Early warnings and likely operational driver signals.</td></tr>
+      <tr><td>Detail</td><td>Underlying operational actuals for the selected period.</td></tr>
+    </table>
+
+    <h2>2. Getting Started and Navigation</h2>
+    <p>Open <code>dashboard.html</code> in the WorkforceIQ folder. The dashboard loads the generated local data file, <code>data/dashboard-data.js</code>. No web server is required.</p>
+    <p>When the dashboard opens, it displays the Pulse view by default. The dashboard may default to the latest complete operational period instead of the latest source period when the newest month has only partial information. In the current data, the latest source period is 2026-09, while the latest full operational period is 2026-08.</p>
+    <img src="file:///Users/ericlane/Desktop/Work Projects/Monica/Saffing and Inventoryy /docs/end-user-guide/assets/dashboard_overview_annotated.png" width="680">
+    <p><b>Annotated overview:</b> 1 data freshness, 2 executive KPI cards, 3 filters, 4 dashboard tabs, 5 intelligence rail.</p>
+    <table><tr><th>Control</th><th>How to use it</th></tr>
+      <tr><td>Dashboard View</td><td>Switches among Pulse, Flow, Staffing, Forecast, Intelligence, and Detail.</td></tr>
+      <tr><td>Business Unit</td><td>Filters the dashboard to All or a specific business unit.</td></tr>
+      <tr><td>Work Category</td><td>Filters the dashboard to All or a specific work category.</td></tr>
+      <tr><td>Period</td><td>Changes the reporting month.</td></tr>
+      <tr><td>Reset View</td><td>Returns to Pulse, All business units, All work categories, and the default full operational period.</td></tr>
+      <tr><td>Refresh</td><td>Rerenders the already-loaded local data. It does not import a new source report.</td></tr>
+      <tr><td>Guide Me</td><td>Opens a question-based navigation helper.</td></tr>
+      <tr><td>Presentation Mode</td><td>Changes display style for meeting use. It does not alter data.</td></tr>
+    </table>
+    <p><b>Last Refreshed</b> means when the dashboard data file was generated. <b>Latest Source Period</b> means the newest period present in the source data. <b>Latest Full Operational Period</b> means the newest period with enough operational fields for flow, staffing, and capacity analysis.</p>
+
+    <h2>3. Executive KPI Cards</h2>
+    <p>The five KPI cards update whenever filters change. Clicking a card opens the dashboard section most closely related to that card.</p>
+    <table><tr><th>Card</th><th>What it measures</th><th>Click opens</th></tr>
+      <tr><td>Capacity</td><td>Whether department-level productive capacity appears sufficient, short, or surplus based on receipts, closures, and FTE.</td><td>Staffing</td></tr>
+      <tr><td>SLA Health</td><td>Selected-context SLA compared with the 90% target. Aggregate SLA is calculated from in-standard work divided by starting inventory.</td><td>Detail</td></tr>
+      <tr><td>Backlog</td><td>Whether closures exceeded receipts. Positive throughput is favorable; negative throughput means incoming work exceeded completed work.</td><td>Flow</td></tr>
+      <tr><td>Operational Health</td><td>Count of Critical, At Risk, and Watch areas. If none are present, the card reports that all areas are healthy.</td><td>Pulse</td></tr>
+      <tr><td>Outlook</td><td>Next forecast direction: Improving, Stable, Deteriorating, or Directional, with confidence label.</td><td>Forecast</td></tr>
+    </table>
+    <p>Example: if Backlog shows a growing value, open Flow to compare receipts and closures, then open Staffing to see whether capacity may be contributing to the issue.</p>
+
+    <h2>4. Workforce Pulse</h2>
+    <p>Pulse answers: <b>Where should I focus my attention today?</b> It shows selected-context SLA, starting inventory, count of flagged areas, ranked attention rows, and enterprise health by business unit.</p>
+    <p>Rows classified as Critical, At Risk, or Watch appear first. If no areas are flagged, Pulse communicates that the selected context is healthy instead of forcing a false problem statement.</p>
+    <p>Practical use: before a leadership meeting, start in Pulse with Business Unit set to All and Work Category set to All. Review the highest-risk area, click it for a detail snapshot, and use the rail to prepare a concise explanation.</p>
+
+    <h2>5. Flow</h2>
+    <p>Flow explains workload movement. It connects incoming work, completed work, and starting inventory so users can determine whether the operation is keeping pace with demand.</p>
+    <p><b>Throughput Balance = Closures - Receipts.</b> A positive value means closures exceeded incoming work, creating an opportunity to reduce backlog. A negative value means incoming work exceeded completed work, increasing backlog pressure.</p>
+    <p>Example: if receipts are 1,000 and closures are 1,200, throughput balance is +200. If receipts are 1,200 and closures are 1,000, throughput balance is -200.</p>
+    <img src="file:///Users/ericlane/Desktop/Work Projects/Monica/Saffing and Inventoryy /docs/end-user-guide/assets/dashboard_flow_annotated.png" width="680">
+    <p>The Flow tab shows a throughput callout, inventory burn-down runway, run-rate timing for 10% and 25% inventory reduction, receipts versus closures, and inventory position.</p>
+
+    <h2>6. Staffing and Productive Capacity</h2>
+    <p>Staffing evaluates whether productive capacity appears sufficient to keep pace with incoming receipts. It uses available department-level staffing information and observed productivity.</p>
+    <table><tr><th>Metric</th><th>Business meaning</th></tr>
+      <tr><td>Department FTE</td><td>Available staffing capacity for the department/business unit.</td></tr>
+      <tr><td>Average Daily Receipts</td><td>Average incoming work per day.</td></tr>
+      <tr><td>Average Daily Production</td><td>Average completed production per day.</td></tr>
+      <tr><td>Production-to-Receipts Ratio</td><td>Daily production divided by daily receipts. Above 100% means production is ahead of incoming volume.</td></tr>
+      <tr><td>Closures per FTE</td><td>Monthly closures divided by FTE. Used in capacity estimates.</td></tr>
+      <tr><td>Capacity Shortfall</td><td>Estimated additional FTE-equivalent productive capacity needed to keep pace with receipts.</td></tr>
+      <tr><td>Capacity Surplus</td><td>Estimated productive capacity above what is needed to keep pace.</td></tr>
+    </table>
+    <p><b>Important:</b> WorkforceIQ does not claim exact FTE allocation by individual work category unless the source data explicitly supports that level. Staffing scenarios should be interpreted at the department/business-unit level.</p>
+    <p>Capacity to keep pace and capacity to reduce accumulated backlog are different questions. A department may have enough capacity to match current receipts while still carrying prior backlog. Backlog decreases only when closures exceed receipts.</p>
+
+    <h2>7. Forecast</h2>
+    <p>Forecast is a directional planning view. It projects receipts, closures, inventory, out-of-standard work, and expected SLA over the displayed horizon using recent operational movement.</p>
+    <img src="file:///Users/ericlane/Desktop/Work Projects/Monica/Saffing and Inventoryy /docs/end-user-guide/assets/dashboard_forecast_annotated.png" width="680">
+    <p><b>Receipts</b> are projected incoming work. <b>Closures</b> are projected completed work. <b>Inventory</b> is the projected backlog after receipts and closures interact. Receipts and closures are period activity; inventory is the resulting backlog level.</p>
+    <p><b>Next Inventory = Current Inventory + Receipts - Closures.</b> If projected closures exceed projected receipts, inventory can decline. If projected receipts exceed closures, inventory can increase.</p>
+    <p><b>Crossover</b> is the first future period where projected closures exceed projected receipts. If the tile says No Crossover Expected, closures are not projected to exceed receipts within the displayed horizon.</p>
+    <p>The forecast table includes Current, Month +1, Month +2, and Month +3. Rows show projected receipts, closures, balance, inventory, out-of-standard work, expected SLA, and confidence. Clicking forecast rows or tiles opens a formula explanation.</p>
+    <p>Forecast confidence considers available history, missing recent fields, volatility, and horizon. Low confidence means the projection should be treated as directional.</p>
+
+    <h2>8. Interactive What-If Forecasting</h2>
+    <p>Forecast scenario controls are temporary planning assumptions. Users can adjust Staffing/FTE, incoming workload, productivity, and backlog target, then return to the original baseline forecast.</p>
+    <ol>
+      <li>Select a specific Business Unit and Work Category.</li>
+      <li>Open Forecast.</li>
+      <li>Adjust Staffing/FTE using the stepper or number input.</li>
+      <li>Choose Workload at -10%, Current, or +10%.</li>
+      <li>Choose Productivity at -5%, Current, or +5%.</li>
+      <li>Optionally enter a Backlog Goal.</li>
+      <li>Review projected receipts, closures, balance, inventory, and expected SLA.</li>
+      <li>Click Reset To Baseline Forecast to return to original assumptions.</li>
+    </ol>
+    <p>Worked example: to test incoming workload increasing by 10% while staffing increases by three FTE, select the department and work category, open Forecast, increase the FTE control by 3, choose +10% under Workload, and compare ending inventory and expected SLA against the baseline. If throughput remains negative, staffing may not be enough by itself. If throughput turns positive, the forecast may show crossover or a stronger burn-down path.</p>
+
+    <h2>9. Intelligence</h2>
+    <p>Intelligence explains why a selected area may be under pressure. It shows Early Warnings and Likely Drivers. Early warnings appear when multiple leading indicators suggest pressure is forming, even if SLA has not fully broken yet.</p>
+    <p>Driver signals can include receipt growth, closure decline, workload pressure, out-of-standard movement, flow gap, and reroutes. Clicking a driver opens a modal with its definition, formula, raw value, normalized displayed score, and source inputs.</p>
+    <p><b>Important:</b> driver indicators are analytical signals, not proof of causation. Use them to focus investigation, then confirm root cause with operational context.</p>
+
+    <h2>10. Detail</h2>
+    <p>Detail displays actual operational rows for the selected reporting period. It includes Business Unit, Work Category, Operational Status, Source SLA, Calculated SLA, Inventory, Out of Standard, Receipts, Closures, Throughput Balance, and FTE.</p>
+    <p>Clicking a Detail row opens an operational snapshot and intelligence brief. Detail is historical actual information; Forecast is future directional estimates.</p>
+
+    <h2>11. Intelligence Rail</h2>
+    <p>The right-side Intelligence Rail changes with the selected context. It includes Current State, Why It Matters, Primary Driver, Early Warning, Outlook, and Recommended Lever.</p>
+    <p>Use the rail next to the main visualization. For example, Flow may show backlog growing while the rail explains the primary driver and whether the selected area also has a capacity shortfall or early warning signal.</p>
+
+    <h2>12. Practical Walkthroughs</h2>
+    <table><tr><th>Scenario</th><th>Workflow</th></tr>
+      <tr><td>My department's SLA is declining.</td><td>Open Pulse, filter to the department, review attention rows, then open Detail for Source SLA and Calculated SLA. Check Intelligence for drivers and Flow for backlog direction.</td></tr>
+      <tr><td>Incoming work is exceeding closures.</td><td>Open Flow. Review Throughput Balance, Receipts In, Closures Out, and burn-down runway. Negative balance means backlog pressure is increasing.</td></tr>
+      <tr><td>I need to know whether staffing is sufficient.</td><td>Open Staffing. Review FTE, production-to-receipts ratio, and capacity shortfall/surplus. Then compare Flow to see whether backlog is burning down.</td></tr>
+      <tr><td>I need to identify the area requiring attention.</td><td>Start in Pulse with All filters. Review Attention Required and Enterprise Health. Click the highest-risk row.</td></tr>
+      <tr><td>I want projected backlog over the next three months.</td><td>Select one Business Unit and Work Category, then open Forecast. Review inventory line, forecast table, crossover, and backlog goal tile.</td></tr>
+      <tr><td>Leadership asks what staffing could change.</td><td>Open Forecast, increase Staffing/FTE, and compare projected closures, balance, inventory, and expected SLA against baseline.</td></tr>
+      <tr><td>I need a meeting summary.</td><td>Use Pulse for status, Flow for backlog direction, Staffing for capacity, Forecast for outlook, and the Intelligence Rail for narrative.</td></tr>
+    </table>
+
+    <h2>13. Metric Glossary</h2>
+    <table><tr><th>Metric</th><th>Definition</th><th>Calculation / interpretation</th></tr>
+      <tr><td>Backlog</td><td>Work still present in inventory.</td><td>Often represented by Starting Inventory or projected Inventory.</td></tr>
+      <tr><td>Backlog Burn-Down</td><td>Closures exceed receipts.</td><td>Positive throughput must persist to reduce accumulated inventory.</td></tr>
+      <tr><td>Calculated SLA</td><td>Dashboard-calculated SLA.</td><td>In Standard / Starting Inventory.</td></tr>
+      <tr><td>Capacity Shortfall</td><td>Estimated productive capacity needed to keep pace.</td><td>Required FTE minus current FTE.</td></tr>
+      <tr><td>Capacity Surplus</td><td>Estimated capacity above keep-pace need.</td><td>Negative capacity gap shown in user-friendly language.</td></tr>
+      <tr><td>Closures</td><td>Work completed during the period.</td><td>Compared with receipts to determine flow.</td></tr>
+      <tr><td>Crossover</td><td>Forecast period where closures begin exceeding receipts.</td><td>First future period with positive throughput balance.</td></tr>
+      <tr><td>Expected SLA</td><td>Forecasted future SLA.</td><td>1 - projected OOS / projected inventory.</td></tr>
+      <tr><td>Forecast Confidence</td><td>Support level for forecast output.</td><td>Considers history, missing data, volatility, and horizon.</td></tr>
+      <tr><td>FTE</td><td>Staffing level from source data.</td><td>Read as department-level unless source proves finer allocation.</td></tr>
+      <tr><td>Inventory</td><td>Work/backlog count.</td><td>In Forecast, rolled forward using receipts and closures.</td></tr>
+      <tr><td>OOS / Out of Standard</td><td>Inventory outside standard.</td><td>Higher OOS usually increases SLA pressure.</td></tr>
+      <tr><td>Production-to-Receipts Ratio</td><td>Daily production compared with incoming daily receipts.</td><td>Average Daily Production / Average Daily Receipts.</td></tr>
+      <tr><td>Receipts</td><td>Incoming work during the period.</td><td>If receipts exceed closures, pressure grows.</td></tr>
+      <tr><td>SLA</td><td>Service-level performance.</td><td>Dashboard target is 90%.</td></tr>
+      <tr><td>Throughput Balance</td><td>Whether completed work exceeded incoming work.</td><td>Closures - Receipts. Positive is favorable; negative means incoming work exceeded closures.</td></tr>
+    </table>
+
+    <h2>14. FAQ</h2>
+    <table><tr><th>Question</th><th>Answer</th></tr>
+      <tr><td>Why am I seeing N/A?</td><td>The selected period or context does not have the fields needed for that metric, or the calculation would require division by zero.</td></tr>
+      <tr><td>Why does the dashboard show an earlier reporting month?</td><td>The latest source period is 2026-09, but the latest full operational period is 2026-08. Views needing receipts, closures, production, and FTE use the complete period.</td></tr>
+      <tr><td>What does partial data mean?</td><td>A period has some information but is missing operational fields such as receipts, closures, FTE, average daily receipts, or average daily production.</td></tr>
+      <tr><td>Why do Forecast and Detail show different numbers?</td><td>Detail shows historical actuals. Forecast shows future directional estimates and scenario outputs.</td></tr>
+      <tr><td>What does limited forecast confidence mean?</td><td>There is limited history, missing recent data, volatility, or horizon uncertainty. Treat the output as directional.</td></tr>
+      <tr><td>Why is no crossover expected?</td><td>Projected closures do not exceed projected receipts within the displayed forecast horizon.</td></tr>
+      <tr><td>What does a negative Throughput Balance mean?</td><td>Incoming work exceeded completed work, so backlog pressure is increasing unless throughput improves.</td></tr>
+      <tr><td>Why can capacity appear sufficient while backlog still exists?</td><td>Capacity may be sufficient to keep pace with current receipts, but reducing old backlog requires closures to exceed receipts.</td></tr>
+      <tr><td>Are what-if changes permanent?</td><td>No. Scenario changes are temporary browser-side assumptions and do not modify source data.</td></tr>
+      <tr><td>Does Refresh retrieve new source data?</td><td>No. Refresh rerenders the current local data. New source data requires running the update script.</td></tr>
+      <tr><td>How do I return to the original forecast?</td><td>Click Reset To Baseline Forecast in the Forecast tab.</td></tr>
+    </table>
+    </body></html>
