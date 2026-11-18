@@ -342,6 +342,15 @@
       border-radius: 8px;
       padding: 12px;
     }
+    .metric-tile.clickable {
+      cursor: pointer;
+      transition: border-color .12s ease, box-shadow .12s ease, transform .12s ease;
+    }
+    .metric-tile.clickable:hover {
+      border-color: #7fa4cf;
+      box-shadow: 0 8px 18px rgba(18, 40, 76, .12);
+      transform: translateY(-1px);
+    }
     .metric-tile strong {
       display: block;
       font-size: clamp(17px, 1.6vw, 22px);
@@ -393,6 +402,7 @@
       font-size: 13px;
     }
     .forecast-row:hover:not(.header) { background: #f8fbff; }
+    .forecast-row.clickable { cursor: pointer; }
     .forecast-row.header { color: #07317a; font-weight: 800; text-transform: uppercase; font-size: 11px; }
     .bar-row {
       display: grid;
@@ -401,6 +411,13 @@
       align-items: center;
       margin: 8px 0;
       font-size: 13px;
+    }
+    .bar-row.clickable {
+      cursor: pointer;
+      border-radius: 6px;
+      padding: 3px;
+      margin-left: -3px;
+      margin-right: -3px;
     }
     .bar-row.clickable:hover { background: #f8fbff; }
     .track { height: 14px; background: #e8edf3; border-radius: 999px; overflow: hidden; }
@@ -697,7 +714,8 @@
       tab: 'pulse',
       businessUnit: 'All',
       workCategory: 'All',
-      period: data?.metadata.latestFullContextPeriod || data?.metadata.latestPeriod
+      period: data?.metadata.latestFullContextPeriod || data?.metadata.latestPeriod,
+      forecastKey: null
     };
     const fmt = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
     const pct = new Intl.NumberFormat('en-US', { style: 'percent', maximumFractionDigits: 0 });
@@ -976,7 +994,7 @@
     function barRow(name, amount, max, text, status, click) {
       const width = Math.max(3, Math.min(100, value(amount) / Math.max(1, value(max)) * 100));
       const color = status.includes('critical') || status.includes('at-risk') ? 'red' : status.includes('watch') ? 'yellow' : 'green';
-      return `<div class="bar-row clickable" onclick="${click || ''}"><span><span class="status-dot ${status}"></span>${name}</span><div class="track"><div class="fill ${color}" style="width:${width}%"></div></div><strong>${text}</strong></div>`;
+      return `<div class="bar-row ${click ? 'clickable' : ''}" ${click ? `onclick="${click}"` : ''}><span><span class="status-dot ${status}"></span>${name}</span><div class="track"><div class="fill ${color}" style="width:${width}%"></div></div><strong>${text}</strong></div>`;
     }
 
     function renderFlow() {
@@ -1098,6 +1116,12 @@
     }
 
     function renderForecast() {
+      if (state.businessUnit === 'All' || state.workCategory === 'All') {
+        document.getElementById('tabForecast').innerHTML = `
+          <div class="signal-callout warn"><div class="label">Select Forecast Context</div><strong>Choose one department and one work bucket.</strong><div>Forecast scenarios are calculated for a specific department/work bucket pair, such as GB + Disputes. Use the Business Unit and Work Category filters on the left, then adjust workload or productivity.</div></div>`;
+        state.forecastKey = null;
+        return;
+      }
       const forecast = selectedForecastContext();
       if (!forecast) {
         document.getElementById('tabForecast').innerHTML = '<div class="hint">No forecast context is available for this selection.</div>';
@@ -1105,27 +1129,33 @@
       }
       const department = selectedDepartmentCapacity();
       const currentFte = value(department?.fte);
-      const fteValue = Number(document.getElementById('forecastFte')?.value || currentFte || 0);
-      const receiptValue = Number(document.getElementById('forecastReceipts')?.value || 0);
-      const prodValue = Number(document.getElementById('forecastProd')?.value || 0);
-      const rawTarget = document.getElementById('forecastTarget')?.value ?? '';
+      const forecastKey = `${forecast.businessUnit}|${forecast.workCategory}`;
+      const sameForecastContext = state.forecastKey === forecastKey;
+      state.forecastKey = forecastKey;
+      const fteValue = sameForecastContext ? Number(document.getElementById('forecastFte')?.value || currentFte || 0) : currentFte || 0;
+      const receiptValue = sameForecastContext ? Number(document.getElementById('forecastReceipts')?.value || 0) : 0;
+      const prodValue = sameForecastContext ? Number(document.getElementById('forecastProd')?.value || 0) : 0;
+      const rawTarget = sameForecastContext ? document.getElementById('forecastTarget')?.value ?? '' : '';
       const target = rawTarget === '' ? null : Number(rawTarget);
-      const adjusted = scenarioProjection(forecast);
+      const adjusted = scenarioProjection(forecast, { targetFte: fteValue, receiptChange: receiptValue, prodChange: prodValue });
       const latest = adjusted[0] || {};
       const last = adjusted[adjusted.length - 1] || {};
       const outlook = last.sla != null && latest.sla != null ? last.sla - latest.sla : null;
       const outlookLabel = outlook == null ? 'Directional' : outlook > 0.005 ? 'Improving' : outlook < -0.005 ? 'Deteriorating' : 'Stable';
       const crossover = adjusted.slice(1).find(item => (item.throughputBalance || 0) > 0)?.period;
+      const crossoverIndex = crossover ? adjusted.findIndex(item => item.period === crossover) : -1;
       const clearance = target == null ? null : adjusted.slice(1).find(item => item.inventory != null && item.inventory <= target)?.period;
+      const clearanceIndex = clearance ? adjusted.findIndex(item => item.period === clearance) : -1;
       const finalPeriod = adjusted[adjusted.length - 1]?.period;
       const narrative = forecastNarrative(adjusted, crossover, target, clearance);
+      const currentInventory = latest.inventory ?? selectedRow()?.startingInventory;
       document.getElementById('tabForecast').innerHTML = `
-        <div class="signal-callout"><div class="label-line"><div class="label">Forecast</div><span class="info" data-tip="This is an adaptive directional forecast. With limited history it uses recent movement; with more history the backend is structured to support seasonality, backtesting, and stronger uncertainty estimates.">i</span></div><strong>${outlookLabel}</strong><div>${forecast.confidence?.label || 'Low'} confidence: ${forecast.confidence?.rationale || 'Limited source history.'}</div></div>
+        <div class="signal-callout"><div class="label-line"><div class="label">Forecast: ${forecast.businessUnit} / ${forecast.workCategory}</div><span class="info" data-tip="This is an adaptive directional forecast. With limited history it uses recent movement; with more history the backend is structured to support seasonality, backtesting, and stronger uncertainty estimates.">i</span></div><strong>${outlookLabel}</strong><div>${forecast.confidence?.label || 'Low'} confidence: ${forecast.confidence?.rationale || 'Limited source history.'}</div></div>
         <div class="forecast-controls">
           <div class="control-card"><div class="label-line"><label>Staffing</label><span class="info" data-tip="Department-level what-if. Additional FTE uses observed department closures per FTE. It is not assigned to a specific work bucket.">i</span></div><div class="subvalue">Current departmental FTE: ${display(currentFte)}</div><div class="stepper"><button type="button" data-step-fte="-1">-</button><input id="forecastFte" type="number" value="${fteValue}" step="1"><button type="button" data-step-fte="1">+</button></div></div>
-          <div class="control-card"><div class="label-line"><label>Expected Workload</label><span class="info" data-tip="Changes projected incoming receipts for the selected forecast context.">i</span></div><input id="forecastReceipts" type="hidden" value="${receiptValue}"><div class="choice-row">${scenarioChoice('forecastReceipts', -0.10, '-10%', receiptValue)}${scenarioChoice('forecastReceipts', 0, 'Current', receiptValue)}${scenarioChoice('forecastReceipts', 0.10, '+10%', receiptValue)}</div></div>
-          <div class="control-card"><div class="label-line"><label>Productivity</label><span class="info" data-tip="Changes projected closures by applying a productivity lift or drag to observed output.">i</span></div><input id="forecastProd" type="hidden" value="${prodValue}"><div class="choice-row">${scenarioChoice('forecastProd', -0.05, '-5%', prodValue)}${scenarioChoice('forecastProd', 0, 'Current', prodValue)}${scenarioChoice('forecastProd', 0.05, '+5%', prodValue)}</div></div>
-          <div class="control-card"><div class="label-line"><label>Backlog Goal</label><span class="info" data-tip="Optional target inventory threshold. If left blank, no backlog-goal result is calculated.">i</span></div><input id="forecastTarget" type="number" value="${rawTarget}" placeholder="Target inventory" step="100"></div>
+          <div class="control-card"><div class="label-line"><label>${forecast.workCategory} Workload</label><span class="info" data-tip="Changes projected incoming receipts for this selected department/work bucket.">i</span></div><div class="subvalue">${forecast.businessUnit} incoming receipts</div><input id="forecastReceipts" type="hidden" value="${receiptValue}"><div class="choice-row">${scenarioChoice('forecastReceipts', -0.10, '-10%', receiptValue)}${scenarioChoice('forecastReceipts', 0, 'Current', receiptValue)}${scenarioChoice('forecastReceipts', 0.10, '+10%', receiptValue)}</div></div>
+          <div class="control-card"><div class="label-line"><label>${forecast.workCategory} Productivity</label><span class="info" data-tip="Changes projected closures for this selected department/work bucket. For example, +5% means this bucket closes 5% more work than baseline.">i</span></div><div class="subvalue">${forecast.businessUnit} closures scenario</div><input id="forecastProd" type="hidden" value="${prodValue}"><div class="choice-row">${scenarioChoice('forecastProd', -0.05, '-5%', prodValue)}${scenarioChoice('forecastProd', 0, 'Current', prodValue)}${scenarioChoice('forecastProd', 0.05, '+5%', prodValue)}</div></div>
+          <div class="control-card"><div class="label-line"><label>Backlog Goal</label><span class="info" data-tip="Optional target inventory threshold. The placeholder shows the selected bucket's current inventory/backlog count.">i</span></div><div class="subvalue">Current inventory: ${display(currentInventory)}</div><input id="forecastTarget" type="number" value="${rawTarget}" placeholder="${display(currentInventory)}" step="100"></div>
         </div>
         <button class="secondary-btn" id="forecastResetBtn" type="button">Reset To Baseline Forecast</button>
         <div class="forecast-stage">
@@ -1134,9 +1164,9 @@
             <div class="legend"><span>Receipts</span><span class="closures">Closures</span><span class="inventory">Inventory</span></div>
           </div>
           <div class="metric-stack">
-            <div class="metric-tile"><div class="label">Crossover</div><strong>${crossover ? periodLabel(crossover) : 'No Crossover Expected'}</strong><div class="subvalue">${crossover ? `Projected closures begin exceeding incoming workload in ${periodLabel(crossover)}.` : 'Projected closures remain below incoming workload throughout the forecast horizon.'}</div></div>
-            <div class="metric-tile"><div class="label">Backlog Goal</div><strong>${target == null ? 'Define Target' : clearance ? `Projected ${periodLabel(clearance)}` : 'Not Reached Within Forecast Horizon'}</strong><div class="subvalue">${target == null ? 'Enter a target inventory to calculate goal timing.' : clearance ? `Projected inventory reaches the configured target of ${display(target)}.` : `Projected backlog remains above the configured target of ${display(target)} through ${periodLabel(finalPeriod)}.`}</div></div>
-            <div class="metric-tile"><div class="label">Expected SLA</div><strong>${displayPct(last.sla)}</strong><div class="subvalue">${last.confidence?.label || forecast.confidence?.label || 'Low'} confidence at horizon.</div></div>
+            <div class="metric-tile clickable" data-forecast-explain="${crossoverIndex >= 0 ? crossoverIndex : adjusted.length - 1}" data-forecast-topic="crossover"><div class="label">Crossover</div><strong>${crossover ? periodLabel(crossover) : 'No Crossover Expected'}</strong><div class="subvalue">${crossover ? `Projected closures begin exceeding incoming workload in ${periodLabel(crossover)}.` : 'Projected closures remain below incoming workload throughout the forecast horizon.'}</div></div>
+            <div class="metric-tile clickable" data-forecast-explain="${clearanceIndex >= 0 ? clearanceIndex : adjusted.length - 1}" data-forecast-topic="backlog-goal"><div class="label">Backlog Goal</div><strong>${target == null ? 'Define Target' : clearance ? `Projected ${periodLabel(clearance)}` : 'Not Reached Within Forecast Horizon'}</strong><div class="subvalue">${target == null ? 'Enter a target inventory to calculate goal timing.' : clearance ? `Projected inventory reaches the configured target of ${display(target)}.` : `Projected backlog remains above the configured target of ${display(target)} through ${periodLabel(finalPeriod)}.`}</div></div>
+            <div class="metric-tile clickable" data-forecast-explain="${adjusted.length - 1}" data-forecast-topic="sla"><div class="label">Expected SLA</div><strong>${displayPct(last.sla)}</strong><div class="subvalue">${last.confidence?.label || forecast.confidence?.label || 'Low'} confidence at horizon.</div></div>
           </div>
         </div>
         <div class="chart-grid">
@@ -1169,6 +1199,9 @@
         document.getElementById('forecastTarget').value = '';
         renderForecast();
       };
+      document.querySelectorAll('[data-forecast-explain]').forEach(item => {
+        item.onclick = () => openForecastExplain(adjusted, Number(item.dataset.forecastExplain), item.dataset.forecastTopic, forecast, target);
+      });
     }
 
     function scenarioChoice(target, value, text, current) {
@@ -1238,20 +1271,74 @@
 
     function forecastTable(projection) {
       return `<div class="forecast-row header"><span>Period</span><span>Receipts</span><span>Closures</span><span>Balance</span><span>Inventory</span><span>OOS</span><span>SLA</span></div>
-        ${projection.map(item => `<div class="forecast-row"><strong>${periodLabel(item.period)}</strong><span>${forecastCell(item.receipts, 'Receipts require an operational base period with source receipt data.')}</span><span>${forecastCell(item.closures, 'Closures require an operational base period with source closure data.')}</span><span class="${(item.throughputBalance || 0) >= 0 ? 'trend good' : 'trend bad'}">${forecastCell(item.throughputBalance, 'Throughput balance requires projected receipts and closures.')}</span><span>${forecastCell(item.inventory, 'Inventory requires source inventory and projected flow.')}</span><span>${forecastCell(item.outOfStandard, 'OOS requires source out-of-standard inventory.')}</span><span>${displayPct(item.sla)}<br><small>${item.confidence?.label || ''}</small></span></div>`).join('')}`;
+        ${projection.map((item, index) => `<div class="forecast-row clickable" data-forecast-explain="${index}" data-forecast-topic="period"><strong>${periodLabel(item.period)}</strong><span>${forecastCell(item.receipts, 'Receipts require an operational base period with source receipt data.')}</span><span>${forecastCell(item.closures, 'Closures require an operational base period with source closure data.')}</span><span class="${(item.throughputBalance || 0) >= 0 ? 'trend good' : 'trend bad'}">${forecastCell(item.throughputBalance, 'Throughput balance requires projected receipts and closures.')}</span><span>${forecastCell(item.inventory, 'Inventory requires source inventory and projected flow.')}</span><span>${forecastCell(item.outOfStandard, 'OOS requires source out-of-standard inventory.')}</span><span>${displayPct(item.sla)}<br><small>${item.confidence?.label || ''}</small></span></div>`).join('')}`;
     }
 
     function forecastCell(value, reason) {
       return value == null || Number.isNaN(Number(value)) ? `<span title="${reason}">Unavailable</span>` : display(value);
     }
 
-    function scenarioProjection(forecast) {
+    function openForecastExplain(projection, index, topic, forecast, target) {
+      const item = projection[Math.max(0, Math.min(index, projection.length - 1))] || {};
+      const prior = projection[Math.max(0, index - 1)] || {};
+      const base = projection[0] || {};
+      const department = selectedDepartmentCapacity();
+      const receiptChange = Number(document.getElementById('forecastReceipts')?.value || 0);
+      const prodChange = Number(document.getElementById('forecastProd')?.value || 0);
+      const currentFte = value(department?.fte);
+      const targetFte = Number(document.getElementById('forecastFte')?.value || currentFte || 0);
+      const fteChange = targetFte - currentFte;
+      const balance = item.throughputBalance;
+      const balanceText = balance == null
+        ? 'Receipts or closures were unavailable, so throughput balance could not be calculated.'
+        : balance > 0
+          ? `Closures exceed incoming workload by ${display(balance)} in ${periodLabel(item.period)}.`
+          : balance < 0
+            ? `Incoming workload exceeds closures by ${display(Math.abs(balance))} in ${periodLabel(item.period)}.`
+            : `Closures equal incoming workload in ${periodLabel(item.period)}.`;
+      const titleByTopic = {
+        crossover: 'Forecast Crossover Detail',
+        'backlog-goal': 'Backlog Goal Detail',
+        sla: 'Expected SLA Detail',
+        period: 'Forecast Period Detail'
+      };
+      const formulaRows = [
+        ['Projected balance', 'closures - receipts', display(balance)],
+        ['Inventory roll-forward', 'prior inventory + receipts - closures', item.inventory == null ? 'Unavailable' : `${display(prior.inventory)} + ${display(item.receipts)} - ${display(item.closures)} = ${display(item.inventory)}`],
+        ['Expected SLA', '1 - out of standard / inventory', item.sla == null ? 'Unavailable' : `1 - ${display(item.outOfStandard)} / ${display(item.inventory)} = ${displayPct(item.sla)}`],
+      ];
+      document.getElementById('detailTitle').textContent = titleByTopic[topic] || 'Forecast Detail';
+      document.getElementById('detailHint').textContent = `${forecast.businessUnit} ${forecast.workCategory} | ${periodLabel(item.period)}`;
+      document.getElementById('detailBody').innerHTML = `
+        <div class="signal-callout ${(balance || 0) >= 0 ? 'good' : 'bad'}"><div class="label">Why This Statement Appears</div><strong>${balanceText}</strong><div>The dashboard treats positive throughput balance as favorable because it means projected closures are higher than projected receipts.</div></div>
+        <div class="summary-grid">
+          <div class="metric-tile"><div class="label">Projected Receipts</div><strong>${display(item.receipts)}</strong><div class="subvalue">Incoming workload</div></div>
+          <div class="metric-tile"><div class="label">Projected Closures</div><strong>${display(item.closures)}</strong><div class="subvalue">Completed workload</div></div>
+          <div class="metric-tile"><div class="label">Balance</div><strong>${display(balance)}</strong><div class="subvalue">Closures minus receipts</div></div>
+        </div>
+        <div class="chart-grid">
+          <div class="chart-panel card"><div class="chart-title">Period Math</div>
+            ${formulaRows.map(([labelText, formula, result]) => `<div class="insight"><div class="insight-type">${labelText}</div><strong>${result}</strong><div class="hint">${formula}</div></div>`).join('')}
+          </div>
+          <div class="chart-panel card"><div class="chart-title">Scenario Inputs</div>
+            <div class="insight"><div class="insight-type">Base Period</div>${periodLabel(base.period)} forecast for ${forecast.businessUnit} ${forecast.workCategory}</div>
+            <div class="insight"><div class="insight-type">Workload Scenario</div>${receiptChange === 0 ? 'Current projected receipts' : `${displayPct(receiptChange)} adjustment to projected receipts`}</div>
+            <div class="insight"><div class="insight-type">Productivity Scenario</div>${prodChange === 0 ? 'Current projected closures' : `${displayPct(prodChange)} adjustment to projected closures`}</div>
+            <div class="insight"><div class="insight-type">Staffing Scenario</div>${display(targetFte)} FTE (${fteChange >= 0 ? '+' : ''}${display(fteChange)} vs current department FTE)</div>
+            <div class="insight"><div class="insight-type">Backlog Target</div>${target == null ? 'No target configured' : display(target)}</div>
+            <div class="insight"><div class="insight-type">Confidence</div>${item.confidence?.label || forecast.confidence?.label || 'Low'} confidence. ${item.confidence?.rationale || forecast.confidence?.rationale || 'Limited source history.'}</div>
+          </div>
+        </div>`;
+      openModal('detailModal');
+    }
+
+    function scenarioProjection(forecast, scenario = {}) {
       const projection = (forecast.projection || []).map(item => ({...item}));
       const department = selectedDepartmentCapacity();
-      const targetFte = Number(document.getElementById('forecastFte')?.value || department?.fte || 0);
+      const targetFte = Number(scenario.targetFte ?? document.getElementById('forecastFte')?.value ?? department?.fte ?? 0);
       const fteChange = targetFte - value(department?.fte);
-      const prodChange = Number(document.getElementById('forecastProd')?.value || 0);
-      const receiptChange = Number(document.getElementById('forecastReceipts')?.value || 0);
+      const prodChange = Number(scenario.prodChange ?? document.getElementById('forecastProd')?.value ?? 0);
+      const receiptChange = Number(scenario.receiptChange ?? document.getElementById('forecastReceipts')?.value ?? 0);
       const current = projection[0] || {};
       const closuresPerFte = department?.closuresPerFte || (current.fte ? value(current.closures) / value(current.fte) : 0);
       const adjusted = [];
@@ -1281,13 +1368,101 @@
             ${current.filter(row => row.earlyWarning?.active).slice(0,8).map(row => `<div class="insight clickable" onclick="openDetail('${row.businessUnit}','${row.workCategory}')"><div class="insight-type">Early Warning</div><strong>${row.businessUnit} ${row.workCategory}</strong><div>${row.earlyWarning.evidence.join(' ')}</div></div>`).join('') || '<div class="hint">No active early warnings for this context.</div>'}
           </div>
           <div class="chart-panel card"><div class="chart-title">Likely Drivers</div>
-            ${(selectedContext()?.driverBars || []).map(item => barRow(item.label, item.strength, 1, Math.round(item.strength*100), '', '')).join('') || '<div class="hint">Select a work category for driver bars.</div>'}
+            ${(selectedContext()?.driverBars || []).map(item => barRow(item.label, item.strength, 1, Math.round(item.strength*100), '', `openDriverExplain('${item.label}')`)).join('') || '<div class="hint">Select a work category for driver bars.</div>'}
           </div>
         </div>`;
     }
 
     function renderDetail() {
       document.getElementById('tabDetail').innerHTML = `<div class="table-wrap"><table><thead><tr><th>BU</th><th>Category</th><th>Status</th><th>Source SLA</th><th>Calc SLA</th><th>Inventory</th><th>OOS</th><th>Receipts</th><th>Closures</th><th>Balance</th><th>FTE</th></tr></thead><tbody>${rows().map(row => `<tr class="clickable" onclick="openDetail('${row.businessUnit}','${row.workCategory}')"><td>${row.businessUnit}</td><td>${row.workCategory}</td><td>${label(row.status)}</td><td>${displayPct(row.monthlyStartingSla)}</td><td>${displayPct(row.calculatedSla)}</td><td>${display(row.startingInventory)}</td><td>${display(row.outOfStandard)}</td><td>${display(row.monthlyReceipts)}</td><td>${display(row.monthlyClosures)}</td><td>${display(row.throughputBalance)}</td><td>${display(row.ftes)}</td></tr>`).join('')}</tbody></table></div>`;
+    }
+
+    function driverDefinition(labelText, row, driver) {
+      const definitions = {
+        'Receipt Growth': {
+          definition: 'How much incoming work changed versus the previous available period.',
+          formula: 'absolute value of receipts percent change',
+          calculation: `${displayPct(row.receiptsPctChange)} change in receipts`,
+          raw: displayPct(driver.rawValue),
+          meaning: 'Higher means incoming volume is moving more than normal for this bucket.'
+        },
+        'Closure Decline': {
+          definition: 'How much completed work declined versus the previous available period.',
+          formula: 'absolute value of negative closures percent change; increases are counted as 0',
+          calculation: `${displayPct(row.closuresPctChange)} change in closures`,
+          raw: displayPct(driver.rawValue),
+          meaning: 'Higher means output is falling, which can widen backlog.'
+        },
+        'Workload Pressure': {
+          definition: 'How large the receipt/closure gap is relative to current inventory/backlog.',
+          formula: 'max(0, receipts - closures) / starting inventory',
+          calculation: `max(0, ${display(row.monthlyReceipts)} - ${display(row.monthlyClosures)}) / ${display(row.startingInventory)} = ${displayPct(driver.rawValue)}`,
+          raw: displayPct(driver.rawValue),
+          meaning: 'Higher means incoming work is too large for the current closure pace, relative to the bucket size.'
+        },
+        'OOS Movement': {
+          definition: 'How much out-of-standard inventory moved relative to current inventory.',
+          formula: 'absolute value of out-of-standard change / starting inventory',
+          calculation: `${display(Math.abs(value(row.outOfStandardChange)))} / ${display(row.startingInventory)} = ${displayPct(driver.rawValue)}`,
+          raw: displayPct(driver.rawValue),
+          meaning: 'Higher means the portion of inventory at SLA risk is moving materially.'
+        },
+        'Flow Gap': {
+          definition: 'The unfavorable gap where receipts are higher than closures.',
+          formula: 'max(0, receipts - closures) / starting inventory',
+          calculation: `max(0, ${display(row.monthlyReceipts)} - ${display(row.monthlyClosures)}) / ${display(row.startingInventory)} = ${displayPct(driver.rawValue)}`,
+          raw: displayPct(driver.rawValue),
+          meaning: 'This is the direct flow math. In the current model, Workload Pressure uses this same ratio as a pressure proxy.'
+        },
+        'Reroutes': {
+          definition: 'How large reroute movement is relative to current inventory.',
+          formula: 'absolute value of monthly reroutes / starting inventory',
+          calculation: `${display(Math.abs(value(row.monthlyReroutes)))} / ${display(row.startingInventory)} = ${displayPct(driver.rawValue)}`,
+          raw: displayPct(driver.rawValue),
+          meaning: 'Higher means rerouting activity may be materially affecting operational flow.'
+        }
+      };
+      return definitions[labelText] || {
+        definition: driver.note || 'Driver generated from source metrics.',
+        formula: 'source-derived metric normalized against the strongest driver for this context',
+        calculation: `Raw driver value: ${driver.rawValue}`,
+        raw: driver.rawValue,
+        meaning: 'Higher means this factor is contributing more than the other detected drivers.'
+      };
+    }
+
+    function openDriverExplain(labelText) {
+      const row = selectedRow();
+      const ctx = selectedContext();
+      const driver = (ctx?.driverBars || []).find(item => item.label === labelText);
+      if (!row || !driver) return;
+      const gap = value(row.receiptClosureGap);
+      const detail = driverDefinition(labelText, row, driver);
+      document.getElementById('detailTitle').textContent = `${labelText} Driver`;
+      document.getElementById('detailHint').textContent = `${row.businessUnit} ${row.workCategory} | ${periodLabel(row.period)}`;
+      document.getElementById('detailBody').innerHTML = `
+        <div class="signal-callout"><div class="label">Driver Definition</div><strong>${detail.definition}</strong><div>${detail.meaning}</div></div>
+        <div class="summary-grid">
+          <div class="metric-tile"><div class="label">Displayed Score</div><strong>${Math.round(driver.strength * 100)}</strong><div class="subvalue">0-100, normalized to strongest detected driver</div></div>
+          <div class="metric-tile"><div class="label">Raw Math Value</div><strong>${detail.raw}</strong><div class="subvalue">Before normalization</div></div>
+          <div class="metric-tile"><div class="label">Formula Type</div><strong>Formula-Based</strong><div class="subvalue">Source data calculation, not causal proof</div></div>
+        </div>
+        <div class="chart-grid">
+          <div class="chart-panel card"><div class="chart-title">Calculation</div>
+            <div class="insight"><div class="insight-type">Formula</div>${detail.formula}</div>
+            <div class="insight"><div class="insight-type">This Selection</div>${detail.calculation}</div>
+            <div class="insight"><div class="insight-type">Normalization</div>The largest raw driver for this same department/bucket is scaled to 100. Other drivers are shown relative to that strongest signal.</div>
+          </div>
+          <div class="chart-panel card"><div class="chart-title">Source Inputs</div>
+            <div class="insight"><div class="insight-type">Receipts</div>${display(row.monthlyReceipts)}</div>
+            <div class="insight"><div class="insight-type">Closures</div>${display(row.monthlyClosures)}</div>
+            <div class="insight"><div class="insight-type">Receipt/Closure Gap</div>${display(gap)}</div>
+            <div class="insight"><div class="insight-type">Starting Inventory</div>${display(row.startingInventory)}</div>
+            <div class="insight"><div class="insight-type">Out of Standard Change</div>${display(row.outOfStandardChange)}</div>
+            <div class="insight"><div class="insight-type">Reroutes</div>${display(row.monthlyReroutes)}</div>
+          </div>
+        </div>`;
+      openModal('detailModal');
     }
 
     function renderRail() {
