@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Build the local Staffing and Inventory dashboard data file.
+"""Build the shared or local Staffing and Inventory dashboard data.
 
 The source report is a wide, human-formatted tab-delimited export. This script
 normalizes it into business-unit/work-category/month rows, builds connected
 inventory and staffing features, generates early insight and forecast signals,
-and writes a local JavaScript data file for dashboard.html.
+and writes the JavaScript data file for dashboard.html.
 """
 
 from __future__ import annotations
@@ -1544,8 +1544,10 @@ def format_percent(value: float | None) -> str:
     return f"{value:.0%}"
 
 
-def build_payload(source_files: list[Path], sheet_name: str | None = None) -> dict[str, Any]:
-    records, source_blocks, source_stats = merge_source_files(source_files, sheet_name)
+def build_payload(
+    source_files: list[Path], sheet_name: str | None = None, *, store_file: Path = SOURCE_STORE_FILE, shared: bool = False,
+) -> dict[str, Any]:
+    records, source_blocks, source_stats = merge_source_files(source_files, sheet_name, store_file=store_file, shared=shared)
     if not records and not source_files:
         return {"metadata": {"recordCount": 0, "featureRows": 0, "latestPeriod": None}, "records": []}
     if not records:
@@ -1571,10 +1573,10 @@ def build_payload(source_files: list[Path], sheet_name: str | None = None) -> di
         "metadata": {
             "lastRefreshed": dt.datetime.now().replace(microsecond=0).isoformat(),
             "sourceFile": str(source_files[0]) if len(source_files) == 1 else (
-                "multiple input files" if source_files else str(SOURCE_STORE_FILE)
+                "multiple input files" if source_files else str(store_file)
             ),
             "sourceFiles": [str(path) for path in source_files],
-            "sourceStoreFile": str(SOURCE_STORE_FILE),
+            "sourceStoreFile": str(store_file),
             "sourceMerge": source_stats,
             "sourceSheet": sheet_name,
             "recordCount": len(records),
@@ -1642,25 +1644,35 @@ def input_source_files(directory: Path) -> list[Path]:
     return sorted(reports, key=lambda path: str(path).lower())
 
 
-def load_source_store() -> list[dict[str, Any]]:
-    if not SOURCE_STORE_FILE.exists():
+def load_source_store(path: Path, *, shared: bool) -> list[dict[str, Any]]:
+    try:
+        document = json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
         return []
-    document = json.loads(SOURCE_STORE_FILE.read_text(encoding="utf-8"))
-    return document.get("records", [])
+    # Previous publishers copied local history to the share. Only reuse history
+    # written by a run that read exclusively from the shared input folder.
+    if shared and document.get("inputFolder") != "Inputfile":
+        print(f"Rebuilding {path} from shared reports. Its previous input source is unverified.")
+        return []
+    return document["records"]
 
 
-def write_source_store(records: list[dict[str, Any]]) -> None:
+def write_source_store(path: Path, records: list[dict[str, Any]], *, shared: bool) -> None:
     document = {
         "updatedAt": dt.datetime.now().replace(microsecond=0).isoformat(),
         "periods": sorted({record["period"] for record in records}),
         "recordCount": len(records),
         "records": records,
     }
-    write_atomic(SOURCE_STORE_FILE, json.dumps(document, indent=2).encode("utf-8"))
+    if shared:
+        document["inputFolder"] = "Inputfile"
+    write_atomic(path, json.dumps(document, indent=2).encode("utf-8"))
 
 
-def merge_source_files(source_files: list[Path], sheet_name: str | None = None) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
-    stored_records = load_source_store()
+def merge_source_files(
+    source_files: list[Path], sheet_name: str | None = None, *, store_file: Path = SOURCE_STORE_FILE, shared: bool = False,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
+    stored_records = load_source_store(store_file, shared=shared)
     accepted_periods = {record["period"] for record in stored_records}
     packets = []
     for source_file in source_files:
@@ -1676,14 +1688,14 @@ def merge_source_files(source_files: list[Path], sheet_name: str | None = None) 
             }
         )
 
-    # Inputs are already in filename order within each folder, with shared files first.
+    # The stable sort keeps filename order for reports with the same first period.
     packets.sort(key=lambda packet: packet["periods"][0] if packet["periods"] else "9999-99")
 
     merged_records: list[dict[str, Any]] = list(stored_records)
     merged_blocks: list[dict[str, Any]] = []
     source_stats: list[dict[str, Any]] = [
         {
-            "sourceFile": str(SOURCE_STORE_FILE),
+            "sourceFile": str(store_file),
             "acceptedPeriods": sorted(accepted_periods),
             "skippedDuplicatePeriods": [],
             "role": "existing source data before this run",
@@ -1733,31 +1745,27 @@ def write_atomic(path: Path, content: bytes) -> None:
         temporary.unlink(missing_ok=True)
 
 
-def write_dashboard_data(payload: dict[str, Any]) -> None:
+def write_dashboard_data(path: Path, payload: dict[str, Any]) -> None:
     document = f"{DATA_HEADER}\nwindow.DASHBOARD_DATA = {json.dumps(payload, indent=2)};\n"
-    write_atomic(DATA_FILE, document.encode("utf-8"))
+    write_atomic(path, document.encode("utf-8"))
 
 
-def publish_dashboard(root: Path) -> None:
+def publish_dashboard_html(root: Path) -> None:
     viewer = root / "Dashboard" / "dashboard.html"
     html = (BASE_DIR / "dashboard.html").read_bytes()
     local_script = b'src="data/dashboard-data.js"'
     if html.count(local_script) != 1:
         raise ValueError("Expected one dashboard data script in the local dashboard.html")
     html = html.replace(local_script, b'src="../data/dashboard-data.js"')
-    for local_file in (SOURCE_STORE_FILE, DATA_FILE):
-        write_atomic(root / "data" / local_file.name, local_file.read_bytes())
     if not viewer.exists() or viewer.read_bytes() != html:
         write_atomic(viewer, html)
-    print(f"Published dashboard: {viewer}")
 
 
 @contextmanager
-def local_update_lock():
-    # Hold the lock through publication so overlapping runs of this updater cannot
-    # publish an older snapshot after a newer one. Closing releases it on exit.
-    DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with (DATA_FILE.parent / ".update.lock").open("a+b") as lock:
+def update_lock(data_dir: Path):
+    # Serialize updates to the same history, including runs from different PCs.
+    data_dir.mkdir(parents=True, exist_ok=True)
+    with (data_dir / ".update.lock").open("a+b") as lock:
         lock.seek(0)
         try:
             if os.name == "nt":
@@ -1767,7 +1775,7 @@ def local_update_lock():
                 import fcntl
                 fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except OSError as exc:
-            raise SystemExit(f"Could not lock the local data folder for update: {exc}") from exc
+            raise OSError(f"Could not lock {data_dir} for update: {exc}") from exc
         yield
 
 
@@ -1777,8 +1785,8 @@ def parse_args() -> argparse.Namespace:
         "source_file",
         nargs="?",
         help=(
-            "Optional report to use instead of discovering .txt, .csv, .xlsx, and .xlsm reports "
-            "in the shared Inputfile folder and local input folder."
+            "Optional single report. For a shared run, give a report within the shared Inputfile "
+            "folder. For a local report, use --local-only."
         ),
     )
     parser.add_argument(
@@ -1791,59 +1799,70 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def update(args: argparse.Namespace) -> int:
-    INPUT_DIR.mkdir(parents=True, exist_ok=True)
-    share_root = args.share_root
-    if share_root is None and os.name == "nt" and not args.local_only:
-        share_root = Path(WINDOWS_SHARE_ROOT)
-    shared_files = []
-    share_error = None
-    if share_root is not None:
-        shared_input = share_root / "Inputfile"
-        try:
-            shared_input.mkdir(parents=True, exist_ok=True)
-            if not args.source_file:
-                shared_files = input_source_files(shared_input)
-        except OSError as exc:
-            share_error = f"Could not access shared input at {shared_input}: {exc}"
-    if args.source_file:
-        source_files = [BASE_DIR / args.source_file]
-    else:
-        source_files = shared_files + input_source_files(INPUT_DIR)
-        if not source_files and share_root is None:
-            source_files = [DEFAULT_SOURCE_FILE]
-    missing_files = [path for path in source_files if not path.exists()]
-    if missing_files:
-        raise SystemExit(f"Source file not found: {missing_files[0]}")
-    payload = build_payload(source_files, args.sheet)
-    write_source_store(payload["records"])
-    write_dashboard_data(payload)
-    print(f"Wrote {DATA_FILE}")
-    print(f"Updated source data: {SOURCE_STORE_FILE}")
+def rebuild_data(data_dir: Path, source_files: list[Path], sheet_name: str | None, *, shared: bool) -> None:
+    store_file = data_dir / SOURCE_STORE_FILE.name
+    dashboard_file = data_dir / DATA_FILE.name
+    payload = build_payload(source_files, sheet_name, store_file=store_file, shared=shared)
+    write_source_store(store_file, payload["records"], shared=shared)
+    write_dashboard_data(dashboard_file, payload)
+    print(f"Wrote {dashboard_file}")
+    print(f"Updated source data: {store_file}")
     print(f"Source files: {len(source_files)}")
     for source_file in source_files:
         print(f"  - {source_file}")
-    if args.sheet:
-        print(f"Source sheet: {args.sheet}")
+    if sheet_name:
+        print(f"Source sheet: {sheet_name}")
     print(f"Normalized records: {payload['metadata']['recordCount']}")
     print(f"Feature rows: {payload['metadata']['featureRows']}")
     print(f"Latest period: {payload['metadata']['latestPeriod'] or 'waiting for the first report'}")
-    if share_root is not None:
-        if share_error is None:
-            try:
-                publish_dashboard(share_root)
-            except (OSError, ValueError) as exc:
-                share_error = f"Could not publish dashboard to {share_root}: {exc}"
-        if share_error:
-            print(f"Local update completed. {share_error}", file=sys.stderr)
-            return 1
-    return 0
+
+
+def update_shared(root: Path, args: argparse.Namespace) -> None:
+    input_dir = root / "Inputfile"
+    data_dir = root / "data"
+    with update_lock(data_dir):
+        input_dir.mkdir(parents=True, exist_ok=True)
+        if args.source_file:
+            report = (input_dir / args.source_file).resolve()
+            if input_dir.resolve() not in report.parents:
+                raise SystemExit(f"Select a report inside {input_dir}, or use --local-only for a local report.")
+            source_files = [report]
+        else:
+            source_files = input_source_files(input_dir)
+        print(f"Shared report folder: {input_dir}")
+        rebuild_data(data_dir, source_files, args.sheet, shared=True)
+        publish_dashboard_html(root)
+        print(f"Published dashboard: {root / 'Dashboard' / 'dashboard.html'}")
+        if data_dir.resolve() == DATA_FILE.parent.resolve():
+            return
+        try:
+            with update_lock(DATA_FILE.parent):
+                for local_file in (SOURCE_STORE_FILE, DATA_FILE):
+                    write_atomic(local_file, (data_dir / local_file.name).read_bytes())
+        except OSError as exc:
+            raise SystemExit(f"Shared dashboard published. Could not update the local copy: {exc}") from exc
+        print(f"Copied published data to {DATA_FILE.parent}")
 
 
 def main() -> int:
     args = parse_args()
-    with local_update_lock():
-        return update(args)
+    share_root = args.share_root
+    if share_root is None and os.name == "nt" and not args.local_only:
+        share_root = Path(WINDOWS_SHARE_ROOT)
+    try:
+        if share_root is not None:
+            update_shared(share_root, args)
+        else:
+            with update_lock(DATA_FILE.parent):
+                INPUT_DIR.mkdir(parents=True, exist_ok=True)
+                source_files = [BASE_DIR / args.source_file] if args.source_file else (
+                    input_source_files(INPUT_DIR) or [DEFAULT_SOURCE_FILE]
+                )
+                rebuild_data(DATA_FILE.parent, source_files, args.sheet, shared=False)
+    except (OSError, ValueError) as exc:
+        print(f"Dashboard update failed: {exc}", file=sys.stderr)
+        return 1
+    return 0
 
 
 if __name__ == "__main__":
