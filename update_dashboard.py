@@ -13,15 +13,20 @@ import datetime as dt
 import argparse
 import json
 import math
+import os
 import re
+import sys
 from collections import defaultdict
+from contextlib import contextmanager
 from pathlib import Path
 from typing import Any
+from uuid import uuid4
 
 
 BASE_DIR = Path(__file__).resolve().parent
 DEFAULT_SOURCE_FILE = BASE_DIR / "Sample Report.txt"
 INPUT_DIR = BASE_DIR / "input"
+WINDOWS_SHARE_ROOT = r"\\va01pstodfs003.corp.agp.ads\Files\VA1\Private\ServiceOperations\Claims\CostContainmentTeam\Escalated Recoveries\Eric Lane\WFM"
 DATA_FILE = BASE_DIR / "data/dashboard-data.js"
 SOURCE_STORE_FILE = BASE_DIR / "data/source-records.json"
 DATA_HEADER = "// AUTO-GENERATED DASHBOARD DATA - DO NOT EDIT MANUALLY"
@@ -1541,6 +1546,8 @@ def format_percent(value: float | None) -> str:
 
 def build_payload(source_files: list[Path], sheet_name: str | None = None) -> dict[str, Any]:
     records, source_blocks, source_stats = merge_source_files(source_files, sheet_name)
+    if not records and not source_files:
+        return {"metadata": {"recordCount": 0, "featureRows": 0, "latestPeriod": None}, "records": []}
     if not records:
         sources = "\n".join(f"  - {path}" for path in source_files)
         raise SystemExit(
@@ -1563,7 +1570,9 @@ def build_payload(source_files: list[Path], sheet_name: str | None = None) -> di
     return {
         "metadata": {
             "lastRefreshed": dt.datetime.now().replace(microsecond=0).isoformat(),
-            "sourceFile": str(source_files[0]) if len(source_files) == 1 else "multiple input files",
+            "sourceFile": str(source_files[0]) if len(source_files) == 1 else (
+                "multiple input files" if source_files else str(SOURCE_STORE_FILE)
+            ),
             "sourceFiles": [str(path) for path in source_files],
             "sourceStoreFile": str(SOURCE_STORE_FILE),
             "sourceMerge": source_stats,
@@ -1619,26 +1628,18 @@ def build_payload(source_files: list[Path], sheet_name: str | None = None) -> di
     }
 
 
-def input_source_files() -> list[Path]:
-    if not INPUT_DIR.exists():
-        return []
-    candidates = [
-        path
-        for path in INPUT_DIR.iterdir()
-        if path.is_file() and path.suffix.lower() in SUPPORTED_SOURCE_SUFFIXES
+def input_source_files(directory: Path) -> list[Path]:
+    entries = list(directory.iterdir())
+    year_folders = [path for path in entries if re.fullmatch(r"20\d{2}", path.name) and path.is_dir()]
+    for year_folder in year_folders:
+        entries.extend(year_folder.iterdir())
+    reports = [
+        path for path in entries
+        if not path.name.startswith(("~$", "."))
+        and path.suffix.lower() in SUPPORTED_SOURCE_SUFFIXES
+        and path.is_file()
     ]
-    for year_dir in sorted(path for path in INPUT_DIR.iterdir() if path.is_dir() and re.fullmatch(r"20\d{2}", path.name)):
-        candidates.extend(
-            path
-            for path in year_dir.iterdir()
-            if path.is_file() and path.suffix.lower() in SUPPORTED_SOURCE_SUFFIXES
-        )
-    return sorted(candidates)
-
-
-def default_source_files() -> list[Path]:
-    input_files = input_source_files()
-    return input_files if input_files else [DEFAULT_SOURCE_FILE]
+    return sorted(reports, key=lambda path: str(path).lower())
 
 
 def load_source_store() -> list[dict[str, Any]]:
@@ -1649,14 +1650,13 @@ def load_source_store() -> list[dict[str, Any]]:
 
 
 def write_source_store(records: list[dict[str, Any]]) -> None:
-    SOURCE_STORE_FILE.parent.mkdir(parents=True, exist_ok=True)
     document = {
         "updatedAt": dt.datetime.now().replace(microsecond=0).isoformat(),
         "periods": sorted({record["period"] for record in records}),
         "recordCount": len(records),
         "records": records,
     }
-    SOURCE_STORE_FILE.write_text(json.dumps(document, indent=2), encoding="utf-8")
+    write_atomic(SOURCE_STORE_FILE, json.dumps(document, indent=2).encode("utf-8"))
 
 
 def merge_source_files(source_files: list[Path], sheet_name: str | None = None) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
@@ -1676,7 +1676,8 @@ def merge_source_files(source_files: list[Path], sheet_name: str | None = None) 
             }
         )
 
-    packets.sort(key=lambda packet: (packet["periods"][0] if packet["periods"] else "9999-99", str(packet["sourceFile"]).lower()))
+    # Inputs are already in filename order within each folder, with shared files first.
+    packets.sort(key=lambda packet: packet["periods"][0] if packet["periods"] else "9999-99")
 
     merged_records: list[dict[str, Any]] = list(stored_records)
     merged_blocks: list[dict[str, Any]] = []
@@ -1722,10 +1723,52 @@ def merge_source_files(source_files: list[Path], sheet_name: str | None = None) 
     return merged_records, merged_blocks, source_stats
 
 
+def write_atomic(path: Path, content: bytes) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(f".{path.name}.{uuid4().hex}.tmp")
+    try:
+        temporary.write_bytes(content)
+        temporary.replace(path)
+    finally:
+        temporary.unlink(missing_ok=True)
+
+
 def write_dashboard_data(payload: dict[str, Any]) -> None:
-    DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     document = f"{DATA_HEADER}\nwindow.DASHBOARD_DATA = {json.dumps(payload, indent=2)};\n"
-    DATA_FILE.write_text(document, encoding="utf-8")
+    write_atomic(DATA_FILE, document.encode("utf-8"))
+
+
+def publish_dashboard(root: Path) -> None:
+    viewer = root / "Dashboard" / "dashboard.html"
+    html = (BASE_DIR / "dashboard.html").read_bytes()
+    local_script = b'src="data/dashboard-data.js"'
+    if html.count(local_script) != 1:
+        raise ValueError("Expected one dashboard data script in the local dashboard.html")
+    html = html.replace(local_script, b'src="../data/dashboard-data.js"')
+    for local_file in (SOURCE_STORE_FILE, DATA_FILE):
+        write_atomic(root / "data" / local_file.name, local_file.read_bytes())
+    if not viewer.exists() or viewer.read_bytes() != html:
+        write_atomic(viewer, html)
+    print(f"Published dashboard: {viewer}")
+
+
+@contextmanager
+def local_update_lock():
+    # Hold the lock through publication so overlapping runs of this updater cannot
+    # publish an older snapshot after a newer one. Closing releases it on exit.
+    DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with (DATA_FILE.parent / ".update.lock").open("a+b") as lock:
+        lock.seek(0)
+        try:
+            if os.name == "nt":
+                import msvcrt
+                msvcrt.locking(lock.fileno(), msvcrt.LK_NBLCK, 1)
+            else:
+                import fcntl
+                fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except OSError as exc:
+            raise SystemExit(f"Could not lock the local data folder for update: {exc}") from exc
+        yield
 
 
 def parse_args() -> argparse.Namespace:
@@ -1734,21 +1777,41 @@ def parse_args() -> argparse.Namespace:
         "source_file",
         nargs="?",
         help=(
-            "Optional source report to read. If omitted, the updater reads all supported files directly "
-            "inside input/, or falls back to Sample Report.txt. Supports .txt, .csv, .xlsx, and .xlsm files."
+            "Optional report to use instead of discovering .txt, .csv, .xlsx, and .xlsm reports "
+            "in the shared Inputfile folder and local input folder."
         ),
     )
     parser.add_argument(
         "--sheet",
         help="Worksheet name to read when the source file is Excel. Defaults to the active worksheet.",
     )
+    publishing = parser.add_mutually_exclusive_group()
+    publishing.add_argument("--share-root", type=Path, help="WFM folder containing Inputfile, data and Dashboard.")
+    publishing.add_argument("--local-only", action="store_true", help="Use the local input and outputs only.")
     return parser.parse_args()
 
 
-def main() -> int:
-    args = parse_args()
-    source_files = [Path(args.source_file)] if args.source_file else default_source_files()
-    source_files = [path if path.is_absolute() else BASE_DIR / path for path in source_files]
+def update(args: argparse.Namespace) -> int:
+    INPUT_DIR.mkdir(parents=True, exist_ok=True)
+    share_root = args.share_root
+    if share_root is None and os.name == "nt" and not args.local_only:
+        share_root = Path(WINDOWS_SHARE_ROOT)
+    shared_files = []
+    share_error = None
+    if share_root is not None:
+        shared_input = share_root / "Inputfile"
+        try:
+            shared_input.mkdir(parents=True, exist_ok=True)
+            if not args.source_file:
+                shared_files = input_source_files(shared_input)
+        except OSError as exc:
+            share_error = f"Could not access shared input at {shared_input}: {exc}"
+    if args.source_file:
+        source_files = [BASE_DIR / args.source_file]
+    else:
+        source_files = shared_files + input_source_files(INPUT_DIR)
+        if not source_files and share_root is None:
+            source_files = [DEFAULT_SOURCE_FILE]
     missing_files = [path for path in source_files if not path.exists()]
     if missing_files:
         raise SystemExit(f"Source file not found: {missing_files[0]}")
@@ -1764,8 +1827,23 @@ def main() -> int:
         print(f"Source sheet: {args.sheet}")
     print(f"Normalized records: {payload['metadata']['recordCount']}")
     print(f"Feature rows: {payload['metadata']['featureRows']}")
-    print(f"Latest period: {payload['metadata']['latestPeriod']}")
+    print(f"Latest period: {payload['metadata']['latestPeriod'] or 'waiting for the first report'}")
+    if share_root is not None:
+        if share_error is None:
+            try:
+                publish_dashboard(share_root)
+            except (OSError, ValueError) as exc:
+                share_error = f"Could not publish dashboard to {share_root}: {exc}"
+        if share_error:
+            print(f"Local update completed. {share_error}", file=sys.stderr)
+            return 1
     return 0
+
+
+def main() -> int:
+    args = parse_args()
+    with local_update_lock():
+        return update(args)
 
 
 if __name__ == "__main__":

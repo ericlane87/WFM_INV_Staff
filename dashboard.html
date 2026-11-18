@@ -589,12 +589,12 @@
       <div class="loading-brand">
         <div>
           <div class="loading-title">Opening WorkforceIQ</div>
-          <div class="loading-subtitle">Loading local dashboard data from the shared folder.</div>
+          <div class="loading-subtitle">Reading the latest dashboard data.</div>
         </div>
         <div class="logo">WFM<span>IQ</span></div>
       </div>
       <div class="loading-spinner" aria-hidden="true"></div>
-      <div class="loading-note">Keep `dashboard.html` and the `data` folder together when sharing this dashboard.</div>
+      <div class="loading-note"></div>
     </div>
   </div>
 
@@ -686,26 +686,18 @@
     </div>
   </div>
 
-  <script src="data/dashboard-data.js"></script>
+  <script id="dashboardData" src="data/dashboard-data.js"></script>
   <script>
     const data = window.DASHBOARD_DATA;
     const loadingPreview = new URLSearchParams(window.location.search).has('loading-preview');
     const normalLoadingMs = 3000;
     const navigationType = performance.getEntriesByType('navigation')?.[0]?.type || 'navigate';
-    if (!data) {
-      document.body.classList.add('loading-error');
-      const loading = document.getElementById('loadingScreen');
-      if (loading) {
-        loading.innerHTML = `<div class="loading-card"><div class="loading-brand"><div><div class="loading-title">Dashboard Data Not Found</div><div class="loading-subtitle">WorkforceIQ opened, but it could not load <strong>data/dashboard-data.js</strong>.</div></div><div class="logo">WFM<span>IQ</span></div></div><div class="loading-spinner" aria-hidden="true"></div><div class="loading-note">On the shared drive, keep <strong>dashboard.html</strong> in the same folder as the <strong>data</strong> folder. If the report was refreshed, run <strong>python3 update_dashboard.py</strong> before sharing.</div></div>`;
-      }
-      throw new Error('WorkforceIQ data file missing: data/dashboard-data.js');
-    }
     const state = {
       view: 'pulse',
       tab: 'pulse',
       businessUnit: 'All',
       workCategory: 'All',
-      period: data.metadata.latestFullContextPeriod || data.metadata.latestPeriod
+      period: data?.metadata.latestFullContextPeriod || data?.metadata.latestPeriod
     };
     const fmt = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
     const pct = new Intl.NumberFormat('en-US', { style: 'percent', maximumFractionDigits: 0 });
@@ -734,7 +726,7 @@
       document.getElementById('categoryFilter').onchange = e => { state.workCategory = e.target.value; render(); };
       document.getElementById('periodFilter').onchange = e => { state.period = e.target.value; render(); };
       document.getElementById('resetViewBtn').onclick = resetView;
-      document.getElementById('refreshBtn').onclick = render;
+      document.getElementById('refreshBtn').onclick = () => window.location.reload();
       document.getElementById('guideMeBtn').onclick = () => openModal('guideModal');
       document.getElementById('presentationBtn').onclick = togglePresentation;
       document.querySelectorAll('.kpi[data-nav]').forEach(card => card.onclick = () => navigateTo(card.dataset.nav));
@@ -1415,6 +1407,20 @@
     }
 
     function boot() {
+      if (!data || data.metadata.recordCount === 0) {
+        const screen = document.getElementById('loadingScreen');
+        const source = document.getElementById('dashboardData').getAttribute('src');
+        screen.querySelector('.loading-title').textContent = data ? 'Waiting for the first report' : 'Dashboard data unavailable';
+        screen.querySelector('.loading-subtitle').textContent = data
+          ? 'The dashboard is ready. There are no report periods to display yet.'
+          : `WorkforceIQ could not read ${source}.`;
+        screen.querySelector('.loading-note').textContent = data
+          ? 'Reload this page after the next dashboard update.'
+          : 'Open the dashboard in its original folder and check that you can read the data file.';
+        screen.querySelector('.loading-spinner').remove();
+        document.body.classList.add('loading');
+        return;
+      }
       if (loadingPreview) {
         document.body.classList.add('loading');
         setTimeout(() => {

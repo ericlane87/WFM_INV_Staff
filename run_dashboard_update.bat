@@ -30,6 +30,7 @@ if errorlevel 1 (
   exit /b 1
 )
 echo.
-echo Dashboard data updated. Open dashboard.html to view it.
+echo Local dashboard updated. Open dashboard.html to view it.
+findstr /B /C:"Published dashboard:" "%LOG_FILE%"
 echo See log: %LOG_FILE%
 pause

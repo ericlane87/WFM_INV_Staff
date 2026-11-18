@@ -1,10 +1,26 @@
 # Staffing and Inventory Intelligence Dashboard
 
-This project builds a local dashboard from the staffing and inventory report in `Sample Report.txt`.
+On Windows, double-click `run_dashboard_update.bat` to refresh the local dashboard and publish it to the WFM share. The shared root from `logs/log.txt` is
 
-You can also put report files directly in the `input` folder beside the updater/batch file. The updater reads every supported file directly inside `input`, sorts the reports by their month periods, and keeps each period only once. If a later file repeats a period that was already loaded, that duplicate period is ignored.
+```text
+\\va01pstodfs003.corp.agp.ads\Files\VA1\Private\ServiceOperations\Claims\CostContainmentTeam\Escalated Recoveries\Eric Lane\WFM
+```
 
-Previously loaded source rows are stored in `data/source-records.json`. New runs keep those existing dates and add only new dates from the files in `input`.
+```text
+WFM/
+  Inputfile/                 Drop staffing and inventory reports here
+  data/
+    dashboard-data.js        Data that the dashboard displays
+    source-records.json      Copy of the accumulated report records
+  Dashboard/
+    dashboard.html           Open this file to view the dashboard
+```
+
+Give viewers the `WFM\Dashboard` folder path. The HTML reads `../data/dashboard-data.js` directly in the browser, so viewers need read access to that file. Contributors can go up one level to `WFM\Inputfile`. The account running the updater needs write access to create the folders and publish the files.
+
+The first run creates any missing folders and publishes the HTML. An empty input folder is fine. The updater publishes the local history if available, or shows “Waiting for the first report” on a fresh installation with no history. Later runs refresh the data and only replace the shared HTML if the local page has changed or the shared copy is missing. Viewers can use Refresh to load a new publication.
+
+Each run reads reports from the shared `Inputfile` and local `input` folders, including four-digit year subfolders such as `2026`. Supported formats are `.txt`, `.csv`, `.xlsx` and `.xlsm`. The local `data/source-records.json` retains previously loaded months. Reports are processed by earliest period, with shared inputs first on a tie. Each new month is accepted once. The local dashboard and its data remain beside the updater. Windows batch logs stay in the local `logs` folder.
 
 Excel date headers such as `26-Jan`, `Jan-26`, `Aug`, and `2026-08-26` are supported. Month labels without a year default to 2026.
 
@@ -14,11 +30,13 @@ Excel date headers such as `26-Jan`, `Jan-26`, `Aug`, and `2026-08-26` are suppo
 python3 update_dashboard.py
 ```
 
-On Windows, double-click:
+To use a mounted share on macOS or another shared root on Windows, pass the parent directory containing `Inputfile`:
 
-```text
-run_dashboard_update.bat
+```bash
+python3 update_dashboard.py --share-root "/Volumes/Files/path/to/WFM"
 ```
+
+For a local-only run, use `python3 update_dashboard.py --local-only`. This is the default on macOS and Linux. Local-only runs fall back to `Sample Report.txt` if the local input folder has no reports.
 
 You can also point the job directly at an Excel workbook that has the same staffing/inventory layout:
 
